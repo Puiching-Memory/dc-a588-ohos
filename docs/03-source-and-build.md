@@ -10,16 +10,17 @@ export GIT_CONFIG_COUNT=2 \
        GIT_CONFIG_KEY_1=https.proxy GIT_CONFIG_VALUE_1=
 
 python3 ~/ohos/repo init \
-  -u https://gitcode.com/ning-bb/manifest \
+  -u https://gitcode.com/caesar-wang/manifest \
   -b OpenHarmony-6.1-RK-LTS \
   -m chipsets/rockchip.xml
 
 python3 ~/ohos/repo sync -c --force-sync --no-tags --jobs=16 --retry-fetches=3
 ```
 
-- manifest 仓库：`https://gitcode.com/ning-bb/manifest`，分支 `OpenHarmony-6.1-RK-LTS`，
-  `.repo/manifest.xml` 里 `<include name="chipsets/rockchip.xml" />`。
-  （早期文档写的 `caesar-wang/manifest` 是笔误，以运行时 `.repo/manifests` 的 remote 为准。）
+- manifest 仓库：`https://gitcode.com/caesar-wang/manifest`（RK3588 OpenHarmony 移植工程），
+  分支 `OpenHarmony-6.1-RK-LTS`，`.repo/manifest.xml` 里 `<include name="chipsets/rockchip.xml" />`。
+  本次构建机的 `.repo/manifests` remote 记录为 `gitcode.com/ning-bb/manifest`；复现时以上游
+  `caesar-wang/manifest` 为准。
 - repo 工具：`https://gitcode.com/gitcode-dev/repo`（repo-py3）。
 - `sync.sh` = 上面的 sync 循环 30 次、每次失败等 60 s，适合弱网。
 - `lfspull.sh` + `lfs_repos.txt` = 逐仓库 `git lfs pull`（`timeout 1200`）。

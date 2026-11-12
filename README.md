@@ -11,18 +11,18 @@
 
 ## 当前状态
 
-| 项 | 状态 |
-| --- | --- |
-| 系统启动 | 可启动到 `bootevent.boot.completed`，经典 WindowManager 进入桌面 |
-| 显示 | HDMI OUT0 正常；HDMI OUT1 已绑定并出图；DSI0 因无面板关闭；DP0/DP1（与 HDMI 复用连接器）关闭 |
-| 网络 | eth0（GMAC0 + RTL8211F）通路可用，实测只协商到 100 Mbps（待查线材/交换机）；eth1（RTL8111）需插线验证 |
-| 存储 | eMMC 正常；TF 卡、SATA 盘未插卡/盘验证 |
-| 音频 | ES8388 声卡注册成功，未做实际播放验证 |
-| 蓝牙 | 驱动层就绪（ttyS8），协议栈未验证 |
-| USB | 设备/主机模式未完整验证；`usb_host` 服务存在 SIGSEGV 重启循环（厂商 HDI 缺陷） |
-| 摄像头 / CAN / RTC / LVDS | 未适配，缺厂商原理图或硬件 |
-| 鼠标光标 | 已定位真实根因（WindowManager 漏填 `rsId`），修正库已编译但**未上板验证** |
-| SceneBoard | 已完成编译/打包/预装修复，R2 能跑起桌面进程，但随后黑屏，**按用户要求停止该方向并回退经典版本** |
+| 项                        | 状态                                                                                                  |
+| ------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 系统启动                  | 可启动到 `bootevent.boot.completed`，经典 WindowManager 进入桌面                                      |
+| 显示                      | HDMI OUT0 正常；HDMI OUT1 已绑定并出图；DSI0 因无面板关闭；DP0/DP1（与 HDMI 复用连接器）关闭          |
+| 网络                      | eth0（GMAC0 + RTL8211F）通路可用，实测只协商到 100 Mbps（待查线材/交换机）；eth1（RTL8111）需插线验证 |
+| 存储                      | eMMC 正常；TF 卡、SATA 盘未插卡/盘验证                                                                |
+| 音频                      | ES8388 声卡注册成功，未做实际播放验证                                                                 |
+| 蓝牙                      | 驱动层就绪（ttyS8），协议栈未验证                                                                     |
+| USB                       | 设备/主机模式未完整验证；`usb_host` 服务存在 SIGSEGV 重启循环（厂商 HDI 缺陷）                        |
+| 摄像头 / CAN / RTC / LVDS | 未适配，缺厂商原理图或硬件                                                                            |
+| 鼠标光标                  | 已定位真实根因（WindowManager 漏填 `rsId`），修正库已编译但**未上板验证**                             |
+| SceneBoard                | 已完成编译/打包/预装修复，R2 能跑起桌面进程，但随后黑屏，**按用户要求停止该方向并回退经典版本**       |
 
 完整清单见 [docs/07-known-issues.md](docs/07-known-issues.md)，原始版本见
 [docs/original/KNOWN-ISSUES.md](docs/original/KNOWN-ISSUES.md)。
@@ -60,7 +60,7 @@
 
 ## 复现链路（TL;DR）
 
-1. **准备源码**（构建机）：`repo init -u https://gitcode.com/ning-bb/manifest -b OpenHarmony-6.1-RK-LTS -m chipsets/rockchip.xml`，
+1. **准备源码**（构建机）：`repo init -u https://gitcode.com/caesar-wang/manifest -b OpenHarmony-6.1-RK-LTS -m chipsets/rockchip.xml`，
    用 [scripts/build/sync.sh](scripts/build/sync.sh) 带重试同步，再用 [scripts/build/lfspull.sh](scripts/build/lfspull.sh) 拉 LFS。
 2. **准备容器**：[scripts/build/Dockerfile](scripts/build/Dockerfile) 构建 `ohos-6.1-rk:jammy-v3`，以 1005:1005 运行。
 3. **板级设备树**：把 [board-dts/rk3588-evb7-v11-standard.dts](board-dts/rk3588-evb7-v11-standard.dts)
@@ -84,6 +84,16 @@
 5. **“看不到光标但点击有效”是 RS 屏幕映射错误。** 经典 WindowManager 的
    `InputWindowMonitor::UpdateDisplayInfo()` 漏填 `MMI::DisplayInfo.rsId`，光标被挂到没有画面的 RS 屏幕 0；
    桌面窗口走另一条正确映射路径，所以点击/hover 正常。
+
+## 致谢
+
+- **[caesar-wang/manifest](https://gitcode.com/caesar-wang/manifest)** —— RK3588 的 OpenHarmony 移植工程。
+  本工程使用的 manifest（`OpenHarmony-6.1-RK-LTS` 分支、`chipsets/rockchip.xml`）与 Rockchip 板级适配均来自该项目。
+- **OpenHarmony 社区** —— 提供 OpenHarmony 6.1-RK-LTS 源码、构建框架与 API 23 SDK。
+- **Rockchip 上游** —— U-Boot、Linux 6.6 内核、rkbin、MPP 等组件，随 manifest 引入。
+- **[AndroidOL/Archive-DC-A588](https://github.com/AndroidOL/Archive-DC-A588)** —— 厂商官方固件与设备树，
+  是本板引脚与使能状态的权威对照依据。
+- **工具** —— Rockchip RKDevTool v3.37、OpenHarmony 命令行工具（`hdc`、`hvigor`、`hapsigner`）。
 
 ## 约定
 
