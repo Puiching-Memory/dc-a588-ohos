@@ -1,0 +1,166 @@
+
+# [  215.287702] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  215.488455] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  215.689169] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; bm dump -h; bm dump -a | grep -iE "sceneboard|launcher|sysmp -h; bm dump -a | grep -iE "sceneboard|launcher|sys                         <temui|settings"; hilog -x-iE "sceneboard|launcher|systemui|settings"; hilog -x                         < -L E,F | tail -n 100; ecsystemui|settings"; hilog -x -L E,F | tail -n 100; ec                         <ho PROBE_END
+PROBE_BEGIN
+usage: bm dump <options>
+options list:
+  -h, --help                           list available commands
+  -a, --all                            list all bundles in system
+  -g, --debug-bundle                   list debug bundles in system
+  -n, --bundle-name <bundle-name>      list the bundle info by a bundle name
+  -s, --shortcut-info                  list the shortcut info
+  -d, --device-id <device-id>          specify a device id
+  -u, --user-id <user-id>              specify a user id,only supports current user or userId is 0
+  -l, --label                          list the label info
+[  215.889943] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+11-05 16:08:44.885   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:45.386   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:45.886   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:46.386   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:46.886   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:47.386   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:47.887   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:48.387   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:48.887   602  1877 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:49.387   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:49.887   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:50.388   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:50.888   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:51.388   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:51.888   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:51.959   218   557 E C05a03/Selinux: avc:  denied  { get } for service=401 sid=u:r:console:s0 scontext=u:r:console:s0 tcontext=u:object_r:sa_foundation_bms:s0 tclass=samgr_class permissive=1
+11-05 16:08:51.960   218   557 E C05a03/Selinux: avc:  denied  { get } for service=200 sid=u:r:console:s0 scontext=u:r:console:s0 tcontext=u:object_r:sa_accountmgr:s0 tclass=samgr_class permissive=1
+11-05 16:08:51.961   658   658 E C01120/BMS: [bundle_mgr_host_impl.cpp(DumpInfos:2460)]verify permission failed
+11-05 16:08:51.961  1879  1879 E C01120/BMS: [bundle_mgr_proxy.cpp(DumpInfos:2200)]readParcelableInfo failed
+11-05 16:08:51.961  1879  1879 E C01123/BMSTool: [bundle_command.cpp(DumpBundleInfo:2263)]failed to dump bundle info.
+11-05 16:08:51.984  1884  1884 E C057c2/IPCObjectProxy: PrintErrorDetailedInfo: failed, handle:0 error:7 desc:*.accessToken proxy:2353220368 time:180704932054
+11-05 16:08:52.087  1887  1887 E C02d20/DumperService: Request# No dump permission, please check!, uid:0.
+11-05 16:08:52.088  1884  1884 E C02d20/DumperService: Main# request error, ret: -1.
+11-05 16:08:52.389   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:52.889   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:53.390   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:53.890   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:54.111   220   315 E C04300/StorageManager: [GetTotalSize:76] StorageTotalStatusService::GetTotalSize success, roundSize=64000000000, (/data)totalDataSize=58988670976, (/)totalRootSize=2107482112
+11-05 16:08:54.111   220   315 E C04300/StorageManager: [GetFreeSize:88] StorageTotalStatusService::GetFreeSize success, (/data)freeSize=57350356992
+11-05 16:08:54.390   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:54.891   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:55.391   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:55.891   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:56.392   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:56.892   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:57.393   602  1878 E C01611/Uailed to query os accounts, ret:1
+11-05 16:08:57.893   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:58.394   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:58.894   602  1878 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:59.394   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:59.895   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:00.395   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:00.896   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:01.396   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:01.896   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:02.397   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:02.897   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:03.397   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:03.898   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:04.398   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:04.899   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:05.399   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:05.899   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:06.400   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:06.900   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:07.400   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:07.901   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:08.401   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:08.901   602  1902 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:09.402   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:09.902   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:10.402   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:10.903   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:11.403   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:11.904   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:12.404   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:12.904   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:13.405   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:13.905   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:14.405   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:14.906   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:15.406   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:157 no need report
+11-05 16:09:15.854   700  1906 E C02b24/PipelineTreadPool: (RemoveTask(), 223): PipeLineThread playerMemReport1_S remove all Task
+11-05 16:09:15.907   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:16.407   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:16.907   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:17.408   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:17.908   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:18.408   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:18.909   602  1903 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:19.409   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:19.910   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:20.410   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:20.910   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:21.411   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:21.911   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:22.412   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:22.912   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:23.412   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:23.913   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:24.413   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:24.914   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:25.414   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:25.915   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:26.415   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:26.915   602  1907 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:09:27.167   658   658 E C01120/BMS: [bundle_mgr_host_impl.cpp(DumpInfos:2460)]verify permission failed
+11-05 16:09:27.167  1911  1911 E C01120/BMS: [bundle_mgr_proxy.cpp(DumpInfos:2200)]readParcelableInfo failed
+11-05 16:09:27.167  1911  1911 E C01123/BMSTool: [bundle_command.cpp(DumpBundleList:2219)]failed to dump bundle list.
+PROBE_END
+# [  216.091287] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  216.292554] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  216.493520] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  216.694322] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  216.895088] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  216.994265] hungtask_user process 215 is kicked
+[  216.994334] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  217.095816] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  217.296560] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  217.497293] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  217.698027] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  217.898724] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  218.099430] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  218.300200] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  218.500927] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  218.701635] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  218.902373] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  219.103136] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  219.303868] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  219.504600] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  219.512378] kauditd_printk_skb: 81 callbacks suppressed
+[  219.512383] audit: type=1400 audit(1793866170.783:4696): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.512412] audit: type=1400 audit(1793866170.783:4697): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.512425] audit: type=1400 audit(1793866170.783:4698): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.512436] audit: type=1400 audit(1793866170.783:4699): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.705338] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  219.812722] audit: type=1400 audit(1793866171.086:4700): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.812742] audit: type=1400 audit(1793866171.086:4701): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.812754] audit: type=1400 audit(1793866171.086:4702): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.812766] audit: type=1400 audit(1793866171.086:4703): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  219.906080] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  220.106835] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  220.113071] audit: type=1400 audit(1793866171.383:4704): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  220.113092] audit: type=1400 audit(1793866171.386:4705): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  220.307612] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  220.508342] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  220.709071] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  220.909828] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  221.110550] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  221.311262] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  221.512000] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  221.712736] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  221.913458] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  222.114185] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  222.314893] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  222.515646] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  222.716365] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

@@ -1,0 +1,68 @@
+==============================================================================
+节点总数：我方 1235   厂商 1017   共有 976
+==============================================================================
+
+### 1. status 不一致（共有节点）
+
+节点                                             我方           厂商          
+------------------------------------------------------------------------------
+/av1d@fdc70000                                 okay         disabled    
+/avsd-plus@fdb51000                            okay         disabled    
+/can@fea50000                                  disabled     okay        
+/csi2-dphy0                                    okay         disabled    
+/csi2-dphy0-hw@fedc0000                        okay         disabled    
+/csi2-dphy1-hw@fedc8000                        okay         disabled    
+/dfi@fe060000                                  okay         disabled    
+/display-subsystem/route/route-hdmi1           okay         disabled    
+/dmc                                           okay         disabled    
+/dp0-sound                                     okay         disabled    
+/dp@fde50000                                   okay         disabled    
+/dp@fde50000/ports/port@0/endpoint@2           okay         disabled    
+/dp@fde60000                                   okay         disabled    
+/dp@fde60000/ports/port@0/endpoint@2           okay         disabled    
+/hdmi1-sound                                   okay         disabled    
+/hdmi@fdea0000                                 okay         disabled    
+/hdmi@fdea0000/ports/port@0/endpoint@1         okay         disabled    
+/hdmiin-sound                                  (无)          okay        
+/hdmiphy@fed70000                              okay         disabled    
+/i2c@feab0000                                  okay         disabled    
+/iommu@fdcb7f00                                okay         disabled    
+/iommu@fdce0800                                okay         disabled    
+/phy@fedb0000                                  okay         disabled    
+/pwm@fd8b0010                                  okay         disabled    
+/pwm@febf0020                                  disabled     okay        
+/rkcif-mipi-lvds2                              okay         disabled    
+/rkcif-mipi-lvds2-sditf                        okay         disabled    
+/rkcif@fdce0000                                okay         disabled    
+/rkisp0-vir0                                   okay         disabled    
+/rkisp@fdcb0000                                okay         disabled    
+/serial@fd890000                               disabled     okay        
+/serial@feb60000                               disabled     okay        
+/serial@feba0000                               disabled     okay        
+/watchdog@feaf0000                             disabled     okay        
+合计 34 处
+
+### 2. GPIO 属性不一致（共有节点）
+
+节点                                 属性                     我方                   厂商                  
+----------------------------------------------------------------------------------------------------
+合计 0 处
+
+### 3. 只在单侧出现的 GPIO 属性
+
+侧      节点                                       属性                     引脚
+----------------------------------------------------------------------------------------------------
+我方     /i2c@feab0000/imx415@1a                  pwdn-gpios             GPIO1_A7/HIGH
+我方     /i2c@feac0000/icm_acc@68                 irq-gpio               GPIO4_C2/LOW
+我方     /i2c@fead0000/hynitron@5a                irq-gpios              GPIO3_C0/LOW
+我方     /i2c@fead0000/hynitron@5a                reset-gpios            GPIO3_C1/HIGH
+我方     /rk-headset                              headset-gpios          GPIO1_D5/LOW
+我方     /sdio-pwrseq                             reset-gpios            GPIO0_C4/LOW
+我方     /vbus5v0-typec                           gpio                   GPIO3_A6/HIGH
+我方     /vcc-mipicsi0-regulator                  gpio                   GPIO1_D2/HIGH
+我方     /vcc-mipicsi1-regulator                  gpio                   GPIO1_D3/HIGH
+我方     /vcc-mipidcphy0-regulator                gpio                   GPIO1_B2/HIGH
+厂商     /fan-regulator                           gpio                   GPIO4_A5/HIGH
+厂商     /i2c@feac0000/mpu_acc@68                 irq-gpio               GPIO4_C2/LOW
+厂商     /mark_gpio                               gpio_pwen              GPIO3_B4/LOW
+合计 13 处

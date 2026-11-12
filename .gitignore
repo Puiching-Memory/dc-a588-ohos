@@ -1,0 +1,19 @@
+# 大镜像与二进制产物不入库（约 4.3 GB）
+images/*.img
+images/*.bin
+images/Image
+images/*.dtb
+images/*.hap
+**/*.img
+**/*.hap
+**/*.dtb
+**/*.so
+**/*.tar.gz
+**/*.gz
+
+# 本地构建/编辑残留
+*.log
+!evidence/**/*.log
+.vscode/
+.DS_Store
+Thumbs.db

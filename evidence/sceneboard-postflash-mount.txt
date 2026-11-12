@@ -1,0 +1,11 @@
+
+# echo PROBE_BEGIN; cat /etc/sceneboard.config; ls -ld /etc /system; ls -l /syetc/sceneboard.config; ls -ld /etc /system; ls -l /sy                         <stem/app/SceneBoard; cat  -ld /etc /system; ls -l /system/app/SceneBoard; cat                          </proc/mounts | grep -E "s/system/app/SceneBoard; cat /proc/mounts | grep -E "s                         <ystem|overlay|mapper"; ecat /proc/mounts | grep -E "system|overlay|mapper"; ec                         <ho PROBE_END
+PROBE_BEGIN
+/system/bin/sh: cat: /etc/sceneboard.config: No such file or directory
+lrw-r--r--  1 root root   11 2026-11-04 17:58 /etc -> /system/etc
+drwxr-xr-x 11 root root 4096 2026-11-04 17:58 /system
+ls: /system/app/SceneBoard: No such file or directory
+/dev/block/by-name/system / ext4 ro,seclabel,nodev,relatime 0 0
+PROBE_END
+# [  147.012617] hungtask_user process 215 is kicked
+

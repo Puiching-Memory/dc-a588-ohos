@@ -1,0 +1,12 @@
+
+# [  132.777720] kauditd_printk_skb: 58 callbacks suppressed
+echo PROBE_BEGIN; hilog -x -P 322 | grep -iE "ScreenPointer|PointerDrawingMa -x -P 322 | grep -iE "ScreenPointer|PointerDrawingMa                         <nager|PointerRenderer|HarreenPointer|PointerDrawingManager|PointerRenderer|Har                         <dwareCursor|UpdateDisplaygManager|PointerRenderer|HardwareCursor|UpdateDisplay                         <Info" | tail -60; hilog -HardwareCursor|UpdateDisplayInfo" | tail -60; hilog -                         <x -P 722 | grep -iE "curslayInfo" | tail -60; hilog -x -P 722 | grep -iE "curs                         <or|pointer|GetDisplayPropg -x -P 722 | grep -iE "cursor|pointer|GetDisplayProp                         <erty|Capture" | tail -25;ursor|pointer|GetDisplayProperty|Capture" | tail -25;                         < hidumper -s 3101 -a "-h"roperty|Capture" | tail -25; hidumper -s 3101 -a "-h"                         <; echo PROBE_END
+PROBE_BEGIN
+11-05 10:05:21.475   322   579 I C02804/PointerDrawingManager: [P:M:1569|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:05:21.637   322   579 I C02804/PointerDrawingManager: [|1597]The screenId_:0
+11-05 10:05:21.637   322   579 I C02804/PointerDrawingManager: [|1615]AttachToDisplay screenId_:0
+11-05 10:05:21.875   322   579 I C02804/PointerDrawingManager: [P:M:1614|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+request error
+PROBE_END
+# [  136.889371] hungtask_user process 219 is kicked
+

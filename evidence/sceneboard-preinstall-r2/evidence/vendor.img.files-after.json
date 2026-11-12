@@ -1,0 +1,1789 @@
+{
+  "bin": {
+    "type": "directory",
+    "mode": 489
+  },
+  "bin/hdf_devhost": {
+    "type": "file",
+    "sha256": "dd5d3f037ba802aa9866aaa0422240dc47acb1d6f899bb42cba1adfe8b0cd20e",
+    "mode": 493
+  },
+  "bin/hostapd": {
+    "type": "file",
+    "sha256": "83f1dcddd4ad1126dc82d788b5e72efa8f239b88de6fa0d70c9c19324f2f9d27",
+    "mode": 493
+  },
+  "bin/mpi_dec_test": {
+    "type": "file",
+    "sha256": "7748b6919aa116d0f2b18e54984200e4d98c6ff0677f478d264edc56a33a41f0",
+    "mode": 493
+  },
+  "bin/mpi_enc_test": {
+    "type": "file",
+    "sha256": "f3c1ce9690ef31396c4a427c6c4b73594c5a33a14b71a1d78236730242eff158",
+    "mode": 493
+  },
+  "bin/rkaiq_3A_server": {
+    "type": "file",
+    "sha256": "8fc9a9c9aaaaaff487c326e6c60dbee632ed4d5d81bcfdc788a368c27ce3a74e",
+    "mode": 493
+  },
+  "bin/rknn_benchmark": {
+    "type": "file",
+    "sha256": "dc05f1f22f33341dce9ec91745cdeb0e61f28c37a63affd77a3f446a5238147e",
+    "mode": 493
+  },
+  "bin/wpa_cli": {
+    "type": "file",
+    "sha256": "cd8a65853890532ec058db851713ff682584887f3c48f90e3da9e19576d67851",
+    "mode": 493
+  },
+  "bin/wpa_supplicant": {
+    "type": "file",
+    "sha256": "155cf6fe22846dddeb1b84b048d7819e0ac5aef84962913f3ce296325886b4cb",
+    "mode": 493
+  },
+  "etc": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/audio": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/audio/audio_policy_config.xml": {
+    "type": "file",
+    "sha256": "f530fff469a5f2562e1ed2584edcdd7540c7839ad0088da64ccdf7fa187083a0",
+    "mode": 420
+  },
+  "etc/audio/audio_policy_config_new.xml": {
+    "type": "file",
+    "sha256": "e5e27aa768673f63fb201cf5cb0069f0b362e90c0967e13dc246198702ffe2ef",
+    "mode": 420
+  },
+  "etc/battery": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/battery/battery_config.json": {
+    "type": "file",
+    "sha256": "eca690ce2308085456f442f3e3d4ec7ba4cd97533b600563db7e57127030a28d",
+    "mode": 420
+  },
+  "etc/bluetooth": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/bluetooth/bt_vendor.conf": {
+    "type": "file",
+    "sha256": "63c73ec06fe338f29947b3ecd73672129220826b29ab230a13e876dc78cd7e62",
+    "mode": 420
+  },
+  "etc/cgroup_sched": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/cgroup_sched/cgroup_action_config.json": {
+    "type": "file",
+    "sha256": "83fcde08db2f48ad0c3ebc101bbf349e75f016abf1f695ecbc6e2ac42ab6baef",
+    "mode": 420
+  },
+  "etc/distributedhardware": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/distributedhardware/dinput_business_event_whitelist.cfg": {
+    "type": "file",
+    "sha256": "090e39e19074b291e9f1a587feb6c3c9466e731a7dce28ea5c595840de9a2dd4",
+    "mode": 420
+  },
+  "etc/distributedhardware/distributed_hardware_components_cfg.json": {
+    "type": "file",
+    "sha256": "34fe97118ce10f69b0196de2b3f114096b41aa3726905de77cc79d29a9f9fe34",
+    "mode": 420
+  },
+  "etc/firmware": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/firmware/BCM4359C0.hcd": {
+    "type": "file",
+    "sha256": "7894fd4d20fc0b439ab9d57595a74ca7b9bf62839fab365ccc935daea4b9c154",
+    "mode": 420
+  },
+  "etc/firmware/BCM4362A2.hcd": {
+    "type": "file",
+    "sha256": "9b81041e34b269463de1677ab5e7153a9e3f0cdcdd281db3ad5fd798f04618a8",
+    "mode": 420
+  },
+  "etc/firmware/clm_bcm43752a2_ag.blob": {
+    "type": "file",
+    "sha256": "fc0bed644e599e622600431e7e3a11b5816dc7981f1a747c657475a3a761fabf",
+    "mode": 420
+  },
+  "etc/firmware/clm_bcm43752a2_pcie_ag.blob": {
+    "type": "file",
+    "sha256": "d81ba8adc8b3bc0a5589146b31bc318122693d8a116a5028d3fe826556c5a92a",
+    "mode": 420
+  },
+  "etc/firmware/fw_bcm4359c0_ag.bin": {
+    "type": "file",
+    "sha256": "626a4e54722eb81dafb30a3836d05e33ce2fd3970dcd7ed71249474ef2cf1042",
+    "mode": 420
+  },
+  "etc/firmware/fw_bcm4359c0_ag_apsta.bin": {
+    "type": "file",
+    "sha256": "5b184a5b9209539b83cd8cf6176f46d4d64e5ccbda9e17f14b480c49de0dbad8",
+    "mode": 420
+  },
+  "etc/firmware/fw_bcm43752a2_ag.bin": {
+    "type": "file",
+    "sha256": "4e8814d11fdadc9af2f2eb0ec17acc17a53b27022b69a6ea506e252102a19f48",
+    "mode": 420
+  },
+  "etc/firmware/fw_bcm43752a2_ag_apsta.bin": {
+    "type": "file",
+    "sha256": "4e8814d11fdadc9af2f2eb0ec17acc17a53b27022b69a6ea506e252102a19f48",
+    "mode": 420
+  },
+  "etc/firmware/fw_bcm43752a2_pcie_ag.bin": {
+    "type": "file",
+    "sha256": "6a2dbe01e72221defba91a52e158768d973a3c85ca2d881c924379e35ad36b23",
+    "mode": 420
+  },
+  "etc/firmware/fw_bcm43752a2_pcie_ag_apsta.bin": {
+    "type": "file",
+    "sha256": "4fa746d324151c76ac0154cc86128cf17e0c711067ddda263887e52fae592b66",
+    "mode": 420
+  },
+  "etc/firmware/nvram_ap6275p.txt": {
+    "type": "file",
+    "sha256": "b4780f7b86a5680dbe496815dbe07aa22010701de2d8c60570b8274a42db215b",
+    "mode": 420
+  },
+  "etc/firmware/nvram_ap6275s.txt": {
+    "type": "file",
+    "sha256": "c5f9be5f571996ccb69d170ecf56a2190619302163133094037b1dbc4c293611",
+    "mode": 420
+  },
+  "etc/firmware/nvram_ap6398s.txt": {
+    "type": "file",
+    "sha256": "6c257708f7686baab3aded7e9b00e122323e9a029c838155b385feb9df7ec986",
+    "mode": 420
+  },
+  "etc/fstab.rk3588": {
+    "type": "file",
+    "sha256": "c4009fa4f08414620b0c70de3bd2efd0c3d81d2e4787de56128e3071c606c4f6",
+    "mode": 420
+  },
+  "etc/hdfconfig": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/hdfconfig/a2dp_adapter_config.json": {
+    "type": "file",
+    "sha256": "a1a8026c0354d0deeeb22c3ab59727a2a59f7bfcf6e75694bc74039a8050beab",
+    "mode": 420
+  },
+  "etc/hdfconfig/alsa_adapter.json": {
+    "type": "file",
+    "sha256": "31245adebc103727e7a22788ac97abedafd60b953da37f9b03f098c59a520a9a",
+    "mode": 420
+  },
+  "etc/hdfconfig/alsa_paths.json": {
+    "type": "file",
+    "sha256": "a4a827fe433a1ae6163b0911aed0139930c46cce5a0b6952e2843e3a49586d91",
+    "mode": 420
+  },
+  "etc/hdfconfig/audio_adapter.json": {
+    "type": "file",
+    "sha256": "7650630943c78df923ca9907a6d707a7050b8824fb15e8f708006c22aa8a628e",
+    "mode": 420
+  },
+  "etc/hdfconfig/audio_effect.json": {
+    "type": "file",
+    "sha256": "9858d7ae046ffaa1298fb845e0731281b675b6d1b619149dcdff4f2ad083fcf6",
+    "mode": 420
+  },
+  "etc/hdfconfig/audio_paths.json": {
+    "type": "file",
+    "sha256": "a02ddb84ac0d21939fdc66a11677e71333a67b7c8250a2620786704d3d09d7e3",
+    "mode": 420
+  },
+  "etc/hdfconfig/camera_host_config.hcb": {
+    "type": "file",
+    "sha256": "539416bc1f4ae922c6a23fee3b67129ced6db642f24ec84be9b7b0895069cb96",
+    "mode": 420
+  },
+  "etc/hdfconfig/codec_adapter_capabilities.hcb": {
+    "type": "file",
+    "sha256": "2655f786b6cee291d2956afc084323c72ff2412ef518727905bc7e152a75506c",
+    "mode": 420
+  },
+  "etc/hdfconfig/hdf_default.hcb": {
+    "type": "file",
+    "sha256": "46efcd8363dda860696ae713df1c6721557928f8312f9efbfd83f5eda6fabbbb",
+    "mode": 420
+  },
+  "etc/hdfconfig/ipp_algo_config.hcb": {
+    "type": "file",
+    "sha256": "678b282930ae4c0e75c7ca2d8b6d3c1372726e3e29a3cd995793e26d78a67008",
+    "mode": 420
+  },
+  "etc/init": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/init/hdf_devhost.cfg": {
+    "type": "file",
+    "sha256": "5c0c285685246aff3b9c796f4447056c7e0d81e3ecf50d8ded9f23c4d6ffa896",
+    "mode": 420
+  },
+  "etc/init/hdf_peripheral.cfg": {
+    "type": "file",
+    "sha256": "a9e83ac2dbc925b056cb269664b42fc1f0bad299639443da8777c467509ae852",
+    "mode": 420
+  },
+  "etc/init/init.usb.configfs.cfg": {
+    "type": "file",
+    "sha256": "9caef925695a36cee16a9007d915dafbb2ae63e0e0d45040e7012deab076e8aa",
+    "mode": 420
+  },
+  "etc/init/intelligent_voice_engine.cfg": {
+    "type": "file",
+    "sha256": "f858095d8a9db201d5d89a45005524f0fc9695e8c58c281e023fbb319db3ddd4",
+    "mode": 420
+  },
+  "etc/init.rk3588.cfg": {
+    "type": "file",
+    "sha256": "eed6def82849e30a15e3883fcd06a1eae9d1756319a515a8e0a0a37e4066c104",
+    "mode": 420
+  },
+  "etc/init.rk3588.usb.cfg": {
+    "type": "file",
+    "sha256": "fc54a576642a15fc710de57740f78e10032e570d59bddf86160508994d81f878",
+    "mode": 420
+  },
+  "etc/iqfiles": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/iqfiles/imx415_CMK-OT2022-PX1_IR0147-50IRC-8M-F20.json": {
+    "type": "file",
+    "sha256": "8fa479999302f18d831ec5ac163a67bb1b30c60f533339efb50dab1463daf5be",
+    "mode": 420
+  },
+  "etc/models": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/models/cat_224x224.jpg": {
+    "type": "file",
+    "sha256": "0ce3ef6da3424c0744385935a210e4ec8ab3a6ddda205113ab07b77f9c0e812a",
+    "mode": 420
+  },
+  "etc/models/mobilenet_v1.rknn": {
+    "type": "file",
+    "sha256": "381dae3b7038a98b10f6ec9dcdbb094a49247341856fb294e692ef518218fcfb",
+    "mode": 420
+  },
+  "etc/param": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/param/composer_host.para.dac": {
+    "type": "file",
+    "sha256": "456b0be9789c61e294d6f0e8dc682c4edb2548e3e9e4f76baf744852f5ee35e3",
+    "mode": 420
+  },
+  "etc/param/display.para": {
+    "type": "file",
+    "sha256": "1bfb7b8a4c4741f2b5464265223ec964c3e60dbf2932af748fc350d5a939705e",
+    "mode": 420
+  },
+  "etc/param/display.para.dac": {
+    "type": "file",
+    "sha256": "2a9a9edb56bda0bbd3490aa7afb123db0f03e7815d8e71b8277ce2447751c190",
+    "mode": 420
+  },
+  "etc/param/power.para": {
+    "type": "file",
+    "sha256": "563dff340cc6df82ff0af7fe77d6c946a4f849900dd549c14385209236f13fbd",
+    "mode": 420
+  },
+  "etc/param/power.para.dac": {
+    "type": "file",
+    "sha256": "85233310639e2fd4fb6aaac3ff694a15cf2d7a9f29581b0cd2dce77bb5e164ce",
+    "mode": 420
+  },
+  "etc/param/thermal.para": {
+    "type": "file",
+    "sha256": "431946f2cb611cb9f9bda1e90d82d92b8d6b34be652c10c2766c77ed6152d46b",
+    "mode": 420
+  },
+  "etc/param/thermal.para.dac": {
+    "type": "file",
+    "sha256": "7f5c3575c9f4f03b80f1782d8eacc0ebd9c33232ec7a44c7a78bee2132dd99d2",
+    "mode": 420
+  },
+  "etc/param/usb.para.dac": {
+    "type": "file",
+    "sha256": "30e3047ed824ffb2409820df0b956bc87ca0be9d9d9acb3fd6bff5acb0d760dc",
+    "mode": 420
+  },
+  "etc/power_config": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/power_config/power_mode_config.xml": {
+    "type": "file",
+    "sha256": "f41c9cbe721bfb27d3dc9b6f48f923edee8df6c56df255049d3e75d4a365a883",
+    "mode": 420
+  },
+  "etc/power_config/power_suspend.json": {
+    "type": "file",
+    "sha256": "bbda6d6ef33069a38c1fa7d6d85c521b7632927e5fe36200204c522e1b01c379",
+    "mode": 420
+  },
+  "etc/power_config/power_wakeup.json": {
+    "type": "file",
+    "sha256": "e6c385af631729f6fa2039213d3577a74c92160063f12f657ee89c78a6bc1756",
+    "mode": 420
+  },
+  "etc/profile": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/profile/power_average.json": {
+    "type": "file",
+    "sha256": "6ff7d50e79871fd35e57449eb5f69902241a59438a085864f28b474c0b0bfe24",
+    "mode": 420
+  },
+  "etc/ressched": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/ressched/res_sched_config.xml": {
+    "type": "file",
+    "sha256": "9f278dc4755149c43a9e92c048564c40426d091a5513cf70f0adff374420e116",
+    "mode": 420
+  },
+  "etc/ressched/res_sched_plugin_switch.xml": {
+    "type": "file",
+    "sha256": "b2f6dbb00d6bfbd6fbbce62221facc47127821c35f38dbd51b2b50f5624fefc9",
+    "mode": 420
+  },
+  "etc/soc_perf": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/soc_perf/socperf_boost_config.xml": {
+    "type": "file",
+    "sha256": "6d4354fdc024701fbd83f4de90998e23aa9bcf68d896479e7fe20d46918930ea",
+    "mode": 420
+  },
+  "etc/soc_perf/socperf_resource_config.xml": {
+    "type": "file",
+    "sha256": "28ab7d2799f111f0bac9df909d4a02b432989380e1983aef39a2c267393d5192",
+    "mode": 420
+  },
+  "etc/thermal_config": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/thermal_config/thermal_hdi_config.xml": {
+    "type": "file",
+    "sha256": "3d7c0204257f014a0111aa9cf7ad755eef35de995e11f45ac43242dc6ad779bc",
+    "mode": 420
+  },
+  "etc/thermal_config/thermal_kernel_config.xml": {
+    "type": "file",
+    "sha256": "cacf357d8b4930b006dfed896d4755efee7b5672f5ff28ee573eb684a3dbe315",
+    "mode": 420
+  },
+  "etc/thermal_config/thermal_service_config.xml": {
+    "type": "file",
+    "sha256": "649ce6b6f441e7a2870c4fddb5e6db5c00b369a9127d9973bf1f3c597dfe826f",
+    "mode": 420
+  },
+  "lib64": {
+    "type": "directory",
+    "mode": 493
+  },
+  "lib64/libagnss_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "a53207d291830318acd0ad8c005ddae788d1f39ba9a5e8fa0817e294ea73cf23",
+    "mode": 420
+  },
+  "lib64/liballocator_driver_1.0.z.so": {
+    "type": "file",
+    "sha256": "3748cee56c55e1b4d85a237fcd208354544b6a052bc46bc67fb27086444b4c02",
+    "mode": 420
+  },
+  "lib64/liballocator_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "065f02f390343207126190d2a3678ed275f93a83c3c2af68f3842b08481a5b7c",
+    "mode": 420
+  },
+  "lib64/liballocator_service_1.4.z.so": {
+    "type": "file",
+    "sha256": "8d5c6555e94855a12b0121e73268a670215145b435cb6ad2886b1d9fc9cfdfc6",
+    "mode": 420
+  },
+  "lib64/libaudio_bluetooth_hdi_adapter_server.z.so": {
+    "type": "file",
+    "sha256": "5069d5ad363c87512399eceb1e9f9d7da786ed5504142c0cfd332ea4bf35ea55",
+    "mode": 420
+  },
+  "lib64/libaudio_capture_adapter.z.so": {
+    "type": "file",
+    "sha256": "10791db3d76d293df5aa961ad9a11099bf9498df192caa086907bdee8742494f",
+    "mode": 420
+  },
+  "lib64/libaudio_manager_daudio_primary_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "e55b3562c5147d0bfa58693ee48b900955ac61b1319f839193052e12eeb8a503",
+    "mode": 420
+  },
+  "lib64/libaudio_manager_service_6.0.z.so": {
+    "type": "file",
+    "sha256": "342160b4e28d23d5f20c91008286fecb0f1f4c192f8538f4cfa1ae2eb2ddaca8",
+    "mode": 420
+  },
+  "lib64/libaudio_path_select.z.so": {
+    "type": "file",
+    "sha256": "5592718d6f52662e48e30f135e2d9759be958d1107ec051aa47db250b86d58cc",
+    "mode": 420
+  },
+  "lib64/libaudio_primary_driver.z.so": {
+    "type": "file",
+    "sha256": "04619d4dfd320f6ab6f25bd6f17a8b63c353554f2349243a7fd923b6f078d5e4",
+    "mode": 420
+  },
+  "lib64/libaudio_primary_impl_vendor.z.so": {
+    "type": "file",
+    "sha256": "513e8ccda067b95d9cb0b50337c5a11379ad3d6455635013a20cbd73c56240f3",
+    "mode": 420
+  },
+  "lib64/libaudio_render_adapter.z.so": {
+    "type": "file",
+    "sha256": "7c4e5c94bfe2ff4aa0feb4bf74fc94f9c31baab8aad579b74250300693a1e4a8",
+    "mode": 420
+  },
+  "lib64/libaudio_stub_6.0.z.so": {
+    "type": "file",
+    "sha256": "1f76017940847f7ec5411bc8e2c4b0c1b55080e6950ab9c97cbbc5597bdffeb7",
+    "mode": 420
+  },
+  "lib64/libbattery_driver.z.so": {
+    "type": "file",
+    "sha256": "b1bbba564883dc6eeb8f13c3e5e57417f7bcdefd435461dae2d450323e63d5bc",
+    "mode": 420
+  },
+  "lib64/libbattery_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "87bdc1e7f42670a3c956d7efd301501313e9acca62d794460983b87d7a6b7316",
+    "mode": 420
+  },
+  "lib64/libbattery_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "1325ca15b42c09841136f53562f1a1b88a1492fa22386eb16ffa40e4333232ba",
+    "mode": 420
+  },
+  "lib64/libbluetooth_a2dp_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "07b58eeb5954785f501e7a59b37cd96be0dd2dd6ba0371e7383edf60aeb1066d",
+    "mode": 420
+  },
+  "lib64/libbluetooth_hci_hdi_driver.z.so": {
+    "type": "file",
+    "sha256": "066f1c44ce085cdd073d777df138f701e07f905cbf3a3691abd51903f5bdfb0e",
+    "mode": 420
+  },
+  "lib64/libbluetooth_hci_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "05e11fc5a2bf256a7eecabd145e13cadeca69f8a4ecb6c6cce97412731f6f31f",
+    "mode": 420
+  },
+  "lib64/libbluetooth_lp_ble_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "83278e32918340c66c816ac01167a66af21a3f295f225ff61a03156056405a1f",
+    "mode": 420
+  },
+  "lib64/libbt_vendor.z.so": {
+    "type": "file",
+    "sha256": "fb6f4b2a391b97d84f53c1ac2756c304bff5d3df6c7689336956e58db5b541d7",
+    "mode": 420
+  },
+  "lib64/libcamera_device_manager.z.so": {
+    "type": "file",
+    "sha256": "bc4d62585d1c1d6b10ecf65112d0f9fa01923582ab7546c93cf8f1d9fca89e77",
+    "mode": 420
+  },
+  "lib64/libcamera_external_usb_camera.so": {
+    "type": "file",
+    "sha256": "a4ba8947ec5b1639bffa4ed9f74e646b89e86a8bf23af999f5696e1657b6276e",
+    "mode": 420
+  },
+  "lib64/libcamera_host_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "6f11318bc8251edb94d3823a31a2dd831d666eb901160deda90708ea975e9ca9",
+    "mode": 420
+  },
+  "lib64/libcamera_host_vdi_impl_1.0.z.so": {
+    "type": "file",
+    "sha256": "a4c30091f0d81cd24763fc8017d942079a6f7e6e453ab6555cc588afe5112213",
+    "mode": 420
+  },
+  "lib64/libcamera_ipp_algo_example.z.so": {
+    "type": "file",
+    "sha256": "4be17bc484a7abb07a38f472d697b39440f81fe88d17669259dae3af0b9447f2",
+    "mode": 420
+  },
+  "lib64/libcamera_pipeline_config.z.so": {
+    "type": "file",
+    "sha256": "e53359499437185be657af913644e7e4d167b86af1b1373a1a68053c8db2d83b",
+    "mode": 420
+  },
+  "lib64/libcamera_pipeline_core.z.so": {
+    "type": "file",
+    "sha256": "9aada5c1ddab3c4118f62a5462cd15b7bcca786ee8ef4c874265d1b2507b2522",
+    "mode": 420
+  },
+  "lib64/libcamera_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "cef03d685abb0a4430b9405452120f2a12afbf7826b8db02cd4840f55e716072",
+    "mode": 420
+  },
+  "lib64/libcamera_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "fcd1294e67cd17a8e267313a651d575e1a007d08fbf6720c775a3e029fba47d8",
+    "mode": 420
+  },
+  "lib64/libcamera_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "407901389a3c77f889a40348dfba560f565ffdbff056d32967990a102cd2c6cb",
+    "mode": 420
+  },
+  "lib64/libcamera_stub_1.3.z.so": {
+    "type": "file",
+    "sha256": "a7e2fc0ce88f037166b5f34e7b743fe7523e3a7d4dd7783c655ca767f4abbaf9",
+    "mode": 420
+  },
+  "lib64/libcamera_stub_1.4.z.so": {
+    "type": "file",
+    "sha256": "859d12186a25ee3069ac67c2bedcd0767e4d8a80f08f051dd2e3859a4e91a985",
+    "mode": 420
+  },
+  "lib64/libcamera_stub_1.5.z.so": {
+    "type": "file",
+    "sha256": "19fe6817e83d11bfe7db0582309afe14f519e2f04dea60397543bdf432cc66c8",
+    "mode": 420
+  },
+  "lib64/libchip_controller_chip_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "1772328144c145ce8642f76e8f8560835f31221a1e227d003645e66b8b2e0609",
+    "mode": 420
+  },
+  "lib64/libchip_hdi_driver.z.so": {
+    "type": "file",
+    "sha256": "f299a93f6f1823c1ee59fcd629e3a1ff4dd5901b26597b77a6e2bbfcaff037e0",
+    "mode": 420
+  },
+  "lib64/libchip_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "7b1d4d51c7b82b04dde7b03cd358e1d9568f1d907f14bdb96f7c92d40c1b56c9",
+    "mode": 420
+  },
+  "lib64/libclearplay_driver.z.so": {
+    "type": "file",
+    "sha256": "a2376cb37b3877e728f20f4f7f5c71e5c60587d3cad4e7a7aa91632422c26a01",
+    "mode": 420
+  },
+  "lib64/libcodec_driver.z.so": {
+    "type": "file",
+    "sha256": "efc9b185a192d6c13e6b24b405f35bae1102d5de99435dbc597d50f86f03d9f3",
+    "mode": 420
+  },
+  "lib64/libcodec_image_driver.z.so": {
+    "type": "file",
+    "sha256": "b0901e3f412fc117495c919ca861e1746b617d40081f082b899d0aff073d587a",
+    "mode": 420
+  },
+  "lib64/libcodec_image_service_2.1.z.so": {
+    "type": "file",
+    "sha256": "ad346aac6f4221ea67b4a4dbbe1fb9daa8f3b6ad584b52da8ad75f62936b808b",
+    "mode": 420
+  },
+  "lib64/libcodec_oem_interface.z.so": {
+    "type": "file",
+    "sha256": "333b290e8d2e320690849dc510501eca419a3ebf50394cf4c3754fbca92e8253",
+    "mode": 420
+  },
+  "lib64/libcodec_stub_4.0.z.so": {
+    "type": "file",
+    "sha256": "007365ef4c08adffcef666345e9a33f90391be2f08c7e6e3927a1fdfa95f6ad0",
+    "mode": 420
+  },
+  "lib64/libcomposer_buffer_cache.z.so": {
+    "type": "file",
+    "sha256": "2b3492d1606ad1bc85bf3e267351303477e72f966a77c3ffa68e0933b39f3f14",
+    "mode": 420
+  },
+  "lib64/libdaudio_ext_driver.z.so": {
+    "type": "file",
+    "sha256": "e98868cba5e06d56ba40c0e7857670bcfa9ec7f0c0be99dcca9190ccd73cc316",
+    "mode": 420
+  },
+  "lib64/libdaudio_hdf_utils.z.so": {
+    "type": "file",
+    "sha256": "ffefe1ecc8e8a82b56b6d9c673d875c46eebe20892070122f49c87652a6b6158",
+    "mode": 420
+  },
+  "lib64/libdaudio_manager_daudio_ext_service_2.1.z.so": {
+    "type": "file",
+    "sha256": "5a94dc4f9418073439c175fa8973cf0eb7f645f4e0b309e9e526bc77e913d76e",
+    "mode": 420
+  },
+  "lib64/libdaudio_primary_driver.z.so": {
+    "type": "file",
+    "sha256": "f005b722cfb6e14b5fd1d456102fac4d77b6c3fea73dd41db71af0e8391bbd11",
+    "mode": 420
+  },
+  "lib64/libdaudio_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "fd98753cdb066e4c12654d4d5fa6bd470087e81f1411e7e791337f56b6bf5df1",
+    "mode": 420
+  },
+  "lib64/libdaudioext_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "4e0cb586623fd9bf2974d8dc075f997a432865d2abab09329f001eede962427e",
+    "mode": 420
+  },
+  "lib64/libdaudioext_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "a03f306f05069e65452e104af6d495a06541982204a7eaea7f70f77192f0996b",
+    "mode": 420
+  },
+  "lib64/libdaudioext_stub_2.1.z.so": {
+    "type": "file",
+    "sha256": "588ce43168e1dc4836623bd10b203f3872ef51a6d84c61803c872cd396f3745c",
+    "mode": 420
+  },
+  "lib64/libdisplay_buffer_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "720f935e02456545903ce389c201ada6fab40e970c2a1522689eba7fe015a9e9",
+    "mode": 420
+  },
+  "lib64/libdisplay_buffer_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "53164f789ec355648bb2b7af6ea98fc197fe57ec16c75da373a6df7882d51e30",
+    "mode": 420
+  },
+  "lib64/libdisplay_buffer_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "3597aa8d31434d48eaf6cf3e1aba05ae545b7a73f6181f331bd5fa5d32fbe0ec",
+    "mode": 420
+  },
+  "lib64/libdisplay_buffer_stub_1.3.z.so": {
+    "type": "file",
+    "sha256": "6f1e549f60d430d74672545ae7da23e10bd0582f88fee0a2454a95f6e9d66f9b",
+    "mode": 420
+  },
+  "lib64/libdisplay_buffer_stub_1.4.z.so": {
+    "type": "file",
+    "sha256": "0c6c21c5b1532bbfe7ed788907a4cf239a6c3e9dabfc70331ddc609c5f043489",
+    "mode": 420
+  },
+  "lib64/libdisplay_commontype_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "8cc429c87d79953daf19ad839c1b6bef11fcae6128ea54b8e32572dde453e7c9",
+    "mode": 420
+  },
+  "lib64/libdisplay_commontype_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "1e86148aa9a9033533f207ea13044a1aeb57ca068b4891cc490f46f7222d98fd",
+    "mode": 420
+  },
+  "lib64/libdisplay_commontype_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "7026964d0e18bda95718276970df498493edc5b30f84461f21751cecad67ae8a",
+    "mode": 420
+  },
+  "lib64/libdisplay_commontype_stub_2.1.z.so": {
+    "type": "file",
+    "sha256": "05e71fb4521e7a195fa0902b5253c22249871d42abf9781b4f6046c20d06e493",
+    "mode": 420
+  },
+  "lib64/libdisplay_commontype_stub_2.2.z.so": {
+    "type": "file",
+    "sha256": "4ddd4cb62739a03529c9784c1aa3ab6ab3e384697e410632727494af5b3b7a42",
+    "mode": 420
+  },
+  "lib64/libdisplay_commontype_stub_2.3.z.so": {
+    "type": "file",
+    "sha256": "d1dc7c9f3703c2e523ba02b8c4e11e06bc029511d7bfd45a76282a7be86f2683",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_driver_1.0.z.so": {
+    "type": "file",
+    "sha256": "2674ad067ce438ec8f0083fd19eba856e279c4ed6a66a96d92694fb1679e7e27",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_service_1.4.z.so": {
+    "type": "file",
+    "sha256": "dcd2a80ebea80a1727557bf98fcb037155ef0bace93126038effab1761a3c7cd",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "8dc56ad4dd07032df16b84e3a22af3e1c6278ea8857248d5f218ede9bd8d2f10",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "fca5cd542ab2fde37224df3d2d91d0381d7ea8345d4f8a333e08654c4ba46548",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "7a846d17070ee0e559f7804aa3df0fec324248a1976fd63bd24ca99adec69bb6",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_stub_1.3.z.so": {
+    "type": "file",
+    "sha256": "d8044bf52c9a4e628c4d0a81d2110fd242383f56d825a4646292a155a4a686d9",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_stub_1.4.z.so": {
+    "type": "file",
+    "sha256": "fa60fd452d458ef7520b38f5f7fa90a9e101e9634dcc03e88a29a849029cffe2",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_vdi_impl.z.so": {
+    "type": "file",
+    "sha256": "36fa224a9d7e87fc4e074be81e90c5bafd02af5a8a73ae48156c22f42605d9cc",
+    "mode": 420
+  },
+  "lib64/libdisplay_composer_vendor.z.so": {
+    "type": "file",
+    "sha256": "70c461b88c06530b2b3c6a648bfb106b4030bf39a30da77fd476ec5741bb1f93",
+    "mode": 420
+  },
+  "lib64/libdisplay_gfx.z.so": {
+    "type": "file",
+    "sha256": "7ea492efecd38f79d9d34a5ed6f30a19699788673fd44e2354c0f97f8afc0445",
+    "mode": 420
+  },
+  "lib64/libdistributed_camera_hdf_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "f12873d3801f62e61f825935cffe62e10192dc134ba61ddaec31377e74c71f73",
+    "mode": 420
+  },
+  "lib64/libdistributed_camera_host_config.z.so": {
+    "type": "file",
+    "sha256": "80bae71984ae386a13a04ee9ac63fcc87b6da20c1e15ec0bde1f69d14e940977",
+    "mode": 420
+  },
+  "lib64/libdistributed_camera_provider_config.z.so": {
+    "type": "file",
+    "sha256": "1d2e5987b4508c202c8d3736f4e1e3b7647020c117303f77ee7e81699b5acf91",
+    "mode": 420
+  },
+  "lib64/libdistributed_camera_provider_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "2cdf9b372d899ea8d90fd70d17e6ed0c2ccfc7df098d827361857487169585a1",
+    "mode": 420
+  },
+  "lib64/libdrm_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "63accc4201714d8e68bb17706d3a696c2d83254871188c6662e76607a51ada1b",
+    "mode": 420
+  },
+  "lib64/libdrm_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "97f2b733c6abd8b0ca2270908480bdeb9157249c86ede55baf5f57c1dd9fbdb1",
+    "mode": 420
+  },
+  "lib64/libeffect_model_service.z.so": {
+    "type": "file",
+    "sha256": "c162afc9a3f768736aaba698a3f39d32f313c51ab408ad42a649fbd232a149ec",
+    "mode": 420
+  },
+  "lib64/libeffect_model_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "0d76122640d128e58672d76c462ce86be517b26a56c77e718b013c83c5cdc52d",
+    "mode": 420
+  },
+  "lib64/libeffect_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "eed953df0d947e5eedf06ee357e89c2c9e7e06145fad91a54599ccceb0844838",
+    "mode": 420
+  },
+  "lib64/libemit_event_manager.z.so": {
+    "type": "file",
+    "sha256": "83b943e4c764623c63f61084836bfe8db5591dc2284b04ecea68dcbd79a057f1",
+    "mode": 420
+  },
+  "lib64/libethernet_hdi_c_device.z.so": {
+    "type": "file",
+    "sha256": "f17a46839e1b7891045730940b5e4a00da73b5be7a4ab83e99638bf86794dfa2",
+    "mode": 420
+  },
+  "lib64/libethernet_hdi_client.z.so": {
+    "type": "file",
+    "sha256": "96f2fe2281f7c3f5354223a51c93b0717f095f1f0aee556d3a311da462a124b8",
+    "mode": 420
+  },
+  "lib64/libethernet_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "bc3cb65c4b094e0f870a82fe2c805facf26cd6b7c5afba3afeb1d8b256289b22",
+    "mode": 420
+  },
+  "lib64/libethernet_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "b5a73e1dbe002b7e9633ca66d4cc38a98a3f4b7d3389ffa391dd25bce16fbe64",
+    "mode": 420
+  },
+  "lib64/libface_auth_driver.z.so": {
+    "type": "file",
+    "sha256": "3b564857702fb87ea4d473b628b7c44f84ecaf0ad4ac178b0dbaceb2f7960b8d",
+    "mode": 420
+  },
+  "lib64/libface_auth_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "de13cf0e62dfb4a1f84b8abaa126cdace0cfc396b39a0abfd250ce411f68f321",
+    "mode": 420
+  },
+  "lib64/libface_auth_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "db6c3d5b21a26a75d27a01cb88b1cb13322ad39579e6786695d1c9f3ec2799ee",
+    "mode": 420
+  },
+  "lib64/libfingerprint_auth_driver.z.so": {
+    "type": "file",
+    "sha256": "5db1f5b90a02cbcecf906fe2a13f9fa048b954183acf7c474f7e1a14bed0c814",
+    "mode": 420
+  },
+  "lib64/libfingerprint_auth_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "efb13e32b91b6da9188e45af4bfea5b400e470690fe3f1374329b18c587c916d",
+    "mode": 420
+  },
+  "lib64/libfingerprint_auth_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "956f492e793267394e9ea9d0f2b2ed175d8e61ecfe3554c21caaf72931db3f1d",
+    "mode": 420
+  },
+  "lib64/libgeofence_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "f5fd2c7d5a5cb5e194c10939b62c1e66af9abf283f2e0b0d679c7999dd864778",
+    "mode": 420
+  },
+  "lib64/libgnss_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "25c6a35572873ec5bd8364f0f30d5e6009c84f27f23f2d4eac4a25b3bc0f822c",
+    "mode": 420
+  },
+  "lib64/libhci_interface_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "c3e386b5e37e75f2aa1a7708e9f64fe5604a09cd4c0d4cf9e34889b4de86bbe4",
+    "mode": 420
+  },
+  "lib64/libhdi_audio_a2dp_server.z.so": {
+    "type": "file",
+    "sha256": "8456a6089eed5ba5748302c7be5ef3cbbd71a56473dd3c233d4843a615ccc43a",
+    "mode": 420
+  },
+  "lib64/libhdi_audio_bluetooth.z.so": {
+    "type": "file",
+    "sha256": "769fa8c7773c7859d970d26b9b586d302afa44d845f24f21f6caa3cadc65d084",
+    "mode": 420
+  },
+  "lib64/libhdi_light.z.so": {
+    "type": "file",
+    "sha256": "5a22459b1797d0a082fb0f41a5145d1be6ba0cf20f4e73f3be184258cafa3862",
+    "mode": 420
+  },
+  "lib64/libhdi_light_impl.z.so": {
+    "type": "file",
+    "sha256": "692ab559527a3add824f47bf0beadf93726ee6932a306026a8c3c3c75ffef8bf",
+    "mode": 420
+  },
+  "lib64/libhdi_sensor.z.so": {
+    "type": "file",
+    "sha256": "fda929963d3bb5345fc01dfb722e61f585f1cc446b79d4f93e6d039d7dff8d01",
+    "mode": 420
+  },
+  "lib64/libhdi_sensor_impl.z.so": {
+    "type": "file",
+    "sha256": "92d782fbfe5768a1bdbce217dfb4260adb923052095a328109a72a7a35571dd7",
+    "mode": 420
+  },
+  "lib64/libhdi_vibrator.z.so": {
+    "type": "file",
+    "sha256": "7c3fb7ad14029ee0ae3605e86548a7ea3421a42e230e5ea98d708c3608025e5f",
+    "mode": 420
+  },
+  "lib64/libhdi_vibrator_impl.z.so": {
+    "type": "file",
+    "sha256": "de35c3220e7c51fde7c25215ff59d5d283daf5e021a07af06ca46ab23f7fc450",
+    "mode": 420
+  },
+  "lib64/libhid_ddk_driver.z.so": {
+    "type": "file",
+    "sha256": "501a77c4234e1ac6707fa49a7b486b409ab2d541f64b76efc7fafe4025bf20ab",
+    "mode": 420
+  },
+  "lib64/libhid_ddk_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "c4292efa478ea0201283aac5a772339c0e1aa54d8c3070099d9b829845fb6dd7",
+    "mode": 420
+  },
+  "lib64/libhid_ddk_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "91dbfb3b8b86ef94628066ed95a72a0cbcfe896933ed3b90169739dd2eb4bb5c",
+    "mode": 420
+  },
+  "lib64/libhid_ddk_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "f77b5519e50ccc42a1fd34b0e558d5512f93a61e10dfcc76a6f3e050b11c48a1",
+    "mode": 420
+  },
+  "lib64/libhostapd_hdi_c_device.z.so": {
+    "type": "file",
+    "sha256": "8e360fe9393ebdf95fd7edf02751f9dacef6c41e5b73f4f1de7fc734b9500942",
+    "mode": 420
+  },
+  "lib64/libhostapd_hdi_client.z.so": {
+    "type": "file",
+    "sha256": "ee38e4f4041c9ef42ac65775f72e862c9ac75cb58835bc2daa1396261d769e80",
+    "mode": 420
+  },
+  "lib64/libhostapd_interface_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "d62ac82daa57670af66515b4d0c379dfc36a3b306befcca1ba010574373a45a5",
+    "mode": 420
+  },
+  "lib64/libhostapd_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "423348d9f33e08bd172f2195dba640e9b0a21ceac86ebbd2f2b271e95613f2f6",
+    "mode": 420
+  },
+  "lib64/libhril.z.so": {
+    "type": "file",
+    "sha256": "b004727067566b5178743a82e798e35b776ed0773b45e862ef5ccbd508e82089",
+    "mode": 420
+  },
+  "lib64/libhril_hdf.z.so": {
+    "type": "file",
+    "sha256": "80c164c51a673025f40a729696ee6b425d94661b9c55c8e1fa9d61c7cd1f99c1",
+    "mode": 420
+  },
+  "lib64/libhril_innerkits.z.so": {
+    "type": "file",
+    "sha256": "bf8be1345b14fa1963ac920f92764268ad8f8314d6c7c72525c32bc64c9d8757",
+    "mode": 420
+  },
+  "lib64/libimage_stub_2.1.z.so": {
+    "type": "file",
+    "sha256": "99b956eeb8ef8b40dee575b3964dd2326b493166e1da6e724150067176dc59b9",
+    "mode": 420
+  },
+  "lib64/libintell_voice_engine_driver.z.so": {
+    "type": "file",
+    "sha256": "ed1301e3b14e79a7f5a98ae54f7f08fe3eab5478c02e7f884d714758eced95d1",
+    "mode": 420
+  },
+  "lib64/libintell_voice_engine_manager_service_1.2.z.so": {
+    "type": "file",
+    "sha256": "af240081c186327548792803a6f52f7c0b6306631053af7e214f9f2e32c47227",
+    "mode": 420
+  },
+  "lib64/libintell_voice_engine_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "1b09f89000e16e4b8a8c444b14e9a5902ba262eb77723a56b40e1f6ccad7b716",
+    "mode": 420
+  },
+  "lib64/libintell_voice_engine_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "9ea4f2ecbe3bfbb216a7f8f467845ec847cb86a3bda37db6514a648abb1cc598",
+    "mode": 420
+  },
+  "lib64/libintell_voice_engine_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "0de31a958fd9e73fafd6163e08fb30199ac6c602c9a2ac6bec50587b33efb5f5",
+    "mode": 420
+  },
+  "lib64/libintell_voice_trigger_driver.z.so": {
+    "type": "file",
+    "sha256": "30bfd2d22fb0e486d42e7002787d2313a135991a558d0df58cb1f24cd0831c06",
+    "mode": 420
+  },
+  "lib64/libintell_voice_trigger_manager_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "92c2a7eaac6b3d5da09243187a1d871ba656f0c9d6070934bbcc68d78fc9af29",
+    "mode": 420
+  },
+  "lib64/libintell_voice_trigger_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "3fe2335da2a35bdd1424f65f851d6503aa3fc9fc709a16dc4c7b6fdfc23d488b",
+    "mode": 420
+  },
+  "lib64/libintell_voice_trigger_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "668ca7f98a9ea2796aa169aa0c17cb3d6a6e3d736c00d7e37b1da203c29c0df5",
+    "mode": 420
+  },
+  "lib64/libintell_voice_trigger_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "718b154db29b1255ce74a85bd66a13c4f73ae7d53711b3b9520ebcaae30d4a4c",
+    "mode": 420
+  },
+  "lib64/libjpeg_vdi_impl.z.so": {
+    "type": "file",
+    "sha256": "b1dbc00d8717e64a6f857be5c024f758b9a599f3a408d0cadbe44d13336fbb83",
+    "mode": 420
+  },
+  "lib64/liblight_driver.z.so": {
+    "type": "file",
+    "sha256": "71535749260883793a48ce8d3b1bff9da925fc88985ca7842c8ad81b0b06bd3b",
+    "mode": 420
+  },
+  "lib64/liblight_interface_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "458afded8d9e6f04dd88ddbd0b1afe051ae391cc60c03a736c1161815aaa32b2",
+    "mode": 420
+  },
+  "lib64/liblight_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "f7f3abf2a32c69dbed4132ac814bcc5766872f917b65db411a005ba621ab4049",
+    "mode": 420
+  },
+  "lib64/liblocation_agnss_hdi_driver.z.so": {
+    "type": "file",
+    "sha256": "08f6522973f641aca4eee2514350aa585328cc8edf8febd72815bae5a2d3a58c",
+    "mode": 420
+  },
+  "lib64/liblocation_agnss_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "5cc84815dfb58266033556b99a6d8ac21fbb5aad1e95608f727ce9367488b247",
+    "mode": 420
+  },
+  "lib64/liblocation_geofence_hdi_driver.z.so": {
+    "type": "file",
+    "sha256": "c55df86932f904de7e9bc35819490f793e09c4402cd9f78e128e5674e60299d9",
+    "mode": 420
+  },
+  "lib64/liblocation_geofence_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "a710ecdab01530601bfc09ffced3921dc6041cd914bca696677ca312c4adda6d",
+    "mode": 420
+  },
+  "lib64/liblocation_gnss_hdi_driver.z.so": {
+    "type": "file",
+    "sha256": "c0eb917de725567c424e1f986768b6e4c7d3b9cd08ac78536afe30a479a74ec9",
+    "mode": 420
+  },
+  "lib64/liblocation_gnss_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "79d1bc57446248e8b5bf5db10cf2949630bfc2f68adb110e28e5f769f1fa1b83",
+    "mode": 420
+  },
+  "lib64/liblow_power_player_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "1e502e76761786dff58510919dbd58657533f7b0c5a88dfad0beb3b87a0d6230",
+    "mode": 420
+  },
+  "lib64/libmapper_driver_1.0.z.so": {
+    "type": "file",
+    "sha256": "674bb05cadf8a415b390f8de1c4cd66bf0b23f67a2198b8a93fc9503f4fd1408",
+    "mode": 420
+  },
+  "lib64/libmedia_key_system_factory_clearplay_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "c422623b58808a317db4abb140d3400d69713acb36e975b85559d8337d51d6fb",
+    "mode": 420
+  },
+  "lib64/libmemorytracker_driver.z.so": {
+    "type": "file",
+    "sha256": "c088ca9fb638eaa854bd7d5596a28fd873c526ed4e4bded02e65fb0d05163ef2",
+    "mode": 420
+  },
+  "lib64/libmemorytracker_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "153538c10f10a56834579886a35e72c88455641989f5d0e93e5f3fa3f5990753",
+    "mode": 420
+  },
+  "lib64/libmetadata_driver_1.1.z.so": {
+    "type": "file",
+    "sha256": "cd13c7e0548fd8501ede7d0b4682fa671957589ef4bf465e7221fd3b04075f65",
+    "mode": 420
+  },
+  "lib64/libmock_effect_lib.z.so": {
+    "type": "file",
+    "sha256": "cdfa29d6158f92cec8da123689102b53f8855e073a395a64e434bcd0bfefa390",
+    "mode": 420
+  },
+  "lib64/libmotion_driver.z.so": {
+    "type": "file",
+    "sha256": "92b500cbb348d88787c74f59549dfeeb56e2221ad8b0176d473f001529c9fcdb",
+    "mode": 420
+  },
+  "lib64/libmotion_interface_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "34dc92c46deaa6d33f16308479382730cfed80b710b4a22191799dc2323847bc",
+    "mode": 420
+  },
+  "lib64/libmotion_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "21be02a6a75344b5b9d2feb84729ae6e51da591b883508935be9fe6965613d3a",
+    "mode": 420
+  },
+  "lib64/libmotion_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "76e306340b508e5d8a42eb45742816e1738657654e7f05d667b5ed610dc4878c",
+    "mode": 420
+  },
+  "lib64/libnnrt_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "25dd7f9f8bc9a69ca0905c13bb574c0d7159569bbd8eff59f412f22c29c95541",
+    "mode": 420
+  },
+  "lib64/libnnrt_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "ac75e6c4167b1eb32aa200dc7b8889f52fdff30919e8f5eb936d6e17e213275c",
+    "mode": 420
+  },
+  "lib64/libnnrt_stub_2.1.z.so": {
+    "type": "file",
+    "sha256": "1ea959a9e11fd2e09e22cef8e20750209fe395d9af62f655cf50c480aed5def8",
+    "mode": 420
+  },
+  "lib64/libpartition_slot_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "2cf44a3a66033a2b48f6599a12d511854a0e648c05891c8e1feccd64ee5834dc",
+    "mode": 420
+  },
+  "lib64/libpartitionslot_driver.z.so": {
+    "type": "file",
+    "sha256": "db3a26e05121dd8f55457ad8a925f616f328a112a3b95851675a687ac71958ef",
+    "mode": 420
+  },
+  "lib64/libpartitionslot_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "cca0eaea3188d65e5e4f94166f402caae807590313e5571b7766e3b1fb064b4e",
+    "mode": 420
+  },
+  "lib64/libperipheral_camera_buffer_manager.z.so": {
+    "type": "file",
+    "sha256": "e5d5ef0114f35c6619d9732932ef3239e09aba930c89c2d69fedf781678d78f2",
+    "mode": 420
+  },
+  "lib64/libperipheral_camera_device_manager.z.so": {
+    "type": "file",
+    "sha256": "658cfff43c038ad1f310dc87517e978f7b4688fa3ff344754ca9302eefe5f150",
+    "mode": 420
+  },
+  "lib64/libperipheral_camera_metadata_manager.z.so": {
+    "type": "file",
+    "sha256": "4fca3b373644127b372a5b2c4a1d955fbc3ba670482ca7fc179a356827710186",
+    "mode": 420
+  },
+  "lib64/libperipheral_camera_pipeline_core.z.so": {
+    "type": "file",
+    "sha256": "0b63abb05a60732b99a0d6e13d7a9b08b545fd5d4aafa05a400005402d094345",
+    "mode": 420
+  },
+  "lib64/libperipheral_camera_utils.z.so": {
+    "type": "file",
+    "sha256": "cf798278d53c907716e4c7b9a334435123666a88e3cc3e60ae27b6c72e6690ef",
+    "mode": 420
+  },
+  "lib64/libperipheral_camera_v4l2_adapter.z.so": {
+    "type": "file",
+    "sha256": "e73f9d6a8f63d2833b53ddcc90c56d51dffaaaf8154b8713a72474dfcaa6dea3",
+    "mode": 420
+  },
+  "lib64/libpin_auth_driver.z.so": {
+    "type": "file",
+    "sha256": "cde230b7215270e660101d4b40382ceb5613cc1c0639399a1cb6705d598d133f",
+    "mode": 420
+  },
+  "lib64/libpin_auth_interface_service_3.0.z.so": {
+    "type": "file",
+    "sha256": "1c648cba4192a2be841f845e2bb338162865f2f8493976a66ff5951544abe85c",
+    "mode": 420
+  },
+  "lib64/libpin_auth_stub_3.0.z.so": {
+    "type": "file",
+    "sha256": "0064d6b6088b24a062009e910614979ad60d767d391054169b23fee5cd5cbe2b",
+    "mode": 420
+  },
+  "lib64/libpower_driver.z.so": {
+    "type": "file",
+    "sha256": "d54ed6895a0e507098001c798a6da31b14021ec7f1ca69da459d9a656e87f290",
+    "mode": 420
+  },
+  "lib64/libpower_interface_service_1.3.z.so": {
+    "type": "file",
+    "sha256": "c977b429896470576f7fd997666a7644b2690bd2b7509b9c61c7ff11718c0e41",
+    "mode": 420
+  },
+  "lib64/libpower_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "17570ad9f6356e1008c51e6c06326dabdb195a37a494ef9221938408be662002",
+    "mode": 420
+  },
+  "lib64/libpower_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "510de1be026cc5f46733555a8e12a3b94cac6bff0b9cd5d38dc311546eaef74f",
+    "mode": 420
+  },
+  "lib64/libpower_stub_1.3.z.so": {
+    "type": "file",
+    "sha256": "5923e3e1febf025f9c3c7cdca27053b985b4ca6be1768f49c459b7b75a52a171",
+    "mode": 420
+  },
+  "lib64/libril_driver.z.so": {
+    "type": "file",
+    "sha256": "02b6d536a657c328231b0882545e20b6723ad30d7c593f151803d5d113aac0ba",
+    "mode": 420
+  },
+  "lib64/libril_service_1.5.z.so": {
+    "type": "file",
+    "sha256": "4ccd96c33e4048258bf17b93a9d7a4b9476224591d04fe7fbf7c6df4adc51576",
+    "mode": 420
+  },
+  "lib64/libril_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "f5ccb589a902e26e56e11a66d558c4f9ff828537c214508d5101a65c8290bf55",
+    "mode": 420
+  },
+  "lib64/libril_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "ff91cfccc0fe57596e3a43947750b342f5e4b5d49bb4d96219f6db6d5d05fbc7",
+    "mode": 420
+  },
+  "lib64/libril_stub_1.3.z.so": {
+    "type": "file",
+    "sha256": "1a813c23f16d7fc2038b81ed80546854448bab77afd32e704b9f50aa32ca8c05",
+    "mode": 420
+  },
+  "lib64/libril_stub_1.4.z.so": {
+    "type": "file",
+    "sha256": "a77834d62332f4c78c4ac1a51b58d72983db402430887e55a7d5c7941c200e5a",
+    "mode": 420
+  },
+  "lib64/libril_stub_1.5.z.so": {
+    "type": "file",
+    "sha256": "46fc4ce476455019b7eec8ff64c6b1aee96b96b4a0bd46ca3b82fcdf1ac3512e",
+    "mode": 420
+  },
+  "lib64/libril_vendor.z.so": {
+    "type": "file",
+    "sha256": "202949f73aef9f88783cbddb604a7e777f4892c8c7e612520cd89d72fc78d2c7",
+    "mode": 420
+  },
+  "lib64/librkaiq.so": {
+    "type": "file",
+    "sha256": "46d0ff44478e1514d1a9f5873e63332e226424d0e80d50bb2ebc858cd8e0a7a9",
+    "mode": 420
+  },
+  "lib64/librknnrt.so": {
+    "type": "symlink",
+    "target": "librknnrt.so.2.4.1"
+  },
+  "lib64/librknnrt.so.2": {
+    "type": "symlink",
+    "target": "librknnrt.so.2.4.1"
+  },
+  "lib64/librknnrt.so.2.4.1": {
+    "type": "file",
+    "sha256": "c36ce3edd015413002dc9f40d1ca13a5643cb69d61a0e529a7a865c44d4a0e18",
+    "mode": 420
+  },
+  "lib64/libscsi_ddk_driver.z.so": {
+    "type": "file",
+    "sha256": "e9ce9342b66505309f1d82fc978d36197be1ea1f9fab5a3dda177b79131a03a9",
+    "mode": 420
+  },
+  "lib64/libscsi_ddk_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "a05253163e379e10ac485a8181460c029395b9cd26e738b33a2561b7433e0715",
+    "mode": 420
+  },
+  "lib64/libscsi_peripheral_ddk_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "21537353b65ee595e33f6e465d47e77a4b39305c6a7bfc56f905d0d93f849589",
+    "mode": 420
+  },
+  "lib64/libsensor_driver.z.so": {
+    "type": "file",
+    "sha256": "83b2cae5efa8df265b06c19f15978460cc5b1e120fb151b11ef7f97e06d51d28",
+    "mode": 420
+  },
+  "lib64/libsensor_interface_service_3.1.z.so": {
+    "type": "file",
+    "sha256": "8b3e3719a7c6df9fd0286d31bc290e7c2fb91693df9263d05a759462cc14ff3f",
+    "mode": 420
+  },
+  "lib64/libsensor_stub_3.0.z.so": {
+    "type": "file",
+    "sha256": "d799b7400de2371b70761544826a2db17f192bb1cc291803d5e9cfffb104669b",
+    "mode": 420
+  },
+  "lib64/libsensor_stub_3.1.z.so": {
+    "type": "file",
+    "sha256": "b97e2e7775b17d4dbd6a228c72163add5b4cef363633b957d26949ca37d9aef4",
+    "mode": 420
+  },
+  "lib64/libthermal_driver.z.so": {
+    "type": "file",
+    "sha256": "b0e5ebd987ad9532431daddc90201324c742766c60604720e7ee45e209fada3d",
+    "mode": 420
+  },
+  "lib64/libthermal_interface_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "68d12496a653576c062d72b9909f1c529d54177e182f022d9dda0f95bf1d1983",
+    "mode": 420
+  },
+  "lib64/libthermal_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "f817dedf170e8e9b38a64dc66c5cd09c0b806d1fab5267b9657541ccc3f63990",
+    "mode": 420
+  },
+  "lib64/libusb_camera_buffer_manager.z.so": {
+    "type": "file",
+    "sha256": "13c5ab11211371c860896f9c956a6dece907f1d02f5505773b6b80a7ab4c61f7",
+    "mode": 420
+  },
+  "lib64/libusb_camera_device_manager.z.so": {
+    "type": "file",
+    "sha256": "8d3a0576cec4c1d90d79383b2adea3a9c320b9eae0549f3400ab45feb7675820",
+    "mode": 420
+  },
+  "lib64/libusb_camera_metadata_manager.z.so": {
+    "type": "file",
+    "sha256": "c9d0da4027b5d32dd642cbb752e26a9b2dad07e69ff274448a4b64a4c35549f0",
+    "mode": 420
+  },
+  "lib64/libusb_camera_pipeline_core.z.so": {
+    "type": "file",
+    "sha256": "11f67a809be872a9ce767e1d1c2a300d0be17befb88fffaf988d39133784a95a",
+    "mode": 420
+  },
+  "lib64/libusb_camera_v4l2_adapter.z.so": {
+    "type": "file",
+    "sha256": "f4d317c7ff10255162874fe7d84f6846f122fcc15d47cb5033217f8608551ad9",
+    "mode": 420
+  },
+  "lib64/libusb_ddk_driver.z.so": {
+    "type": "file",
+    "sha256": "3b38f0e06e77fdd740a2d2c4d53e8000b4ea9450a7d8daa50e8c3ea1b2061894",
+    "mode": 420
+  },
+  "lib64/libusb_ddk_dynamic_library_wrapper.z.so": {
+    "type": "file",
+    "sha256": "97ca969bbf38501182240e374bf5c01a89410962184f88370fea99c5e55e4cd1",
+    "mode": 420
+  },
+  "lib64/libusb_ddk_host.z.so": {
+    "type": "file",
+    "sha256": "4cb36e7a8cf31bbf353d2eabb5a5a7ca16cddbe52e5a28c7c529df066f3c5a00",
+    "mode": 420
+  },
+  "lib64/libusb_ddk_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "39bab80b1c05ae210fcd398373981f20e479a4f3ff9b82623777717494d86736",
+    "mode": 420
+  },
+  "lib64/libusb_ddk_service_common.z.so": {
+    "type": "file",
+    "sha256": "d507b32df7ee6ef0625783d33a86e0107d795f5970478e1155f3484b69ac0afc",
+    "mode": 420
+  },
+  "lib64/libusb_ddk_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "19c641111d76edc772e7267d48b32e980b989ed7438c8544190d156ea14178b5",
+    "mode": 420
+  },
+  "lib64/libusb_ddk_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "860727506005ddf4b938d818a3689c363b6b2bbdb67b20ab8900100b664cce84",
+    "mode": 420
+  },
+  "lib64/libusb_device_driver.z.so": {
+    "type": "file",
+    "sha256": "f809de998108a6bad1e99435018b3ed678edf2d1842d868be4144f87d873cf8e",
+    "mode": 420
+  },
+  "lib64/libusb_device_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "f7f269ec6af3eb049b804645e03fdc403cb0b43d256a5da5edee3017f1c83454",
+    "mode": 420
+  },
+  "lib64/libusb_pnp_manager.z.so": {
+    "type": "file",
+    "sha256": "298bce4ecc494b9f83eb5f77ee76873f95a3bb3d72b0931c0361275d00bd723c",
+    "mode": 420
+  },
+  "lib64/libusb_port_driver.z.so": {
+    "type": "file",
+    "sha256": "0ee03c2b615da5acaff7ec338554e036af8ac25f91d6200a20f2fd10b008c43e",
+    "mode": 420
+  },
+  "lib64/libusb_port_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "1345782785d02b171acdeaa0ccc45728309f2890723a07393e061a64d66cae89",
+    "mode": 420
+  },
+  "lib64/libusb_serial_ddk_driver.z.so": {
+    "type": "file",
+    "sha256": "1eb421a6608326efd0af2bcaac3916dbd6e8c81f70c8e1b62b9f1485039a71c2",
+    "mode": 420
+  },
+  "lib64/libusb_serial_ddk_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "9abe437b7c42f47452e34445eb4d16a71142466986aa2c44b14dc1dc276c5599",
+    "mode": 420
+  },
+  "lib64/libusb_serial_ddk_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "c91523ada86e5ced7664d6e118b21b7f550ad510df9c53a5a43d451d64c86337",
+    "mode": 420
+  },
+  "lib64/libusb_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "d04b0d8b4ef6f8aa11dbe58c43de2cb4cad69ffe9a4d395d73540486a9b92abf",
+    "mode": 420
+  },
+  "lib64/libusb_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "a0d5de20061a12becf30cd8b89f83013a7674b2a4f2e5f11092ab43bb13d9ae3",
+    "mode": 420
+  },
+  "lib64/libusb_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "a4e46e1d4acfc20d1c4a144678970810b9b10bc9bb35d8ae9a0448553c9bd604",
+    "mode": 420
+  },
+  "lib64/libusb_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "fd6b167ab062fdd2b9df8216f488669368406a8dd20ffb98434eab9b39fa7dd5",
+    "mode": 420
+  },
+  "lib64/libusbfn.z.so": {
+    "type": "file",
+    "sha256": "1d4c60a07373b9a2c640ec0ba90b9a767fac96c5d4dfeb0ca1f28104cb3efc15",
+    "mode": 420
+  },
+  "lib64/libusbfn_cdcacm.z.so": {
+    "type": "file",
+    "sha256": "8cbec2ecb1fa7572709dc4fba38802be2c78ba3ed7ed7ab665223041eb24a814",
+    "mode": 420
+  },
+  "lib64/libusbfn_cdcecm.z.so": {
+    "type": "file",
+    "sha256": "06a5a3851554ec7877991f001f534d6fd2a1d41951ae74a0f233107b021bae10",
+    "mode": 420
+  },
+  "lib64/libusbfn_mtp_driver.z.so": {
+    "type": "file",
+    "sha256": "3de39b2f575feb0f42e7d81f7c6736823207da10d702dc5ba28a93249c82506a",
+    "mode": 420
+  },
+  "lib64/libusbfn_mtp_stub_1.0.z.so": {
+    "type": "file",
+    "sha256": "d4e9c7847047caa9f1b66ad7ccfa936e280886c6d1d980ef201bfb42ccef1445",
+    "mode": 420
+  },
+  "lib64/libusbhost_acm.z.so": {
+    "type": "file",
+    "sha256": "ae2cc1637d137082ffe66bd4a499c5bca73e3d57e1ae44a90ef117f2cdb8841a",
+    "mode": 420
+  },
+  "lib64/libusbhost_acm_rawapi.z.so": {
+    "type": "file",
+    "sha256": "42a08c759a8a5c95d940617f809b918a21504861f734d5ca30b209301c0bc6fe",
+    "mode": 420
+  },
+  "lib64/libusbhost_ecm.z.so": {
+    "type": "file",
+    "sha256": "d71e6f884bff629b46dad9c0468342689448d6300ea6a2ceb3c9a20b84a99795",
+    "mode": 420
+  },
+  "lib64/libusbhost_rndis_rawapi.z.so": {
+    "type": "file",
+    "sha256": "6f0f09c48765576e5bf26b9e4ed44acbd04f82e31c26a03c7ac2315e3b571a30",
+    "mode": 420
+  },
+  "lib64/libuser_auth_driver.z.so": {
+    "type": "file",
+    "sha256": "8dba69e7d9b853aebd1161a311d95daa28eb69458588bc314c858de4e81eb224",
+    "mode": 420
+  },
+  "lib64/libuser_auth_interface_service_4.1.z.so": {
+    "type": "file",
+    "sha256": "723680ad49df84cc52cf3ab056ff4e4fced36881f690c4181af264a45d1936f5",
+    "mode": 420
+  },
+  "lib64/libuser_auth_stub_4.0.z.so": {
+    "type": "file",
+    "sha256": "d14c10aff37370be0092d7f69563c4feb418444ee5e668738150172fa43097db",
+    "mode": 420
+  },
+  "lib64/libuser_auth_stub_4.1.z.so": {
+    "type": "file",
+    "sha256": "dff41edb804f77f0461869e9b74a808d7d5090bf39387cf9474569b539d3a1b2",
+    "mode": 420
+  },
+  "lib64/libvendor_intell_voice_engine.z.so": {
+    "type": "file",
+    "sha256": "d4558e21efbeb9b9cbd7190c96a5def4483a818de35c5d8dc7399debb702c9cd",
+    "mode": 420
+  },
+  "lib64/libvendor_intell_voice_trigger.z.so": {
+    "type": "file",
+    "sha256": "9f4384355e642ad2ecc4acb62c18c3c062a492eb188d6c2b0c6c6b458f870c67",
+    "mode": 420
+  },
+  "lib64/libvibrator_driver.z.so": {
+    "type": "file",
+    "sha256": "775f9d659cbb0433f16eab1e0cb70eb76aa124ffd9529fc91ace414e9033aa7b",
+    "mode": 420
+  },
+  "lib64/libvibrator_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "b026d6a0319bddfb583fdbb64326c03dc85a14ac47f3c1f5e8889c960c1d1b46",
+    "mode": 420
+  },
+  "lib64/libvibrator_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "cf51a761513649ba9c2c10f5ff4a1a6c925e0c135c7fe019a8de9f88dc90ef2c",
+    "mode": 420
+  },
+  "lib64/libwifi_driver_client.z.so": {
+    "type": "file",
+    "sha256": "5ddacd2500db19265ee173945c2a94cad0ef6a69106c44d527c190c84a21a784",
+    "mode": 420
+  },
+  "lib64/libwifi_hal.z.so": {
+    "type": "file",
+    "sha256": "2498cab2a293be393ed0a7db0cca3aaee18cb9dd545fa748b92ec82d58c300d8",
+    "mode": 420
+  },
+  "lib64/libwifi_hal_default.z.so": {
+    "type": "file",
+    "sha256": "d1b1b522d17c0be2ac562bb8f4ed9b71d85c608f73400aaaf61a17f2ad92a1f9",
+    "mode": 420
+  },
+  "lib64/libwifi_hdi_c_device.z.so": {
+    "type": "file",
+    "sha256": "54b28774b327c4c8162db0e92c5a40d57cef78f004b859a2ea992babe4a47b1d",
+    "mode": 420
+  },
+  "lib64/libwlan_interface_service_1.3.z.so": {
+    "type": "file",
+    "sha256": "b65c05a17acdc1daac83b5f507c2d53f48cb0c3072a7f0474397454e3a6909d5",
+    "mode": 420
+  },
+  "lib64/libwlan_service_extend.z.so": {
+    "type": "file",
+    "sha256": "06a127b6b8b87d076841bcf50606cd5fe4b1048f4e5a57bd6e423faa22147728",
+    "mode": 420
+  },
+  "lib64/libwlan_stub_1.1.z.so": {
+    "type": "file",
+    "sha256": "fe47865559f4af6bc3930d44ed4d32a866789a82e0d0d713648effae26a74ce1",
+    "mode": 420
+  },
+  "lib64/libwlan_stub_1.2.z.so": {
+    "type": "file",
+    "sha256": "a2e0c635fc760403e7b088fb3d33f608a6ba7171df4b41f1d895ef4b0ad43003",
+    "mode": 420
+  },
+  "lib64/libwlan_stub_1.3.z.so": {
+    "type": "file",
+    "sha256": "0c849ca600dbc771032881126e7f1de2282d0ed8d601a70385e80af107eb8bee",
+    "mode": 420
+  },
+  "lib64/libwpa.z.so": {
+    "type": "file",
+    "sha256": "610c948b8824e1bfe24782f9d46ff25d1250b972914638b1f43c8ba01f3feb8f",
+    "mode": 420
+  },
+  "lib64/libwpa_client_vendor.z.so": {
+    "type": "file",
+    "sha256": "c4c624eb2e754f643fd724ae2cc11ccd5c36255e74c982e67c423385b3e1207c",
+    "mode": 420
+  },
+  "lib64/libwpa_hdi_c_device.z.so": {
+    "type": "file",
+    "sha256": "7af344167bda130b4706555d91224c65e738de27d447601911c9f4d3ee4d6861",
+    "mode": 420
+  },
+  "lib64/libwpa_hdi_client.z.so": {
+    "type": "file",
+    "sha256": "6bed7339678f6b537fec639196bc6af69933be3bca3b59e881e57040eafdc7c3",
+    "mode": 420
+  },
+  "lib64/libwpa_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "f126d186ca60f657aed5ee77f73ae667b5548396a9f2ac7c74264d79e4ca5abc",
+    "mode": 420
+  },
+  "lib64/libwpa_stub_2.0.z.so": {
+    "type": "file",
+    "sha256": "536e202a7b7ca6829dd9d73c777be8d8d01bb24102d488e289ff81cea50a33fc",
+    "mode": 420
+  },
+  "lib64/passthrough": {
+    "type": "directory",
+    "mode": 493
+  },
+  "lib64/passthrough/indirect": {
+    "type": "directory",
+    "mode": 493
+  },
+  "lib64/passthrough/indirect/libOMX_Core.z.so": {
+    "type": "file",
+    "sha256": "e209903309fb1dc5235ea5191cdd137ce68c857d87da330145cba8b6d87c0109",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libOMX_Pluginhw.z.so": {
+    "type": "file",
+    "sha256": "535e521b5d4c5c295ecb23601dab68d6d796ee3ab2371f4814809b22406be30b",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libRkOMX_Resourcemanager.z.so": {
+    "type": "file",
+    "sha256": "e7799d3584310caaed598fbbc86dd14e2846fb72b17e10aeed23780978d132ff",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libalsa_midi.so": {
+    "type": "file",
+    "sha256": "a0d0c4f9df00e4c4822e8cc00235bf450336e6126da107f741415379a0608c3a",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libhdi_input.z.so": {
+    "type": "file",
+    "sha256": "a725dc5ce18004888649162667233f43478f0a212aa10c461d20c7287b14d523",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libhuks_hdi_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "591f5f11c44fb2c4af9444623bf4a5e880eec0806416060f04a65b2e3dc3377e",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libmpp.z.so": {
+    "type": "file",
+    "sha256": "435995c0d27a88fe5c89d8a48abd231f1d01d6ac85be031f04093691621a6e36",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libomxvpu_dec.z.so": {
+    "type": "file",
+    "sha256": "1d673dd042dfdc8d61ce1ff49c38e91820edc27763f239545f2ac9d6b7357553",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libomxvpu_enc.z.so": {
+    "type": "file",
+    "sha256": "ed9f7da270c00ac8dac829052969ebf65294adfbf9eaac3e411f2b109e087995",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/librk_rga.z.so": {
+    "type": "file",
+    "sha256": "92abd2c00bd79f52b33f23833386e794eed9a54ce7ad9416cfc3b92dce0cf366",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libserial_interface_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "11a9a7726a1d9706205726374bf5e026e8ddab9b8676765adc87a96962287a9d",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libusb_adapter.z.so": {
+    "type": "file",
+    "sha256": "eb82305b9e2872a50270a8842ae8246ce9adfb64957e62eff731e36781bd78c3",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libusb_ddk_device.z.so": {
+    "type": "file",
+    "sha256": "6cc7f93f6148c0ed1550171eaef4b69134fa882b9042e915706cf832dee64cf1",
+    "mode": 420
+  },
+  "lib64/passthrough/indirect/libvpu.z.so": {
+    "type": "file",
+    "sha256": "81dbde3e59857f3126d5d637c564c23cc506b51f89734f8d5149d6f69642b1ac",
+    "mode": 420
+  },
+  "lib64/passthrough/libaudio_bluetooth_hdi_proxy_server.z.so": {
+    "type": "file",
+    "sha256": "45853564115f38b1cfea3b0964e016cc934f0d42fd5518f44f33d8529b120783",
+    "mode": 420
+  },
+  "lib64/passthrough/libcodec_component_manager_service_4.0.z.so": {
+    "type": "file",
+    "sha256": "b6f473c49c96737e2e47fc892e5b99429640931ed4c9c799fcfbaa50dfbfebc4",
+    "mode": 420
+  },
+  "lib64/passthrough/libdisplay_buffer_vdi_impl.z.so": {
+    "type": "file",
+    "sha256": "cc8aff5288a6e7aafc4232c1293ba079a5b1deea41d6e350420d47b2935037b4",
+    "mode": 420
+  },
+  "lib64/passthrough/libdisplay_buffer_vendor.z.so": {
+    "type": "file",
+    "sha256": "69167cd2d6e215493ad397b0394d14e316b692a854a8cf32383012f7e4cf82d5",
+    "mode": 420
+  },
+  "lib64/passthrough/libinput_interfaces_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "da38e959506296ef6bc0ba793bcdb3c880c06ea0ee265af0f0f7411794cbdaa2",
+    "mode": 420
+  },
+  "lib64/passthrough/libmapper_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "a069c9c3283a2c0d12a73438f6f4a4c94ad38e27c732e21749c2fd7f6af06f3f",
+    "mode": 420
+  },
+  "lib64/passthrough/libmapper_service_1.2.z.so": {
+    "type": "file",
+    "sha256": "b4f7a59fe8355ae02b742a6b3a47dc729a2cf332114ee7f6358139713f52557a",
+    "mode": 420
+  },
+  "lib64/passthrough/libmapper_service_1.3.z.so": {
+    "type": "file",
+    "sha256": "6e3e39d1833b2d4ef73af82ed82808bb6463baa6cce8bc9fa38053a1bd0b1fda",
+    "mode": 420
+  },
+  "lib64/passthrough/libmemory_tracker_interface_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "71b7dc459d8c3d8f628e2811a92d10de4ed39d7c7f877559d7b196993e3be6d6",
+    "mode": 420
+  },
+  "lib64/passthrough/libmetadata_service_1.1.z.so": {
+    "type": "file",
+    "sha256": "1d4bbdd8e0bab82e494554901560b07cd1680e5683314c74b7f0ef021bb45243",
+    "mode": 420
+  },
+  "lib64/passthrough/libmidi_interface_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "cca29967d38c3ec680b62adffa2ce933e78d931492fb8b24b691f4dc41e1e09d",
+    "mode": 420
+  },
+  "lib64/passthrough/libsensor_convert_interfaces_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "32c69571c89742f9caa2e1257cf6ee7bf2c9fd5d66a99abc0660724e6a3307d2",
+    "mode": 420
+  },
+  "lib64/passthrough/libusb_host_interface_service_2.0.z.so": {
+    "type": "file",
+    "sha256": "bde2822273a2f481cfca46a014d3e6d8b24612dc9c9cae9df49ef3d1eea7e43e",
+    "mode": 420
+  },
+  "lib64/passthrough/libusbfn_mtp_interface_service_1.0.z.so": {
+    "type": "file",
+    "sha256": "3dc3e79d584edfbad35eae64b394895b1198dab7f288054b02ecea599cbbbd45",
+    "mode": 420
+  }
+}

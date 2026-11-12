@@ -1,0 +1,40 @@
+
+# echo PROBE_BEGIN; cat /system/etc/sceneboard.config; ps -ef | grep -iE "scensystem/etc/sceneboard.config; ps -ef | grep -iE "scen                         <eboard|launcher|systemui"fig; ps -ef | grep -iE "sceneboard|launcher|systemui"                         <; echo PROBE_END
+PROBE_BEGIN
+/system/bin/sh: cat: /system/etc/sceneboard.config: No such file or directory
+10008         1464   215 2 11:34:17 ?     00:00:01 com.ohos.systemui
+20010013      1575   215 1 11:34:17 ?     00:00:01 com.ohos.launcher
+root          2353   216 3 11:36:15 ttyFIQ0 00:00:00 grep -iE sceneboard|launcher|systemui
+PROBE_END
+# [  127.012008] hungtask_user process 215 is kicked
+[  127.012142] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  127.443366] SAMGR: rm SA:3521_96
+[  127.443880] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 32 pid 218 key: ohos.ctl.stop
+[  127.444120] [pid=1][Init][INFO][init_common_service.c:786]stop service dlp_permission_service, pid 1555.
+[  127.444179] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444204] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444230] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444237] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444246] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444252] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444261] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444267] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444276] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116119
+[  127.444579] SAMGR: Scheduler proc:dlp_permission_service kill pid:1555,3019_0_1ms
+[  127.449729] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process Unknown(pid 1555) exit with signal : 9
+[  127.450008] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:1555 uid:3019 status:9.
+[  127.450012] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  127.450044] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:116114
+[  127.729093] kauditd_printk_skb: 421 callbacks suppressed
+[  127.729099] audit: type=1400 audit(1793849778.670:3160): avc:  denied  { read } for  pid=572 comm="OS_IPC_0_651" name="controlC0" dev="tmpfs" ino=198 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  127.729133] audit: type=1400 audit(1793849778.670:3161): avc:  denied  { open } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  127.729145] audit: type=1400 audit(1793849778.670:3162): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  127.729157] audit: type=1400 audit(1793849778.670:3163): avc:  denied  { write } for  pid=572 comm="OS_IPC_0_651" name="controlC0" dev="tmpfs" ino=198 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  127.729168] audit: type=1400 audit(1793849778.670:3164): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  127.729180] audit: type=1400 audit(1793849778.670:3165): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  127.729190] audit: type=1400 audit(1793849778.670:3166): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  127.914080] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  128.029318] audit: type=1400 audit(1793849778.970:3167): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  128.029341] audit: type=1400 audit(1793849778.970:3168): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  128.029354] audit: type=1400 audit(1793849778.970:3169): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+

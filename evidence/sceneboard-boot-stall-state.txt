@@ -1,0 +1,25 @@
+
+# [  105.286205] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; cat /proc/uptime; cat /etc/sceneboard.config; ps -ef | greproc/uptime; cat /etc/sceneboard.config; ps -ef | gre                         <p -iE "foundation|sceneboneboard.config; ps -ef | grep -iE "foundation|scenebo                         <ard|launcher|systemui|boogrep -iE "foundation|sceneboard|launcher|systemui|boo                         <tanim|render_service"; lseboard|launcher|systemui|bootanim|render_service"; ls                         < -t /data/log/faultlog/fabootanim|render_service"; ls -t /data/log/faultlog/fa                         <ultlogger | head -n 12; e ls -t /data/log/faultlog/faultlogger | head -n 12; e                         <cho PROBE_END
+PROBE_BEGIN
+105.71 812.75
+ENABLED
+graphics       609     1 1 16:05:54 ?     00:00:01 render_service
+graphics       625     1 0 16:05:54 ?     00:00:00 bootanimation
+foundation     658     1 2 16:05:54 ?     00:00:01 foundation
+root          1850   216 3 16:07:36 ttyFIQ0 00:00:00 grep -iE foundation|sceneboard|launcher|systemui|bootanim|render_service
+cppcrash-usb_host-3023-20261105160556299.log
+cppcrash-usb_host-3023-20261105160556090.log
+cppcrash-usb_host-3023-20261105160555873.log
+cppcrash-usb_host-3023-20261105160554753.log
+cppcrash-usb_host-3023-20261105114745300.log
+cppcrash-usb_host-3023-20261105114745084.log
+cppcrash-usb_host-3023-20261105114744872.log
+cppcrash-usb_host-3023-20261105114743637.log
+cppcrash-usb_host-3023-20261105114612326.log
+cppcrash-usb_host-3023-20261105114612079.log
+cppcrash-composer_host-3036-20261105100333483.log
+cppcrash-composer_host-3036-20261104174226544.log
+PROBE_END
+# [  105.888455] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

@@ -1,0 +1,161 @@
+
+# [  484.825339] kauditd_printk_skb: 58 callbacks suppressed
+[  484.825343] audit: type=1400 audit(1793844712.468:8583): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  484.825365] audit: type=1400 audit(1793844712.468:8584): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  484.825370] audit: type=1400 audit(1793844712.468:8585): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  484.825374] audit: type=1400 audit(1793844712.468:8586): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+echo PROBE_BEGIN; base64 --help | head -8; gzip --help | head -8; ls -l /sys4 --help | head -8; gzip --help | head -8; ls -l /sys                         <tem/bin/sh; cat /proc/upt--help | head -8; ls -l /system/bin/sh; cat /proc/upt                         <ime; ps -ef | grep -E "fosystem/bin/sh; cat /proc/uptime; ps -ef | grep -E "fo                         <undation|multimodalinput"uptime; ps -ef | grep -E "foundation|multimodalinput"                         <; echo PROBE_END
+PROBE_BEGIN
+usage: base64 [-di] [-w COLUMNS] [FILE...]
+
+Encode or decode in base64.
+
+-d	Decode
+-i	Ignore non-alphabetic characters
+-w	Wrap output at COLUMNS (default 76 or 0 for no wrap)
+usage: gzip [-19cdfkt] [FILE...]
+
+Compress files. With no files, compresses stdin to stdout.
+On success, the input files are removed and replaced by new
+files with the .gz suffix.
+
+-c	Output to stdout
+-d	Decompress (act as gunzip)
+-rwxr-xr-x 1 root shell 301728 2026-11-03 13:32 /system/bin/sh
+[  485.104488] audit: type=1400 audit(1793844712.748:8587): avc:  denied  { read } for  pid=220 comm="sh" name="uptime" dev="proc" ino=4026532037 scontext=u:r:console:s0 tcontext=u:object_r:proc_uptime_file:s0 tclass=file permissive=1
+485.10 3810.64
+[  485.104505] audit: type=1400 audit(1793844712.748:8588): avc:  denied  { open } for  pid=220 comm="sh" path="/proc/uptime" dev="proc" ino=4026532037 scontext=u:r:console:s0 tcontext=u:object_r:proc_uptime_file:s0 tclass=file permissive=1
+[  485.111803] audit: type=1400 audit(1793844712.755:8589): avc:  denied  { getattr } for  pid=2606 comm="ps" path="/dev/console" dev="tmpfs" ino=33 scontext=u:r:console:s0 tcontext=u:object_r:dev_console_file:s0 tclass=chr_file permissive=1
+[  485.111840] audit: type=1400 audit(1793844712.755:8590): avc:  denied  { read } for  pid=2606 comm="ps" name="pid_max" dev="proc" ino=26017 scontext=u:r:console:s0 tcontext=u:object_r:proc_file:s0 tclass=file permissive=1
+[  485.111845] audit: type=1400 audit(1793844712.755:8591): avc:  denied  { open } for  pid=2606 comm="ps" path="/proc/sys/kernel/pid_max" dev="proc" ino=26017 scontext=u:r:console:s0 tcontext=u:object_r:proc_file:s0 tclass=file permissive=1
+[  485.112113] audit: type=1400 audit(1793844712.755:8592): avc:  denied  { getattr } for  pid=2606 comm="ps" path="/proc/1" dev="proc" ino=21144 scontext=u:r:console:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+input          322     1 1 10:03:48 ?     00:00:02 multimodalinput
+foundation     705     1 1 10:03:49 ?     00:00:02 foundation
+root          2607   220 0 10:11:51 ttyFIQ0 00:00:00 grep -E foundation|multimodalinput
+PROBE_END
+# [  486.899425] hungtask_user process 219 is kicked
+[  486.899559] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  486.986303] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+[  486.987059] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 2608 uid 3023)
+[  486.987074] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793844714-635350555, prefork:1793844714-635423471, startedtime:1793844714-636117638
+[  486.987188] [pid=2608][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+[  486.987435] [pid=2608][BEGET][ERROR][sandbox.c:640]Sandbox chipset has not been created.
+[  486.987442] [pid=2608][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+[  486.987479] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74487
+[  486.987504] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74487
+[  486.987529] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74487
+[  486.987536] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74487
+[  486.987543] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74487
+[  486.987768] [pid=2608][Init][INFO][init_service.c:235]ServiceExec usb_host
+[  487.115607] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  487.123490] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2617) exit with code : 0
+[  487.123506] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2617 uid:3023 status:0.
+[  487.123530] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74351
+[  487.194455] purgemm: Sum: 0 pined in 0 pages
+[  487.194547] purgemm: Sum: 0 pined in 0 pages
+[  487.218360] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2613) exit with code : 0
+[  487.218377] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2613 uid:3023 status:0.
+[  487.218406] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74256
+[  487.221039] binder: release 2608:2608 transaction 84373 in, still active
+[  487.221067] binder: release 2608:2608 transaction 84306 out, still active
+[  487.221078] binder: send failed reply for transaction 84373 to 226:602
+[  487.221111] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 2608) exit with signal : 11
+[  487.221346] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:2608 uid:3023 status:11.
+[  487.221355] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 2608.
+[  487.221399] binder: 602:226 reply target not found
+[  487.221418] binder: 226:602 transaction reply to 0:0 failed 84390/29189/0, size 4-0 line 3030
+[  487.221433] binder: send failed reply for transaction 84306, target dead
+[  487.221454] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+[  487.222320] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 2626 uid 3023)
+[  487.222332] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793844714-870516162, prefork:1793844714-870549703, startedtime:1793844714-871375703
+[  487.222419] [pid=2626][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+[  487.222655] [pid=2626][BEGET][ERROR][sandbox.c:640]Sandbox chipset has not been created.
+[  487.222663] [pid=2626][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+[  487.222715] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222742] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222765] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222771] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222779] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222786] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222793] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222799] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222807] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74252
+[  487.222989] [pid=2626][Init][INFO][init_service.c:235]ServiceExec usb_host
+[  487.331118] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  487.338803] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2635) exit with code : 0
+[  487.338819] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2635 uid:3023 status:0.
+[  487.338842] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74136
+[  487.395655] purgemm: Sum: 0 pined in 0 pages
+[  487.395753] purgemm: Sum: 0 pined in 0 pages
+[  487.419627] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2631) exit with code : 0
+[  487.419660] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2631 uid:3023 status:0.
+[  487.419728] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74055
+[  487.420732] binder: release 2626:2626 transaction 84496 in, still active
+[  487.420753] binder: release 2626:2626 transaction 84429 out, still active
+[  487.420759] binder: send failed reply for transaction 84496 to 226:636
+[  487.420897] binder: 636:226 cannot find target node
+[  487.421252] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 2626) exit with signal : 11
+[  487.421604] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:2626 uid:3023 status:11.
+[  487.421622] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 2626.
+[  487.421802] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+[  487.423144] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 2643 uid 3023)
+[  487.423166] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793844715-70861140, prefork:1793844715-70908098, startedtime:1793844715-72192890
+[  487.423226] [pid=2643][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+[  487.423455] [pid=2643][BEGET][ERROR][sandbox.c:640]Sandbox chipset has not been created.
+[  487.423463] [pid=2643][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+[  487.423710] [pid=2643][Init][INFO][init_service.c:235]ServiceExec usb_host
+[  487.423833] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74051
+[  487.423882] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74051
+[  487.423940] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74051
+[  487.423958] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74051
+[  487.423980] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74050
+[  487.423997] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74050
+[  487.424018] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74050
+[  487.424034] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74050
+[  487.424054] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:74050
+[  487.553935] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  487.563554] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2652) exit with code : 0
+[  487.563585] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2652 uid:3023 status:0.
+[  487.563646] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73911
+[  487.620025] purgemm: Sum: 0 pined in 0 pages
+[  487.620125] purgemm: Sum: 0 pined in 0 pages
+[  487.643998] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2648) exit with code : 0
+[  487.644031] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2648 uid:3023 status:0.
+[  487.644104] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73830
+[  487.646945] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 2643) exit with signal : 11
+[  487.647352] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:2643 uid:3023 status:11.
+[  487.647383] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 2643.
+[  487.647573] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+[  487.648907] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 2661 uid 3023)
+[  487.648937] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793844715-296631579, prefork:1793844715-296679121, startedtime:1793844715-297955454
+[  487.648985] [pid=2661][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+[  487.649211] [pid=2661][BEGET][ERROR][sandbox.c:640]Sandbox chipset has not been created.
+[  487.649218] [pid=2661][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+[  487.649466] [pid=2661][Init][INFO][init_service.c:235]ServiceExec usb_host
+[  487.649533] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649581] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649666] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649685] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649708] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649725] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649747] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649763] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.649783] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73825
+[  487.759254] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  487.767073] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2671) exit with code : 0
+[  487.767106] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2671 uid:3023 status:0.
+[  487.767165] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73707
+[  487.824822] purgemm: Sum: 0 pined in 0 pages
+[  487.824981] purgemm: Sum: 0 pined in 0 pages
+[  487.859985] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process Unknown(pid 2666) exit with code : 0
+[  487.860019] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2666 uid:3023 status:0.
+[  487.860095] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73614
+[  487.862768] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 2661) exit with signal : 11
+[  487.863239] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:2661 uid:3023 status:11.
+[  487.863271] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 2661.
+[  487.863468] [pid=1][Init][INFO][init_common_service.c:981]ServiceReap start failed! usb_host will reStart 240 second later
+[  487.863512] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73611
+[  487.863539] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73611
+[  487.863592] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73611
+[  487.863611] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:73611
+

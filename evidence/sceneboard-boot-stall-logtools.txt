@@ -1,0 +1,166 @@
+
+# [  150.448936] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; hilog -x | tail -n 45; hilog -h | head -n 48; ps -ef | gre -x | tail -n 45; hilog -h | head -n 48; ps -ef | gre                         <p -v "\[" | tail -n 70; eh | head -n 48; ps -ef | grep -v "\[" | tail -n 70; e                         <cho PROBE_END
+PROBE_BEGIN
+11-05 16:08:21.123   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:08:21.324   658  1012 W C01120/BMS: -n com.ohos.launcher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.324   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.324   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.324   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.324   658  1012 W C01120/BMS: -n com.ohos.launcher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.324   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.324   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.324   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.324   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(ImplicitQueryInfoByPriority:7922)]can't find target AbilityInfo or ExtensionAbilityInfo
+11-05 16:08:21.324   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:08:21.375   602  1866 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:21.524   658  1012 W C01120/BMS: -n com.ohos.launcher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.524   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.524   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.524   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.524   658  1012 W C01120/BMS: -n com.ohos.launcher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.524   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.525   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.525   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.525   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(ImplicitQueryInfoByPriority:7922)]can't find target AbilityInfo or ExtensionAbilityInfo
+11-05 16:08:21.525   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:08:21.725   658  1012 W C01120/BMS: -n com.ohos.launcher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.725   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.725   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.725   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.725   658  1012 W C01120/BMS: -n com.ohos.launcher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.725   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.725   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.725   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.725   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(ImplicitQueryInfoByPriority:7922)]can't find target AbilityInfo or ExtensionAbilityInfo
+11-05 16:08:21.725   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:08:21.876   602  1866 E C01611/UserDelegate: InitLocalUserMeta: failed to query os accounts, ret:1
+11-05 16:08:21.926   658  1012 W C01120/Bher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.926   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.926   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.926   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.926   658  1012 W C01120/BMS: -n com.ohos.launcher -u 100 -i 0 disabled caller is bms
+11-05 16:08:21.926   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.launcher userId: 100 incorrect
+11-05 16:08:21.926   658  1012 W C01120/BMS: -n com.ohos.systemui -u 0 -i 0 disabled caller is bms
+11-05 16:08:21.926   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(CheckInnerBundleInfoWithFlags:3971)]bundleName: com.ohos.systemui userId: 0 incorrect
+11-05 16:08:21.926   658  1012 W C01120/BMS: [bundle_data_mgr.cpp(ImplicitQueryInfoByPriority:7922)]can't find target AbilityInfo or ExtensionAbilityInfo
+11-05 16:08:21.926   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:08:22.034  1868  1868 W C03f07/MUSL-SIGCHAIN: signal_chain_handler call 3 rd sigchain action for signal: 4 sca_sigaction=7fa244f5a8 noreturn=0 FREEZE_signo_4 thread_list_lock_status:-1 tl_lock_count=0 tl_lock_waiters=0 tl_lock_tid_fail=-1 tl_lock_count_tid=1868 tl_lock_count_fail=-10000 tl_lock_count_tid_sub=1868 thread_list_lock_after_lock=1868 thread_list_lock_pre_unlock=1868 thread_list_lock_pthread_exit=-1 thread_list_lock_tid_overlimit=-1 tl_lock_unlock_count=0 __pthread_gettid_np_tl_lock=0 __pthread_exit_tl_lock=0 __pthread_create_tl_lock=0 __pthread_key_delete_tl_lock=0 __synccall_tl_lock=0 __membarrier_tl_lock=0 install_new_tls_tl_lock=0 set_syscall_hooks_tl_lock=0 set_syscall_hooks_linux_tl_lock=0 fork_tl_lock=0 register_count=0 __custom_hook_flag=0g_dlcloseLockStatus=0g_dlcloseLockLastExitTid=0
+11-05 16:08:22.034  1868  1868 W C03f07/MUSL-SIGCHAIN: signal_chain_handler call usr sa_handler: 7fa1e57368 for signal: 4
+Usage:
+-h --help
+  Show all help information.
+  Show single help information with option: 
+  query/clear/buffer/stats/persist/private/kmsg/flowcontrol/baselevel/domain/combo
+Querying logs options:
+  No option performs a blocking read and keeps printing.
+  -x --exit
+    Performs a non-blocking read and exits when all logs in buffer are printed.
+  -a <n>, --head=<n>
+    Show n lines logs on head of buffer.
+  -z <n>, --tail=<n>
+    Show n lines logs on tail of buffer.
+  -t <type>, --type=<type>
+    Show specific type/types logs with format: type1,type2,type3
+    Don't show specific type/types logs with format: ^type1,type2,type3
+    Type coule be: app/core/init/kmsg/only_prerelease, kmsg can't combine with others.
+    Default types are: app,core,init,only_prerelease.
+  -L <level>, --level=<level>
+    Show specific level/levels logs with format: level1,level2,level3
+    Don't show specific level/levels logs with format: ^level1,level2,level3
+    Long and short level string are both accepted
+    Long level string coule be: DEBUG/INFO/WARN/ERROR/FATAL.
+    Short level string coule be: D/I/W/E/F.
+    Default levels are all levels.
+  -D <domain>, --domain=<domain>
+    Show specific domain/domains logs with format: domain1,domain2,doman3
+    Don't show specific domain/domains logs with format: ^domain1,domain2,doman3
+    Max domain count is 5.
+    See domain description at the end of this message.
+  -T <tag>, --tag=<tag>
+    Show specific tag/tags logs with format: tag1,tag2,tag3
+    Don't show specific tag/tags logs with format: ^tag1,tag2,tag3
+    Max tag count is 10.
+  -P <pid>, --pid=<pid>
+    Show specific pid/pids logs with format: pid1,pid2,pid3
+    Don't show specific domain/domains logs with format: ^pid1,pid2,pid3
+    Max pid co<format>
+    Show logs in different formats, options are:
+      color or colour      display colorful logs by log level.i.e.
+        [38;5;75mDEBUG        [38;5;40mINFO        [38;5;166mWARN        [38;5;196mERROR       [38;5;226mFATAL[0m
+      time format options are(single accepted):
+        time       display local time, this is default.
+        epoch      display the time from 1970/1/1.
+        monotonic  display the cpu time from bootup.
+hdf_devmgr     217     1 0 16:05:53 ?     00:00:00 hdf_devmgr
+samgr          218     1 0 16:05:53 ?     00:00:00 samgr
+storage_manager 220    1 0 16:05:53 ?     00:00:00 storage_manager
+paramwatcher   221     1 0 16:05:53 ?     00:00:00 param_watcher
+root           222     1 0 16:05:53 ?     00:00:00 storage_daemon
+hiview         223     1 1 16:05:53 ?     00:00:01 hiview
+tee            224     1 0 16:05:53 ?     00:00:00 cadaemon
+bluetooth      317     1 0 16:05:53 ?     00:00:00 bluetooth_service
+accessibility  332     1 0 16:05:54 ?     00:00:00 accessibility
+audio          333     1 0 16:05:54 ?     00:00:00 audio_server
+memmgr         334     1 1 16:05:54 ?     00:00:00 memmgrservice
+root           336     1 0 16:05:54 ?     00:00:00 resource_schedule_executor
+ressched       396     1 0 16:05:54 ?     00:00:00 resource_schedule_service
+input          397     1 0 16:05:54 ?     00:00:00 uinput_inject
+input          398     1 0 16:05:54 ?     00:00:00 multimodalinput
+system         399     1 0 16:05:54 ?     00:00:00 concurrent_task_service
+huks_server    423     1 0 16:05:54 ?     00:00:00 huks_service
+access_token   446     1 0 16:05:54 ?     00:00:00 accesstoken_service
+net_manager    459     1 0 16:05:54 ?     00:00:00 netmanager
+radio          460     1 0 16:05:54 ?     00:00:00 telephony
+wallpaper      464     1 0 16:05:54 ?     00:00:00 wallpaper_service
+msdp           510     1 0 16:05:54 ?     00:00:00 msdp
+time           541     1 0 16:05:54 ?     00:00:00 time_service
+fingerprint_auth_host 570 1 0 16:05:54 ?  00:00:00 fingerprint_auth_host   -i 23 -n fingerprint_auth_host
+user_auth_host 571     1 0 16:05:54 ?     00:00:00 user_auth_host          -i 22 -n user_auth_host
+face_auth_host 572     1 0 16:05:54 ?     00:00:00 face_auth_host          -i 20 -n face_auth_host
+codec_host     573     1 0 16:05:54 ?     00:00:00 codec_host              -i 17 -n codec_host
+light_host     575     1 0 16:05:54 ?     00:00:00 light_host              -i 16 -n light_host
+vibrator_host  578     1 0 16:05:54 ?     00:00:00 vibrator_host           -i 15 -n vibrator_host
+sensor_host    579     1 0 16:05:54 ?     00:00:00 sensor_host             -i 14 -n sensor_host
+input_user_host 580    1 0 16:05:54 ?     00:00:00 input_user_host         -i 11 -n input_user_host
+camera_host    582     1 0 16:05:54 ?     00:00:00 camera_host             -i 9 -n camera_host
+audio_host     583     1 0 16:05:54 ?     00:00:00 audio_host              -i 8 -n audio_host
+wifi_host      584     1 0 16:05:54 ?     00:00:00 wifi_host               -i 5 -n wifi_host
+power_host     585     1 0 16:05:54 ?     00:00:00 power_host              -i 4 -n power_host
+blue_host      587     1 0 16:05:54 ?     00:00:00 blue_host               -i 1 -n blue_host
+allocator_host 589     1 0 16:05:54 ?     00:00:00 allocator_host          -i 13 -n allocator_host
+composer_host  595     1 0 16:05:54 ?     00:00:00 composer_host           -i 12 -n composer_host -p -8 -s 1
+audio          600     1 0 16:05:54 ?     00:00:00 sharing_service
+ddms           602     1 0 16:05:54 ?     00:00:00 distributeddata
+graphics       609     1 1 16:05:54 ?     00:00:01 render_service
+powermgr       610     1 0 16:05:54 ?     00:00:00 powermgr
+pin_auth_host  614     1 0 16:05:54 ?     00:00:00 pin_auth_host           -i 21 -n pin_auth_host
+graphics       625     1 0 16:05:54 ?     004 ?     00:00:00 sensors
+account        630     1 0 16:05:54 ?     00:00:00 accountmgr
+uiserver       639     1 0 16:05:54 ?     00:00:00 ui_service
+drmserver      641     1 0 16:05:54 ?     00:00:00 drm_service
+av_session     644     1 0 16:05:54 ?     00:00:00 av_session
+dsoftbus       647     1 0 16:05:54 ?     00:00:00 softbus_server
+device_manager 650     1 0 16:05:54 ?     00:00:00 device_manager
+netsysnative   651     1 0 16:05:54 ?     00:00:00 netsysnative
+access_token   652     1 0 16:05:54 ?     00:00:00 privacy_service
+security_guard 655     1 0 16:05:54 ?     00:00:00 security_guard
+foundation     658     1 1 16:05:54 ?     00:00:01 foundation
+media          672     1 0 16:05:54 ?     00:00:00 av_codec_service
+media          700     1 1 16:05:54 ?     00:00:00 media_service
+inputmethod    717     1 0 16:05:54 ?     00:00:00 inputmethod_service
+radio          718     1 0 16:05:54 ?     00:00:00 telecom
+media_monitor  724     1 0 16:05:54 ?     00:00:00 media_monitor
+cameraserver   725     1 0 16:05:54 ?     00:00:00 camera_service
+useriam        734     1 0 16:05:54 ?     00:00:00 useriam
+root           770     1 0 16:05:54 ?     00:00:00 hdcd
+installs      1144     1 0 16:05:55 ?     00:00:00 installs
+wifi          1445     1 0 16:05:56 ?     00:00:00 wifi_manager_service
+asset_service 1535     1 0 16:05:58 ?     00:00:00 asset_service
+dms           1554     1 0 16:05:58 ?     00:00:00 deviceprofile
+code_sign     1812     1 0 16:06:13 ?     00:00:00 local_code_sign
+root          1872   216 10 16:08:21 ttyFIQ0 00:00:00 ps -ef
+root          1874   216 0 16:08:21 ttyFIQ0 00:00:00 tail -n 70
+PROBE_END
+# [  151.051869] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

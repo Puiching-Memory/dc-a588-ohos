@@ -1,0 +1,130 @@
+Linux
+{
+  "apiVersion": "23",
+  "displayName": "Ets",
+  "meta": {
+    "metaVersion": "3.0.0"
+  },
+  "path": "ets",
+  "releaseType": "Release",
+  "version": "6.1.0.47"
+}   139	function updateSdkInterface(sdkInfo): void {
+   140	  if (process.platform !== 'win32') {
+   141	    return;
+   142	  }
+   143	
+   144	  const sdkBasePath = path.resolve(sdkInfo.getSdkToolchainsDir(), '../');
+   145	  console.log('Update SDK interface begin');
+   146	  const result = execSync(`node ./hvigor/update-sdk-interface.js "${sdkBasePath}"`);
+   147	  console.log(result.toString());
+   148	}
+   149	//初始化后配置完就执行
+   150	hvigor.nodesEvaluated(() => {
+   151	  console.log('Current sdk test:');
+   152	
+   153	  try {
+   154	    const taskService = appTask.getTaskService()!;
+   155	    const sdkInfo = taskService.getSdkInfo();
+   156	    const etsSdkVersion = require(path.resolve(sdkInfo.getSdkToolchainsDir(), '../ets/oh-uni-package.json')).version;
+   157	// sdk 版本
+   158	    console.log('Current sdk version:', etsSdkVersion);
+   159	
+   160	    // copySignatureFile(sdkInfo);
+   161	    updateSdkInterface(sdkInfo);
+   162	    // modifyArkDataSchemaConfig(sdkInfo);
+   163	  } catch (e) {
+   164	    console.log('Prepare for build failed:', e);
+   165	  }
+   158	function update_sdk_interface() {
+   159	  echo "[OHOS INFO] update_sdk_interface begin"
+   160	  node ${PROJECT_PATH}/hvigor/update-sdk-interface.js ${HM_SDK_HOME}/default/openharmony/
+   161	  echo "[OHOS INFO] update_sdk_interface end"
+   162	}
+   189	function build() {
+   190	    cat ${HOME}/.npmrc | grep 'lockfile=false' || echo 'lockfile=false' >> ${HOME}/.npmrc
+   191	    cd ${PROJECT_PATH}/signature
+   192	    chmod +x build.sh
+   193	    ./build.sh
+   194	
+   195	    cd ${PROJECT_PATH}
+   196	    update_sdk_interface
+   197	    hvigorw clean --no-daemon
+   198	    
+   199	    shell_replace
+    49	const copyOHPathFileArray = [
+    50	    {
+    51	        path: './ets/api/',
+    52	        file: '../staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.pcService.statusBar.d.ts'
+    53	    },
+    94	    {
+    95	        path: './ets/api',
+    96	        file: '../staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.sceneSessionManager.d.ts'
+    97	    },
+    98	    {
+    99	        path: './ets/api',
+   100	        file: '../staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.screenSessionManager.d.ts'
+   101	    },
+   102	    {
+   103	        path: './ets/api',
+   104	        file: '../staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.sessionManagerService.d.ts'
+   105	    },
+   114	    {
+   115	        path: './ets/api',
+   116	        file: '../feature/screenlockcomponent/@ohos.effectKit.d.ts'
+   117	    },
+   517	/**
+   518	 * 打桩更新SDK
+   519	 * 如果打桩的文件发生了变化，本地执行./hvigorw --stop-daemon命令重启进程后再验证
+   520	 */
+   521	function updateSdkInterface() {
+   522	    try {
+   523	        console.log('Update SDK interface base path', sdkBasePath);
+   524	        // 路径替换成  ohos
+   525	        // const hmsSdkBasePath = sdkBasePath.replace('openharmony', 'ohos');
+   526	        // for (let pathFile of copyHmsPathFileArray) {
+   527	        //     copyFile(pathFile, hmsSdkBasePath);
+   528	        // }
+   529	        //
+   530	        // for (let pathFile of removeHmsPathFileArray) {
+   531	        //     removeFile(pathFile, hmsSdkBasePath);
+   532	        // }
+   533	        //
+   534	        // for (let pathFile of replaceHmsPathFileArray) {
+   535	        //     replaceFile(pathFile, hmsSdkBasePath);
+   536	        // }
+   537	
+   538	        for (let pathFile of copyOHPathFileArray) {
+   539	            copyFile(pathFile, sdkBasePath);
+   540	        }
+   541	
+   542	        for (let pathFile of removeOHPathFileArray) {
+   543	            removeFile(pathFile, sdkBasePath);
+   544	        }
+   545	
+   546	        for (let pathFile of replaceOHPathFileArray) {
+   547	            replaceFile(pathFile, sdkBasePath);
+   548	        }
+IN_SOURCE @ohos.sceneSessionManager.d.ts
+MISSING_FROM_SDK @ohos.sceneSessionManager.d.ts
+IN_SOURCE @ohos.screenSessionManager.d.ts
+MISSING_FROM_SDK @ohos.screenSessionManager.d.ts
+IN_SOURCE @ohos.pcService.statusBar.d.ts
+MISSING_FROM_SDK @ohos.pcService.statusBar.d.ts
+    20	static napi_module g_sceneSessionModule = {
+    21	    .nm_filename = "libscenesessionmanager_napi.so/sceneSessionManager.js",
+    22	    .nm_register_func = OHOS::Rosen::JsSceneSessionManager::Init,
+    23	    .nm_modname = "sceneSessionManager",
+    24	};
+    25	
+    26	extern "C" __attribute__((constructor)) void NAPI_sceneSessionManager_AutoRegister()
+    27	{
+    28	    napi_module_register(&g_sceneSessionModule);
+    20	static napi_module g_screenSessionModule = {
+    21	    .nm_filename = "libscreensessionmanager_napi.so/screenSessionManager.js",
+    22	    .nm_register_func = OHOS::Rosen::JsScreenSessionManager::Init,
+    23	    .nm_modname = "screenSessionManager",
+    24	};
+    25	
+    26	extern "C" __attribute__((constructor)) void NAPI_screenSessionManager_AutoRegister()
+    27	{
+    28	    napi_module_register(&g_screenSessionModule);

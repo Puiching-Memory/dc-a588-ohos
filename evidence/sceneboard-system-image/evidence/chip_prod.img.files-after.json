@@ -1,0 +1,15 @@
+{
+  "etc": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/param": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/param/hardware_rk3588.para": {
+    "type": "file",
+    "sha256": "a39f1aa9c2462cc10d1af4355e57b0f0d20bd65aa7da9de37fb271989cf38bfb",
+    "mode": 420
+  }
+}

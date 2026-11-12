@@ -1,0 +1,24 @@
+
+# [  439.330594] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; param get persist.bms.test-upgrade; sqlite3 -readonly "$sc get persist.bms.test-upgrade; sqlite3 -readonly "$sc                         <bdb" "select count(*) frorade; sqlite3 -readonly "$scbdb" "select count(*) fro                         <m installed_bundle where $scbdb" "select count(*) from installed_bundle where                          <KEY='com.ohos.sceneboard'from installed_bundle where KEY='com.ohos.sceneboard'                         <;"; cat /data/service/el1re KEY='com.ohos.sceneboard';"; cat /data/service/el1                         </public/bms/bundle_managerd';"; cat /data/service/el1/public/bms/bundle_manage                         <r_service/bundle_user_infel1/public/bms/bundle_manager_service/bundle_user_inf                         <o.json; echo PROBE_END
+PROBE_BEGIN
+Get parameter "persist.bms.test-upgrade" fail! errNum is:106!
+0
+{
+    "com.ohos.launcher_100": {
+        "disabledAbilities": [],
+        "enabled": false,
+        "overlayState": [],
+        "setEnabledCaller": "bms",
+        "userId": 100
+    },
+    "com.ohos.systemui_0": {
+        "disabledAbilities": [],
+        "enabled": false,
+        "overlayState": [],
+        "setEnabledCaller": "bms",
+        "userId": 0
+    }
+}PROBE_END
+# [  439.932754] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

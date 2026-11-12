@@ -1,0 +1,106 @@
+
+# [  170.196598] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.398394] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.600151] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; ls /system/etc/app /sys_prod/etc/app /chip_prod/etc/app /vystem/etc/app /sys_prod/etc/app /chip_prod/etc/app /v                         <endor/etc/app; grep -iE "tc/app /chip_prod/etc/app /vendor/etc/app; grep -iE "                         <app_dir|SceneBoard|sceneb /vendor/etc/app; grep -iE "app_dir|SceneBoard|sceneb                         <oard|Launcher|SystemUI" /E "app_dir|SceneBoard|sceneboard|Launcher|SystemUI" /                         <system/etc/app/install_lineboard|Launcher|SystemUI" /system/etc/app/install_li                         <st.json /sys_prod/etc/app" /system/etc/app/install_list.json /sys_prod/etc/app                         </install_list.json /chip__list.json /sys_prod/etc/app/install_list.json /chip_                         <prod/etc/app/install_listapp/install_list.json /chip_prod/etc/app/install_list                         <.json /vendor/etc/app/insip_prod/etc/app/install_list.json /vendor/etc/app/ins                         <tall_list.json; echo PROBist.json /vendor/etc/app/install_list.json; echo PROB                         <E_END
+PROBE_BEGIN
+ls: /sys_prod/etc/app: No such file or directory
+ls: /chip_prod/etc/app: No such file or directory
+ls: /vendor/etc/app: No such file or directory
+default_app.json   install_list_capability.json   uninstall_list.json
+install_list.json  install_list_permissions.json
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.systemui",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.launcher",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.settings",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.note",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.settingsdata",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.screenshot",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.samples.clock",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.samples.airquality",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.example.distributedcalc",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.samples.flashlight",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.samples.ecg",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.photos",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.samples.screenrecorder",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.distributedmusicplayer",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.camera",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.devicemanagerui",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.dlpmanager",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.example.kikakeyboard",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.medialibrary.MediaLibraryData",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.ringtonelibrary.RingtoneLibraryData",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.callui",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.mms",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.contacts",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.permissionmanager",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.settings.faceauth",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.useriam.authwidget",
+/system/etc/app/install_lem/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.filepicker",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.global.systemres",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.contactsdataability",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.arkwebcore",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.telephony.resources",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.download",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.telephonydataability",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.UserFile.ExternalFileManager",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.gameperceptio",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.backgroundtaskmgr.resources",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/ohos.sample.shopping",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.wallpaper",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.inputmethodchoosedialog",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.sharepickerdialog",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.pasteboarddialog",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.amsdialog",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.usb.right",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.certificatemanager",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.powerdialog",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.notificationdialog",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.formrenderservice",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.updateapp",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.spooler",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.calendardata",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.usb.function",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/VpnDialog",
+/system/etc/app/install_list.json:            "app_dir" : "/system/app/com.ohos.dhardwareui",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.security.privacycenter",
+/system/etc/app/install_list.json:            "app_dir": "/system/app/com.ohos.browser",
+grep: /sys_prod/etc/app/install_list.json: No such file or directory
+grep: /chip_prod/etc/app/install_list.json: No such file or directory
+grep: /vendor/etc/app/install_list.json: No such file or directory
+PROBE_END
+# [  170.802007] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.004830] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.206979] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.408937] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.610901] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.812743] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.014610] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.216483] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.418303] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.620104] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.821873] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  173.023683] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  173.225452] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  173.427248] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  173.617347] kauditd_printk_skb: 59 callbacks suppressed
+[  173.617352] audit: type=1400 audit(1793867515.648:3841): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.617376] audit: type=1400 audit(1793867515.648:3842): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.617388] audit: type=1400 audit(1793867515.648:3843): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.617399] audit: type=1400 audit(1793867515.648:3844): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.628998] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  173.830746] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  173.917475] audit: type=1400 audit(1793867515.948:3845): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.917498] audit: type=1400 audit(1793867515.948:3846): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.917509] audit: type=1400 audit(1793867515.948:3847): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.917520] audit: type=1400 audit(1793867515.948:3848): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  174.032482] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  174.217599] audit: type=1400 audit(1793867516.248:3849): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  174.217621] audit: type=1400 audit(1793867516.248:3850): avc:  denied  { ioctl } for  pid=595 comm="OS_IPC_1_617" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  174.234360] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  174.436190] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  174.637976] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  174.839729] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  175.041544] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  175.243347] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  175.445154] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

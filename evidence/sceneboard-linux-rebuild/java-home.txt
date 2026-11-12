@@ -1,0 +1,1 @@
+/home/<user>/ohos/validation/sceneboard-linux-20261105/java/openjdk8

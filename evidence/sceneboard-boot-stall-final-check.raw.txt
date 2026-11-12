@@ -1,0 +1,50 @@
+
+# [  439.330594] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  439.343683] audit: type=1400 audit(1793866390.616:7789): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  439.343704] audit: type=1400 audit(1793866390.616:7790): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  439.343716] audit: type=1400 audit(1793866390.616:7791): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  439.343726] audit: type=1400 audit(1793866390.616:7792): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  439.531316] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  439.644008] audit: type=1400 audit(1793866390.919:7793): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  439.644029] audit: type=1400 audit(1793866390.919:7794): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  439.732022] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; param get persist.bms.test-upgrade; sqlite3 -readonly "$sc get persist.bms.test-upgrade; sqlite3 -readonly "$sc                         <bdb" "select count(*) frorade; sqlite3 -readonly "$scbdb" "select count(*) fro                         <m installed_bundle where $scbdb" "select count(*) from installed_bundle where                          <KEY='com.ohos.sceneboard'from installed_bundle where KEY='com.ohos.sceneboard'                         <;"; cat /data/service/el1re KEY='com.ohos.sceneboard';"; cat /data/service/el1                         </public/bms/bundle_managerd';"; cat /data/service/el1/public/bms/bundle_manage                         <r_service/bundle_user_infel1/public/bms/bundle_manager_service/bundle_user_inf                         <o.json; echo PROBE_END
+PROBE_BEGIN
+Get parameter "persist.bms.test-upgrade" fail! errNum is:106!
+0
+{
+    "com.ohos.launcher_100": {
+        "disabledAbilities": [],
+        "enabled": false,
+        "overlayState": [],
+        "setEnabledCaller": "bms",
+        "userId": 100
+    },
+    "com.ohos.systemui_0": {
+        "disabledAbilities": [],
+        "enabled": false,
+        "overlayState": [],
+        "setEnabledCaller": "bms",
+        "userId": 0
+    }
+}PROBE_END
+# [  439.932754] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  440.133958] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  440.334819] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  440.535602] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  440.736357] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  440.937091] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  441.137810] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  441.338537] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  441.539275] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  441.740036] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  441.940740] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  442.141441] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  442.342148] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  442.542877] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  442.743647] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  442.944411] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  443.145115] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  443.345833] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  443.546591] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

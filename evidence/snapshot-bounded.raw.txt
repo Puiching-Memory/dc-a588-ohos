@@ -1,0 +1,61 @@
+
+# echo PROBE_BEGIN; snapshot_display -i 0 -w 640 -h 360 -f /data/local/tmp/curhot_display -i 0 -w 640 -h 360 -f /data/local/tmp/cur                         <sor-audit-small.jpeg; hilh 360 -f /data/local/tmp/cursor-audit-small.jpeg; hil                         <og -x -P 722 | tail -12; cursor-audit-small.jpeg; hilog -x -P 722 | tail -12;                          <hilog -x -P 322 | grep -ihilog -x -P 722 | tail -12; hilog -x -P 322 | grep -i                         <E "DrawPointer|move|SetBo2; hilog -x -P 322 | grep -iE "DrawPointer|move|SetBo                         <unds|displayId|show succe -iE "DrawPointer|move|SetBounds|displayId|show succe                         <ss" | tail -15; echo PROBtBounds|displayId|show success" | tail -15; echo PROB                         <E_END
+PROBE_BEGIN
+fileType: 
+process: display 0, file type: jpeg, width: 1920, height: 1080
+
+error: snapshot display 0, write to /data/local/tmp/cursor-audit-small.jpeg as jpeg failed!
+11-05 10:06:20.463   722   722 E C02515/DISP: [0;32;31m[SetMetadata:92] <private> is not supported[m
+11-05 10:06:20.463   722   722 E C02515/METADATA_SRV: [0;32;31m[SetMetadata:136]  fail[m
+11-05 10:06:20.463   722   722 E C01401/Bufferqueue: <surface_buffer_impl.cpp:714-SetMetadata>: SetMetadata Failed with -5
+11-05 10:06:20.476   722   722 E C02515/DISP: [0;32;31m[GetMetadata:98] <private> is not supported[m
+11-05 10:06:20.476   722   722 E C02515/DISP: [0;32;31m[GetMetadata:98] <private> is not supported[m
+11-05 10:06:20.476   722   722 E C02515/DISP: [0;32;31m[GetMetadata:98] <private> is not supported[m
+11-05 10:06:20.476   722   722 E C02515/DISP: [0;32;31m[GetMetadata:98] <private> is not supported[m
+11-05 10:06:20.476   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:06:20.478   722   722 I C01400/OpenGLWrapper: CreateEglSurface hasColorSpaceSupport_: 1,hasWideColorAndHdrSupport_ 0 , requestWideColor 0
+11-05 10:06:20.479   722   722 E C02515/DISP: [0;32;31m[SetMetadata:92] <private> is not supported[m
+11-05 10:06:20.479   722   722 E C02515/METADATA_SRV: [0;32;31m[SetMetadata:136]  fail[m
+11-05 10:06:20.479   722   722 E C01401/Bufferqueue: <surface_buffer_impl.cpp:714-SetMetadata>: SetMetadata Failed with -5
+11-05 10:06:19.499   322   579 I C02804/PointerDrawingManager: [P:M:1822|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.555   322   579 I C02804/PointerDrawingManager: [P:M:1831|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.579   322   579 I C02804/PointerDrawingManager: [P:M:1836|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.651   322   579 I C02804/PointerDrawingManager: [P:M:1847|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.675   322   579 I C02804/PointerDrawingManager: [P:M:1852|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.755   322   579 I C02804/PointerDrawingManager: [P:M:1864|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.779   322   579 I C02804/PointerDrawingManager: [P:M:1869|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.851   322   579 I C02804/PointerDrawingManager: [P:M:1880|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.875   322   579 I C02804/PointerDrawingManager: [P:M:1885|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.931   322   579 I C02804/PointerDrawingManager: [P:M:1894|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:19.963   322   579 I C02804/PointerDrawingManager: [P:M:1900|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:20.043   322   579 I C02804/PointerDrawingManager: [P:M:1912|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:20.067   322   579 I C02804/PointerDrawingManager: [P:M:1917|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:20.107   322   579 I C02804/PointerDrawingManager: [P:M:1924|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:06:20.179   322   579 I C02804/PointerDrawingManager: [P:M:1935|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+PROBE_END
+# [  170.697883] usb 3-1: USB disconnect, device number 3
+[  170.698738] [pid=191][ueventd][INFO][ueventd_device_handler.c:533]HandleOtherDeviceEvent, devPath = /dev/input, devName = event7
+[  170.698751] [pid=191][ueventd][INFO][ueventd_device_handler.c:236]unlink /dev/input/event7
+[  170.699328] [pid=191][ueventd][INFO][ueventd_device_handler.c:236]unlink /dev/hidraw0
+[  170.701447] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 6 pid 322 key: input.pointer.device
+[  170.701588] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:72840
+[  170.701607] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:72840
+[  170.701646] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:72840
+[  170.701660] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:72840
+[  170.702192] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.708987] [pid=191][ueventd][INFO][ueventd_device_handler.c:236]unlink /dev/bus/usb/003/003
+[  170.724627] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.403283] hungtask_user process 2081 is kicked
+[  171.403357] APPSPAWN: [appspawn_kickdog.c:83]Nweb kick 4
+[  173.595549] kauditd_printk_skb: 82 callbacks suppressed
+[  173.595558] audit: type=1400 audit(1793844401.242:3962): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.595592] audit: type=1400 audit(1793844401.242:3963): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.595603] audit: type=1400 audit(1793844401.242:3964): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.595615] audit: type=1400 audit(1793844401.242:3965): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.895662] audit: type=1400 audit(1793844401.542:3966): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.895692] audit: type=1400 audit(1793844401.542:3967): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.895704] audit: type=1400 audit(1793844401.542:3968): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.895715] audit: type=1400 audit(1793844401.542:3969): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  174.195776] audit: type=1400 audit(1793844401.842:3970): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  174.195803] audit: type=1400 audit(1793844401.842:3971): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+

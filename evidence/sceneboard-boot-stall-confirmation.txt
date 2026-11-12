@@ -1,0 +1,14 @@
+
+# [  361.843191] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; param get const.product.software; param get const.product. get const.product.software; param get const.product.                         <brand; param get const.prre; param get const.product.brand; param get const.pr                         <oduct.name; param get conct.brand; param get const.product.name; param get con                         <st.product.version; sqlit.product.name; param get const.product.version; sqlit                         <e3 -readonly "$scbdb" "seconst.product.version; sqlite3 -readonly "$scbdb" "se                         <lect count(*) from installite3 -readonly "$scbdb" "select count(*) from instal                         <led_bundle where KEY like"select count(*) from installed_bundle where KEY like                         < '%sceneboard%'; select ctalled_bundle where KEY like '%sceneboard%'; select c                         <ount(*) from preinstalledike '%sceneboard%'; select count(*) from preinstalled                         <_bundle;"; sha256sum /syst count(*) from preinstalled_bundle;"; sha256sum /sys                         <tem/app/SceneBoard/SceneBled_bundle;"; sha256sum /system/app/SceneBoard/SceneB                         <oard.hap; echo PROBE_END
+PROBE_BEGIN
+Get parameter "const.product.software" fail! errNum is:106!
+default 
+Rockchip OpenHarmony 6.1 LTS 
+Get parameter "const.product.version" fail! errNum is:106!
+0
+44
+7b21b08807499486d7ff0b711e95f2d6d8d33eeb2a23450bd1b0ed396f97163f  /system/app/SceneBoard/SceneBoard.hap
+PROBE_END
+# [  362.849024] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

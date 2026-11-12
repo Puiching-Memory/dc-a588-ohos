@@ -1,0 +1,92 @@
+diff --git a/wmserver/src/input_window_monitor.cpp b/wmserver/src/input_window_monitor.cpp
+index 8b71ee8..b3ba1fe 100644
+--- a/wmserver/src/input_window_monitor.cpp
++++ b/wmserver/src/input_window_monitor.cpp
+@@ -111,6 +111,12 @@ void InputWindowMonitor::UpdateDisplayInfo(const std::vector<sptr<DisplayInfo>>&
+         if (displayInfo == nullptr) {
+             continue;
+         }
++        const auto screenInfo = DisplayManagerServiceInner::GetInstance().GetScreenInfoByDisplayId(
++            displayInfo->GetDisplayId());
++        if (screenInfo == nullptr || screenInfo->GetRsId() == SCREEN_ID_INVALID) {
++            WLOGFE("No render screen for display %{public}" PRIu64, displayInfo->GetDisplayId());
++            continue;
++        }
+         uint32_t displayWidth = static_cast<uint32_t>(displayInfo->GetWidth());
+         uint32_t displayHeight = static_cast<uint32_t>(displayInfo->GetHeight());
+         int32_t offsetX = displayInfo->GetOffsetX();
+@@ -138,9 +144,10 @@ void InputWindowMonitor::UpdateDisplayInfo(const std::vector<sptr<DisplayInfo>>&
+             .direction = GetDisplayDirectionForMmi(displayInfo->GetRotation()),
+             .displayDirection = GetDisplayDirectionForMmi(displayInfo->GetRotation()),
+             .screenArea = {
+-                .id = static_cast<int32_t>(displayInfo->GetDisplayId()),
++                .id = static_cast<int32_t>(screenInfo->GetScreenId()),
+                 .area = { offsetX, offsetY, static_cast<int32_t>(displayWidth), static_cast<int32_t>(displayHeight) }
+-            }
++            },
++            .rsId = screenInfo->GetRsId()
+         };
+         auto displayIter = std::find_if(displayInfoVector.begin(), displayInfoVector.end(),
+             [&display](MMI::DisplayInfo& displayInfoTmp) {
+@@ -151,9 +158,9 @@ void InputWindowMonitor::UpdateDisplayInfo(const std::vector<sptr<DisplayInfo>>&
+         } else {
+             displayInfoVector.emplace_back(display);
+         }
+-        WLOGFD("UpdateDisplayInfo, displayId: %{public}d, displayRect: "
++        WLOGFI("UpdateDisplayInfo, displayId: %{public}d, screenId: %{public}d, rsId: %{public}" PRIu64 ", displayRect: "
+             "[%{public}d, %{public}d, %{public}u, %{public}u]",
+-            display.id, display.x, display.y, display.width, display.height);
++            display.id, display.screenArea.id, display.rsId, display.x, display.y, display.width, display.height);
+     }
+ }
+ 
+@@ -161,9 +168,9 @@ void InputWindowMonitor::ConstructScreenInfos(std::vector<MMI::DisplayInfo>& dis
+     std::vector<MMI::ScreenInfo>& screenInfos)
+ {
+     for (auto& displayInfo : displayInfoVector) {
+-        MMI::ScreenInfo screenInfo;
+-        screenInfo.id = displayInfo.id;
+-        screenInfo.uniqueId = "default" + std::to_string(displayInfo.id);
++        MMI::ScreenInfo screenInfo {};
++        screenInfo.id = displayInfo.screenArea.id;
++        screenInfo.uniqueId = "default" + std::to_string(displayInfo.rsId);
+         screenInfo.screenType = MMI::ScreenType::REAL;
+         screenInfo.width = displayInfo.width;
+         screenInfo.height = displayInfo.height;
+@@ -228,6 +235,7 @@ void InputWindowMonitor::TraverseWindowNodes(const std::vector<sptr<WindowNode>>
+             .area = MMI::Rect { areaRect.posX_, areaRect.posY_,
+                 static_cast<int32_t>(areaRect.width_), static_cast<int32_t>(areaRect.height_) },
+             .agentWindowId = static_cast<int32_t>(windowNode->GetWindowId()),
++            .displayId = static_cast<int32_t>(windowNode->GetDisplayId()),
+             .agentPid = windowNode->GetInputEventCallingPid(),
+         };
+ 
+diff --git a/wmserver/test/unittest/input_window_monitor_test.cpp b/wmserver/test/unittest/input_window_monitor_test.cpp
+index 507d7b4..e523d41 100644
+--- a/wmserver/test/unittest/input_window_monitor_test.cpp
++++ b/wmserver/test/unittest/input_window_monitor_test.cpp
+@@ -99,11 +99,11 @@ HWTEST_F(InputWindowMonitorTest, UpdateDisplayInfo01, TestSize.Level1)
+ }
+ 
+ /**
+- * @tc.name: UpdateDisplayInfo02
+- * @tc.desc: UpdateDisplayInfo
++ * @tc.name: UpdateDisplayInfoRejectsMissingScreen
++ * @tc.desc: Do not advertise a display without a corresponding render screen.
+  * @tc.type: FUNC
+  */
+-HWTEST_F(InputWindowMonitorTest, UpdateDisplayInfo02, TestSize.Level1)
++HWTEST_F(InputWindowMonitorTest, UpdateDisplayInfoRejectsMissingScreen, TestSize.Level1)
+ {
+     std::vector<sptr<DisplayInfo>> displayInfos;
+     std::vector<MMI::DisplayInfo> displayInfoVector;
+@@ -112,8 +112,7 @@ HWTEST_F(InputWindowMonitorTest, UpdateDisplayInfo02, TestSize.Level1)
+     sptr<DisplayInfo> displayInfo = new (std::nothrow) DisplayInfo();
+     displayInfos.emplace_back(displayInfo);
+     input_monitor_->UpdateDisplayInfo(displayInfos, displayInfoVector);
+-    displayInfo->waterfallDisplayCompressionStatus_ = true;
+-    ASSERT_NE(0, displayInfoVector.size());
++    ASSERT_TRUE(displayInfoVector.empty());
+ }
+ 
+ /**

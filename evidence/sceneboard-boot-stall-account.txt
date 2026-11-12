@@ -1,0 +1,31 @@
+
+# [  239.176624] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; ls -l /data/service/el1/public/bms; ls -l /data/service/el /data/service/el1/public/bms; ls -l /data/service/el                         <1/public/account; cat /pr/bms; ls -l /data/service/el1/public/account; cat /pr                         <oc/658/maps | grep -E "li/el1/public/account; cat /proc/658/maps | grep -E "li                         <bwms|session_manager" | h/proc/658/maps | grep -E "libwms|session_manager" | h                         <ead -n 12; hilog -x -P 63"libwms|session_manager" | head -n 12; hilog -x -P 63                         <0 | tail -n 65; echo PROB| head -n 12; hilog -x -P 630 | tail -n 65; echo PROB                         <E_END
+PROBE_BEGIN
+total 8192
+drwxr-xr-x 3 foundation system 3452 2026-11-04 11:32 bundle_manager_service
+drwxr-xr-x 2 foundation system 3452 2026-11-04 11:32 bundle_resources
+total 32768
+drwx------ 2 account account 3452 2026-11-04 11:32 0
+drwx------ 2 account account 3452 2026-11-04 11:32 100
+-rw------- 1 account account   43 2026-11-04 11:33 account_index_info.json
+-rw------- 1 account account 1065 2026-11-05 16:05 account_info_digest.json
+-rw------- 1 account account  177 2026-11-04 11:32 account_list.json
+-rw------- 1 account account  309 2026-11-04 11:32 base_os_account_constraints.json
+-rw------- 1 account account   48 2026-11-04 11:32 global_os_account_constraints.json
+-rw------- 1 account account   39 2026-11-04 11:32 specific_os_account_constraints.json
+7ef0f40000-7ef0f5a000 r--p 00000000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef0f5a000-7ef0f88000 r-xp 00019000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef0f88000-7ef0f90000 r--p 00046000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef0f90000-7ef0f91000 rw-p 0004d000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef1140000-7ef1167000 r--p 00000000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef1167000-7ef11b8000 r-xp 00026000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef11b8000-7ef11bf000 r--p 00076000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef11bf000-7ef11c0000 rw-p 0007c000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef3380000-7ef3445000 r--p 00000000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+7ef3445000-7ef35d2000 r-xp 000c4000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+7ef35d2000-7ef35e9000 r--p 00250000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+7ef35e9000-7ef35ea000 rw-p 00266000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+PROBE_END
+# [  239.778945] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

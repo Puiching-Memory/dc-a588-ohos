@@ -1,0 +1,39 @@
+
+# echo PROBE_BEGIN; cat /proc/uptime; cat /proc/bus/input/devices | grep -E "Nproc/uptime; cat /proc/bus/input/devices | grep -E "N                         <ame=|Handlers="; hilog -xs/input/devices | grep -E "Name=|Handlers="; hilog -x                         < -P 321 | grep -iE "Updat "Name=|Handlers="; hilog -x -P 321 | grep -iE "Updat                         <eDisplay|No display|Scree -x -P 321 | grep -iE "UpdateDisplay|No display|Scree                         <nPointer|InitSurface|ScredateDisplay|No display|ScreenPointer|InitSurface|Scre                         <enInfo|displayId|screenIdreenPointer|InitSurface|ScreenInfo|displayId|screenId                         <" | tail -45; snapshot_dicreenInfo|displayId|screenId" | tail -45; snapshot_di                         <splay -f /data/local/tmp/nId" | tail -45; snapshot_display -f /data/local/tmp/                         <cursor-audit.jpeg; ls -l _display -f /data/local/tmp/cursor-audit.jpeg; ls -l                          </data/local/tmp/cursor-aump/cursor-audit.jpeg; ls -l /data/local/tmp/cursor-au                         <dit.jpeg; param get persi-l /data/local/tmp/cursor-audit.jpeg; param get persi                         <st.multimodalinput.cursor-audit.jpeg; param get persist.multimodalinput.cursor                         <.hwcbounds; echo PROBE_ENrsist.multimodalinput.cursor.hwcbounds; echo PROBE_EN                         <D
+PROBE_BEGIN
+74.37 548.24
+N: Name="bt-powerkey"
+H: Handlers=kbd event0 dmcfreq 
+N: Name="rk805 pwrkey"
+H: Handlers=kbd event1 dmcfreq 
+N: Name="headset-keys"
+H: Handlers=kbd event2 dmcfreq 
+N: Name="rockchip-es8388 Headset"
+H: Handlers=event3 
+N: Name="adc-keys"
+H: Handlers=kbd event4 dmcfreq 
+N: Name="rockchip-hdmi0 rockchip-hdmi0"
+H: Handlers=event5 
+N: Name="rockchip-hdmi1 rockchip-hdmi1"
+H: Handlers=event6 
+fileType: 
+process: display 0, file type: jpeg, width: 1920, height: 1080
+
+error: snapshot display 0, write to /data/local/tmp/cursor-audit.jpeg as jpeg failed!
+ls: /data/local/tmp/cursor-audit.jpeg: No such file or directory
+Get parameter "persist.multimodalinput.cursor.hwcbounds" fail! errNum is:106!
+PROBE_END
+# [   76.649075] kauditd_printk_skb: 93 callbacks suppressed
+[   76.649090] audit: type=1400 audit(1793844304.295:2254): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   76.649137] audit: type=1400 audit(1793844304.295:2255): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   76.649149] audit: type=1400 audit(1793844304.295:2256): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   76.649161] audit: type=1400 audit(1793844304.295:2257): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   76.887495] hungtask_user process 219 is kicked
+[   76.887626] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[   76.949194] audit: type=1400 audit(1793844304.595:2258): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   76.949219] audit: type=1400 audit(1793844304.595:2259): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   76.949231] audit: type=1400 audit(1793844304.595:2260): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   76.949242] audit: type=1400 audit(1793844304.595:2261): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   77.249309] audit: type=1400 audit(1793844304.895:2262): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   77.249334] audit: type=1400 audit(1793844304.895:2263): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+

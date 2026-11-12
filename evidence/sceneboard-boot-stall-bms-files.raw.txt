@@ -1,0 +1,79 @@
+
+# [  262.671227] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  262.871942] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  263.072658] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; find /data/service/el1/public/bms/bundle_manager_service -/data/service/el1/public/bms/bundle_manager_service -                         <maxdepth 2 -type f; hilogbms/bundle_manager_service -maxdepth 2 -type f; hilog                         < -x -T AMS | tail -n 18; e -maxdepth 2 -type f; hilog -x -T AMS | tail -n 18;                          <ls /system/bin | grep -iElog -x -T AMS | tail -n 18; ls /system/bin | grep -iE                         < "sqlite|rdb|account|dump8; ls /system/bin | grep -iE "sqlite|rdb|account|dump                         <"; echo PROBE_END
+PROBE_BEGIN
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-dwr
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-wal
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-shm
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db-dwr
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db-wal
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db-shm
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-compare
+/data/service/el1/public/bms/bundle_manager_service/bundle_user_info.json
+11-05 16:10:10.937   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.138   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.338   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.539   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.740   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.941   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.141   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.342   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.543   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.743   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.944   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.145   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.346   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.546   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.747   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+[  263.273459] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+11-05 16:10:13.948   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:14.148   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:14.349   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+dumpcatcher
+hidumper
+i2cdump
+processdump
+sqlite3
+PROBE_END
+# [  263.474877] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  263.676015] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  263.876903] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  264.077703] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  264.278474] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  264.479225] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  264.680015] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  264.880768] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  265.081511] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  265.282247] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  265.467237] kauditd_printk_skb: 145 callbacks suppressed
+[  265.467242] audit: type=1400 audit(1793866216.739:5421): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.467266] audit: type=1400 audit(1793866216.739:5422): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.467278] audit: type=1400 audit(1793866216.739:5423): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.467290] audit: type=1400 audit(1793866216.739:5424): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.482988] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  265.683743] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  265.767597] audit: type=1400 audit(1793866217.043:5425): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.767617] audit: type=1400 audit(1793866217.043:5426): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.767628] audit: type=1400 audit(1793866217.043:5427): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.767639] audit: type=1400 audit(1793866217.043:5428): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  265.884498] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  266.067944] audit: type=1400 audit(1793866217.343:5429): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  266.067965] audit: type=1400 audit(1793866217.343:5430): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  266.085191] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  266.285905] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  266.486661] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  266.687369] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  266.888068] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  266.995542] hungtask_user process 215 is kicked
+[  266.995611] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  267.088774] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  267.289482] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  267.490223] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  267.690941] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  267.891655] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  268.092363] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

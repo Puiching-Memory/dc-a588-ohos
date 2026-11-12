@@ -1,0 +1,10 @@
+
+# echo PROBE_BEGIN; cat /proc/uptime; wc -c /data/local/tmp/libwms-cursor-screproc/uptime; wc -c /data/local/tmp/libwms-cursor-scre                         <en-id.so.gz; ls /dev/inpulocal/tmp/libwms-cursor-screen-id.so.gz; ls /dev/inpu                         <t; cat /sys/class/drm/carcreen-id.so.gz; ls /dev/input; cat /sys/class/drm/car                         <d0-HDMI-A-1/status; cat /nput; cat /sys/class/drm/card0-HDMI-A-1/status; cat /                         <sys/class/drm/card0-HDMI-card0-HDMI-A-1/status; cat /sys/class/drm/card0-HDMI-                         <A-2/status; echo PROBE_ENt /sys/class/drm/card0-HDMI-A-2/status; echo PROBE_EN                         <D
+PROBE_BEGIN
+343.63 2679.37
+0 /data/local/tmp/libwms-cursor-screen-id.so.gz
+event0  event1  event2  event3  event4  event5  event6
+disconnected
+connected
+PROBE_END
+# 

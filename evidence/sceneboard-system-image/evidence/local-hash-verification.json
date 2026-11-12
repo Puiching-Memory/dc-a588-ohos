@@ -1,0 +1,32 @@
+[
+  {
+    "file": "system.img",
+    "sha256": "5a323a9faa43b382a611e8d5690c0ca13a182279d5af5e36347d2bff81937228",
+    "verified": true
+  },
+  {
+    "file": "boot.img",
+    "sha256": "a5e272fa5e8e7cb93007f5a7bfa525904deb85f034ce2722fbb5b24f862a31c6",
+    "verified": true
+  },
+  {
+    "file": "vendor.img",
+    "sha256": "286c8167a330ace12c332634cc1e1afb619edcd26b8a50193566bf17a00c7d4c",
+    "verified": true
+  },
+  {
+    "file": "sys_prod.img",
+    "sha256": "f5410cbc5965587ff9bc72742e3a40b8cabc97e338103074faee2299246018a2",
+    "verified": true
+  },
+  {
+    "file": "chip_prod.img",
+    "sha256": "34014b7f58e3a33ac7dd1ebbc2eab20d75a582ca9ec246ec79981860ac3e4884",
+    "verified": true
+  },
+  {
+    "file": "parameter.txt",
+    "sha256": "35fd1e1f16d63bc62808631c12f11e689a9408f04b324aa6cbc73ae7ad0b3bb9",
+    "verified": true
+  }
+]

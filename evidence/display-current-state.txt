@@ -1,0 +1,33 @@
+
+# [  235.233400] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; cat /proc/uptime; cat /sys/class/drm/card0-HDMI-A-1/statusproc/uptime; cat /sys/class/drm/card0-HDMI-A-1/status                         <; cat /sys/class/drm/cardss/drm/card0-HDMI-A-1/status; cat /sys/class/drm/card                         <0-HDMI-A-1/enabled; cat /tus; cat /sys/class/drm/card0-HDMI-A-1/enabled; cat /                         <sys/class/drm/card0-HDMI-ard0-HDMI-A-1/enabled; cat /sys/class/drm/card0-HDMI-                         <A-2/status; cat /sys/clast /sys/class/drm/card0-HDMI-A-2/status; cat /sys/clas                         <s/drm/card0-HDMI-A-2/enabMI-A-2/status; cat /sys/class/drm/card0-HDMI-A-2/enab                         <led; ls /sys/kernel/debuglass/drm/card0-HDMI-A-2/enabled; ls /sys/kernel/debug                         </dri; snapshot_display -fnabled; ls /sys/kernel/debug/dri; snapshot_display -f                         < /data/local/tmp/cursor-abug/dri; snapshot_display -f /data/local/tmp/cursor-a                         <udit.png; hilog -x -P 321 -f /data/local/tmp/cursor-audit.png; hilog -x -P 321                         < | grep -iE "No display|dr-audit.png; hilog -x -P 321 | grep -iE "No display|d                         <evice.*add|add.*device|In321 | grep -iE "No display|device.*add|add.*device|In                         <itSurface|UpdateDisplayIny|device.*add|add.*device|InitSurface|UpdateDisplayIn                         <fo" | tail -15; ps -ef | |InitSurface|UpdateDisplayInfo" | tail -15; ps -ef |                          <grep -i dumper; echo PROByInfo" | tail -15; ps -ef | grep -i dumper; echo PROB                         <E_END
+PROBE_BEGIN
+235.51 1838.43
+disconnected
+disabled
+disconnected
+disabled
+0  1  128  129
+fileType: 
+error: fileName /data/local/tmp/cursor-audit.png invalid, suffix must be .jpeg
+error: filename /data/local/tmp/cursor-audit.png invalid!
+11-05 10:01:59.535   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.543   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.551   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.559   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.567   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.575   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.583   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.591   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.599   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.607   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.615   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.623   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.631   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.639   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:01:59.647   321   545 E C02805/MouseTransformProcessor: [|176]No display
+hidumper_service 2752  1 0 10:00:50 ?     00:00:00 hidumper_service
+root          3104   223 0 10:01:59 ttyFIQ0 00:00:00 grep -i dumper
+PROBE_END
+# [  235.684282] [BT_RFKILL]: bt shut off power
+

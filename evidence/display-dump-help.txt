@@ -1,0 +1,52 @@
+
+# echo PROBE_BEGIN; hidumper -h | head -70; hidumper -s | head -100; hilog -x per -h | head -70; hidumper -s | head -100; hilog -x                          <-P 667 | grep -iE "MMI|dier -s | head -100; hilog -x -P 667 | grep -iE "MMI|di                         <splay|screen|flush|input|-x -P 667 | grep -iE "MMI|display|screen|flush|input|                         <Update" | tail -70; cat /|display|screen|flush|input|Update" | tail -70; cat /                         <sys/class/drm/card0-HDMI-ut|Update" | tail -70; cat /sys/class/drm/card0-HDMI-                         <A-1/status; cat /sys/clast /sys/class/drm/card0-HDMI-A-1/status; cat /sys/clas                         <s/drm/card0-HDMI-A-2/statMI-A-1/status; cat /sys/class/drm/card0-HDMI-A-2/stat                         <us; echo PROBE_END
+PROBE_BEGIN
+request error
+request error
+11-05 10:00:48.592   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:49.599   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:50.600   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:51.604   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:52.603   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:53.606   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:54.605   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:55.599   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:56.602   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:57.599   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:58.602   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:00:59.602   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:00.606   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:01.606   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:02.603   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:03.603   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:04.606   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:05.606   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:06.610   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:07.610   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:08.610   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:09.610   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:10.612   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:11.612   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:12.613   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:13.612   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:14.612   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:15.612   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:16.609   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:17.612   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:18.623   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:19.623   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:20.619   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:21.618   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:22.612   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:23.619   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:24.615   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:25.622   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:26.622   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:27.623   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:28.616   667  1415 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+11-05 10:01:29.619   667  1416 I C01202/Unordered: Pid 322 publish usual.event.bluetooth.host.STATE_UPDATE to -1 end(1,1,0,0)
+disconnected
+disconnected
+PROBE_END
+# [  205.555692] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+

@@ -1,0 +1,112 @@
+
+# echo PROBE_BEGIN; sha256sum /dev/block/by-name/system; echo PROBE_END
+PROBE_BEGIN
+[  171.490722] hungtask_user process 2074 is kicked
+[  171.490799] APPSPAWN: [appspawn_kickdog.c:83]Nweb kick 4
+[  173.648887] kauditd_printk_skb: 63 callbacks suppressed
+[  173.648898] audit: type=1400 audit(1793849824.587:3781): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.648948] audit: type=1400 audit(1793849824.590:3782): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.648960] audit: type=1400 audit(1793849824.590:3783): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.648972] audit: type=1400 audit(1793849824.590:3784): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.949174] audit: type=1400 audit(1793849824.890:3785): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.949260] audit: type=1400 audit(1793849824.890:3786): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.949273] audit: type=1400 audit(1793849824.890:3787): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.949284] audit: type=1400 audit(1793849824.890:3788): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  174.249430] audit: type=1400 audit(1793849825.190:3789): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  174.249484] audit: type=1400 audit(1793849825.190:3790): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  177.013363] hungtask_user process 215 is kicked
+[  177.013498] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  178.753569] kauditd_printk_skb: 58 callbacks suppressed
+[  178.753583] audit: type=1400 audit(1793849829.694:3849): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  178.753637] audit: type=1400 audit(1793849829.694:3850): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  178.753650] audit: type=1400 audit(1793849829.694:3851): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  178.753662] audit: type=1400 audit(1793849829.694:3852): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  179.053798] audit: type=1400 audit(1793849829.994:3853): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  179.053858] audit: type=1400 audit(1793849829.994:3854): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  179.053872] audit: type=1400 audit(1793849829.994:3855): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  179.053883] audit: type=1400 audit(1793849829.994:3856): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  179.354126] audit: type=1400 audit(1793849830.294:3857): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  179.354184] audit: type=1400 audit(1793849830.294:3858): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+62ae221436cd3b36289da08ccc86591e1415e81d4193ec433119b4598388a0e9  /dev/block/by-name/system
+PROBE_END
+# [  181.500876] hungtask_user process 2074 is kicked
+[  181.500934] APPSPAWN: [appspawn_kickdog.c:83]Nweb kick 4
+[  183.856795] kauditd_printk_skb: 58 callbacks suppressed
+[  183.856807] audit: type=1400 audit(1793849834.800:3917): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.856845] audit: type=1400 audit(1793849834.800:3918): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.856857] audit: type=1400 audit(1793849834.800:3919): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.856868] audit: type=1400 audit(1793849834.800:3920): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.887349] hungtask_user process 691 is kicked
+[  183.887412] XCollie: Send kick to hungtask Successful
+[  183.887412] 
+[  184.156920] audit: type=1400 audit(1793849835.097:3921): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.156944] audit: type=1400 audit(1793849835.097:3922): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.156955] audit: type=1400 audit(1793849835.097:3923): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.156967] audit: type=1400 audit(1793849835.097:3924): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.457039] audit: type=1400 audit(1793849835.400:3925): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.457062] audit: type=1400 audit(1793849835.400:3926): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  187.013686] hungtask_user process 215 is kicked
+[  187.013803] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  188.958871] kauditd_printk_skb: 58 callbacks suppressed
+[  188.958883] audit: type=1400 audit(1793849839.900:3985): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  188.958919] audit: type=1400 audit(1793849839.900:3986): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  188.958931] audit: type=1400 audit(1793849839.900:3987): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  188.958942] audit: type=1400 audit(1793849839.900:3988): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  189.258983] audit: type=1400 audit(1793849840.200:3989): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  189.259013] audit: type=1400 audit(1793849840.200:3990): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  189.259024] audit: type=1400 audit(1793849840.200:3991): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  189.259035] audit: type=1400 audit(1793849840.200:3992): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  189.559093] audit: type=1400 audit(1793849840.500:3993): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  189.559120] audit: type=1400 audit(1793849840.500:3994): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  190.740280] SAMGR: rm SA:3508_94
+[  190.740656] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 34 pid 218 key: ohos.ctl.stop
+[  190.740907] [pid=1][Init][INFO][init_common_service.c:786]stop service sandbox_manager_service, pid 2080.
+[  190.740970] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52823
+[  190.740989] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52823
+[  190.741016] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52823
+[  190.741023] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52823
+[  190.741030] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52823
+[  190.741037] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52823
+[  190.741046] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52823
+[  190.741052] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52822
+[  190.741060] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52822
+[  190.741199] SAMGR: Scheduler proc:sandbox_manager_service kill pid:2080,3076_0_1ms
+[  190.743789] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process Unknown(pid 2080) exit with signal : 9
+[  190.744066] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2080 uid:3076 status:9.
+[  190.744129] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52819
+[  190.806112] SAMGR: rm SA:3507_93
+[  190.806453] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 35 pid 218 key: samgr.cache.sa
+[  190.806622] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52757
+[  190.806663] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52757
+[  190.806715] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52757
+[  190.806835] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 36 pid 218 key: ohos.ctl.stop
+[  190.807150] [pid=1][Init][INFO][init_common_service.c:786]stop service local_code_sign, pid 2150.
+[  190.807273] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807311] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807350] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807369] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807390] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807406] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807428] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807445] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807465] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52756
+[  190.807542] SAMGR: Scheduler proc:local_code_sign kill pid:2150,3074_0_1ms
+[  190.809384] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process Unknown(pid 2150) exit with signal : 9
+[  190.809617] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:2150 uid:3074 status:9.
+[  190.809670] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:52754
+[  191.511027] hungtask_user process 2074 is kicked
+[  191.511094] APPSPAWN: [appspawn_kickdog.c:83]Nweb kick 4
+[  191.838798] hungtask_base whitelist[0]-init-1
+[  191.838972] hungtask_base whitelist[1]-appspawn-215
+[  194.061147] kauditd_printk_skb: 58 callbacks suppressed
+[  194.061156] audit: type=1400 audit(1793849845.000:4053): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.061186] audit: type=1400 audit(1793849845.000:4054): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.061198] audit: type=1400 audit(1793849845.000:4055): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.061209] audit: type=1400 audit(1793849845.000:4056): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.361261] audit: type=1400 audit(1793849845.304:4057): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.361288] audit: type=1400 audit(1793849845.304:4058): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.361300] audit: type=1400 audit(1793849845.304:4059): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.361311] audit: type=1400 audit(1793849845.304:4060): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.661370] audit: type=1400 audit(1793849845.600:4061): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  194.661394] audit: type=1400 audit(1793849845.600:4062): avc:  denied  { ioctl } for  pid=572 comm="OS_IPC_0_651" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+

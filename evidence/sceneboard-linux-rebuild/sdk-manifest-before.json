@@ -1,0 +1,494 @@
+{
+  "copy": [
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.pcService.statusBar.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.pcService.statusBar.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.multimodalAwareness.motion.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.multimodalAwareness.motion.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.hds.hdsBaseComponent.d.ets",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.hds.hdsBaseComponent.d.ets",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.hds.HdsVisualComponent.d.ets",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.hds.HdsVisualComponent.d.ets",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.hds.hdsDrawable.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.hds.hdsDrawable.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@kit.UIDesignKit.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@kit.UIDesignKit.json",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/kits/@kit.UIDesignKit.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/kit_configs/@kit.UIDesignKit.json",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/HdsVisualComponent.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/components/HdsVisualComponent.json",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/tsconfig.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/tsconfig.json",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.sceneSessionManager.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.sceneSessionManager.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.screenSessionManager.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.screenSessionManager.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.sessionManagerService.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.sessionManagerService.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.space_ability_napi.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.space_ability_napi.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.distributedHardware.mechanicManager.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.distributedHardware.mechanicManager.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/feature/screenlockcomponent/@ohos.effectKit.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.effectKit.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/feature/screenlockcomponent/@ohos.screenLock.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.screenLock.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/feature/screenlockcomponent/sysResource.js",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/sysResource.js",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/feature/screenlockcomponent/@ohos.account.osAccount.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.account.osAccount.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/feature/screenlockcomponent/@ohos.power.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.power.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/feature/aod/@ohos.sceneboard.aod.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.sceneboard.aod.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/feature/aod/@ohos.swingability.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.swingability.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.transactionManager.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.transactionManager.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.migrate.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.migrate.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.security.privacyIndicatorManager.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.security.privacyIndicatorManager.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.graphic.apsManager.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.graphic.apsManager.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.pcService.statusBar.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.pcService.statusBar.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.pcService.scb_mode_change_napi.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.pcService.scb_mode_change_napi.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.nearlink.remoteDevice.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.nearlink.remoteDevice.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.graphics.uiEffect.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.graphics.uiEffect.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.virtService.bmsBrokerAdapter.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.virtService.bmsBrokerAdapter.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/@ohos.arkui.ArcList.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/js/api/@ohos.arkui.ArcList.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/@ohos.arkui.ArcList.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.arkui.ArcList.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/@ohos.arkui.ArcAlphabetIndexer.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.arkui.ArcAlphabetIndexer.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/@ohos.arkui.ArcAlphabetIndexer.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/js/api/@ohos.arkui.ArcAlphabetIndexer.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/arcAlphabetIndexer.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/components/arcAlphabetIndexer.json",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/arcList.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/components/arcList.json",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/arcListItem.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/components/arcListItem.json",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/@ohos.telephony.esim.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/js/api/@ohos.telephony.esim.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/@ohos.telephony.esim.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.telephony.esim.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/dynamic_component.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/component/dynamic_component.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/dynamic_component.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/declarations/dynamic_component.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/dynamic_component.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/components/dynamic_component.json",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/Scene.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/graphics3d/Scene.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.app.form.formInfo.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.app.form.formInfo.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.xrGlassesService.xrGlassesAppService.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.xrGlassesService.xrGlassesAppService.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/text.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/declarations/text.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/text_common.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/declarations/text_common.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/text.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/component/text.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/text_common.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/component/text_common.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/ShortcutInfo.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/bundleManager/ShortcutInfo.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.application.BackupExtensionAbility.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.application.BackupExtensionAbility.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    }
+  ],
+  "replace": [
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/common.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/component/common.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/common.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/declarations/common.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/swiper.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/component/swiper.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/swiper.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/declarations/swiper.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.displayengine.displayengine_napi.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.displayengine.displayengine_napi.d.ts",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.multimedia.audio.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.multimedia.audio.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.window.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.window.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.security.appLock.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.security.appLock.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.utilityApplication.parentControl.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.utilityApplication.parentControl.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/effect_component.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/component/effect_component.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/effect_component.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/declarations/effect_component.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.resourceschedule.animationPolicy.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.resourceschedule.animationPolicy.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.ai.vision.imageGeneration.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.ai.vision.imageGeneration.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.fusionConnectivityExt.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.fusionConnectivityExt.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.app.form.formHost.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.app.form.formHost.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/product/watch/src/main/ets/common/interfaces/form_component.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/declarations/form_component.d.ts",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/tsconfig.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/tsconfig.json",
+      "sourceExists": false,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/ohos/ets/kits/@kit.UIDesignKit.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/ohos/ets/build-tools/ets-loader/kit_configs/@kit.UIDesignKit.json",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.hds.hdsBaseComponent.d.ets",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/ohos/ets/api/@ohos.hds.hdsBaseComponent.d.ets",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.hds.hdsBaseComponent.d.ets",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.hds.hdsBaseComponent.d.ets",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.hds.HdsVisualComponent.d.ets",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.hds.HdsVisualComponent.d.ets",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/kits/@kit.UIDesignKit.d.ts",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@kit.UIDesignKit.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/kit_configs/@kit.UIDesignKit.json",
+      "sourceExists": false,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/HdsVisualComponent.json",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/build-tools/ets-loader/components/HdsVisualComponent.json",
+      "sourceExists": true,
+      "destinationExists": false
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.bundle.launcherBundleManager.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.bundle.launcherBundleManager.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    },
+    {
+      "source": "/home/<user>/ohos/src/applications/standard/window_scene_board/staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.app.ability.AbilityConstant.d.ts",
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.app.ability.AbilityConstant.d.ts",
+      "sourceExists": true,
+      "destinationExists": true
+    }
+  ],
+  "remove": [
+    {
+      "source": null,
+      "destination": "/home/<user>/ohos/src/prebuilts/ohos-sdk/linux/23/ets/api/@ohos.hds.hdsBaseComponent.d.ts",
+      "sourceExists": null,
+      "destinationExists": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+
+# [  180.154724] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  180.355448] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  180.556123] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; bm dump -n com.ohos.sceneboard; ls -lh /data/log/hilog; himp -n com.ohos.sceneboard; ls -lh /data/log/hilog; hi                         <dumper -s 200 -a "-h"; ec; ls -lh /data/log/hilog; hidumper -s 200 -a "-h"; ec                         <ho PROBE_END
+PROBE_BEGIN
+error: failed to get information and the parameters may be wrong.
+total 0
+[  180.708826] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 21 pid 218 key: ohos.ctl.start
+[  180.708925] [pid=1][Init][INFO][init_service_manager.c:1306]Service info hidumper_service start service bt ext parameter hidumper_service|1212#0#load##-1#.
+[  180.708949] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:hidumper_service
+[  180.709893] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info hidumper_service(pid 1887 uid 1212)
+[  180.709906] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793866131-985284156, prefork:1793866131-985351531, startedtime:1793866131-986220114
+[  180.710189] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:62805
+[  180.710226] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:62805
+[  180.710245] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:62805
+[  180.710251] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:62805
+[  180.710258] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:62805
+[  180.710363] SAMGR: Start dynamic proc:hidumper_service,1212,0_2ms
+[  180.710862] [pid=1887][Init][INFO][init_common_service.c:471]Deal service hidumper_service job end
+[  180.711847] [pid=1887][Init][INFO][init_service.c:235]ServiceExec hidumper_service
+[  180.725370] SAFWK: operator() Set process name to hidumper_service
+[  180.756933] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  180.759154] SAMGR: SA:1212 OpenSo 34ms
+[  180.762051] SAMGR: insert SA:1212_89
+[  180.762396] SAFWK: Publish SA:1212 result:0,spend:1ms
+[  180.762418] SAFWK: Start OnStart-SA:1212 finished, spend:1 ms
+[  180.762503] SAFWK: StartSystemAbilityTask hidumper_service SA:1212 init finished, 37 ms
+request error
+PROBE_END
+# [  180.958592] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  181.160011] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  181.360976] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  181.561788] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  181.762529] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  181.963292] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  182.163986] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  182.364690] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  182.565404] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  182.766090] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  182.966794] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  183.167503] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  183.368441] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  183.569224] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  183.766344] hungtask_user process 658 is kicked
+[  183.766382] XCollie: Send kick to hungtask Successful
+[  183.766382] 
+[  183.769262] kauditd_printk_skb: 84 callbacks suppressed
+[  183.769265] audit: type=1400 audit(1793866135.039:4197): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.769307] audit: type=1400 audit(1793866135.039:4198): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.769334] audit: type=1400 audit(1793866135.039:4199): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.769354] audit: type=1400 audit(1793866135.039:4200): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  183.769996] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  183.970710] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  184.069658] audit: type=1400 audit(1793866135.339:4201): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.069716] audit: type=1400 audit(1793866135.339:4202): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.069750] audit: type=1400 audit(1793866135.343:4203): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.069771] audit: type=1400 audit(1793866135.343:4204): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.171493] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  184.370029] audit: type=1400 audit(1793866135.643:4205): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.370071] audit: type=1400 audit(1793866135.643:4206): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  184.372302] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  184.573161] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  184.773915] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  184.974673] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  185.175450] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  185.376234] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  185.577426] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  185.778362] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  185.979481] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  186.180396] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  186.381179] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  186.581932] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

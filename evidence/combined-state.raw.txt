@@ -1,0 +1,44 @@
+
+# echo PROBE_BEGIN; cat /proc/uptime; cat /sys/class/drm/card0-HDMI-A-1/statusproc/uptime; cat /sys/class/drm/card0-HDMI-A-1/status                         <; cat /proc/bus/input/devss/drm/card0-HDMI-A-1/status; cat /proc/bus/input/dev                         <ices | grep -E "Name=|Hantus; cat /proc/bus/input/devices | grep -E "Name=|Han                         <dlers="; ps -ef | grep -Edevices | grep -E "Name=|Handlers="; ps -ef | grep -E                         < "multimodalinput|render_Handlers="; ps -ef | grep -E "multimodalinput|render_                         <service"; hilog -x -e "No -E "multimodalinput|render_service"; hilog -x -e "No                         < display|MS116|InitSurfacer_service"; hilog -x -e "No display|MS116|InitSurfac                         <e completed" -z 15; ls -l"No display|MS116|InitSurface completed" -z 15; ls -l                         <d /data/local/tmp /data /face completed" -z 15; ls -ld /data/local/tmp /data /                         <data/local; echo PROBE_EN -ld /data/local/tmp /data /data/local; echo PROBE_EN                         <D
+PROBE_BEGIN
+95.98 713.43
+connected
+N: Name="bt-powerkey"
+H: Handlers=kbd event0 dmcfreq 
+N: Name="rk805 pwrkey"
+H: Handlers=kbd event1 dmcfreq 
+N: Name="headset-keys"
+H: Handlers=kbd event2 dmcfreq 
+N: Name="rockchip-es8388 Headset"
+H: Handlers=event3 
+N: Name="adc-keys"
+H: Handlers=kbd event4 dmcfreq 
+N: Name="rockchip-hdmi0 rockchip-hdmi0"
+H: Handlers=event5 
+N: Name="rockchip-hdmi1 rockchip-hdmi1"
+H: Handlers=event6 
+N: Name="PixArt Dell MS116 USB Optical Mouse"
+H: Handlers=event7 dmcfreq 
+input          322     1 2 10:03:48 ?     00:00:01 multimodalinput
+graphics       722     1 6 10:03:49 ?     00:00:05 render_service
+root          2370   220 0 10:05:21 ttyFIQ0 00:00:00 grep -E multimodalinput|render_service
+Mutlti commands can't be used in combination [CODE: -31]
+drwxrwx--x 18 system system 4096 2026-11-04 16:25 /data
+drwxr-x--x  6 root   root   3452 2026-11-04 11:32 /data/local
+drwxrwx--x  3 shell  shell  3452 2026-11-04 11:32 /data/local/tmp
+PROBE_END
+# [   96.888149] hungtask_user process 219 is kicked
+[   96.888265] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[   97.062014] kauditd_printk_skb: 414 callbacks suppressed
+[   97.062023] audit: type=1400 audit(1793844324.708:2882): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.062054] audit: type=1400 audit(1793844324.708:2883): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.062066] audit: type=1400 audit(1793844324.708:2884): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.062077] audit: type=1400 audit(1793844324.708:2885): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.362140] audit: type=1400 audit(1793844325.008:2886): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.362166] audit: type=1400 audit(1793844325.008:2887): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.362177] audit: type=1400 audit(1793844325.008:2888): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.362187] audit: type=1400 audit(1793844325.008:2889): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.662266] audit: type=1400 audit(1793844325.308:2890): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.662291] audit: type=1400 audit(1793844325.308:2891): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   97.777384] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

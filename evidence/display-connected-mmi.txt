@@ -1,0 +1,27 @@
+
+# echo PROBE_BEGIN; cat /proc/uptime; cat /proc/bus/input/devices | grep -E "Nproc/uptime; cat /proc/bus/input/devices | grep -E "N                         <ame=|Handlers="; hilog -xs/input/devices | grep -E "Name=|Handlers="; hilog -x                         < -P 321 | grep -iE "Updat "Name=|Handlers="; hilog -x -P 321 | grep -iE "Updat                         <eDisplay|No display|Scree -x -P 321 | grep -iE "UpdateDisplay|No display|Scree                         <nPointer|InitSurface|ScredateDisplay|No display|ScreenPointer|InitSurface|Scre                         <enInfo|displayId|screenIdreenPointer|InitSurface|ScreenInfo|displayId|screenId                         <" | tail -45; snapshot_dicreenInfo|displayId|screenId" | tail -45; snapshot_di                         <splay -f /data/local/tmp/nId" | tail -45; snapshot_display -f /data/local/tmp/                         <cursor-audit.jpeg; ls -l _display -f /data/local/tmp/cursor-audit.jpeg; ls -l                          </data/local/tmp/cursor-aump/cursor-audit.jpeg; ls -l /data/local/tmp/cursor-au                         <dit.jpeg; param get persi-l /data/local/tmp/cursor-audit.jpeg; param get persi                         <st.multimodalinput.cursor-audit.jpeg; param get persist.multimodalinput.cursor                         <.hwcbounds; echo PROBE_ENrsist.multimodalinput.cursor.hwcbounds; echo PROBE_EN                         <D
+PROBE_BEGIN
+74.37 548.24
+N: Name="bt-powerkey"
+H: Handlers=kbd event0 dmcfreq 
+N: Name="rk805 pwrkey"
+H: Handlers=kbd event1 dmcfreq 
+N: Name="headset-keys"
+H: Handlers=kbd event2 dmcfreq 
+N: Name="rockchip-es8388 Headset"
+H: Handlers=event3 
+N: Name="adc-keys"
+H: Handlers=kbd event4 dmcfreq 
+N: Name="rockchip-hdmi0 rockchip-hdmi0"
+H: Handlers=event5 
+N: Name="rockchip-hdmi1 rockchip-hdmi1"
+H: Handlers=event6 
+fileType: 
+process: display 0, file type: jpeg, width: 1920, height: 1080
+
+error: snapshot display 0, write to /data/local/tmp/cursor-audit.jpeg as jpeg failed!
+ls: /data/local/tmp/cursor-audit.jpeg: No such file or directory
+Get parameter "persist.multimodalinput.cursor.hwcbounds" fail! errNum is:106!
+PROBE_END
+# [   76.649075] kauditd_printk_skb: 93 callbacks suppressed
+

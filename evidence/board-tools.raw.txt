@@ -1,0 +1,260 @@
+^C
+# [  148.441739] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  148.441779] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  148.441796] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  148.441996] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  148.442016] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  148.442033] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  148.445142] [BT_RFKILL]: bt shut off power
+[  148.469368] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  148.469388] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  148.522349] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  148.522393] [BT_RFKILL]: ENABLE UART_RTS
+[  148.629025] [BT_RFKILL]: DISABLE UART_RTS
+[  148.629070] [BT_RFKILL]: bt turn on power
+[  148.629187] [BT_RFKILL]: Request irq for bt wakeup host
+[  148.629494] [BT_RFKILL]: ** disable irq
+[  148.632972] [BT_RFKILL]: bt shut off power
+[  148.659330] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  148.659350] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  148.712352] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  148.712390] [BT_RFKILL]: ENABLE UART_RTS
+
+# [  148.819010] [BT_RFKILL]: DISABLE UART_RTS
+[  148.819053] [BT_RFKILL]: bt turn on power
+[  148.819159] [BT_RFKILL]: Request irq for bt wakeup host
+[  148.819488] [BT_RFKILL]: ** disable irq
+[  148.820988] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  148.821060] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; param get persist.multimodalinput.cursor.hwcbounds; ps -ef get persist.multimodalinput.cursor.hwcbounds; ps -ef                         < | grep -iE "mmi|input|reput.cursor.hwcbounds; ps -ef | grep -iE "mmi|input|re                         <nder|usb_host"; command --ef | grep -iE "mmi|input|render|usb_host"; command -                         <v getevent; command -v ti|render|usb_host"; command -v getevent; command -v ti                         <meout; command -v hidumped -v getevent; command -v timeout; command -v hidumpe                         <r; command -v snapshot_di timeout; command -v hidumper; command -v snapshot_di                         <splay; hilog -h; echo PROmper; command -v snapshot_display; hilog -h; echo PRO                         <BE_END
+PROBE_BEGIN
+Get parameter "persist.multimodalinput.cursor.hwcbounds" fail! errNum is:106!
+input          320     1 0 09:58:06 ?     00:00:00 uinput_inject
+input          321     1 0 09:58:06 ?     00:00:00 multimodalinput
+input_user_host 547    1 0 09:58:07 ?     00:00:00 input_user_host         -i 11 -n input_user_host
+inputmethod    623     1 0 09:58:07 ?     00:00:00 inputmethod_service
+graphics       738     1 1 09:58:07 ?     00:00:00 render_service
+root          2669   223 0 10:00:32 ttyFIQ0 00:00:00 grep -iE mmi|input|render|usb_host
+/bin/timeout
+/bin/hidumper
+/bin/snapshot_display
+Usage:
+-h --help
+  Show all help information.
+  Show single help information with option: 
+  query/clear/buffer/stats/persist/private/kmsg/flowcontrol/baselevel/domain/combo
+Querying logs options:
+  No option performs a blocking read and keeps printing.
+  -x --exit
+    Performs a non-blocking read and exits when all logs in buffer are printed.
+  -a <n>, --head=<n>
+    Show n lines logs on head of buffer.
+  -z <n>, --tail=<n>
+    Show n lines logs on tail of buffer.
+  -t <type>, --type=<type>
+    Show specific type/types logs with format: type1,type2,type3
+    Don't show specific type/types logs with format: ^type1,type2,type3
+    Type coule be: app/core/init/kmsg/only_prerelease, kmsg can't combine with others.
+    Default types are: app,core,init,only_prerelease.
+  -L <level>, --level=<level>
+    Show specific level/levels logs with format: level1,level2,level3
+    Don't show specific level/levels logs with format: ^level1,level2,level3
+    Long and short level string are both accepted
+    Long level string coule be: DEBUG/INFO/WARN/ERROR/FATAL.
+    Short level string coule be: D/I/W/E/F.
+    Default levels are all levels.
+  -D <domain>, --domain=<domain>
+    Show specific domain/domains logs with format: domain1,domain2,doman3
+    Don't show specific domain/domains logs with format: ^domain1,domain2,doman3
+    Max domain count is 5.
+    See domain description at the end of this message.
+  -T <tag>, --tag=<tag>
+    Show specific tag/tags logs with format: tag1,tag2,tag3
+    Don't show specific tag/tags logs with format: ^tag1,tag2,tag3
+    Max tag count is 10.
+  -P <pid>, --pid=<pid>
+    Show specific pid/pids logs with format: pid1,pid2,pid3
+    Don't show specific domain/domains logs with format: ^pid1,pid2,pid3
+    Max pid count is 5.
+  -e <expr>, --regex=<expr>
+    Show the logs which match the regular expression <expr>.
+  -v <format>, --format=<format>
+    Show logs in different formats, options are:
+      color or colour      display colorful logs by log level.i.e.
+        [38;5;75mDEBUG        [38;5;40mINFO        [38;5;166mWARN        [38;5;196mERROR       [38;5;226mFATAL[0m
+      time format options are(single accepted):
+        time       display local time, this is default.
+        epoch      display the time from 1970/1/1.
+        monotonic  display the cpu time from bootup.
+      time accuracy format options are(single accepted):
+        msec       display time by millisecond, this is default.
+        usec       display time by microsecond.
+        nsec       display time by nanosecond.
+      year       display the year when -v time is specified.
+      zone       display the time zone when -v time is specified.
+      wrap       display the log without prefix when a log line is wrapped.
+    Different types of formats can be combined, such as:
+    -v color -v time -v msec -v year -v zone.
+-r
+  Remove all logs in hilogd buffer, advanced option:
+  -t <type>, --type=<type>
+    Remove specific type/types logs in buffer with format: type1,type2,type3
+    Type coule be: app/core/init/kmsg/only_prerelease.
+    Default types are: app,core,only_prerelease
+-g
+  Query hilogd buffer size, advanced option:
+  -t <type>, --type=<type>
+    Query specific type/types buffer size with format: type1,type2,type3
+    Type coule be: app/core/init/kmsg/only_prerelease.
+    Default types are: app,core,only_prerelease
+-G <size>, --buffer-size=<size>
+  Set hilogd buffer size, <size> could be number or number with unit.
+  Unit could be: B/K/M/G which represents Byte/Kilobyte/Megabyte/Gigabyte.
+  <size> range: [64.0K,16.0M].
+  Advanced option:
+  -t <type>, --type=<type>
+    Set  [  149.442324] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  149.442373] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  149.442391] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  149.442589] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  149.442609] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  149.442626] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  149.446090] [BT_RFKILL]: bt shut off power
+[  149.472716] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  149.472745] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  149.525693] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  149.525739] [BT_RFKILL]: ENABLE UART_RTS
+[  149.632355] [BT_RFKILL]: DISABLE UART_RTS
+[  149.632407] [BT_RFKILL]: bt turn on power
+[  149.632563] [BT_RFKILL]: Request irq for bt wakeup host
+[  149.632884] [BT_RFKILL]: ** disable irq
+[  149.635722] [BT_RFKILL]: bt shut off power
+[  149.662628] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  149.662652] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  149.715699] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  149.715740] [BT_RFKILL]: ENABLE UART_RTS
+[  149.822358] [BT_RFKILL]: DISABLE UART_RTS
+[  149.822400] [BT_RFKILL]: bt turn on power
+[  149.822507] [BT_RFKILL]: Request irq for bt wakeup host
+[  149.822830] [BT_RFKILL]: ** disable irq
+[  149.824070] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  149.824142] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.442860] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.442904] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.442924] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.443113] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.443133] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.443149] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.446389] [BT_RFKILL]: bt shut off power
+[  150.472760] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  150.472781] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  150.525695] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  150.525739] [BT_RFKILL]: ENABLE UART_RTS
+[  150.632345] [BT_RFKILL]: DISABLE UART_RTS
+[  150.632392] [BT_RFKILL]: bt turn on power
+[  150.632532] [BT_RFKILL]: Request irq for bt wakeup host
+[  150.632851] [BT_RFKILL]: ** disable irq
+[  150.635846] [BT_RFKILL]: bt shut off power
+[  150.662666] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  150.662687] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  150.715638] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  150.715678] [BT_RFKILL]: ENABLE UART_RTS
+[  150.822355] [BT_RFKILL]: DISABLE UART_RTS
+[  150.822397] [BT_RFKILL]: bt turn on power
+[  150.822512] [BT_RFKILL]: Request irq for bt wakeup host
+[  150.822823] [BT_RFKILL]: ** disable irq
+[  150.823949] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  150.824017] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.443385] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.443426] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.443445] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.443645] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.443665] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.443682] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.446855] [BT_RFKILL]: bt shut off power
+[  151.472713] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  151.472736] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  151.525696] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  151.525743] [BT_RFKILL]: ENABLE UART_RTS
+[  151.632350] [BT_RFKILL]: DISABLE UART_RTS
+[  151.632401] [BT_RFKILL]: bt turn on power
+[  151.632526] [BT_RFKILL]: Request irq for bt wakeup host
+[  151.632853] [BT_RFKILL]: ** disable irq
+[  151.635544] [BT_RFKILL]: bt shut off power
+[  151.659212] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  151.659229] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  151.712350] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  151.712389] [BT_RFKILL]: ENABLE UART_RTS
+[  151.819034] [BT_RFKILL]: DISABLE UART_RTS
+[  151.819073] [BT_RFKILL]: bt turn on power
+[  151.819238] [BT_RFKILL]: Request irq for bt wakeup host
+[  151.819535] [BT_RFKILL]: ** disable irq
+[  151.820858] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  151.820929] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.443918] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.443920] kauditd_printk_skb: 208 callbacks suppressed
+[  152.443924] audit: type=1400 audit(1793844037.206:4658): avc:  denied  { ioctl } for  pid=322 comm="SaInit0" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  152.443964] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.443966] audit: type=1400 audit(1793844037.206:4659): avc:  denied  { ioctl } for  pid=322 comm="SaInit0" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  152.443981] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.443983] audit: type=1400 audit(1793844037.206:4660): avc:  denied  { ioctl } for  pid=322 comm="SaInit0" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  152.444182] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.444184] audit: type=1400 audit(1793844037.206:4661): avc:  denied  { ioctl } for  pid=322 comm="SaInit0" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  152.444203] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.444205] audit: type=1400 audit(1793844037.206:4662): avc:  denied  { ioctl } for  pid=322 comm="SaInit0" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  152.444223] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.444225] audit: type=1400 audit(1793844037.206:4663): avc:  denied  { ioctl } for  pid=322 comm="SaInit0" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  152.447541] [BT_RFKILL]: bt shut off power
+[  152.472564] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  152.472581] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  152.525686] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  152.525729] [BT_RFKILL]: ENABLE UART_RTS
+[  152.628261] audit: type=1400 audit(1793844037.393:4664): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  152.628280] audit: type=1400 audit(1793844037.393:4665): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  152.628290] audit: type=1400 audit(1793844037.393:4666): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  152.628295] audit: type=1400 audit(1793844037.393:4667): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  152.632347] [BT_RFKILL]: DISABLE UART_RTS
+[  152.632385] [BT_RFKILL]: bt turn on power
+[  152.632528] [BT_RFKILL]: Request irq for bt wakeup host
+[  152.632844] [BT_RFKILL]: ** disable irq
+[  152.635475] [BT_RFKILL]: bt shut off power
+[  152.659260] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  152.659278] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  152.712351] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  152.712388] [BT_RFKILL]: ENABLE UART_RTS
+[  152.819014] [BT_RFKILL]: DISABLE UART_RTS
+[  152.819057] [BT_RFKILL]: bt turn on power
+[  152.819226] [BT_RFKILL]: Request irq for bt wakeup host
+[  152.819524] [BT_RFKILL]: ** disable irq
+[  152.821001] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  152.821072] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.444461] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.444506] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.444525] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.444726] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.444747] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.444764] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.447853] [BT_RFKILL]: bt shut off power
+[  153.472636] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  153.472657] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  153.525695] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  153.525741] [BT_RFKILL]: ENABLE UART_RTS
+[  153.632364] [BT_RFKILL]: DISABLE UART_RTS
+[  153.632411] [BT_RFKILL]: bt turn on power
+[  153.632598] [BT_RFKILL]: Request irq for bt wakeup host
+[  153.632911] [BT_RFKILL]: ** disable irq
+[  153.635993] [BT_RFKILL]: bt shut off power
+[  153.662563] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  153.662580] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  153.715687] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  153.715727] [BT_RFKILL]: ENABLE UART_RTS
+[  153.747912] hungtask_user process 667 is kicked
+[  153.747959] XCollie: Send kick to hungtask Successful
+[  153.747959] 
+[  153.822355] [BT_RFKILL]: DISABLE UART_RTS
+[  153.822392] [BT_RFKILL]: bt turn on power
+[  153.822562] [BT_RFKILL]: Request irq for bt wakeup host
+[  153.822864] [BT_RFKILL]: ** disable irq
+[  153.824377] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  153.824448] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

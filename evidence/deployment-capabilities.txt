@@ -1,0 +1,11 @@
+
+# [  303.747780] hungtask_user process 705 is kicked
+echo PROBE_BEGIN; command -v wget; command -v curl; command -v nc; command -nd -v wget; command -v curl; command -v nc; command -                         <v busybox; command -v su;rl; command -v nc; command -v busybox; command -v su;                         < ls -l /system/lib64/libwd -v busybox; command -v su; ls -l /system/lib64/libw                         <ms.z.so; mount | grep -E su; ls -l /system/lib64/libwms.z.so; mount | grep -E                          <" /system | / " ; ls /devibwms.z.so; mount | grep -E " /system | / " ; ls /dev                         </block/by-name; echo PROB-E " /system | / " ; ls /dev/block/by-name; echo PROB                         <E_END
+PROBE_BEGIN
+-rw-r--r-- 1 root root 1285208 2026-11-04 17:52 /system/lib64/libwms.z.so
+/dev/block/mmcblk0p5 on / type ext4 (ro,seclabel,nodev,relatime)
+boot      chip-prod  eng_chipset  misc      system  updater   vendor
+bootctrl  chip_ckm   eng_system   sys-prod  uboot   userdata
+PROBE_END
+# [  306.252053] kauditd_printk_skb: 94 callbacks suppressed
+

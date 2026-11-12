@@ -1,0 +1,47 @@
+
+# [  132.777720] kauditd_printk_skb: 58 callbacks suppressed
+[  132.777732] audit: type=1400 audit(1793844360.425:3380): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  132.777774] audit: type=1400 audit(1793844360.425:3381): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  132.777786] audit: type=1400 audit(1793844360.425:3382): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  132.777797] audit: type=1400 audit(1793844360.425:3383): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  133.077840] audit: type=1400 audit(1793844360.725:3384): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  133.077863] audit: type=1400 audit(1793844360.725:3385): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  133.077875] audit: type=1400 audit(1793844360.725:3386): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  133.077886] audit: type=1400 audit(1793844360.725:3387): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+echo PROBE_BEGIN; hilog -x -P 322 | grep -iE "ScreenPointer|PointerDrawingMa -x -P 322 | grep -iE "ScreenPointer|PointerDrawingMa                         <nager|PointerRenderer|HarreenPointer|PointerDrawingManager|PointerRenderer|Har                         <dwareCursor|UpdateDisplaygManager|PointerRenderer|HardwareCursor|UpdateDisplay                         <Info" | tail -60; hilog -HardwareCursor|UpdateDisplayInfo" | tail -60; hilog -                         <x -P 722 | grep -iE "curslayInfo" | tail -60; hilog -x -P 722 | grep -iE "curs                         <or|pointer|GetDisplayPropg -x -P 722 | grep -iE "cursor|pointer|GetDisplayProp                         <erty|Capture" | tail -25;ursor|pointer|GetDisplayProperty|Capture" | tail -25;                         < hidumper -s 3101 -a "-h"roperty|Capture" | tail -25; hidumper -s 3101 -a "-h"                         <; echo PROBE_END
+PROBE_BEGIN
+11-05 10:05:21.475   322   579 I C02804/PointerDrawingManager: [P:M:1569|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+11-05 10:05:21.637   322   579 I C02804/PointerDrawingManager: [|1597]The screenId_:0
+11-05 10:05:21.637   322   579 I C02804/PointerDrawingManager: [|1615]AttachToDisplay screenId_:0
+11-05 10:05:21.875   322   579 I C02804/PointerDrawingManager: [P:M:1614|2546]Pointer window show success, mouseDisplayState_:true, displayId_:0
+[  133.226694] audit: type=1400 audit(1793844360.875:3388): avc:  denied  { use } for  pid=2404 comm="hidumper" path="/system/bin/hidumper" dev="mmcblk0p5" ino=262 scontext=u:r:hidumper:s0 tcontext=u:r:console:s0 tclass=fd permissive=1
+[  133.228307] audit: type=1400 audit(1793844360.875:3389): avc:  denied  { search } for  pid=2404 comm="hidumper" name="etc" dev="mmcblk0p7" ino=12 scontext=u:r:hidumper:s0 tcontext=u:object_r:sys_prod_file:s0 tclass=dir permissive=1
+[  133.238703] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 34 pid 223 key: ohos.ctl.start
+[  133.238803] [pid=1][Init][INFO][init_service_manager.c:1306]Service info hidumper_service start service bt ext parameter hidumper_service|1212#0#load##-1#.
+[  133.238823] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:hidumper_service
+[  133.239616] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info hidumper_service(pid 2407 uid 1212)
+[  133.239628] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793844360-887848095, prefork:1793844360-887906428, startedtime:1793844360-888636470
+[  133.239933] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:110302
+[  133.239969] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:110302
+[  133.239993] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:110302
+[  133.240000] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:110302
+[  133.240007] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:110301
+[  133.240076] SAMGR: Start dynamic proc:hidumper_service,1212,0_2ms
+[  133.240641] [pid=2407][Init][INFO][init_common_service.c:471]Deal service hidumper_service job end
+[  133.241648] [pid=2407][Init][INFO][init_service.c:235]ServiceExec hidumper_service
+[  133.255952] SAFWK: operator() Set process name to hidumper_service
+[  133.289944] SAMGR: SA:1212 OpenSo 33ms
+[  133.292732] SAMGR: insert SA:1212_96
+[  133.293239] SAFWK: Publish SA:1212 result:0,spend:1ms
+[  133.293307] SAFWK: Start OnStart-SA:1212 finished, spend:1 ms
+[  133.293484] SAFWK: StartSystemAbilityTask hidumper_service SA:1212 init finished, 38 ms
+request error
+PROBE_END
+# [  136.889371] hungtask_user process 219 is kicked
+[  136.889507] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  137.879912] kauditd_printk_skb: 72 callbacks suppressed
+[  137.879922] audit: type=1400 audit(1793844365.528:3462): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  137.879961] audit: type=1400 audit(1793844365.528:3463): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  137.879973] audit: type=1400 audit(1793844365.528:3464): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  137.879985] audit: type=1400 audit(1793844365.528:3465): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+

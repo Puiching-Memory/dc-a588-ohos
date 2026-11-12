@@ -1,0 +1,122 @@
+
+# [  239.176624] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  239.377369] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  239.578107] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; ls -l /data/service/el1/public/bms; ls -l /data/service/el /data/service/el1/public/bms; ls -l /data/service/el                         <1/public/account; cat /pr/bms; ls -l /data/service/el1/public/account; cat /pr                         <oc/658/maps | grep -E "li/el1/public/account; cat /proc/658/maps | grep -E "li                         <bwms|session_manager" | h/proc/658/maps | grep -E "libwms|session_manager" | h                         <ead -n 12; hilog -x -P 63"libwms|session_manager" | head -n 12; hilog -x -P 63                         <0 | tail -n 65; echo PROB| head -n 12; hilog -x -P 630 | tail -n 65; echo PROB                         <E_END
+PROBE_BEGIN
+total 8192
+drwxr-xr-x 3 foundation system 3452 2026-11-04 11:32 bundle_manager_service
+drwxr-xr-x 2 foundation system 3452 2026-11-04 11:32 bundle_resources
+total 32768
+drwx------ 2 account account 3452 2026-11-04 11:32 0
+drwx------ 2 account account 3452 2026-11-04 11:32 100
+-rw------- 1 account account   43 2026-11-04 11:33 account_index_info.json
+-rw------- 1 account account 1065 2026-11-05 16:05 account_info_digest.json
+-rw------- 1 account account  177 2026-11-04 11:32 account_list.json
+-rw------- 1 account account  309 2026-11-04 11:32 base_os_account_constraints.json
+-rw------- 1 account account   48 2026-11-04 11:32 global_os_account_constraints.json
+-rw------- 1 account account   39 2026-11-04 11:32 specific_os_account_constraints.json
+7ef0f40000-7ef0f5a000 r--p 00000000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef0f5a000-7ef0f88000 r-xp 00019000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef0f88000-7ef0f90000 r--p 00046000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef0f90000-7ef0f91000 rw-p 0004d000 b3:05 5700                           /system/lib64/platformsdk/libsession_manager.z.so
+7ef1140000-7ef1167000 r--p 00000000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef1167000-7ef11b8000 r-xp 00026000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef11b8000-7ef11bf000 r--p 00076000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef11bf000-7ef11c0000 rw-p 0007c000 b3:05 5680                           /system/lib64/platformsdk/libscreen_session_manager_client.z.so
+7ef3380000-7ef3445000 r--p 00000000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+7ef3445000-7ef35d2000 r-xp 000c4000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+7ef35d2000-7ef35e9000 r--p 00250000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+7ef35e9000-7ef35ea000 rw-p 00266000 b3:05 5679                           /system/lib64/platformsdk/libscreen_session_manager.z.so
+PROBE_END
+# [  239.778945] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  239.934609] kauditd_printk_skb: 72 callbacks suppressed
+[  239.934618] audit: type=1400 audit(1793866191.206:4982): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  239.934651] audit: type=1400 audit(1793866191.206:4983): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  239.934664] audit: type=1400 audit(1793866191.206:4984): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  239.934676] audit: type=1400 audit(1793866191.206:4985): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  239.980299] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  240.181236] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  240.235071] audit: type=1400 audit(1793866191.506:4986): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  240.235096] audit: type=1400 audit(1793866191.506:4987): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  240.235109] audit: type=1400 audit(1793866191.506:4988): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  240.235119] audit: type=1400 audit(1793866191.506:4989): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  240.382074] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  240.535486] audit: type=1400 audit(1793866191.806:4990): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  240.535508] audit: type=1400 audit(1793866191.806:4991): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  240.582875] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  240.783633] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  240.984368] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  241.185107] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  241.385853] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  241.586616] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  241.787330] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  241.988049] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  242.188775] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  242.389485] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  242.590223] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  242.790899] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  242.991629] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  243.192364] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  243.393123] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  243.523068] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:teecd
+[  243.523991] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info teecd(pid 1929 uid 6668)
+[  243.524006] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793866194-799392050, prefork:1793866194-799460300, startedtime:1793866194-800322467
+[  243.524513] [pid=1929][Init][INFO][init_service.c:235]ServiceExec teecd
+[  243.530133] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process teecd(pid 1929) exit with code : 255
+[  243.530150] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning teecd, SIGCHLD received, pid:1929 uid:6668 status:65280.
+[  243.530156] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info teecd pid 1929.
+[  243.530220] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:teecd
+[  243.530826] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info teecd(pid 1930 uid 6668)
+[  243.530837] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793866194-806561217, prefork:1793866194-806575509, startedtime:1793866194-807157384
+[  243.531178] [pid=1930][Init][INFO][init_service.c:235]ServiceExec teecd
+[  243.535919] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process teecd(pid 1930) exit with code : 255
+[  243.535931] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning teecd, SIGCHLD received, pid:1930 uid:6668 status:65280.
+[  243.535936] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info teecd pid 1930.
+[  243.535988] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:teecd
+[  243.536597] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info teecd(pid 1931 uid 6668)
+[  243.536609] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793866194-812329510, prefork:1793866194-812343510, startedtime:1793866194-812929176
+[  243.536949] [pid=1931][Init][INFO][init_service.c:235]ServiceExec teecd
+[  243.541577] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process teecd(pid 1931) exit with code : 255
+[  243.541589] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning teecd, SIGCHLD received, pid:1931 uid:6668 status:65280.
+[  243.541595] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info teecd pid 1931.
+[  243.541643] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:teecd
+[  243.542234] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info teecd(pid 1932 uid 6668)
+[  243.542245] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793866194-817984927, prefork:1793866194-817999802, startedtime:1793866194-818552802
+[  243.542573] [pid=1932][Init][INFO][init_service.c:235]ServiceExec teecd
+[  243.547379] [pid=1][Init][WARNING][init_signal_handler.c:73]Child process teecd(pid 1932) exit with code : 255
+[  243.547392] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning teecd, SIGCHLD received, pid:1932 uid:6668 status:65280.
+[  243.547398] [pid=1][Init][INFO][init_common_service.c:925]ServiceReap info teecd pid 1932.
+[  243.547442] [pid=1][Init][INFO][init_common_service.c:981]ServiceReap start failed! teecd will reStart 240 second later
+[  243.593928] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  243.766252] hungtask_user process 658 is kicked
+[  243.766280] XCollie: Send kick to hungtask Successful
+[  243.766280] 
+[  243.795158] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  243.996129] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  244.197024] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  244.397879] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  244.584835] SAFWK: Stop OnStop-SA:511 finished,spend:1ms
+[  244.585254] SAMGR: rm SA:511_87
+[  244.585481] SAFWK: Stop suc to rm SA:511,spend:1ms
+[  244.585595] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 24 pid 218 key: ohos.ctl.stop
+[  244.585823] [pid=1][Init][INFO][init_common_service.c:786]stop service installs, pid 1144.
+[  244.586159] SAMGR: Scheduler proc:installs kill pid:1144,3060_0_1ms
+[  244.588027] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process Unknown(pid 1144) exit with signal : 9
+[  244.588037] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:1144 uid:3060 status:9.
+[  244.598841] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  244.800137] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  245.001153] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  245.041610] kauditd_printk_skb: 58 callbacks suppressed
+[  245.041615] audit: type=1400 audit(1793866196.316:5050): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.041639] audit: type=1400 audit(1793866196.316:5051): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.041652] audit: type=1400 audit(1793866196.316:5052): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.041664] audit: type=1400 audit(1793866196.316:5053): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.201984] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  245.342035] audit: type=1400 audit(1793866196.616:5054): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.342056] audit: type=1400 audit(1793866196.616:5055): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.342069] audit: type=1400 audit(1793866196.616:5056): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.342080] audit: type=1400 audit(1793866196.616:5057): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  245.402773] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  245.603577] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

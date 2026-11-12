@@ -1,0 +1,27 @@
+
+# [  484.825339] kauditd_printk_skb: 58 callbacks suppressed
+echo PROBE_BEGIN; base64 --help | head -8; gzip --help | head -8; ls -l /sys4 --help | head -8; gzip --help | head -8; ls -l /sys                         <tem/bin/sh; cat /proc/upt--help | head -8; ls -l /system/bin/sh; cat /proc/upt                         <ime; ps -ef | grep -E "fosystem/bin/sh; cat /proc/uptime; ps -ef | grep -E "fo                         <undation|multimodalinput"uptime; ps -ef | grep -E "foundation|multimodalinput"                         <; echo PROBE_END
+PROBE_BEGIN
+usage: base64 [-di] [-w COLUMNS] [FILE...]
+
+Encode or decode in base64.
+
+-d	Decode
+-i	Ignore non-alphabetic characters
+-w	Wrap output at COLUMNS (default 76 or 0 for no wrap)
+usage: gzip [-19cdfkt] [FILE...]
+
+Compress files. With no files, compresses stdin to stdout.
+On success, the input files are removed and replaced by new
+files with the .gz suffix.
+
+-c	Output to stdout
+-d	Decompress (act as gunzip)
+-rwxr-xr-x 1 root shell 301728 2026-11-03 13:32 /system/bin/sh
+485.10 3810.64
+input          322     1 1 10:03:48 ?     00:00:02 multimodalinput
+foundation     705     1 1 10:03:49 ?     00:00:02 foundation
+root          2607   220 0 10:11:51 ttyFIQ0 00:00:00 grep -E foundation|multimodalinput
+PROBE_END
+# [  486.899425] hungtask_user process 219 is kicked
+

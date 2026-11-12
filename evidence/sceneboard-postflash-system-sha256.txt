@@ -1,0 +1,7 @@
+
+# echo PROBE_BEGIN; sha256sum /dev/block/by-name/system; echo PROBE_END
+PROBE_BEGIN
+62ae221436cd3b36289da08ccc86591e1415e81d4193ec433119b4598388a0e9  /dev/block/by-name/system
+PROBE_END
+# [  181.500876] hungtask_user process 2074 is kicked
+

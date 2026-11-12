@@ -1,0 +1,73 @@
+{
+  "diagnostic_messages": 1274,
+  "missing_module_messages": 225,
+  "missing_unique_modules": 11,
+  "categories": [
+    {
+      "Name": "Other diagnostics",
+      "Count": 530
+    },
+    {
+      "Name": "Missing members or exports",
+      "Count": 413
+    },
+    {
+      "Name": "Missing module declarations",
+      "Count": 225
+    },
+    {
+      "Name": "Implicit any or unknown",
+      "Count": 89
+    },
+    {
+      "Name": "Implicit return type",
+      "Count": 17
+    }
+  ],
+  "top_missing_modules": [
+    {
+      "Name": "@ohos.sceneSessionManager",
+      "Count": 151
+    },
+    {
+      "Name": "@ohos.screenSessionManager",
+      "Count": 32
+    },
+    {
+      "Name": "@ohos.pcService.statusBar",
+      "Count": 13
+    },
+    {
+      "Name": "@ohos.transactionManager",
+      "Count": 10
+    },
+    {
+      "Name": "touchEvent",
+      "Count": 6
+    },
+    {
+      "Name": "DragControllerParam",
+      "Count": 4
+    },
+    {
+      "Name": "@ohos.sessionManagerService",
+      "Count": 3
+    },
+    {
+      "Name": "AnimateToParam",
+      "Count": 2
+    },
+    {
+      "Name": "ExpectedFrameRateRange",
+      "Count": 2
+    },
+    {
+      "Name": "@ohos.displayengine.displayengine_napi",
+      "Count": 1
+    },
+    {
+      "Name": "@ohos.space_ability_napi",
+      "Count": 1
+    }
+  ]
+}

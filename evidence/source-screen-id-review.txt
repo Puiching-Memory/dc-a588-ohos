@@ -1,0 +1,169 @@
+ac4fbeff04b9560fb004f8ecb834aeccfc66bffd
+ M interfaces/kits/napi/environmental/package-lock.json
+ M wmserver/src/input_window_monitor.cpp
+ M wmserver/test/unittest/input_window_monitor_test.cpp
+   107	void InputWindowMonitor::UpdateDisplayInfo(const std::vector<sptr<DisplayInfo>>& displayInfos,
+   108	                                           std::vector<MMI::DisplayInfo>& displayInfoVector)
+   109	{
+   110	    for (auto& displayInfo : displayInfos) {
+   111	        if (displayInfo == nullptr) {
+   112	            continue;
+   113	        }
+   114	        const auto screenInfo = DisplayManagerServiceInner::GetInstance().GetScreenInfoByDisplayId(
+   115	            displayInfo->GetDisplayId());
+   116	        if (screenInfo == nullptr || screenInfo->GetRsId() == SCREEN_ID_INVALID) {
+   117	            WLOGFE("No render screen for display %{public}" PRIu64, displayInfo->GetDisplayId());
+   118	            continue;
+   119	        }
+   120	        uint32_t displayWidth = static_cast<uint32_t>(displayInfo->GetWidth());
+   121	        uint32_t displayHeight = static_cast<uint32_t>(displayInfo->GetHeight());
+   122	        int32_t offsetX = displayInfo->GetOffsetX();
+   123	        int32_t offsetY = displayInfo->GetOffsetY();
+   124	        if (displayInfo->GetWaterfallDisplayCompressionStatus()) {
+   125	            displayWidth = static_cast<uint32_t>(
+   126	                static_cast<int32_t>(displayWidth) + offsetX * 2); // 2: Get full width;
+   127	            displayHeight = static_cast<uint32_t>(
+   128	                static_cast<int32_t>(displayHeight) + offsetY * 2); // 2: Get full height;
+   129	            offsetX = 0;
+   130	            offsetY = 0;
+   131	        }
+   132	        if (displayInfo->GetRotation() == Rotation::ROTATION_90 ||
+   133	            displayInfo->GetRotation() == Rotation::ROTATION_270) {
+   134	            std::swap(displayWidth, displayHeight);
+   135	        }
+   136	        MMI::DisplayInfo display = {
+   137	            .id = static_cast<int32_t>(displayInfo->GetDisplayId()),
+   138	            .x = offsetX,
+   139	            .y = offsetY,
+   140	            .width = static_cast<int32_t>(displayWidth),
+   141	            .height = static_cast<int32_t>(displayHeight),
+   142	            .dpi = displayInfo->GetDpi(),
+   143	            .name = "display " + std::to_string(displayInfo->GetDisplayId()),
+   144	            .direction = GetDisplayDirectionForMmi(displayInfo->GetRotation()),
+   145	            .displayDirection = GetDisplayDirectionForMmi(displayInfo->GetRotation()),
+   146	            .screenArea = {
+   147	                .id = static_cast<int32_t>(screenInfo->GetScreenId()),
+   148	                .area = { offsetX, offsetY, static_cast<int32_t>(displayWidth), static_cast<int32_t>(displayHeight) }
+   149	            },
+   150	            .rsId = screenInfo->GetRsId()
+   151	        };
+   152	        auto displayIter = std::find_if(displayInfoVector.begin(), displayInfoVector.end(),
+   153	            [&display](MMI::DisplayInfo& displayInfoTmp) {
+   154	            return displayInfoTmp.id == display.id;
+   155	        });
+   156	        if (displayIter != displayInfoVector.end()) {
+   157	            *displayIter = display;
+   158	        } else {
+   159	            displayInfoVector.emplace_back(display);
+   160	        }
+   161	        WLOGFI("UpdateDisplayInfo, displayId: %{public}d, screenId: %{public}d, rsId: %{public}" PRIu64 ", displayRect: "
+   162	            "[%{public}d, %{public}d, %{public}u, %{public}u]",
+   163	            display.id, display.screenArea.id, display.rsId, display.x, display.y, display.width, display.height);
+   164	    }
+   165	}
+   166	
+   167	void InputWindowMonitor::ConstructScreenInfos(std::vector<MMI::DisplayInfo>& displayInfoVector,
+   168	    std::vector<MMI::ScreenInfo>& screenInfos)
+   169	{
+   170	    for (auto& displayInfo : displayInfoVector) {
+   171	        MMI::ScreenInfo screenInfo {};
+   172	        screenInfo.id = displayInfo.screenArea.id;
+   173	        screenInfo.uniqueId = "default" + std::to_string(displayInfo.rsId);
+   174	        screenInfo.screenType = MMI::ScreenType::REAL;
+   175	        screenInfo.width = displayInfo.width;
+   176	        screenInfo.height = displayInfo.height;
+   177	        screenInfo.tpDirection = MMI::DIRECTION0;
+   178	        screenInfo.dpi = displayInfo.dpi;
+   179	        screenInfo.rotation = static_cast<MMI::Rotation>(displayInfo.direction);
+   180	        screenInfos.emplace_back(screenInfo);
+   181	    }
+   182	}
+   183	
+   184	void InputWindowMonitor::TransformWindowRects(const sptr<WindowNode>& windowNode, Rect& areaRect,
+   185	                                              std::vector<Rect>& touchHotAreas, std::vector<Rect>& pointerHotAreas)
+   186	{
+   187	    if (windowNode->GetWindowProperty()->isNeedComputerTransform()) {
+   188	        windowNode->ComputeTransform();
+   189	        for (Rect& rect : touchHotAreas) {
+   228	
+   229	        TransformWindowRects(windowNode, areaRect, touchHotAreas, pointerHotAreas);
+   230	
+   231	        MMI::WindowInfo windowInfo = {
+   232	            .id = static_cast<int32_t>(windowNode->GetWindowId()),
+   233	            .pid = windowNode->GetInputEventCallingPid(),
+   234	            .uid = windowNode->GetCallingUid(),
+   235	            .area = MMI::Rect { areaRect.posX_, areaRect.posY_,
+   236	                static_cast<int32_t>(areaRect.width_), static_cast<int32_t>(areaRect.height_) },
+   237	            .agentWindowId = static_cast<int32_t>(windowNode->GetWindowId()),
+   238	            .displayId = static_cast<int32_t>(windowNode->GetDisplayId()),
+   239	            .agentPid = windowNode->GetInputEventCallingPid(),
+   240	        };
+   241	
+   242	        auto iter = (windowNode->GetParentId() == INVALID_WINDOW_ID) ?
+   243	            dialogWindowMap.find(windowNode->GetWindowId()) : dialogWindowMap.find(windowNode->GetParentId());
+   244	        if (iter != dialogWindowMap.end()) {
+   245	            windowInfo.agentWindowId = static_cast<int32_t>(iter->second->GetWindowId());
+   246	        }
+   247	        convertRectsToMmiRects(touchHotAreas, windowInfo.defaultHotAreas);
+   248	        convertRectsToMmiRects(pointerHotAreas, windowInfo.pointerHotAreas);
+   249	        if (!windowNode->GetWindowProperty()->GetTouchable()) {
+   250	            WLOGFD("window is not touchable: %{public}u", windowNode->GetWindowId());
+  1158	void ServerMsgHandler::ChangeToOld(size_t num, const std::vector<DisplayInfo>& displaysInfo,
+  1159	    const std::vector<ScreenInfo>& screens)
+  1160	{
+  1161	    for (auto &display : displaysInfo) {
+  1162	        OLD::DisplayInfo oldDisplay;
+  1163	        oldDisplay = {
+  1164	            .id = display.id,
+  1165	            .x = display.x,
+  1166	            .y = display.y,
+  1167	            .dpi = display.dpi,
+  1168	            .name = display.name,
+  1169	            .direction = display.direction,
+  1170	            .displayDirection = display.displayDirection,
+  1171	            .displayMode = display.displayMode,
+  1172	            .transform = display.transform,
+  1173	            .offsetX = display.offsetX,
+  1174	            .offsetY = display.offsetY,
+  1175	            .scalePercent = display.scalePercent,
+  1176	            .expandHeight = display.expandHeight,
+  1177	            .isCurrentOffScreenRendering = display.isCurrentOffScreenRendering,
+  1178	            .displaySourceMode = display.displaySourceMode,
+  1179	            .oneHandX = display.oneHandX,
+  1180	            .oneHandY = display.oneHandY,
+  1181	            .validWidth = display.width,
+  1182	            .validHeight = display.height,
+  1183	            .pointerActiveWidth = display.pointerActiveWidth,
+  1184	            .pointerActiveHeight = display.pointerActiveHeight,
+  1185	            .rsId = display.rsId,
+  1186	            .deviceRotation = display.deviceRotation,
+  1187	            .rotationCorrection = display.rotationCorrection
+  1188	        };
+  1189	        for (auto &screen : screens) {
+  1190	            if (screen.id == display.screenArea.id) {
+    40	    static ScreenInfo* Unmarshalling(Parcel& parcel);
+    41	
+    42	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(std::string, Name, name, "");
+    43	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(ScreenId, ScreenId, id, SCREEN_ID_INVALID);
+    44	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(uint32_t, VirtualWidth, virtualWidth, 0);
+    45	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(uint32_t, VirtualHeight, virtualHeight, 0);
+    46	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(uint32_t, MirrorWidth, mirrorWidth, 0);
+    47	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(uint32_t, MirrorHeight, mirrorHeight, 0);
+    48	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(float, VirtualPixelRatio, virtualPixelRatio, 1.0f);
+    49	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(ScreenId, LastParentId, lastParent, SCREEN_ID_INVALID);
+    50	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(ScreenId, ParentId, parent, SCREEN_ID_INVALID);
+    51	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(bool, IsScreenGroup, isScreenGroup, false);
+    52	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(bool, IsExtend, isExtend, false);
+    53	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(Rotation, Rotation, rotation, Rotation::ROTATION_0);
+    54	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(Orientation, Orientation, orientation, Orientation::UNSPECIFIED);
+    55	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(ScreenSourceMode, SourceMode, sourceMode, ScreenSourceMode::SCREEN_ALONE);
+    56	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(ScreenType, Type, type, ScreenType::UNDEFINED);
+    57	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(uint32_t, ModeId, modeId, 0);
+    58	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(std::string, SerialNumber, serialNumber, "");
+    59	    DEFINE_VAR_DEFAULT_FUNC_GET_SET(ScreenId, RsId, rsId, SCREEN_ID_INVALID);
+    60	    DEFINE_VAR_FUNC_GET(std::vector<sptr<SupportedScreenModes>>, Modes, modes);
+-rw-r--r-- 1 <user> <user> 2413148 11月  5 02:21 out/rockchip/obj/foundation/window/window_manager/wmserver/test/unittest/wmserver_input_window_monitor_test/input_window_monitor_test.o
+c7055481c6e72aeedaa39a487af6e6b5f8b84fe5d73090c212e38213db7d56ab  out/rockchip/window/window_manager/libwms.z.so
+ wmserver/src/input_window_monitor.cpp              | 22 +++++++++++++++-------
+ .../test/unittest/input_window_monitor_test.cpp    |  9 ++++-----
+ 2 files changed, 19 insertions(+), 12 deletions(-)

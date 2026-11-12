@@ -1,0 +1,33 @@
+diff --git a/rk3588/preinstall-config/install_list.json b/rk3588/preinstall-config/install_list.json
+index fa5575a..549e2e3 100755
+--- a/rk3588/preinstall-config/install_list.json
++++ b/rk3588/preinstall-config/install_list.json
+@@ -1,5 +1,9 @@
+ {
+     "install_list" : [
++        {
++            "app_dir": "/system/app/SceneBoard",
++            "removable": false
++        },
+         {
+             "app_dir" : "/system/app/com.ohos.systemui",
+             "removable" : false
+diff --git a/rk3588/preinstall-config/install_list_capability.json b/rk3588/preinstall-config/install_list_capability.json
+index 3e01ec0..c5894d1 100755
+--- a/rk3588/preinstall-config/install_list_capability.json
++++ b/rk3588/preinstall-config/install_list_capability.json
+@@ -1,5 +1,14 @@
+ {
+     "install_list": [
++        {
++            "bundleName": "com.ohos.sceneboard",
++            "app_signature": [
++                "8E93863FC32EE238060BF69A9B37E2608FFFB21F93C862DD511CBAC9F30024B5"
++            ],
++            "allowAppUsePrivilegeExtension": true,
++            "allowAbilityPriorityQueried": true,
++            "allowAppRunWhenDeviceFirstLocked": true
++        },
+         {
+             "bundleName": "com.example.kikakeyboard",
+             "runningResourcesApply": false,

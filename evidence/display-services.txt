@@ -1,0 +1,37 @@
+
+# echo PROBE_BEGIN; hidumper -ls | grep -iE "window|display|input|render|310|4per -ls | grep -iE "window|display|input|render|310|4                         <60"; ifconfig; ps -ef | gw|display|input|render|310|460"; ifconfig; ps -ef | g                         <rep -iE "foundation|launc0|460"; ifconfig; ps -ef | grep -iE "foundation|launc                         <her|scene"; hilog -x -P 3| grep -iE "foundation|launcher|scene"; hilog -x -P 3                         <21 | grep -iE "UpdateDispuncher|scene"; hilog -x -P 321 | grep -iE "UpdateDisp                         <lay|display group|screen|P 321 | grep -iE "UpdateDisplay|display group|screen|                         <default display" | tail -isplay|display group|screen|default display" | tail -                         <40; ls /sys/class/drm; ecen|default display" | tail -40; ls /sys/class/drm; ec                         <ho PROBE_END
+PROBE_BEGIN
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0 
+          inet6 addr: ::1/128 Scope: Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+eth0      Link encap:Ethernet  HWaddr 46:ee:37:xx:xx:xx  Driver rk_gmac-dwmac
+          inet addr:192.168.0.11  Bcast:192.168.0.255  Mask:255.255.255.0 
+          inet6 addr: fe80::44ee:37ff:fee0:ee87/64 Scope: Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1527 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:133 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:126813 TX bytes:37863 
+          Interrupt:58 
+
+eth1      Link encap:Ethernet  HWaddr 46:39:96:xx:xx:xx  Driver r8169
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0 
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0 
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 TX bytes:0 
+
+foundation     667     1 1 09:58:07 ?     00:00:02 foundation
+20010013      1727   221 0 09:58:11 ?     00:00:00 com.ohos.launcher
+root          2853   223 0 10:01:10 ttyFIQ0 00:00:00 grep -iE foundation|launcher|scene
+card0           card0-HDMI-A-2     card1       renderD129
+card0-HDMI-A-1  card0-Writeback-1  renderD128  version
+PROBE_END
+# [  186.492739] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+

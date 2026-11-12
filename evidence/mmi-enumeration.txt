@@ -1,0 +1,111 @@
+
+# [  166.451285] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; hilog -x -P 321 | grep -iE "mouse|pointer|cursor|device ad -x -P 321 | grep -iE "mouse|pointer|cursor|device ad                         <ded|InitSurface|SetBoundsuse|pointer|cursor|device added|InitSurface|SetBounds                         <|HardCursor|failed" | tai added|InitSurface|SetBounds|HardCursor|failed" | tai                         <l -100; hidumper -s 3101 nds|HardCursor|failed" | tail -100; hidumper -s 3101                          <-a "-h"; ip -4 addr; snaptail -100; hidumper -s 3101 -a "-h"; ip -4 addr; snap                         <shot_display -h; echo PRO01 -a "-h"; ip -4 addr; snapshot_display -h; echo PRO                         <BE_END
+PROBE_BEGIN
+11-05 10:00:10.199   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.206   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.215   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.223   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.231   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.239   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.247   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.254   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.262   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.271   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.271   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:10.278   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.286   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.295   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.303   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.311   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.319   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.326   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.335   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.342   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.351   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.358   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.367   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.367   321   545 I C02803/InputWindowsManager: [P:BU:26|437]get deviceId failed:7
+11-05 10:00:10.375   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.382   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.391   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.399   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.407   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.415   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.423   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.431   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.431   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:10.438   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.446   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.454   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.462   321   545 ransformProcessor: [|176]No display
+11-05 10:00:10.471   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.478   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.486   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.495   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.503   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.510   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.519   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.527   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.534   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.542   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.551   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.558   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.567   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.574   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.582   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.583   321   545 I C02803/InputWindowsManager: [P:BU:27|437]get deviceId failed:7
+11-05 10:00:10.591   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.598   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.606   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.615   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.623   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.631   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.631   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:10.638   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.719   321   545 I C02803/InputWindowsManager: [P:BU:28|437]get deviceId failed:7
+11-05 10:00:10.734   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.743   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.751   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.758   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.766   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.774   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.799   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:10.839   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.863   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.879   321   545 I C02803/InputWindowsManager: [P:BU:29|437]get deviceId failed:7
+11-05 10:00:10.911   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.943   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:11.023   321   545 I C02803/InputWindowsManager: [P:BU:30|437]get deviceId failed:7
+11-05 10:00:11.039   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.047   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.055   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.062   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.071   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.079   321   54essor: [|176]No display
+11-05 10:00:11.086   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.095   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.103   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.110   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.119   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.126   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.134   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.142   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.150   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.158   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.166   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.174   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.182   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.191   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.198   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.207   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.214   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.247   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:12.023   321   545 I C02805/InputKeyFlow: [|1147]PixArt Dell MS116 USB Optical Mouse, TW: -1, first: 23-(2026-11-05 10:00:09.367ms), 30, count: 8
+request error
+/system/bin/sh: ip: inaccessible or not found
+snapshot_display: option requires an argument: h
+usage: snapshot_display [-i displayId] [-f output_file] [-w width] [-h height] [-t type] [-m]
+PROBE_END
+# [  167.099389] hungtask_user process 221 is kicked
+

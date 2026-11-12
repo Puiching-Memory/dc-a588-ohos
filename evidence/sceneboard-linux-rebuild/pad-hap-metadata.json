@@ -1,0 +1,15 @@
+{
+  "bytes": 118993418,
+  "app": {
+    "bundleName": "com.ohos.sceneboard",
+    "compileSdkVersion": "6.1.0.47",
+    "minAPIVersion": 20,
+    "targetAPIVersion": 20
+  },
+  "module": "pad_sceneboard",
+  "dependencies": [],
+  "abc_entries": [
+    "ets/modules.abc",
+    "ets/widgets.abc"
+  ]
+}

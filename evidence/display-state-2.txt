@@ -1,0 +1,47 @@
+
+# [  262.888920] [BT_RFKILL]: DISABLE UART_RTS
+echo PROBE_BEGIN; cat /sys/class/drm/card0-HDMI-A-1/status; cat /sys/class/dsys/class/drm/card0-HDMI-A-1/status; cat /sys/class/d                         <rm/card0-HDMI-A-2/status;A-1/status; cat /sys/class/drm/card0-HDMI-A-2/status;                         < cat /sys/kernel/debug/drs/drm/card0-HDMI-A-2/status; cat /sys/kernel/debug/dr                         <i/0/summary; snapshot_disus; cat /sys/kernel/debug/dri/0/summary; snapshot_dis                         <play -f /data/local/tmp/c/dri/0/summary; snapshot_display -f /data/local/tmp/c                         <ursor-audit.jpeg; hilog -display -f /data/local/tmp/cursor-audit.jpeg; hilog -                         <x -t kmsg | grep -iE "usbp/cursor-audit.jpeg; hilog -x -t kmsg | grep -iE "usb                         <_host|413c|301a|MS116|newg -x -t kmsg | grep -iE "usb_host|413c|301a|MS116|new                         <.*USB|HDMI-A|hdmi.*connecusb_host|413c|301a|MS116|new.*USB|HDMI-A|hdmi.*connec                         <t" | tail -35; echo PROBEnew.*USB|HDMI-A|hdmi.*connect" | tail -35; echo PROBE                         <_END
+PROBE_BEGIN
+disconnected
+disconnected
+Video Port0: DISABLED
+Video Port1: DISABLED
+Video Port3: DISABLED
+fileType: 
+error: GetDisplayById 18446744073709551615 error!
+11-05 10:02:10.883  14,13471,246112671,-;[pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+11-05 10:02:10.883  14,13472,246113589,-;[pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 3155 uid 3023)
+11-05 10:02:10.883  14,13474,246113682,-;[pid=3155][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+11-05 10:02:10.883  12,13481,246113953,-;[pid=3155][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+11-05 10:02:10.897  14,13482,246114265,-;[pid=3155][Init][INFO][init_service.c:235]ServiceExec usb_host
+11-05 10:02:11.108  12,13497,246341053,-;[pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 3155) exit with signal : 11
+11-05 10:02:11.108  12,13498,246341070,-;[pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:3155 uid:3023 status:11.
+11-05 10:02:11.108  14,13499,246341088,-;[pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 3155.
+11-05 10:02:11.113  14,13503,246341283,-;[pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+11-05 10:02:11.113  14,13504,246342783,-;[pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 3172 uid 3023)
+11-05 10:02:11.113  14,13506,246342866,-;[pid=3172][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+11-05 10:02:11.113  12,13510,246343126,-;[pid=3172][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+11-05 10:02:11.243  14,13518,246343381,-;[pid=3172][Init][INFO][init_service.c:235]ServiceExec usb_host
+11-05 10:02:11.343  12,13539,246574386,-;[pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 3172) exit with signal : 11
+11-05 10:02:11.343  12,13540,246574403,-;[pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:3172 uid:3023 status:11.
+11-05 10:02:11.343  14,13541,246574421,-;[pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 3172.
+11-05 10:02:11.346  14,13542,246574648,-;[pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+11-05 10:02:11.346  14,13543,246576117,-;[pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 3192 uid 3023)
+11-05 10:02:11.346  14,13545,246576182,-;[pid=3192][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+11-05 10:02:11.346  12,13548,246576418,-;[pid=3192][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+11-05 10:02:11.356  14,13557,246576641,-;[pid=3192][Init][INFO][init_service.c:235]ServiceExec usb_host
+11-05 10:02:11.559  12,13578,246792015,-;[pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 3192) exit with signal : 11
+11-05 10:02:11.559  12,13579,246792045,-;[pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:3192 uid:3023 status:11.
+11-05 10:02:11.563  14,13580,246792061,-;[pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 3192.
+11-05 10:02:11.563  14,13581,246792344,-;[pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:usb_host
+11-05 10:02:11.563  14,13582,246793788,-;[pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info usb_host(pid 3212 uid 3023)
+11-05 10:02:11.563  14,13584,246793856,-;[pid=3212][PLUGIN][INFO][init_context_static.c:84]Set selinux context 0 for usb_host
+11-05 10:02:11.563  12,13587,246794101,-;[pid=3212][Init][WARNING][init_common_service.c:457]Service warning -1 usb_host, failed to enter sandbox.
+11-05 10:02:11.656  14,13596,246794309,-;[pid=3212][Init][INFO][init_service.c:235]ServiceExec usb_host
+11-05 10:02:11.776  12,13612,247005783,-;[pid=1][Init][WARNING][init_signal_handler.c:63]Child process usb_host(pid 3212) exit with signal : 11
+11-05 10:02:11.776  12,13613,247005841,-;[pid=1][Init][WARNING][init_signal_handler.c:90]Service warning usb_host, SIGCHLD received, pid:3212 uid:3023 status:11.
+11-05 10:02:11.776  14,13614,247005857,-;[pid=1][Init][INFO][init_common_service.c:925]ServiceReap info usb_host pid 3212.
+11-05 10:02:11.776  14,13615,247006076,-;[pid=1][Init][INFO][init_common_service.c:981]ServiceReap start failed! usb_host will reStart 240 second later
+PROBE_END
+# [  263.512323] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

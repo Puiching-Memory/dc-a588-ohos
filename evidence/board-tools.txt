@@ -1,0 +1,93 @@
+^C
+# [  148.441739] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+
+# [  148.819010] [BT_RFKILL]: DISABLE UART_RTS
+echo PROBE_BEGIN; param get persist.multimodalinput.cursor.hwcbounds; ps -ef get persist.multimodalinput.cursor.hwcbounds; ps -ef                         < | grep -iE "mmi|input|reput.cursor.hwcbounds; ps -ef | grep -iE "mmi|input|re                         <nder|usb_host"; command --ef | grep -iE "mmi|input|render|usb_host"; command -                         <v getevent; command -v ti|render|usb_host"; command -v getevent; command -v ti                         <meout; command -v hidumped -v getevent; command -v timeout; command -v hidumpe                         <r; command -v snapshot_di timeout; command -v hidumper; command -v snapshot_di                         <splay; hilog -h; echo PROmper; command -v snapshot_display; hilog -h; echo PRO                         <BE_END
+PROBE_BEGIN
+Get parameter "persist.multimodalinput.cursor.hwcbounds" fail! errNum is:106!
+input          320     1 0 09:58:06 ?     00:00:00 uinput_inject
+input          321     1 0 09:58:06 ?     00:00:00 multimodalinput
+input_user_host 547    1 0 09:58:07 ?     00:00:00 input_user_host         -i 11 -n input_user_host
+inputmethod    623     1 0 09:58:07 ?     00:00:00 inputmethod_service
+graphics       738     1 1 09:58:07 ?     00:00:00 render_service
+root          2669   223 0 10:00:32 ttyFIQ0 00:00:00 grep -iE mmi|input|render|usb_host
+/bin/timeout
+/bin/hidumper
+/bin/snapshot_display
+Usage:
+-h --help
+  Show all help information.
+  Show single help information with option: 
+  query/clear/buffer/stats/persist/private/kmsg/flowcontrol/baselevel/domain/combo
+Querying logs options:
+  No option performs a blocking read and keeps printing.
+  -x --exit
+    Performs a non-blocking read and exits when all logs in buffer are printed.
+  -a <n>, --head=<n>
+    Show n lines logs on head of buffer.
+  -z <n>, --tail=<n>
+    Show n lines logs on tail of buffer.
+  -t <type>, --type=<type>
+    Show specific type/types logs with format: type1,type2,type3
+    Don't show specific type/types logs with format: ^type1,type2,type3
+    Type coule be: app/core/init/kmsg/only_prerelease, kmsg can't combine with others.
+    Default types are: app,core,init,only_prerelease.
+  -L <level>, --level=<level>
+    Show specific level/levels logs with format: level1,level2,level3
+    Don't show specific level/levels logs with format: ^level1,level2,level3
+    Long and short level string are both accepted
+    Long level string coule be: DEBUG/INFO/WARN/ERROR/FATAL.
+    Short level string coule be: D/I/W/E/F.
+    Default levels are all levels.
+  -D <domain>, --domain=<domain>
+    Show specific domain/domains logs with format: domain1,domain2,doman3
+    Don't show specific domain/domains logs with format: ^domain1,domain2,doman3
+    Max domain count is 5.
+    See domain description at the end of this message.
+  -T <tag>, --tag=<tag>
+    Show specific tag/tags logs with format: tag1,tag2,tag3
+    Don't show specific tag/tags logs with format: ^tag1,tag2,tag3
+    Max tag count is 10.
+  -P <pid>, --pid=<pid>
+    Show specific pid/pids logs with format: pid1,pid2,pid3
+    Don't show specific domain/domains logs with format: ^pid1,pid2,pid3
+    Max pid count is 5.
+  -e <expr>, --regex=<expr>
+    Show the logs which match the regular expression <expr>.
+  -v <format>, --format=<format>
+    Show logs in different formats, options are:
+      color or colour      display colorful logs by log level.i.e.
+        [38;5;75mDEBUG        [38;5;40mINFO        [38;5;166mWARN        [38;5;196mERROR       [38;5;226mFATAL[0m
+      time format options are(single accepted):
+        time       display local time, this is default.
+        epoch      display the time from 1970/1/1.
+        monotonic  display the cpu time from bootup.
+      time accuracy format options are(single accepted):
+        msec       display time by millisecond, this is default.
+        usec       display time by microsecond.
+        nsec       display time by nanosecond.
+      year       display the year when -v time is specified.
+      zone       display the time zone when -v time is specified.
+      wrap       display the log without prefix when a log line is wrapped.
+    Different types of formats can be combined, such as:
+    -v color -v time -v msec -v year -v zone.
+-r
+  Remove all logs in hilogd buffer, advanced option:
+  -t <type>, --type=<type>
+    Remove specific type/types logs in buffer with format: type1,type2,type3
+    Type coule be: app/core/init/kmsg/only_prerelease.
+    Default types are: app,core,only_prerelease
+-g
+  Query hilogd buffer size, advanced option:
+  -t <type>, --type=<type>
+    Query specific type/types buffer size with format: type1,type2,type3
+    Type coule be: app/core/init/kmsg/only_prerelease.
+    Default types are: app,core,only_prerelease
+-G <size>, --buffer-size=<size>
+  Set hilogd buffer size, <size> could be number or number with unit.
+  Unit could be: B/K/M/G which represents Byte/Kilobyte/Megabyte/Gigabyte.
+  <size> range: [64.0K,16.0M].
+  Advanced option:
+  -t <type>, --type=<type>
+    Set  [  149.442324] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

@@ -1,0 +1,32 @@
+
+# echo PROBE_BEGIN; cat /proc/uptime; cat /sys/class/drm/card0-HDMI-A-1/statusproc/uptime; cat /sys/class/drm/card0-HDMI-A-1/status                         <; cat /sys/class/drm/cardss/drm/card0-HDMI-A-1/status; cat /sys/class/drm/card                         <0-HDMI-A-2/status; cat /stus; cat /sys/class/drm/card0-HDMI-A-2/status; cat /s                         <ys/kernel/debug/dri/0/sumard0-HDMI-A-2/status; cat /sys/kernel/debug/dri/0/sum                         <mary; ls /dev/input; echo /sys/kernel/debug/dri/0/summary; ls /dev/input; echo                         < PROBE_END
+PROBE_BEGIN
+52.60 375.11
+connected
+disconnected
+Video Port0: ACTIVE
+    Connector:HDMI-A-1	Encoder: TMDS-216
+	bus_format[2025]: YUV8_1X24
+	overlay_mode[1] output_mode[f] SDR[0] color-encoding[BT.709] color-range[Limited]
+    Display mode: 1920x1080p60
+	dclk[148500 kHz] real_dclk[148500 kHz] aclk[500000 kHz] type[48] flag[5]
+	H: 1920 2008 2052 2200
+	V: 1080 1084 1089 1125
+	Fixed H: 1920 2008 2052 2200
+	Fixed V: 1080 1084 1089 1125
+    Esmart0-win0: ACTIVE
+	win_id: 8
+	format: AB24 little-endian (0x34324241) pixel_blend_mode[0] glb_alpha[0xff]
+	color: SDR[0] color-encoding[BT.601] color-range[Limited]
+	rotate: xmirror: 0 ymirror: 0 rotate_90: 0 rotate_270: 0
+	csc: y2r[0] r2y[1] csc mode[1]
+	zpos: 3
+	src: pos[0, 0] rect[1920 x 1080]
+	dst: pos[0, 0] rect[1920 x 1080]
+	buf[0]: addr: 0x00000000f1387000 pitch: 7680 offset: 0
+Video Port1: DISABLED
+Video Port3: DISABLED
+event0  event1  event2  event3  event4  event5  event6
+PROBE_END
+# [   54.239819] hungtask_base whitelist[0]-init-1
+

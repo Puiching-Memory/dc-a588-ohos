@@ -1,0 +1,82 @@
+
+# echo PROBE_BEGIN; command -v base64; command -v gzip; command -v stty; command -v base64; command -v gzip; command -v stty; comma                         <nd -v mount; command -v sgzip; command -v stty; command -v mount; command -v s                         <ha256sum; ls /bin | grep mmand -v mount; command -v sha256sum; ls /bin | grep                          <-iE "hdc|tcp|netcat|nc$|fv sha256sum; ls /bin | grep -iE "hdc|tcp|netcat|nc$|f                         <tp|curl|wget|python|socatep -iE "hdc|tcp|netcat|nc$|ftp|curl|wget|python|socat                         <"; ls -l /system/etc/init$|ftp|curl|wget|python|socat"; ls -l /system/etc/init                         </foundation.cfg; cat /syscat"; ls -l /system/etc/init/foundation.cfg; cat /sys                         <tem/etc/init/foundation.cnit/foundation.cfg; cat /system/etc/init/foundation.c                         <fg | head -65; echo PROBEsystem/etc/init/foundation.cfg | head -65; echo PROBE                         <_END
+PROBE_BEGIN
+/bin/base64
+/bin/gzip
+/bin/mount
+/bin/sha256sum
+fsync
+ftpget
+ftpput
+hdcd
+hdcd_user_permit
+sync
+-r-x------ 1 root root 10516 2026-11-03 09:48 /system/etc/init/foundation.cfg
+{
+    "jobs" : [{
+            "name" : "services:foundation",
+            "cmds" : [
+                "mkdir /data/service/el1/public/AbilityManagerService 0711 foundation system",
+                "mkdir /data/storage/el1/bundle 0711 system system",
+                "mkdir /data/storage/el2/base 0711 system system",
+                "mkdir /data/storage/el2/database 0711 system system",
+                "mkdir /data/service/el1/public/notification 0711 foundation system",
+                "mkdir /data/service/el1/public/database 0711 ddms ddms",
+                "mkdir /data/service/el1/public/database/bundle_manager_service 02770 foundation ddms",
+                "mkdir /data/service/el1/public/database/notification_service 02770 foundation ddms",
+                "mkdir /data/service/el1/public/database/form_storage 02770 foundation ddms",
+                "mkdir /data/service/el1/public/window 0711 foundation foundation",
+                "mkdir /data/service/el1/public/database/common_event_service 02770 foundation ddms",
+                "mkdir /data/service/el1/public/database/auto_startup_service 02770 foundation ddms",
+                "mkdir /data/service/el1/public/database/app_config_data 02770 foundation ddms",
+                "mkdir /data/service/el1/public/database/app_exit_reason 02770 foundation ddms",
+                "mkdir /data/service/el1/public/ecological_rule_mgr_service 0751 foundation system",
+                "mkdir /data/service/el1/public/database/ability_manager_service 02770 foundation ddms",
+                "mkdir /data/service/el1/public/app_domain_verify_mgr_service 0750 foundation system",
+                "mkdir /data/service/el1/public/database/keep_alive_service 02770 foundation ddms",
+                "mkdir /data/service/el1/public/database/insight_intent 02770 foundation ddms"
+            ]
+        } , {
+            "name" : "services:restartfoundation",
+            "cmds" : [
+                "unset_bootevent bootevent.appfwk.ready",
+                "unset_bootevent bootevent.lockscreen.ready",
+                "unset_bootevent bootevent.launcher.ready",
+                "unset_bootevent bootevent.bms.main.bundles.ready",
+                "reset appspawn",
+                "reset accountmgr",
+                "reset bgtaskmgr_service",
+                "reset inputmethod_service",
+                "reset resource_schedule_service",
+                "reset device_usage_stats_service",
+                "stop dlp_permission_service",
+                "stop installs"
+            ]
+        }
+    ],
+    "services" : [{
+            "name" : "foundation",
+            "path" : ["/system/bin/sa_main", "/system/profile/foundation.json"],
+            "critical" : [1, 4, 240],
+            "importance" : -20,
+            "uid" : "foundation",
+            "permission" : [
+                "ohos.permission.ACCESS_DEVICE_COLLABORATION_SERVICE",
+                "ohos.permission.INPUT_MONITORING",
+                "ohos.permission.PERMISSION_USED_STATS",
+                "ohos.permission.DISTRIBUTED_SOFTBUS_CENTER",
+                "ohos.permission.DISTRIBUTED_DATASYNC",
+                "ohos.permission.MANAGE_AUDIO_CONFIG",
+                "ohos.permission.WRITE_CALL_LOG",
+                "ohos.permission.READ_CALL_LOG",
+                "ohos.permission.READ_CONTACTS",
+                "ohos.permission.READ_DFX_SYSEVENT",
+                "ohos.permission.GRANT_SENSITIVE_PERMISSIONS",
+                "ohos.permission.REVOKE_SENSITIVE_PERMISSIONS",
+                "ohos.permission.MANAGE_SETTINGS",
+                "ohos.permission.MANAGE_SECURE_SETTINGS",
+                "ohos.permission.START_ABILITIES_FROM_BACKGROUND",
+                "ohos.permission.ACCESS_SERVICE_DM",
+PROBE_END
+# [  411.637596] hungtask_user process 2081 is kicked
+

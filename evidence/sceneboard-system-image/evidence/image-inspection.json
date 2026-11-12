@@ -1,0 +1,96 @@
+{
+  "images": {
+    "system.img": {
+      "bytes": 2147483648,
+      "sha256": "5a323a9faa43b382a611e8d5690c0ca13a182279d5af5e36347d2bff81937228",
+      "original_sha256": "62ae221436cd3b36289da08ccc86591e1415e81d4193ec433119b4598388a0e9",
+      "unchanged": false,
+      "sector_offset": "0x29000",
+      "capacity": 2147483648
+    },
+    "boot.img": {
+      "bytes": 48569344,
+      "sha256": "a5e272fa5e8e7cb93007f5a7bfa525904deb85f034ce2722fbb5b24f862a31c6",
+      "original_sha256": "2d0ded4377213019bbf40fce5423c4090316bc066a765612b396d7458f1a74cf",
+      "unchanged": false,
+      "sector_offset": "0x6000",
+      "capacity": 67108864
+    },
+    "vendor.img": {
+      "bytes": 268431360,
+      "sha256": "286c8167a330ace12c332634cc1e1afb619edcd26b8a50193566bf17a00c7d4c",
+      "original_sha256": "215320622473f7de0594f7095cf565c61a08fba0f09d6835dab78e68424f0e2f",
+      "unchanged": false,
+      "sector_offset": "0x429000",
+      "capacity": 1073741824
+    },
+    "sys_prod.img": {
+      "bytes": 52428800,
+      "sha256": "f5410cbc5965587ff9bc72742e3a40b8cabc97e338103074faee2299246018a2",
+      "original_sha256": "2b6e11c9321117046f9d067fd259c9a9aa128583d8e227eace38e8ee2913fb0f",
+      "unchanged": false,
+      "sector_offset": "0x629000",
+      "capacity": 52428800
+    },
+    "chip_prod.img": {
+      "bytes": 52428800,
+      "sha256": "34014b7f58e3a33ac7dd1ebbc2eab20d75a582ca9ec246ec79981860ac3e4884",
+      "original_sha256": "a087f5dd388368e220876ca2a2f0c29784f2955da440a7f97824c5c10c97555a",
+      "unchanged": false,
+      "sector_offset": "0x642000",
+      "capacity": 52428800
+    }
+  },
+  "partition_content_differences": {
+    "vendor.img": [],
+    "sys_prod.img": [],
+    "chip_prod.img": []
+  },
+  "local_original_comparison": {
+    "vendor.img": {
+      "sha256": "0550eb8320322541f3f8a35dbfec98435cc8c3f0f3445e21e1bf23792e6068ce",
+      "unchanged": false,
+      "changed_paths": []
+    },
+    "sys_prod.img": {
+      "sha256": "52ac2b5fdac17db605d08222f2e8ff0c55ad6f8af0ebe4a3f0479398f25be275",
+      "unchanged": false,
+      "changed_paths": []
+    },
+    "chip_prod.img": {
+      "sha256": "c29470ff97e1c362b0047fb2638bc92ef590222e1d6c1f7db6f1e9805281ca3c",
+      "unchanged": false,
+      "changed_paths": []
+    }
+  },
+  "sceneboard_activation": "ENABLED",
+  "screen_service": {
+    "name": 4607,
+    "libpath": "libscreen_session_manager.z.so",
+    "run-on-create": true,
+    "distributed": false,
+    "bootphase": "CoreStartPhase",
+    "dump_level": 1,
+    "min_hdi_proxy_version": []
+  },
+  "required_libraries": [
+    "/system/lib64/platformsdk/libscreen_session_manager.z.so",
+    "/system/lib64/platformsdk/libscene_session_manager.z.so",
+    "/system/lib64/module/libscenesessionmanager_napi.z.so",
+    "/system/lib64/module/libscreensessionmanager_napi.z.so"
+  ],
+  "app": {
+    "bundleName": "com.ohos.sceneboard",
+    "versionCode": 20000048,
+    "versionName": "6.0.0.100",
+    "compileSdkVersion": "6.1.0.47",
+    "minAPIVersion": 20,
+    "targetAPIVersion": 20
+  },
+  "module": "pad_sceneboard",
+  "hap_sha256": "7b21b08807499486d7ff0b711e95f2d6d8d33eeb2a23450bd1b0ed396f97163f",
+  "device_types": [
+    "default",
+    "tablet"
+  ]
+}

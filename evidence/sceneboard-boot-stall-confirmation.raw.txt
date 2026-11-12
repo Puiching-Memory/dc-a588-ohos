@@ -1,0 +1,57 @@
+[  361.642459] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+
+# [  361.843191] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  362.043876] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; param get const.product.software; param get const.product. get const.product.software; param get const.product.                         <brand; param get const.prre; param get const.product.brand; param get const.pr                         <oduct.name; param get conct.brand; param get const.product.name; param get con                         <st.product.version; sqlit.product.name; param get const.product.version; sqlit                         <e3 -readonly "$scbdb" "seconst.product.version; sqlite3 -readonly "$scbdb" "se                         <lect count(*) from installite3 -readonly "$scbdb" "select count(*) from instal                         <led_bundle where KEY like"select count(*) from installed_bundle where KEY like                         < '%sceneboard%'; select ctalled_bundle where KEY like '%sceneboard%'; select c                         <ount(*) from preinstalledike '%sceneboard%'; select count(*) from preinstalled                         <_bundle;"; sha256sum /syst count(*) from preinstalled_bundle;"; sha256sum /sys                         <tem/app/SceneBoard/SceneBled_bundle;"; sha256sum /system/app/SceneBoard/SceneB                         <oard.hap; echo PROBE_END
+PROBE_BEGIN
+Get parameter "const.product.software" fail! errNum is:106!
+default 
+Rockchip OpenHarmony 6.1 LTS 
+Get parameter "const.product.version" fail! errNum is:106!
+0
+44
+[  362.244640] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  362.446061] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  362.480993] kauditd_printk_skb: 58 callbacks suppressed
+[  362.481009] audit: type=1400 audit(1793866313.753:6762): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  362.481055] audit: type=1400 audit(1793866313.753:6763): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  362.481068] audit: type=1400 audit(1793866313.753:6764): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  362.481079] audit: type=1400 audit(1793866313.753:6765): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  362.647577] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  362.695102] StorageDaemon: [StorageRadarThd:205] Storage statistic update, intervalMinutes:5
+[  362.781291] audit: type=1400 audit(1793866314.053:6766): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  362.781348] audit: type=1400 audit(1793866314.053:6767): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  362.781360] audit: type=1400 audit(1793866314.053:6768): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  362.781372] audit: type=1400 audit(1793866314.053:6769): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+7b21b08807499486d7ff0b711e95f2d6d8d33eeb2a23450bd1b0ed396f97163f  /system/app/SceneBoard/SceneBoard.hap
+PROBE_END
+# [  362.849024] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  363.050308] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  363.081464] audit: type=1400 audit(1793866314.356:6770): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  363.081488] audit: type=1400 audit(1793866314.356:6771): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  363.251198] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  363.452072] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  363.652874] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  363.767045] hungtask_user process 658 is kicked
+[  363.767071] XCollie: Send kick to hungtask Successful
+[  363.767071] 
+[  363.853672] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  364.054462] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  364.255240] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  364.456018] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  364.656850] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  364.857645] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  365.058393] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  365.259161] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  365.459930] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  365.660671] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  365.861399] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  366.062130] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  366.262862] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  366.463627] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  366.664359] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  366.865099] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  366.998238] hungtask_user process 215 is kicked
+[  366.998309] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  367.065846] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

@@ -1,0 +1,10 @@
+
+# echo PROBE_BEGIN; cat /system/etc/sceneboard.config; ps -ef | grep -iE "scensystem/etc/sceneboard.config; ps -ef | grep -iE "scen                         <eboard|launcher|systemui"fig; ps -ef | grep -iE "sceneboard|launcher|systemui"                         <; echo PROBE_END
+PROBE_BEGIN
+/system/bin/sh: cat: /system/etc/sceneboard.config: No such file or directory
+10008         1464   215 2 11:34:17 ?     00:00:01 com.ohos.systemui
+20010013      1575   215 1 11:34:17 ?     00:00:01 com.ohos.launcher
+root          2353   216 3 11:36:15 ttyFIQ0 00:00:00 grep -iE sceneboard|launcher|systemui
+PROBE_END
+# [  127.012008] hungtask_user process 215 is kicked
+

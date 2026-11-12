@@ -1,0 +1,121 @@
+{
+  "images": {
+    "system.img": {
+      "bytes": 2147483648,
+      "sha256": "b3f5382450d20a6b9e7741a68bbb8f6f7e7e56148c70a12aafb980744d8ad55c",
+      "original_sha256": "5a323a9faa43b382a611e8d5690c0ca13a182279d5af5e36347d2bff81937228",
+      "unchanged": false,
+      "sector_offset": "0x29000",
+      "capacity": 2147483648
+    },
+    "boot.img": {
+      "bytes": 48569344,
+      "sha256": "a5e272fa5e8e7cb93007f5a7bfa525904deb85f034ce2722fbb5b24f862a31c6",
+      "original_sha256": "a5e272fa5e8e7cb93007f5a7bfa525904deb85f034ce2722fbb5b24f862a31c6",
+      "unchanged": true,
+      "sector_offset": "0x6000",
+      "capacity": 67108864
+    },
+    "vendor.img": {
+      "bytes": 268431360,
+      "sha256": "7048762eb38871245f356dca964863a57e8371d054321318983c0ffec836a2e6",
+      "original_sha256": "286c8167a330ace12c332634cc1e1afb619edcd26b8a50193566bf17a00c7d4c",
+      "unchanged": false,
+      "sector_offset": "0x429000",
+      "capacity": 1073741824
+    },
+    "sys_prod.img": {
+      "bytes": 52428800,
+      "sha256": "b47abfc2d21f7be99daaf932b508af9b5a905d1146bf29f1642c04d4bf642897",
+      "original_sha256": "f5410cbc5965587ff9bc72742e3a40b8cabc97e338103074faee2299246018a2",
+      "unchanged": false,
+      "sector_offset": "0x629000",
+      "capacity": 52428800
+    },
+    "chip_prod.img": {
+      "bytes": 52428800,
+      "sha256": "bba6a0dcb1be644b40d3b4bf0d223a0833d8ab00074f5507ac80e774671bf45b",
+      "original_sha256": "34014b7f58e3a33ac7dd1ebbc2eab20d75a582ca9ec246ec79981860ac3e4884",
+      "unchanged": false,
+      "sector_offset": "0x642000",
+      "capacity": 52428800
+    }
+  },
+  "partition_content_differences": {
+    "vendor.img": [],
+    "sys_prod.img": [],
+    "chip_prod.img": []
+  },
+  "sceneboard_activation": "ENABLED",
+  "screen_service": {
+    "name": 4607,
+    "libpath": "libscreen_session_manager.z.so",
+    "run-on-create": true,
+    "distributed": false,
+    "bootphase": "CoreStartPhase",
+    "dump_level": 1,
+    "min_hdi_proxy_version": []
+  },
+  "required_libraries": [
+    "/system/lib64/platformsdk/libscreen_session_manager.z.so",
+    "/system/lib64/platformsdk/libscene_session_manager.z.so",
+    "/system/lib64/module/libscenesessionmanager_napi.z.so",
+    "/system/lib64/module/libscreensessionmanager_napi.z.so"
+  ],
+  "preinstall_fix": {
+    "profile_entry": {
+      "app_dir": "/system/app/SceneBoard",
+      "removable": false
+    },
+    "capability": {
+      "bundleName": "com.ohos.sceneboard",
+      "app_signature": [
+        "8E93863FC32EE238060BF69A9B37E2608FFFB21F93C862DD511CBAC9F30024B5"
+      ],
+      "allowAppUsePrivilegeExtension": true,
+      "allowAbilityPriorityQueried": true,
+      "allowAppRunWhenDeviceFirstLocked": true
+    },
+    "incremental_version": "sceneboard-preinstall-20261105-r2"
+  },
+  "app": {
+    "bundleName": "com.ohos.sceneboard",
+    "versionCode": 20000048,
+    "versionName": "6.0.0.100",
+    "compileSdkVersion": "6.1.0.47",
+    "minAPIVersion": 20,
+    "targetAPIVersion": 20
+  },
+  "module": "pad_sceneboard",
+  "hap_sha256": "7b21b08807499486d7ff0b711e95f2d6d8d33eeb2a23450bd1b0ed396f97163f",
+  "device_types": [
+    "default",
+    "tablet"
+  ],
+  "sceneboard_modules": [
+    {
+      "file": "SceneBoard.hap",
+      "module": "pad_sceneboard",
+      "type": "entry",
+      "sha256": "7b21b08807499486d7ff0b711e95f2d6d8d33eeb2a23450bd1b0ed396f97163f"
+    },
+    {
+      "file": "NotificationManagement.hap",
+      "module": "default_notificationmanagement",
+      "type": "feature",
+      "sha256": "66d033d20dacb6ab7045f0b735fbeedcd6f6cc8e2f23de8940fe729b13688491"
+    },
+    {
+      "file": "ThemeComponent.hap",
+      "module": "themecomponent",
+      "type": "feature",
+      "sha256": "4cd960f89f9776abc6e4e49d61edad3e44f30687e3cc6ac66159a0742df78b16"
+    },
+    {
+      "file": "ThemeService.hap",
+      "module": "themeservice_core",
+      "type": "feature",
+      "sha256": "893875ceb1f1c2cfa6edc020b5727d20998772247d7523c501fb2344b1f7d443"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "before": {
+    "log": "/home/<user>/ohos/validation/sceneboard-linux-20261105/evidence/baseline-build-logs/build.log",
+    "compile_results": [
+      "COMPILE RESULT:FAIL {ERROR:1275 WARN:16993}"
+    ],
+    "build_results": [
+      "BUILD FAILED in 4 min 33 s 749 ms "
+    ],
+    "diagnostic_messages": 1274,
+    "missing_module_messages": 225,
+    "missing_modules": {
+      "@ohos.sceneSessionManager": 151,
+      "@ohos.screenSessionManager": 32,
+      "@ohos.pcService.statusBar": 13,
+      "@ohos.transactionManager": 10,
+      "touchEvent": 6,
+      "DragControllerParam": 4,
+      "@ohos.sessionManagerService": 3,
+      "AnimateToParam": 2,
+      "ExpectedFrameRateRange": 2,
+      "@ohos.displayengine.displayengine_napi": 1,
+      "@ohos.space_ability_napi": 1
+    },
+    "non_error_missing_module_mentions": 0,
+    "arkts_warning_blocks": 0,
+    "missing_member_messages": 413,
+    "examples": [
+      "Use explicit types instead of \"any\", \"unknown\" (arkts-no-any-unknown)",
+      "Use explicit types instead of \"any\", \"unknown\" (arkts-no-any-unknown)",
+      "Property 'getAverageColor' does not exist on type 'Promise<ColorPicker> & void'.",
+      "'color' is possibly 'undefined'.",
+      "'color' is possibly 'undefined'.",
+      "'color' is possibly 'undefined'.",
+      "'color' is possibly 'undefined'.",
+      "Use explicit types instead of \"any\", \"unknown\" (arkts-no-any-unknown)",
+      "Use explicit types instead of \"any\", \"unknown\" (arkts-no-any-unknown)",
+      "Use explicit types instead of \"any\", \"unknown\" (arkts-no-any-unknown)",
+      "Use explicit types instead of \"any\", \"unknown\" (arkts-no-any-unknown)",
+      "Use explicit types instead of \"any\", \"unknown\" (arkts-no-any-unknown)"
+    ],
+    "sdk_preparation_verified": false
+  },
+  "after": {
+    "log": "/home/<user>/ohos/validation/sceneboard-linux-20261105/evidence/pad_sceneboard.log",
+    "compile_results": [],
+    "build_results": [
+      "BUILD FAILED in 6 min 44 s 675 ms "
+    ],
+    "diagnostic_messages": 0,
+    "missing_module_messages": 0,
+    "missing_modules": {},
+    "non_error_missing_module_mentions": 127,
+    "arkts_warning_blocks": 18126,
+    "missing_member_messages": 0,
+    "examples": [],
+    "sdk_preparation_verified": true
+  }
+}

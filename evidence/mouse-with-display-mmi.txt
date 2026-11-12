@@ -1,0 +1,115 @@
+
+# echo PROBE_BEGIN; hilog -x -P 322 | grep -iE "display|screen|cursor|pointer| -x -P 322 | grep -iE "display|screen|cursor|pointer|                         <MS116|failed|error" | taisplay|screen|cursor|pointer|MS116|failed|error" | tai                         <l -95; ls -l /proc/322/fder|MS116|failed|error" | tail -95; ls -l /proc/322/fd                         < | grep event7; param gettail -95; ls -l /proc/322/fd | grep event7; param get                         < const.product.devicetype/fd | grep event7; param get const.product.devicetype                         <; cat /sys/kernel/debug/dget const.product.devicetype; cat /sys/kernel/debug/d                         <ri/0/summary | head -12; ype; cat /sys/kernel/debug/dri/0/summary | head -12;                          <echo PROBE_END
+PROBE_BEGIN
+11-05 10:05:22.083   322   579 E C02803/InputWindowsManager: [P:M:1642|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.083   322   579 W C02803/InputWindowsManager: [P:M:1642|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.083   322   579 E C02803/InputWindowsManager: [P:M:1642|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.084   322   579 I C02803/InputWindowsManager: [P:M:1642|593]get deviceId failed:7
+11-05 10:05:22.091   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.091   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.091   322   579 W C02803/InputWindowsManager: [P:M:1643|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.091   322   579 E C02803/InputWindowsManager: [P:M:1643|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.091   322   579 W C02803/InputWindowsManager: [P:M:1643|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.091   322   579 E C02803/InputWindowsManager: [P:M:1643|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.091   322   579 W C02803/InputWindowsManager: [P:M:1643|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.091   322   579 E C02803/InputWindowsManager: [P:M:1643|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.091   322   579 I C02803/InputWindowsManager: [P:M:1643|593]get deviceId failed:7
+11-05 10:05:22.099   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.099   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.100   322   579 W C02803/InputWindowsManager: [P:M:1644|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.100   322   579 E C02803/InputWindowsManager: [P:M:1644|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.100   322   579 W C02803/InputWindowsManager: [P:M:1644|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.100   322   579 E C02803/InputWindowsManager: [P:M:1644|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.100   322   579 W C02803/InputWindowsManager: [P:M:1644|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.100   322   579 E C02803/InputWindowsManager: [P:M:1644|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.101   322   579 I C02803/InputWindowsManager: [P:M:1644|593]get deviceId failed:7
+11-05 10:05:22.107   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.107   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.107   322   579 W C02803/InputWindowsManager: [P:M:1645|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.107   322   579 E C02803/InputWindowsManager: [P:M:1645|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.107   322   579 W C02803/InputWindowsManager: [P:M:1645|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.107   322   579 E C02803/InputWindowsManager: [P:M:1645|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.107   322   579 W C02803/InputWindowsManager: [P:M:1645|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.107   322   579 E C02803/InputWindowsManager: [P:M:1645|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.107   322   579 I C02803/InputWindowsManager: [P:M:1645|593]get deviceId failed:7
+11-05 10:05:22.115   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.115   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.115   322   579 W C02803/InputWindowsManager: [P:M:1646|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.115   322   579 E C02803/InputWindowsManager: [P:M:1646|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.115   322   579 W C02803/InputWindowsManager: [P:M:1646|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.115   3229E C02803/InputWindowsManager: [P:M:1646|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.116   322   579 W C02803/InputWindowsManager: [P:M:1646|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.116   322   579 E C02803/InputWindowsManager: [P:M:1646|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.117   322   579 I C02803/InputWindowsManager: [P:M:1646|593]get deviceId failed:7
+11-05 10:05:22.131   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.131   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.131   322   579 W C02803/InputWindowsManager: [P:M:1647|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.131   322   579 E C02803/InputWindowsManager: [P:M:1647|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.131   322   579 W C02803/InputWindowsManager: [P:M:1647|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.131   322   579 E C02803/InputWindowsManager: [P:M:1647|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.131   322   579 W C02803/InputWindowsManager: [P:M:1647|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.131   322   579 E C02803/InputWindowsManager: [P:M:1647|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.132   322   579 I C02803/InputWindowsManager: [P:M:1647|593]get deviceId failed:7
+11-05 10:05:22.155   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.155   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.155   322   579 W C02803/InputWindowsManager: [P:M:1648|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.155   322   579 E C02803/InputWindowsManager: [P:M:1648|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.155   322   579 W C02803/InputWindowsManager: [P:M:1648|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.155   322   579 E C02803/InputWindowsManager: [P:M:1648|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.155   322   579 W C02803/InputWindowsManager: [P:M:1648|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.155   322   579 E C02803/InputWindowsManager: [P:M:1648|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.156   322   579 I C02803/InputWindowsManager: [P:M:1648|593]get deviceId failed:7
+11-05 10:05:22.171   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.171   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.171   322   579 W C02803/InputWindowsManager: [P:M:1649|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.171   322   579 E C02803/InputWindowsManager: [P:M:1649|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.171   322   579 W C02803/InputWindowsManager: [P:M:1649|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.171   322   579 E C02803/InputWindowsManager: [P:M:1649|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.171   322   579 W C02803/InputWindowsManager: [P:M:1649|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.171   322   579 E C02803/InputWindowsManager: [P:M:1649|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.172   322   579 I C02803/InputWindowsManager: [P:M:1649|593]get deviceId failed:7
+11-05 10:05:22.179   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.179   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.179   322   579 W C02803/InputWindowsManager: [P:M:1650|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.179   322   579 E C02803/InputWindowsManager: [P:M:1650|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.179   322   579 W C02803/InputWindowsManager: [P:M:1650|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.179   322   579 E C02803/InputWindowsManager: [P:M:1650|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.179   322   579 W C02803/InputWindowsManager: [P:M:1650|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.179   322   579 E C02803/InputWindowsManager: [P:M:1650|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.180   322   579 I C02803/InputWindowsManager: [P:M:1650|593]get deviceId failed:7
+11-05 10:05:22.195   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.195   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.195   322   579 W C02803/InputWindowsManager: [P:M:1651|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.195   322   579 E C02803/InputWindowsManager: [P:M:1651|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.195   322   579 W C02803/InputWindowsManager: [P:M:1651|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.195   322   579 E C02803/InputWindowsManager: [P:M:1651|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.195   322   579 W C02803/InputWindowsManager: [P:M:1651|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.195   322   579 E C02803/InputWindowsManager: [P:M:1651|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.196   322   579 I C02803/InputWindowsManager: [P:M:1651|593]get deviceId failed:7
+11-05 10:05:22.219   322   579 I C02805/MouseTransformProcessor: [|329]mouseName:PixArt Dell MS116 USB Optical Mouse, devType:3
+11-05 10:05:22.219   322   579 W C02805/MouseTransformProcessor: [|264]displayinfo get failed, use default acclerate. width:1920 height:1080
+11-05 10:05:22.219   322   579 W C02803/InputWindowsManager: [P:M:1652|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.219   322   579 E C02803/InputWindowsManager: [P:M:1652|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.219   322   579 W C02803/InputWindowsManager: [P:M:1652|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.219   322   579 E C02803/InputWindowsManager: [P:M:1652|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.219   322   579 W C02803/InputWindowsManager: [P:M:1652|3006]Failed to obtain physical(-1) display
+11-05 10:05:22.219   322   579 E C02803/InputWindowsManager: [P:M:1652|3944]CHKPV(physicalDisplayInfo) is null
+11-05 10:05:22.220   322   579 I C02803/InputWindowsManager: [P:M:1652|593]get deviceId failed:7
+11-05 10:05:23.219   322   579 I C02805/InputKeyFlow: [|1147]PixArt Dell MS116 USB Optical Mouse, TW: 5, first: 1617-(2026-11-05 10:05:21.885ms), 1652, count: 36
+lrwx------ 1 input input 64 2026-11-05 10:05 22 -> /dev/input/event7
+default 
+Video Port0: ACTIVE
+    Connector:HDMI-A-1	Encoder: TMDS-216
+	bus_format[2025]: YUV8_1X24
+	overlay_mode[1] output_mode[f] SDR[0] color-encoding[BT.709] color-range[Limited]
+    Display mode: 1920x1080p60
+	dclk[148500 kHz] real_dclk[148500 kHz] aclk[500000 kHz] type[48] flag[5]
+	H: 1920 2008 2052 2200
+	V: 1080 1084 1089 1125
+	Fixed H: 1920 2008 2052 2200
+	Fixed V: 1080 1084 1089 1125
+    Esmart0-win0: ACTIVE
+	win_id: 8
+PROBE_END
+# [  116.888755] hungtask_user process 219 is kicked
+

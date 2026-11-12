@@ -1,0 +1,433 @@
+m_service.c:319]HandleParamWatcherAdd name persist.location.switch_mode watcher: 54
+[   13.730385] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:229878
+[   13.730411] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:229878
+[   13.749275] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.749758] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.749778] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.749790] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+
+[   13.753554] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+# [   13.773309] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.773798] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.777028] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.843359] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.844112] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.847222] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.847774] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.848054] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.848344] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.849227] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.853922] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.862281] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.920096] platform hdmiin-sound: deferred probe pending
+[   13.920122] platform mtd_vendor_storage: deferred probe pending
+[   13.958028] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.958540] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.958581] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   13.958614] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.067377] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.070894] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.074219] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.077136] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.080398] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.082660] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.084870] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.086651] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; cat /proc/uptime; param get const.product.incremental.versproc/uptime; param get const.product.incremental.vers                         <ion; ps -ef | grep -iE "fnst.product.incremental.version; ps -ef | grep -iE "f                         <oundation|sceneboard|launersion; ps -ef | grep -iE "foundation|sceneboard|laun                         <cher|systemui|bootanim|re "foundation|sceneboard|launcher|systemui|bootanim|re                         <nder_service"; param get auncher|systemui|bootanim|render_service"; param get                          <bootevent.wms.ready; para|render_service"; param get bootevent.wms.ready; para                         <m get bootevent.wms.fullset bootevent.wms.ready; param get bootevent.wms.fulls                         <creen.ready; param get boaram get bootevent.wms.fullscreen.ready; param get bo                         <otevent.account.ready; lsllscreen.ready; param get bootevent.account.ready; ls                         < -t /data/log/faultlog/fa bootevent.account.ready; ls -t /data/log/faultlog/fa                         <ultlogger | head -n 15; e ls -t /data/log/faultlog/faultlogger | head -n 15; e                         <cho PROBE_END
+[   14.222914] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+PROBE_BEGIN
+[   14.223355] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+14.21 66.93
+[   14.223387] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.223402] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.224314] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.224893] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.224942] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.224981] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.229118] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.229417] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.229472] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.229505] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.232808] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.232974] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.233158] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+sceneboard-preinstall-20261105-r2 
+[   14.233177] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.233189] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.233472] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.233486] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.233498] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.237190] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.237733] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.237795] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.237853] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.238909] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.239303] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.239347] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.239382] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.246519] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.246898] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.246972] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.247009] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.247766] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.248045] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.248092] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.248125] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.248263] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.248704] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.248723] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.248735] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.249763] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.249936] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.249957] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.249968] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.263233] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.263277] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.263358] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.263372] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+foundation     573     1 24 17:24:05 ?    00:00:02 foundation
+graphics       584     1 12 17:24:05 ?    00:00:01 render_service
+20010014      1649   221 97 17:24:09 ?    00:00:07 com.ohos.sceneboard
+root          2103   223 1 17:24:16 ttyFIQ0 00:00:00 grep -iE foundation|sceneboard|launcher|systemui|bootanim|render_service
+true 
+true[   14.307750] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+ 
+[   14.308882] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.309009] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.311126] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.311434] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.311481] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.311517] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.311814] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.311951] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312019] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312124] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312139] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312151] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312307] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312319] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312329] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312419] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.312431] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+true 
+[   14.312443] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.314827] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.314990] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315010] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315020] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315147] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315292] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315433] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315471] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315504] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315646] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315898] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315917] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.315929] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.317972] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318275] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318324] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318358] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318449] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318612] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318675] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318761] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318815] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318830] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.318909] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.319048] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105172409314.log
+[   14.319164] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105172409103.log
+[   14.319201] access_token_id: access_tokenid_ioctl: access E=84
+cppcrash-usb_host-3023-20261105172408816.log
+[   14.319234] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105171641307.log
+[   14.319313] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105171641073.log
+[   14.319548] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105171640851.log
+[   14.319584] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105171639643.log
+[   14.319615] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105171228316.log
+[   14.319740] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105171228110.log
+[   14.319868] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+cppcrash-usb_host-3023-20261105171227858.log
+[   14.319953] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+PROBE_END
+[   14.319987] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+# [   14.320021] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320111] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320290] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320428] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320442] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320451] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320574] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320585] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320597] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320700] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320710] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320720] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320797] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320807] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320817] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320890] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320901] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.320911] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.321008] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.321020] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.321030] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.321134] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.321176] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.321187] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.321197] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.325993] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.326272] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.326290] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.326303] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.326670] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.326927] access_token_id: access_tokenid_ioctl: access tokenid ma] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.326995] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.327504] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.327641] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.327754] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.327867] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.327905] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.327940] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328261] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328275] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328284] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328323] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328393] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328405] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328414] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328513] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328525] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.328534] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337132] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337341] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337381] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337413] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337512] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337678] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337758] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337930] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337965] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.337997] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338074] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338156] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338233] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338366] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338381] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338392] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338510] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338523] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338533] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338616] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338627] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338639] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338726] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338737] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338749] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338829] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.338841] access magic fail, TYPE=84
+[   14.338851] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.342436] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.342577] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.342595] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.342606] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.358270] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.358953] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.360789] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.368830] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.368860] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.368918] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.368931] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.368965] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.368977] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.370128] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.370329] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.370367] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.370400] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.373568] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.373758] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.373796] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.373829] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.378545] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.379480] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.379649] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.379795] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.379811] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.379822] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.379986] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.380000] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.380010] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.380185] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.380281] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.380294] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.380303] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.380446] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.423280] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.429742] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.479979] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.486672] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.487121] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.487540] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.488083] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.552356] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.615426] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.816409] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.816496] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.816565] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.816577] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.816588] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.820880] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.820921] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.912451] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.933615] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.933879] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.957854] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.958343] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.958723] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.959363] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.986093] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.986611] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.987128] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   14.987843] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.066472] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.070593] SAMGR: rm SA:1602_104
+[   15.071043] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 23 pid 220 key: ohos.ctl.stop
+[   15.071500] [pid=1][Init][INFO][init_common_service.c:786]stop service i18n_service, pid 1270.
+[   15.071635] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071688] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071745] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071764] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071787] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071804] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071827] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071844] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071864] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228537
+[   15.071872] SAMGR: Scheduler proc:i18n_service kill pid:1270,3013_0_1ms
+[   15.078559] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process Unknown(pid 1270) exit with signal : 9
+[   15.079217] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:1270 uid:3013 status:9.
+[   15.079379] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:228529
+[   15.230060] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.230237] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.230336] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.230405] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.230912] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.234440] [SCHED_RTG] do_proc_rtg_ioctl: RTG_SCHED_IPC_MAGIC fail, TYPE=84
+[   15.234459] [SCHED_RTG] parse_create_rtg_grp rtgid=2, type=0, prio=97, threadnum=5, rtnum=4
+[   15.375237] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.375391] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.375513] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.375726] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.418051] kauditd_printk_skb: 505 callbacks suppressed
+[   15.418067] audit: type=1400 audit(1793870658.625:1606): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.418124] audit: type=1400 audit(1793870658.625:1607): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.418138] audit: type=1400 audit(1793870658.625:1608): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.418149] audit: type=1400 audit(1793870658.625:1609): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.419273] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.433428] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.433727] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.433769] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.433801] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.474435] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.510035] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.516183] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.522603] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.648738] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.649068] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.649088] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.649100] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.718393] audit: type=1400 audit(1793870658.925:1610): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.718476] audit: type=1400 audit(1793870658.925:1611): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.718489] audit: type=1400 audit(1793870658.925:1612): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.718501] audit: type=1400 audit(1793870658.925:1613): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   15.812885] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.842239] hungtask_base whitelist[0]-init-1
+[   15.842335] hungtask_base whitelist[1]-appspawn-221
+[   15.853165] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.899873] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.945412] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   15.991143] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.018634] audit: type=1400 audit(1793870659.225:1614): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   16.018688] audit: type=1400 audit(1793870659.225:1615): avc:  denied  { ioctl } for  pid=565 comm="OS_IPC_0_582" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[   16.040077] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.090273] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.103480] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.103817] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.103860] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.103894] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.105873] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.106021] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.106039] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.106051] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.109208] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.109424] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.109444] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.109455] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.112895] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.113094] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.113115] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.113126] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.117598] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.117867] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.117887] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.117898] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.122703] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.122945] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.122965] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   16.122975] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   17.226313] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   17.228072] SAMGR: rm SA:3511_103
+[   17.228366] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 24 pid 220 key: samgr.cache.sa
+[   17.228471] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228491] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228515] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228633] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 25 pid 220 key: ohos.ctl.stop
+[   17.228789] [pid=1][Init][INFO][init_common_service.c:786]stop service dslm_service, pid 1492.
+[   17.228844] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228857] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228867] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228873] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228881] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228902] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228910] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228916] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228923] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226380
+[   17.228966] SAMGR: Scheduler proc:dslm_service kill pid:1492,3046_0_0ms
+[   17.230799] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process Unknown(pid 1492) exit with signal : 9
+[   17.230964] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:1492 uid:3046 status:9.
+[   17.230985] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:226378
+[   17.400559] hungtask_user process 221 is kicked
+[   17.400689] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[   18.667588] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   18.672349] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   18.672580] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   18.672599] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   18.672610] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   19.026583] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   19.026663] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   19.029714] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   19.042236] hungtask_base whitelist[0]-init-1
+[   19.042331] hungtask_base whitelist[1]-appspawn-221
+[   19.080124] SAMGR: rm SA:4801_102
+[   19.080475] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 26 pid 220 key: ohos.ctl.stop
+[   19.080934] [pid=1][Init][INFO][init_common_service.c:786]stop service dhardware, pid 1915.
+[   19.081071] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224528
+[   19.081126] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224528
+[   19.081181] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224528
+[   19.081199] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224528
+[   19.081221] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224528
+[   19.081237] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224527
+[   19.081258] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224527
+[   19.081275] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224527
+[   19.081295] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:224527
+[   19.081386] SAMGR: Scheduler proc:dhardware kill pid:1915,3056_0_1ms
+[   19.089187] [pid=1][Init][WARNING][init_signal_handler.c:63]Child process Unknown(pid 1915) exit with signal : 9
+[   19.089398] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[   19.089630] [pid=1][Init][WARNING][init_signal_handler.c:90]Service warning Unknown, SIGCHLD received, pid:1915 uid:3056 status:9.
+

@@ -1,0 +1,21 @@
+
+# [  394.768522] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; for scbkey in const.product.software.version const.productcbkey in const.product.software.version const.product                         <.build.type const.productftware.version const.product.build.type const.product                         <.brand const.product.nameuct.build.type const.product.brand const.product.name                         < const.product.devicetypeuct.brand const.product.name const.product.devicetype                         < const.product.incrementaame const.product.devicetype const.product.incrementa                         <l.version const.comp.hl.pype const.product.incremental.version const.comp.hl.p                         <roduct_base_version.real;ntal.version const.comp.hl.product_base_version.real;                         < do echo "$scbkey"; paraml.product_base_version.real; do echo "$scbkey"; param                         < get "$scbkey"; done; echal; do echo "$scbkey"; param get "$scbkey"; done; ech                         <o PROBE_END
+PROBE_BEGIN
+const.product.software.version
+OpenHarmony 6.1.0.36 
+const.product.build.type
+default 
+const.product.brand
+default 
+const.product.name
+Rockchip OpenHarmony 6.1 LTS 
+const.product.devicetype
+default 
+const.product.incremental.version
+default 
+const.comp.hl.product_base_version.real
+Get parameter "const.comp.hl.product_base_version.real" fail! errNum is:106!
+PROBE_END
+# [  395.370888] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

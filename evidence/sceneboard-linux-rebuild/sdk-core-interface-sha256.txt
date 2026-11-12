@@ -1,0 +1,6 @@
+a1437e255c57b69c2ed11f663d1c6a3ffbb3d4c6b659df271964d64076968b57  staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.sceneSessionManager.d.ts
+a1437e255c57b69c2ed11f663d1c6a3ffbb3d4c6b659df271964d64076968b57  /home/<user>/ohos/validation/sceneboard-linux-20261105/sdk/23/ets/api/@ohos.sceneSessionManager.d.ts
+e818b864b41d79b4a2bd4959a1b662a615170004a5143f2a1fef9533c79e2357  staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.screenSessionManager.d.ts
+e818b864b41d79b4a2bd4959a1b662a615170004a5143f2a1fef9533c79e2357  /home/<user>/ohos/validation/sceneboard-linux-20261105/sdk/23/ets/api/@ohos.screenSessionManager.d.ts
+11ca95dd1cba1f684e9d466004493f99f0f88ae4c6a2cb11746251b0cbab1891  staticcommon/basecommon/windowsceneinterfaces/src/main/ets/interfaces/@ohos.pcService.statusBar.d.ts
+11ca95dd1cba1f684e9d466004493f99f0f88ae4c6a2cb11746251b0cbab1891  /home/<user>/ohos/validation/sceneboard-linux-20261105/sdk/23/ets/api/@ohos.pcService.statusBar.d.ts

@@ -1,0 +1,19 @@
+diff --git a/service/window_manager/src/screen_pointer.cpp b/service/window_manager/src/screen_pointer.cpp
+index 7184e20..e5e45a8 100644
+--- a/service/window_manager/src/screen_pointer.cpp
++++ b/service/window_manager/src/screen_pointer.cpp
+@@ -519,7 +519,13 @@ bool ScreenPointer::MoveSoft(int32_t x, int32_t y)
+     int32_t px = x - FOCUS_POINT;
+     int32_t py = y - FOCUS_POINT;
+ 
+-    if (!IsMirror()) {
++    // 显示后端不支持硬件光标时，RSPointerWindowManager 会把 isPointerEnableHwc_ 置为 false，
++    // 此时 SetHwcNodeBounds 只在渲染侧记录边界，不会移动节点本身，光标会固定在初始 (0,0)。
++    // 这里默认改用节点自身边界，由常规合成定位；需要回到 HWC 定位时，
++    // 设置 persist.multimodalinput.cursor.hwcbounds=1 后重启。
++    static const bool useHwcCursorBounds =
++        (OHOS::system::GetParameter("persist.multimodalinput.cursor.hwcbounds", "0") == "1");
++    if (!IsMirror() && useHwcCursorBounds) {
+         int64_t nodeId = surfaceNode_->GetId();
+         Rosen::RSInterfaces::GetInstance().SetHwcNodeBounds(nodeId, px, py, DEFAULT_CURSOR_SIZE, DEFAULT_CURSOR_SIZE);
+     } else {

@@ -1,0 +1,14 @@
+
+# [  322.500056] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; sqlite3 -readonly "$scbdb" "select KEY,length(VALUE) from e3 -readonly "$scbdb" "select KEY,length(VALUE) from                          <installed_bundle where KElect KEY,length(VALUE) from installed_bundle where KE                         <Y like '%sceneboard%' or om installed_bundle where KEY like '%sceneboard%' or                          <KEY like '%launcher%' or  KEY like '%sceneboard%' or KEY like '%launcher%' or                          <KEY like '%systemui%'; seor KEY like '%launcher%' or KEY like '%systemui%'; se                         <lect KEY,length(VALUE) fror KEY like '%systemui%'; select KEY,length(VALUE) fr                         <om bms_param; select KEY  select KEY,length(VALUE) from bms_param; select KEY                          <from install_exception_mg from bms_param; select KEY from install_exception_mg                         <r;"; echo PROBE_END
+PROBE_BEGIN
+com.ohos.systemui|42090
+com.ohos.launcher|18349
+SystemTimeForShortcut|13
+otaFlag|8
+updatePermissionsFlag|7
+fingerprint|81
+PreInstallExceptionMgr|47
+PROBE_END
+# [  322.901527] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

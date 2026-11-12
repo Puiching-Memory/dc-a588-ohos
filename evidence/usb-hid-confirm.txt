@@ -1,0 +1,19 @@
+
+# [  284.523473] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; cat /sys/bus/usb/devices/3-1/idVendor; cat /sys/bus/usb/desys/bus/usb/devices/3-1/idVendor; cat /sys/bus/usb/de                         <vices/3-1/idProduct; cat dVendor; cat /sys/bus/usb/devices/3-1/idProduct; cat                          </sys/bus/usb/devices/3-1//devices/3-1/idProduct; cat /sys/bus/usb/devices/3-1/                         <product; cat /sys/bus/usbat /sys/bus/usb/devices/3-1/product; cat /sys/bus/usb                         </devices/3-1:1.0/uevent; -1/product; cat /sys/bus/usb/devices/3-1:1.0/uevent;                          <ls -l /proc/321/fd | grepusb/devices/3-1:1.0/uevent; ls -l /proc/321/fd | grep                         < event7; cat /sys/class/dt; ls -l /proc/321/fd | grep event7; cat /sys/class/d                         <rm/card0-HDMI-A-1/status;rep event7; cat /sys/class/drm/card0-HDMI-A-1/status;                         < cat /sys/class/drm/card0s/drm/card0-HDMI-A-1/status; cat /sys/class/drm/card0                         <-HDMI-A-2/status; hilog -us; cat /sys/class/drm/card0-HDMI-A-2/status; hilog -                         <x -P 321 | grep -iE "No drd0-HDMI-A-2/status; hilog -x -P 321 | grep -iE "No d                         <isplay|MS116" | tail -6; g -x -P 321 | grep -iE "No display|MS116" | tail -6;                          <echo PROBE_END
+PROBE_BEGIN
+413c
+301a
+Dell MS116 USB Optical Mouse
+DEVTYPE=usb_interface
+DRIVER=usbhid
+PRODUCT=413c/301a/100
+TYPE=0/0/0
+INTERFACE=3/1/2
+MODALIAS=usb:v413Cp301Ad0100dc00dsc00dp00ic03isc01ip02in00
+lrwx------ 1 input input 64 2026-11-05 10:02 31 -> /dev/input/event7
+disconnected
+disconnected
+PROBE_END
+# [  284.906309] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:198790
+

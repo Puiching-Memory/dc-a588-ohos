@@ -1,0 +1,16 @@
+{
+  "status": "sceneboard-direction-abandoned-at-user-request",
+  "restored_source_files": {
+    "vendor/rockchip/rk3588/preinstall-config/install_list.json": "6b11cef01000da8cc102caaa978a61bc5fb2dd16c73141ecb32ceae39a3c7703",
+    "vendor/rockchip/rk3588/preinstall-config/install_list_capability.json": "6aee041f1207ca1eb9fdb91e09a46e8989d12f7535e2b12b95ce0273fc946764",
+    "base/startup/init/services/etc/param/ohos.para": "cf1c116e3667586fa528e7735b4302cbb3f6ddc7f901773ab1ca95d863c61ccb"
+  },
+  "window_manager_use_sceneboard": false,
+  "new_build_executed": false,
+  "retained": [
+    "Linux SDK preparation source fixes",
+    "classic cursor rsId source fix",
+    "original MoveSoft patch",
+    "other pre-existing worktree changes"
+  ]
+}

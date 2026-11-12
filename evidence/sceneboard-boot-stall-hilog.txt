@@ -1,0 +1,7 @@
+
+# [  125.358805] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; hilog -x | grep -iE "sceneboard|scene.board|fusionsearch|S -x | grep -iE "sceneboard|scene.board|fusionsearch|S                         <tartUIAbility|StartAbilitd|scene.board|fusionsearch|StartUIAbility|StartAbilit                         <y.*fail|failed to load|Erh|StartUIAbility|StartAbility.*fail|failed to load|Er                         <ror message" | tail -n 18lity.*fail|failed to load|Error message" | tail -n 18                         <0; echo PROBE_END
+PROBE_BEGIN
+PROBE_END
+# [  125.961082] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

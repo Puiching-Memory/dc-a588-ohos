@@ -1,0 +1,10 @@
+
+# [  180.154724] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; bm dump -n com.ohos.sceneboard; ls -lh /data/log/hilog; himp -n com.ohos.sceneboard; ls -lh /data/log/hilog; hi                         <dumper -s 200 -a "-h"; ec; ls -lh /data/log/hilog; hidumper -s 200 -a "-h"; ec                         <ho PROBE_END
+PROBE_BEGIN
+error: failed to get information and the parameters may be wrong.
+total 0
+request error
+PROBE_END
+# [  180.958592] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

@@ -1,0 +1,57 @@
+
+[  230.155463] audit: type=1400 audit(1793844457.798:4718): avc:  denied  { ioctl } for  pid=220 comm="sh" path="/dev/tty" dev="tmpfs" ino=34 ioctlcmd=0x5413 scontext=u:r:console:s0 tcontext=u:object_r:tty_device:s0 tclass=chr_file permissive=1
+# [  230.320632] audit: type=1400 audit(1793844457.968:4719): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+echo PROBE_BEGIN; hilog -x -P 722 | grep -iE "screen\[|screenId|screen id|sc -x -P 722 | grep -iE "screen\[|screenId|screen id|sc                         <reen_id|pointer window" |reen\[|screenId|screen id|screen_id|pointer window" |                         < tail -35; ps -ef | grep |screen_id|pointer window" | tail -35; ps -ef | grep                          <foundation; hilog -x | gr" | tail -35; ps -ef | grep foundation; hilog -x | gr                         <ep -iE "ScreenId.*Rs|rsScep foundation; hilog -x | grep -iE "ScreenId.*Rs|rsSc                         <reenId|defaultScreenId|Ge grep -iE "ScreenId.*Rs|rsScreenId|defaultScreenId|Ge                         <tDisplayInfo|screenshot.*sScreenId|defaultScreenId|GetDisplayInfo|screenshot.*                         <fail|snapshot.*fail|permi|GetDisplayInfo|screenshot.*fail|snapshot.*fail|permi                         <ssion.*snapshot" | tail -t.*fail|snapshot.*fail|permission.*snapshot" | tail -                         <25; echo PROBE_END
+PROBE_BEGIN
+11-05 10:07:23.576   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.593   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.609   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.626   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.643   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.659   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.676   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.693   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.710   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.726   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.743   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.759   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.776   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.793   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.810   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.826   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.843   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.859   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.876   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.893   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.909   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.926   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.943   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.959   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.976   722   722 I01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:23.993   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.009   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.026   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.043   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.060   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.076   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.093   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.110   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.126   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+11-05 10:07:24.143   722   722 I C01406/RSScreenManager: GetScreenActiveMode: screen[1] pixel[1920 * 1080],freshRate[60]
+foundation     705     1 1 10:03:50 ?     00:00:02 foundation
+root          2454   220 0 10:07:37 ttyFIQ0 00:00:00 grep foundation
+PROBE_END
+# [  231.463084] hungtask_user process 2081 is kicked
+[  231.463145] APPSPAWN: [appspawn_kickdog.c:83]Nweb kick 4
+[  234.822636] kauditd_printk_skb: 394 callbacks suppressed
+[  234.822650] audit: type=1400 audit(1793844462.468:5114): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  234.822695] audit: type=1400 audit(1793844462.468:5115): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  234.822706] audit: type=1400 audit(1793844462.468:5116): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  234.822718] audit: type=1400 audit(1793844462.468:5117): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  235.122746] audit: type=1400 audit(1793844462.768:5118): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  235.122777] audit: type=1400 audit(1793844462.768:5119): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  235.122789] audit: type=1400 audit(1793844462.768:5120): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  235.122801] audit: type=1400 audit(1793844462.768:5121): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  235.422858] audit: type=1400 audit(1793844463.068:5122): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  235.422884] audit: type=1400 audit(1793844463.068:5123): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+

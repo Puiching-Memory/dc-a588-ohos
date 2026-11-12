@@ -1,0 +1,70 @@
+
+# [  281.943653] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  282.144469] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  282.345237] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; sqlite3 -readonly /data/service/el1/public/bms/bundle_manae3 -readonly /data/service/el1/public/bms/bundle_mana                         <ger_service/bmsdb.db ".tae/el1/public/bms/bundle_manager_service/bmsdb.db ".ta                         <bles"; cat /data/service/anager_service/bmsdb.db ".tables"; cat /data/service/                         <el1/public/bms/bundle_man.tables"; cat /data/service/el1/public/bms/bundle_man                         <ager_service/bundle_user_ce/el1/public/bms/bundle_manager_service/bundle_user_                         <info.json; echo PROBE_ENDmanager_service/bundle_user_info.json; echo PROBE_END                         <
+PROBE_BEGIN
+app_control                   preinstalled_bundle         
+app_provision_info            quick_fix                   
+bms_param                     router_map_V2               
+default_app                   sandbox                     
+first_install_bundle_info     shortcut_enabled            
+install_exception_mgr         shortcut_info               
+install_patch_bundle          shortcut_visible            
+installed_bundle              uninstall_bundle_info       
+pre_on_demand_install_bundle
+{
+    "com.ohos.launcher_100": {
+        "disabledAbilities": [],
+        "enabled": false,
+        "overlayState": [],
+        "setEnabledCaller": "bms",
+        "userId": 100
+    },
+    "com.ohos.systemui_0": {
+        "disabledAbilities": [],
+        "enabled": false,
+        "overlayState": [],
+        "setEnabledCaller": "bms",
+        "userId": 0
+    }
+}PROBE_END
+# [  282.546081] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  282.747385] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  282.948280] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  283.149073] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  283.349856] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  283.550614] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  283.751351] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  283.952075] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  284.152818] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  284.353595] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  284.554363] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  284.755108] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  284.955855] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  285.156609] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  285.357364] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  285.558118] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  285.758841] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  285.890966] kauditd_printk_skb: 78 callbacks suppressed
+[  285.890971] audit: type=1400 audit(1793866237.166:5713): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  285.890995] audit: type=1400 audit(1793866237.166:5714): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  285.891007] audit: type=1400 audit(1793866237.166:5715): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  285.891019] audit: type=1400 audit(1793866237.166:5716): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  285.959556] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  286.160295] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  286.191309] audit: type=1400 audit(1793866237.463:5717): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  286.191329] audit: type=1400 audit(1793866237.463:5718): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  286.191340] audit: type=1400 audit(1793866237.463:5719): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  286.191351] audit: type=1400 audit(1793866237.463:5720): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  286.361034] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  286.491645] audit: type=1400 audit(1793866237.763:5721): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  286.491666] audit: type=1400 audit(1793866237.763:5722): avc:  denied  { ioctl } for  pid=583 comm="OS_IPC_3_896" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  286.561758] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  286.762493] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  286.963251] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  286.996038] hungtask_user process 215 is kicked
+[  286.996141] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  287.163963] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  287.364698] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

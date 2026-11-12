@@ -1,0 +1,107 @@
+71f0c83f97da70f8c1f5ec4e30257af7767ef9bd
+f6fda72a768cbdde4bb0298626de2478ea99a83a
+    13	
+    14	import("//build/ohos.gni")
+    15	
+    16	hap_src_dir = ""
+    17	if (window_manager_use_sceneboard) {
+    18	  hap_src_dir = "sceneboard/"
+    19	}
+    20	
+    21	ohos_prebuilt_etc("launcher_hap") {
+    22	  source = "Launcher.hap"
+    23	  module_install_dir = "app/com.ohos.launcher"
+    24	  part_name = "prebuilt_hap"
+    25	  subsystem_name = "applications"
+    26	}
+    27	
+    28	ohos_prebuilt_etc("launcher_settings_hap") {
+    29	  source = "Launcher_Settings.hap"
+    30	  module_install_dir = "app/com.ohos.launcher"
+    31	  part_name = "prebuilt_hap"
+    32	  subsystem_name = "applications"
+    33	}
+   305	ohos_prebuilt_etc("sceneboard_notificationManagement_hap") {
+   306	  source = hap_src_dir + "NotificationManagement.hap"
+   307	  module_install_dir = "app/SceneBoard"
+   308	  part_name = "prebuilt_hap"
+   309	  subsystem_name = "applications"
+   310	}
+   311	
+   312	ohos_prebuilt_etc("themeservice_hap") {
+   313	  source = hap_src_dir + "ThemeService.hap"
+   314	  module_install_dir = "app/SceneBoard"
+   315	  part_name = "prebuilt_hap"
+   316	  subsystem_name = "applications"
+   317	}
+   318	
+   319	ohos_prebuilt_etc("themecomponent_hap") {
+   320	  source = hap_src_dir + "ThemeComponent.hap"
+   321	  module_install_dir = "app/SceneBoard"
+   322	  part_name = "prebuilt_hap"
+   323	  subsystem_name = "applications"
+   324	}
+   325	
+   326	ohos_prebuilt_etc("sceneboard_hap") {
+   327	  source = hap_src_dir + "SceneBoard.hap"
+   328	  module_install_dir = "app/SceneBoard"
+   329	  part_name = "prebuilt_hap"
+   330	  subsystem_name = "applications"
+   331	}
+   413	  if (window_manager_use_sceneboard) {
+   414	    deps -= [
+   415	      "//applications/standard/hap:mobileDataSettings_hap",
+   416	    ]
+   417	    deps += [
+   418	      "//applications/standard/hap:CallSetting_hap",
+   419	      "//applications/standard/hap:EmergencyCommunication_hap",
+   420	      "//applications/standard/hap:CommunicationSetting_hap",
+   421	      "//applications/standard/hap:CallRecorder_hap",
+   422	      "//applications/standard/hap:cameraPicker_hap",
+   423	
+   424	      "//applications/standard/hap:filemanager_hap",
+   425	      "//applications/standard/hap:sceneboard_hap",
+   426	      "//applications/standard/hap:sceneboard_notificationManagement_hap",
+   427	      "//applications/standard/hap:themeservice_hap",
+   428	      "//applications/standard/hap:themecomponent_hap",
+   429	      "//applications/standard/hap:Floatingnavigation_hap",
+   430	      "//applications/standard/hap:Intelligent_Scene_hap",
+   431	      "//applications/standard/hap:PortalLogin_hap",
+   432	      "//applications/standard/hap:mediacontroller_hap",
+   433	    ]
+200:[OHOS INFO] [GN] window_manager_use_sceneboard = true
+877:[OHOS INFO] [NINJA] [335/7612] COPY ../../applications/standard/hap/sceneboard/SceneBoard.hap obj/applications/standard/hap/sceneboard/SceneBoard.hap
+6798:[OHOS INFO]  rk3588 build success
+5110:[31mCOMPILE RESULT:FAIL {ERROR:1275 WARN:16993}[39m
+5117:[2026-11-04T09:36:08.377] [ERROR] debug-file - BUILD FAILED in 4 min 33 s 749 ms 
+sdk.dir=/home/<user>/ohos/src/prebuilts/ohos-sdk/linux
+{
+  "app": {
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "release",
+        "compileSdkVersion": 23,
+        "compatibleSdkVersion": 20,
+        "targetSdkVersion": 20,
+        "runtimeOS": "OpenHarmony",
+        "buildOption": {
+          "napiLibFilterOption": {
+            "enableOverride": true
+          },
+          "strictMode": {
+            "useNormalizedOHMUrl": true
+          }
+        }
+      },
+      {
+        "name": "2in1",
+        "compileSdkVersion": 23,
+        "compatibleSdkVersion": 20,
+        "targetSdkVersion": 20,
+        "runtimeOS": "OpenHarmony",
+        "buildOption": {
+          "napiLibFilterOption": {
+            "enableOverride": true
+          },
+          "strictMode": {

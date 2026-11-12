@@ -1,0 +1,22 @@
+
+# [  303.747780] hungtask_user process 705 is kicked
+[  303.747818] XCollie: Send kick to hungtask Successful
+[  303.747818] 
+echo PROBE_BEGIN; command -v wget; command -v curl; command -v nc; command -nd -v wget; command -v curl; command -v nc; command -                         <v busybox; command -v su;rl; command -v nc; command -v busybox; command -v su;                         < ls -l /system/lib64/libwd -v busybox; command -v su; ls -l /system/lib64/libw                         <ms.z.so; mount | grep -E su; ls -l /system/lib64/libwms.z.so; mount | grep -E                          <" /system | / " ; ls /devibwms.z.so; mount | grep -E " /system | / " ; ls /dev                         </block/by-name; echo PROB-E " /system | / " ; ls /dev/block/by-name; echo PROB                         <E_END
+PROBE_BEGIN
+-rw-r--r-- 1 root root 1285208 2026-11-04 17:52 /system/lib64/libwms.z.so
+[  303.779043]  hmdfs: hmdfs_get_root_dentry_type() Unexpected dentry type 0
+/dev/block/mmcblk0p5 on / type ext4 (ro,seclabel,nodev,relatime)
+boot      chip-prod  eng_chipset  misc      system  updater   vendor
+bootctrl  chip_ckm   eng_system   sys-prod  uboot   userdata
+PROBE_END
+# [  306.252053] kauditd_printk_skb: 94 callbacks suppressed
+[  306.252060] audit: type=1400 audit(1793844533.895:6114): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  306.252091] audit: type=1400 audit(1793844533.895:6115): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  306.252098] audit: type=1400 audit(1793844533.895:6116): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  306.252103] audit: type=1400 audit(1793844533.895:6117): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  306.552169] audit: type=1400 audit(1793844534.198:6118): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  306.552178] audit: type=1400 audit(1793844534.198:6119): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  306.552183] audit: type=1400 audit(1793844534.198:6120): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  306.552187] audit: type=1400 audit(1793844534.198:6121): avc:  denied  { ioctl } for  pid=603 comm="OS_IPC_2_955" path="/dev/snd/controlC0" dev="tmpfs" ino=201 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+

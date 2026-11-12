@@ -1,0 +1,28 @@
+m_service.c:319]HandleParamWatcherAdd name persist.location.switch_mode watcher: 54
+
+# [   13.773309] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; cat /proc/uptime; param get const.product.incremental.versproc/uptime; param get const.product.incremental.vers                         <ion; ps -ef | grep -iE "fnst.product.incremental.version; ps -ef | grep -iE "f                         <oundation|sceneboard|launersion; ps -ef | grep -iE "foundation|sceneboard|laun                         <cher|systemui|bootanim|re "foundation|sceneboard|launcher|systemui|bootanim|re                         <nder_service"; param get auncher|systemui|bootanim|render_service"; param get                          <bootevent.wms.ready; para|render_service"; param get bootevent.wms.ready; para                         <m get bootevent.wms.fullset bootevent.wms.ready; param get bootevent.wms.fulls                         <creen.ready; param get boaram get bootevent.wms.fullscreen.ready; param get bo                         <otevent.account.ready; lsllscreen.ready; param get bootevent.account.ready; ls                         < -t /data/log/faultlog/fa bootevent.account.ready; ls -t /data/log/faultlog/fa                         <ultlogger | head -n 15; e ls -t /data/log/faultlog/faultlogger | head -n 15; e                         <cho PROBE_END
+PROBE_BEGIN
+14.21 66.93
+sceneboard-preinstall-20261105-r2 
+foundation     573     1 24 17:24:05 ?    00:00:02 foundation
+graphics       584     1 12 17:24:05 ?    00:00:01 render_service
+20010014      1649   221 97 17:24:09 ?    00:00:07 com.ohos.sceneboard
+root          2103   223 1 17:24:16 ttyFIQ0 00:00:00 grep -iE foundation|sceneboard|launcher|systemui|bootanim|render_service
+true 
+true[   14.307750] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+ 
+true 
+cppcrash-usb_host-3023-20261105172409314.log
+cppcrash-usb_host-3023-20261105172409103.log
+cppcrash-usb_host-3023-20261105172408816.log
+cppcrash-usb_host-3023-20261105171641307.log
+cppcrash-usb_host-3023-20261105171641073.log
+cppcrash-usb_host-3023-20261105171640851.log
+cppcrash-usb_host-3023-20261105171639643.log
+cppcrash-usb_host-3023-20261105171228316.log
+cppcrash-usb_host-3023-20261105171228110.log
+cppcrash-usb_host-3023-20261105171227858.log
+PROBE_END
+# [   14.320021] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

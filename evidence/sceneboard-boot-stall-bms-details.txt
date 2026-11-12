@@ -1,0 +1,11 @@
+
+# [  299.409870] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; scbdb=/data/service/el1/public/bms/bundle_manager_service/=/data/service/el1/public/bms/bundle_manager_service/                         <bmsdb.db; sqlite3 -readon/bms/bundle_manager_service/bmsdb.db; sqlite3 -readon                         <ly "$scbdb" ".schema instce/bmsdb.db; sqlite3 -readonly "$scbdb" ".schema inst                         <alled_bundle"; sqlite3 -rdonly "$scbdb" ".schema installed_bundle"; sqlite3 -r                         <eadonly "$scbdb" ".schemanstalled_bundle"; sqlite3 -readonly "$scbdb" ".schema                         < bms_param"; hilog -x -P  -readonly "$scbdb" ".schema bms_param"; hilog -x -P                          <658 -L E,F | tail -n 30; ema bms_param"; hilog -x -P 658 -L E,F | tail -n 30;                          <echo PROBE_END
+PROBE_BEGIN
+CREATE TABLE installed_bundle(KEY TEXT NOT NULL PRIMARY KEY, VALUE TEXT NOT NULL);
+CREATE TABLE bms_param(KEY TEXT NOT NULL PRIMARY KEY, VALUE TEXT NOT NULL);
+11-05 16:09:57.473   658   658 E C01336/AMS: [app_exit_reason_helper46]GetNameAndIndexForUid failed, ret: 8521233
+11-05 16:09:57.706   658   658 E C01336/AMS: [app_exit_reason_helper46]GetNameAndIndexForUid failed, ret: 8521233
+PROBE_END
+# [  300.012204] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

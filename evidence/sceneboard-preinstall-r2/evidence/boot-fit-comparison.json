@@ -1,0 +1,45 @@
+{
+  "before": {
+    "images": {
+      "/images/kernel": {
+        "bytes": 44285960,
+        "sha256": "3c45596c0ec8deb140e3cc2fbcdebefacffdce5a5b36a1784532c26e28670435"
+      },
+      "/images/fdt": {
+        "bytes": 203024,
+        "sha256": "d25d7127ceba4ef6e03db6d5cc78769727ad597a0d164489f75e5de4e36c835c"
+      },
+      "/images/resource": {
+        "bytes": 1266176,
+        "sha256": "abcb28ed9c06e8faed21d569dab0f2da3a196b3267be77ad64283dcfcaf94de2"
+      },
+      "/images/ramdisk": {
+        "bytes": 2795575,
+        "sha256": "177a6871265daf519ad5bb79d950f03f90a4152277acbb56912178205b55551f"
+      }
+    },
+    "fit_timestamp": 1793848427
+  },
+  "after": {
+    "images": {
+      "/images/kernel": {
+        "bytes": 44285960,
+        "sha256": "3c45596c0ec8deb140e3cc2fbcdebefacffdce5a5b36a1784532c26e28670435"
+      },
+      "/images/fdt": {
+        "bytes": 203024,
+        "sha256": "d25d7127ceba4ef6e03db6d5cc78769727ad597a0d164489f75e5de4e36c835c"
+      },
+      "/images/resource": {
+        "bytes": 1266176,
+        "sha256": "abcb28ed9c06e8faed21d569dab0f2da3a196b3267be77ad64283dcfcaf94de2"
+      },
+      "/images/ramdisk": {
+        "bytes": 2795575,
+        "sha256": "177a6871265daf519ad5bb79d950f03f90a4152277acbb56912178205b55551f"
+      }
+    },
+    "fit_timestamp": 1793848427
+  },
+  "all_payloads_identical": true
+}

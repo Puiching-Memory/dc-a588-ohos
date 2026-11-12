@@ -1,0 +1,15 @@
+{
+  "etc": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/param": {
+    "type": "directory",
+    "mode": 493
+  },
+  "etc/param/product_rk3588.para": {
+    "type": "file",
+    "sha256": "c6dfd86bdf36b0a69ca030ccdadcacb577352c33f279472bf81605a65c598e44",
+    "mode": 420
+  }
+}

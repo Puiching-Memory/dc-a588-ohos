@@ -1,0 +1,40 @@
+
+# [  262.671227] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; find /data/service/el1/public/bms/bundle_manager_service -/data/service/el1/public/bms/bundle_manager_service -                         <maxdepth 2 -type f; hilogbms/bundle_manager_service -maxdepth 2 -type f; hilog                         < -x -T AMS | tail -n 18; e -maxdepth 2 -type f; hilog -x -T AMS | tail -n 18;                          <ls /system/bin | grep -iElog -x -T AMS | tail -n 18; ls /system/bin | grep -iE                         < "sqlite|rdb|account|dump8; ls /system/bin | grep -iE "sqlite|rdb|account|dump                         <"; echo PROBE_END
+PROBE_BEGIN
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-dwr
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-wal
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-shm
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db-dwr
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db-wal
+/data/service/el1/public/bms/bundle_manager_service/bmsdb_slave.db-shm
+/data/service/el1/public/bms/bundle_manager_service/bmsdb.db-compare
+/data/service/el1/public/bms/bundle_manager_service/bundle_user_info.json
+11-05 16:10:10.937   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.138   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.338   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.539   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.740   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:11.941   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.141   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.342   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.543   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.743   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:12.944   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.145   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.346   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.546   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.747   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:13.948   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:14.148   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+11-05 16:10:14.349   658  1012 I C01336/AMS: [ABMS7888]waiting query highest priority ability info completed
+dumpcatcher
+hidumper
+i2cdump
+processdump
+sqlite3
+PROBE_END
+# [  263.474877] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

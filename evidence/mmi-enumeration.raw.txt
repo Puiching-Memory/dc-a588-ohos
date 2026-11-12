@@ -1,0 +1,313 @@
+
+# [  166.451285] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  166.451331] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  166.451349] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  166.451536] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  166.451556] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  166.451573] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  166.454816] [BT_RFKILL]: bt shut off power
+[  166.482377] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  166.482391] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  166.535610] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  166.535632] [BT_RFKILL]: ENABLE UART_RTS
+[  166.642281] [BT_RFKILL]: DISABLE UART_RTS
+[  166.642298] [BT_RFKILL]: bt turn on power
+[  166.642414] [BT_RFKILL]: Request irq for bt wakeup host
+[  166.642639] [BT_RFKILL]: ** disable irq
+[  166.645554] [BT_RFKILL]: bt shut off power
+echo PROBE_BEGIN; hilog -x -P 321 | grep -iE "mouse|pointer|cursor|device ad -x -P 321 | grep -iE "mouse|pointer|cursor|device ad                         <ded|InitSurface|SetBoundsuse|pointer|cursor|device added|InitSurface|SetBounds                         <|HardCursor|failed" | tai added|InitSurface|SetBounds|HardCursor|failed" | tai                         <l -100; hidumper -s 3101 nds|HardCursor|failed" | tail -100; hidumper -s 3101                          <-a "-h"; ip -4 addr; snaptail -100; hidumper -s 3101 -a "-h"; ip -4 addr; snap                         <shot_display -h; echo PRO01 -a "-h"; ip -4 addr; snapshot_display -h; echo PRO                         <BE_END
+PROBE_BEGIN
+[  166.669353] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  166.669377] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+11-05 10:00:10.199   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.206   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.215   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.223   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.231   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.239   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.247   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.254   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.262   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.271   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.271   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:10.278   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.286   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.295   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.303   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.311   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.319   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.326   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.335   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.342   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.351   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.358   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.367   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.700359] [pid=1][PARAM][INFO][param_service.c:195]Handle set param msgId 27 pid 225 key: ohos.ctl.start
+11-05 10:00:10.367   321   545 I C02803/InputWindowsManager: [P:BU:26|437]get deviceId failed:7
+[  166.700559] [pid=1][Init][INFO][init_service_manager.c:1306]Service info hidumper_service start service bt ext parameter hidumper_service|1212#0#load##-1#.
+11-05 10:00:10.375   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.700595] [pid=1][Init][INFO][init_common_service.c:716]ServiceStart starting:hidumper_service
+11-05 10:00:10.382   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.702024] [pid=1][Init][INFO][init_common_service.c:742]ServiceStart started info hidumper_service(pid 2752 uid 1212)
+11-05 10:00:10.391   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.702052] [pid=1][Init][INFO][init_common_service.c:745]starttime:1793844051-468184233, prefork:1793844051-468237317, startedtime:1793844051-469596483
+11-05 10:00:10.399   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.702578] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:76928
+11-05 10:00:10.407   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.702672] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:76928
+11-05 10:00:10.415   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.702716] SAMGR: Start dynamic proc:hidumper_service,1212,0_3ms
+11-05 10:00:10.423   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.702728] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:76928
+11-05 10:00:10.431   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.702741] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:76928
+11-05 10:00:10.431   321   545 E C02805/MouseTransformProcessor: [|524]No display
+[  166.702763] [pid=1][LoopEvent][WARNING][le_epoll.c:122]timeout:76928
+11-05 10:00:10.438   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.703655] [pid=2752][Init][INFO][init_common_service.c:471]Deal service hidumper_service job end
+11-05 10:00:10.446   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.454   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.462   321   545 ransformProcessor: [|176]No display
+11-05 10:00:10.471   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.478   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.486   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.495   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.503   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.510   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.519   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.705956] [pid=2752][Init][INFO][init_service.c:235]ServiceExec hidumper_service
+11-05 10:00:10.527   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.722300] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+11-05 10:00:10.534   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.722328] [BT_RFKILL]: ENABLE UART_RTS
+11-05 10:00:10.542   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.551   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.558   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.567   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.574   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.582   321   545 E C02805/MouseTransformProcessor: [|176]No display
+[  166.729365] SAFWK: operator() Set process name to hidumper_service
+11-05 10:00:10.583   321   545 I C02803/InputWindowsManager: [P:BU:27|437]get deviceId failed:7
+11-05 10:00:10.591   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.598   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.606   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.615   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.623   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.631   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.631   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:10.638   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.719   321   545 I C02803/InputWindowsManager: [P:BU:28|437]get deviceId failed:7
+11-05 10:00:10.734   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.743   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.751   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.758   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.766   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.774   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.799   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:10.839   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.863   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.879   321   545 I C02803/InputWindowsManager: [P:BU:29|437]get deviceId failed:7
+11-05 10:00:10.911   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:10.943   321   545 E C02805/MouseTransformProcessor: [|524]No display
+11-05 10:00:11.023   321   545 I C02803/InputWindowsManager: [P:BU:30|437]get deviceId failed:7
+11-05 10:00:11.039   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.047   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.055   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.062   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.071   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.079   321   54essor: [|176]No display
+11-05 10:00:11.086   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.095   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.103   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.110   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.119   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.126   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.134   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.142   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.150   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.158   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.166   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.174   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.182   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.191   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.198   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.207   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.214   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:11.247   321   545 E C02805/MouseTransformProcessor: [|176]No display
+11-05 10:00:12.023   321   545 I C02805/InputKeyFlow: [|1147]PixArt Dell MS116 USB Optical Mouse, TW: -1, first: 23-(2026-11-05 10:00:09.367ms), 30, count: 8
+[  166.761514] SAMGR: SA:1212 OpenSo 32ms
+[  166.764084] SAMGR: insert SA:1212_93
+[  166.764445] SAFWK: Publish SA:1212 result:0,spend:1ms
+[  166.764465] SAFWK: Start OnStart-SA:1212 finished, spend:1 ms
+[  166.764543] SAFWK: StartSystemAbilityTask hidumper_service SA:1212 init finished, 35 ms
+request error
+/system/bin/sh: ip: inaccessible or not found
+[  166.832287] [BT_RFKILL]: DISABLE UART_RTS
+[  166.832351] [BT_RFKILL]: bt turn on power
+[  166.832435] [BT_RFKILL]: Request irq for bt wakeup host
+[  166.832676] [BT_RFKILL]: ** disable irq
+[  166.834946] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  166.835035] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+snapshot_display: option requires an argument: h
+usage: snapshot_display [-i displayId] [-f output_file] [-w width] [-h height] [-t type] [-m]
+PROBE_END
+# [  167.099389] hungtask_user process 221 is kicked
+[  167.099534] APPSPAWN: [appspawn_kickdog.c:83]App kick 4
+[  167.451845] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.451892] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.451910] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.452130] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.452150] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.452169] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.455739] [BT_RFKILL]: bt shut off power
+[  167.482444] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  167.482457] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  167.538944] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  167.538965] [BT_RFKILL]: ENABLE UART_RTS
+[  167.638436] kauditd_printk_skb: 141 callbacks suppressed
+[  167.638439] audit: type=1400 audit(1793844052.403:5021): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  167.638452] audit: type=1400 audit(1793844052.403:5022): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  167.638464] audit: type=1400 audit(1793844052.403:5023): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  167.638469] audit: type=1400 audit(1793844052.403:5024): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  167.645607] [BT_RFKILL]: DISABLE UART_RTS
+[  167.645626] [BT_RFKILL]: bt turn on power
+[  167.645744] [BT_RFKILL]: Request irq for bt wakeup host
+[  167.645972] [BT_RFKILL]: ** disable irq
+[  167.648020] [BT_RFKILL]: bt shut off power
+[  167.672373] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  167.672383] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  167.725614] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  167.725632] [BT_RFKILL]: ENABLE UART_RTS
+[  167.832276] [BT_RFKILL]: DISABLE UART_RTS
+[  167.832292] [BT_RFKILL]: bt turn on power
+[  167.832395] [BT_RFKILL]: Request irq for bt wakeup host
+[  167.832574] [BT_RFKILL]: ** disable irq
+[  167.833489] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.833492] audit: type=1400 audit(1793844052.596:5025): avc:  denied  { ioctl } for  pid=322 comm="AdapterManager" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  167.833559] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  167.833559] audit: type=1400 audit(1793844052.596:5026): avc:  denied  { ioctl } for  pid=322 comm="AdapterManager" path="/dev/access_token_id" dev="tmpfs" ino=216 ioctlcmd=0x5413 scontext=u:r:bluetooth_service:s0 tcontext=u:object_r:dev_at_file:s0 tclass=chr_file permissive=1
+[  167.938676] audit: type=1400 audit(1793844052.700:5027): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  167.938699] audit: type=1400 audit(1793844052.700:5028): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  167.938710] audit: type=1400 audit(1793844052.700:5029): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  167.938720] audit: type=1400 audit(1793844052.700:5030): avc:  denied  { ioctl } for  pid=550 comm="OS_IPC_1_597" path="/dev/snd/controlC0" dev="tmpfs" ino=196 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  168.452378] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  168.452406] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  168.452424] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  168.452618] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  168.452637] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  168.452654] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  168.455887] [BT_RFKILL]: bt shut off power
+[  168.482702] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  168.482721] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  168.535680] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  168.535724] [BT_RFKILL]: ENABLE UART_RTS
+[  168.642354] [BT_RFKILL]: DISABLE UART_RTS
+[  168.642404] [BT_RFKILL]: bt turn on power
+[  168.642540] [BT_RFKILL]: Request irq for bt wakeup host
+[  168.642857] [BT_RFKILL]: ** disable irq
+[  168.644914] [BT_RFKILL]: bt shut off power
+[  168.672355] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  168.672365] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  168.728941] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  168.728959] [BT_RFKILL]: ENABLE UART_RTS
+[  168.835610] [BT_RFKILL]: DISABLE UART_RTS
+[  168.835627] [BT_RFKILL]: bt turn on power
+[  168.835735] [BT_RFKILL]: Request irq for bt wakeup host
+[  168.835935] [BT_RFKILL]: ** disable irq
+[  168.836855] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  168.836925] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.452878] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.452922] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.452940] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.453127] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.453147] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.453163] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.456211] [BT_RFKILL]: bt shut off power
+[  169.482740] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  169.482762] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  169.535695] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  169.535739] [BT_RFKILL]: ENABLE UART_RTS
+[  169.642352] [BT_RFKILL]: DISABLE UART_RTS
+[  169.642398] [BT_RFKILL]: bt turn on power
+[  169.642518] [BT_RFKILL]: Request irq for bt wakeup host
+[  169.642847] [BT_RFKILL]: ** disable irq
+[  169.644745] [BT_RFKILL]: bt shut off power
+[  169.672358] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  169.672366] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  169.728946] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  169.728963] [BT_RFKILL]: ENABLE UART_RTS
+[  169.835610] [BT_RFKILL]: DISABLE UART_RTS
+[  169.835628] [BT_RFKILL]: bt turn on power
+[  169.835732] [BT_RFKILL]: Request irq for bt wakeup host
+[  169.835939] [BT_RFKILL]: ** disable irq
+[  169.836947] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  169.837039] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.453385] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.453420] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.453437] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.453639] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.453659] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.453675] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.456863] [BT_RFKILL]: bt shut off power
+[  170.482376] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  170.482384] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  170.535608] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  170.535629] [BT_RFKILL]: ENABLE UART_RTS
+[  170.642278] [BT_RFKILL]: DISABLE UART_RTS
+[  170.642296] [BT_RFKILL]: bt turn on power
+[  170.642413] [BT_RFKILL]: Request irq for bt wakeup host
+[  170.642649] [BT_RFKILL]: ** disable irq
+[  170.644836] [BT_RFKILL]: bt shut off power
+[  170.669028] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  170.669039] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  170.722280] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  170.722297] [BT_RFKILL]: ENABLE UART_RTS
+[  170.828944] [BT_RFKILL]: DISABLE UART_RTS
+[  170.828959] [BT_RFKILL]: bt turn on power
+[  170.829061] [BT_RFKILL]: Request irq for bt wakeup host
+[  170.829273] [BT_RFKILL]: ** disable irq
+[  170.830592] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  170.830662] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.453898] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.453941] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.453960] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.454145] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.454164] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.454180] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.458075] [BT_RFKILL]: bt shut off power
+[  171.482705] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  171.482725] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  171.535684] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  171.535729] [BT_RFKILL]: ENABLE UART_RTS
+[  171.642353] [BT_RFKILL]: DISABLE UART_RTS
+[  171.642400] [BT_RFKILL]: bt turn on power
+[  171.642527] [BT_RFKILL]: Request irq for bt wakeup host
+[  171.642857] [BT_RFKILL]: ** disable irq
+[  171.645078] [BT_RFKILL]: bt shut off power
+[  171.672350] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  171.672363] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  171.725611] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  171.725631] [BT_RFKILL]: ENABLE UART_RTS
+[  171.832276] [BT_RFKILL]: DISABLE UART_RTS
+[  171.832293] [BT_RFKILL]: bt turn on power
+[  171.832372] [BT_RFKILL]: Request irq for bt wakeup host
+[  171.832540] [BT_RFKILL]: ** disable irq
+[  171.833531] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  171.833617] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.454399] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.454435] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.454454] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.454645] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.454665] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.454683] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+[  172.457736] [BT_RFKILL]: bt shut off power
+[  172.482382] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host high!
+[  172.482394] gpio-0 (BT,wake_host): gpiod_direction_output: tried to set a GPIO tied to an IRQ as output
+[  172.535607] [BT_RFKILL]: rfkill_rk_set_power: set bt wake_host input!
+[  172.535628] [BT_RFKILL]: ENABLE UART_RTS
+[  172.642287] [BT_RFKILL]: DISABLE UART_RTS
+[  172.642306] [BT_RFKILL]: bt turn on power
+[  172.642423] [BT_RFKILL]: Request irq for bt wakeup host
+[  172.642651] [BT_RFKILL]: ** disable irq
+[  172.644672] [BT_RFKILL]: bt shut off power
+

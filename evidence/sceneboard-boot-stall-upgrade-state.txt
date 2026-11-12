@@ -1,0 +1,11 @@
+
+# [  343.175082] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+echo PROBE_BEGIN; sqlite3 -readonly "$scbdb" "select KEY,VALUE from bms_parae3 -readonly "$scbdb" "select KEY,VALUE from bms_para                         <m where KEY in ('fingerprlect KEY,VALUE from bms_param where KEY in ('fingerpr                         <int','otaFlag'); select Karam where KEY in ('fingerprint','otaFlag'); select K                         <EY,VALUE from install_excrprint','otaFlag'); select KEY,VALUE from install_exc                         <eption_mgr; select KEY frt KEY,VALUE from install_exception_mgr; select KEY fr                         <om preinstalled_bundle whexception_mgr; select KEY from preinstalled_bundle wh                         <ere KEY like '%sceneboard from preinstalled_bundle where KEY like '%sceneboard                         <%';"; param get const.pro where KEY like '%sceneboard%';"; param get const.pro                         <duct.software.version; paard%';"; param get const.product.software.version; pa                         <ram get const.product.booproduct.software.version; param get const.product.boo                         <tloader.version; echo PRO param get const.product.bootloader.version; echo PRO                         <BE_END
+PROBE_BEGIN
+fingerprint|OpenHarmony 6.1.0.36/default/default/Rockchip OpenHarmony 6.1 LTS/default/default
+otaFlag|16776977
+OpenHarmony 6.1.0.36 
+bootloader 
+PROBE_END
+# [  343.777297] access_token_id: access_tokenid_ioctl: access tokenid magic fail, TYPE=84
+

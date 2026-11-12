@@ -1,0 +1,286 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) 2023 Rockchip Electronics Co., Ltd.
+ *
+ * 定昌电子 DC-A588-V04 载板 + DC-CM3588 核心板（RK3588）。
+ *
+ * 板级配置取自厂商官方固件设备树 rk3588-evb7-lp4-v10：
+ *   pcie2x1l0 (fe170000) - mini-PCIe 座，扩展 3G/4G 模块
+ *   pcie2x1l1 (fe180000) - 板载 RTL8111 千兆网卡（第二路 RJ45）
+ *   pcie3x4 / pcie3x2 / pcie2x1l2 / pcie30phy - 本板未引出
+ *   gmac0 (fe1b0000) - 第一路 RJ45；gmac1 (fe1c0000) 未引出
+ *   uart8 (ttyS8) - AP6275P 蓝牙
+ */
+
+/dts-v1/;
+
+#include "rk3588-evb7-v11.dtsi"
+#include "rk3588-standard.dtsi"
+
+/ {
+	model = "Rockchip RK3588 EVB7 V11 Board";
+	compatible = "rockchip,rk3588-evb7-v11", "rockchip,rk3588";
+
+	/* mini-PCIe 座 3.3V 供电：GPIO2_B4 使能，上电延时 5ms */
+	vcc3v3_pcie: vcc3v3-pcie {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc3v3_pcie";
+		regulator-min-microvolt = <3300000>;
+		regulator-max-microvolt = <3300000>;
+		enable-active-high;
+		gpios = <&gpio2 RK_PB4 GPIO_ACTIVE_HIGH>;
+		startup-delay-us = <5000>;
+		vin-supply = <&vcc12v_dcin>;
+	};
+
+	/* mini-PCIe 座 3.8V（4G 模块）常开供电：GPIO3_B4，低有效 */
+	vcc_3v8_4g: vcc-3v8-4g {
+		compatible = "regulator-fixed";
+		regulator-name = "vcc_3v8_4g";
+		regulator-boot-on;
+		regulator-always-on;
+		gpio = <&gpio3 RK_PB4 GPIO_ACTIVE_LOW>;
+	};
+};
+
+&wireless_wlan {
+	/delete-property/ WIFI,poweren-gpios;
+};
+
+/* DC-A588 功放/耳机控制脚与 EVB7 不同，同时把 GPIO4_A2 让给 PCIe 复位 */
+&es8388_sound {
+	spk-con-gpio = <&gpio1 RK_PD3 GPIO_ACTIVE_HIGH>;
+	hp-con-gpio  = <&gpio1 RK_PD2 GPIO_ACTIVE_HIGH>;
+};
+
+&pinctrl {
+	/* RTL8111 隔离脚，PCIe 侧要求上拉 */
+	rtl8111 {
+		rtl8111_isolate: rtl8111-isolate {
+			rockchip,pins = <1 RK_PA4 RK_FUNC_GPIO &pcfg_pull_up>;
+		};
+	};
+
+	/* 蓝牙 RTS 已从 GPIO4_C4 移到 GPIO3_A4 */
+	wireless-bluetooth {
+		uart8_rts_gpio: uart8-rts-gpio {
+			rockchip,pins = <3 RK_PA4 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+
+	leds {
+		work_led_gpio: work-led-gpio {
+			rockchip,pins = <3 RK_PB7 RK_FUNC_GPIO &pcfg_pull_none>;
+		};
+	};
+};
+
+/* 状态灯在 DC-A588 上是 GPIO3_B7，EVB7 用的 GPIO1_C6 在本板无引出。
+ * EVB7 把 GPIO3_B7 用作 gmac1 的 PHY 复位，本板 gmac1 未引出。 */
+&{/leds/work} {
+	gpios = <&gpio3 RK_PB7 GPIO_ACTIVE_HIGH>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&work_led_gpio>;
+};
+
+/* 蓝牙挂在 UART8；EVB7 的 GPIO4_C4 在本板是 GMAC0 的 MDC。
+ * TX/RX/CTS 由 &uart8 独占，蓝牙节点只声明 RTS 与三个控制脚，
+ * 否则两个设备同时 request uart8m1-xfer 会让蓝牙 probe 失败。 */
+&uart8 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&uart8m1_xfer &uart8m1_ctsn>;
+	status = "okay";
+};
+
+&wireless_bluetooth {
+	bt_port = "/dev/ttyS8";
+	uart_rts-gpios = <&gpio3 RK_PA4 GPIO_ACTIVE_LOW>;
+	pinctrl-names = "default", "rts_gpio";
+	pinctrl-0 = <&uart8m1_rtsn &bt_reset_gpio &bt_wake_gpio &bt_irq_gpio>;
+	pinctrl-1 = <&uart8_rts_gpio>;
+};
+
+/* 第一路 RJ45：GMAC0 + RTL8211F */
+&gmac0 {
+	phy-mode = "rgmii-rxid";
+	clock_in_out = "output";
+
+	snps,reset-gpio = <&gpio4 RK_PB3 GPIO_ACTIVE_LOW>;
+	snps,reset-active-low;
+	snps,reset-delays-us = <0 20000 100000>;
+
+	pinctrl-names = "default";
+	pinctrl-0 = <&gmac0_miim
+		     &gmac0_tx_bus2
+		     &gmac0_rx_bus2
+		     &gmac0_rgmii_clk
+		     &gmac0_rgmii_bus>;
+
+	tx_delay = <0x43>;
+
+	phy-handle = <&rgmii_phy0>;
+	status = "okay";
+};
+
+&mdio0 {
+	rgmii_phy0: phy@1 {
+		compatible = "ethernet-phy-ieee802.3-c22";
+		reg = <0x1>;
+	};
+};
+
+&gmac1 {
+	status = "disabled";
+};
+
+/* 以下两个节点在 EVB7 上占用的引脚，在 DC-A588 上属于 GMAC0 */
+&vcc3v3_lcd_n {
+	/delete-property/ gpio;
+};
+
+&i2c4 {
+	status = "disabled";
+};
+
+/* EVB7 把 ttyS9 的 CTS 配在 GPIO4_C5、RX 配在 GPIO2_C2，与 GMAC0 冲突 */
+&uart9 {
+	status = "disabled";
+};
+
+/* 本板没有 SDIO WiFi（mini-PCIe 上是 RTL8852BE） */
+&sdio {
+	status = "disabled";
+};
+
+/* TF 卡供电为固定 3.3V，缺电压约束时 mmc 报 could not set regulator OCR */
+&vcc_3v3_sd_s0 {
+	regulator-min-microvolt = <3300000>;
+	regulator-max-microvolt = <3300000>;
+};
+
+/* 摄像头供电脚与 ES8388 功放脚（GPIO1_D2/D3）重叠，本板无摄像头 */
+&vcc_mipicsi0 {
+	status = "disabled";
+};
+
+&vcc_mipicsi1 {
+	status = "disabled";
+};
+
+/* 本板无触摸屏，且 gt1x 与 hynitron 抢同一组 GPIO3_C0/C1 */
+&i2c5 {
+	status = "disabled";
+};
+
+/* HDMI-IN 热插拔检测在 DC-A588 上是 GPIO2_B5，EVB7 用的是 GPIO1_D5 */
+&{/hdmirx-controller@fdee0000} {
+	hdmirx-det-gpios = <&gpio2 RK_PB5 GPIO_ACTIVE_LOW>;
+};
+
+/* mini-PCIe：3G/4G 模块 */
+&pcie2x1l0 {
+	status = "okay";
+	reset-gpios = <&gpio1 RK_PB4 GPIO_ACTIVE_HIGH>;
+	vpcie3v3-supply = <&vcc3v3_pcie>;
+	rockchip,skip-scan-in-resume;
+};
+
+/* 板载 RTL8111 千兆网卡 */
+&pcie2x1l1 {
+	status = "okay";
+	reset-gpios = <&gpio4 RK_PA2 GPIO_ACTIVE_HIGH>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&rtl8111_isolate>;
+};
+
+&pcie3x4 {
+	status = "disabled";
+};
+
+&pcie3x2 {
+	status = "disabled";
+};
+
+&pcie2x1l2 {
+	status = "disabled";
+};
+
+&pcie30phy {
+	status = "disabled";
+};
+
+/* 显示输出：DC-A588 有 HDMI OUT0、HDMI OUT1 两个输出口，另有 HDMI IN 输入口。
+ * EDP0 / EDP1 连接器与 HDMI OUT0 / OUT1 复用同一组走线，本板按 HDMI 使用，
+ * 与厂商官方固件一致（固件里 dp0/dp1/edp0/edp1 全为 disabled）。
+ * HDMI1 走 VP1，引脚为 GPIO3_C4/C5/C6（CEC/DDC）与 GPIO1_A6（HPD）。 */
+&hdmi1 {
+	status = "okay";
+};
+
+&hdmi1_sound {
+	status = "okay";
+};
+
+&route_hdmi1 {
+	status = "okay";
+};
+
+&dp0 {
+	status = "disabled";
+};
+
+&dp1 {
+	status = "disabled";
+};
+
+&dp0_sound {
+	status = "disabled";
+};
+
+&dp1_sound {
+	status = "disabled";
+};
+
+/* HDMI1 的 TX PHY */
+&hdptxphy_hdmi1 {
+	status = "okay";
+};
+
+/* DSI：EVB7 dtsi 默认开启 dsi0 并挂一个 simple-panel-dsi（1080x1920 竖屏，
+ * 像素时钟 132MHz）。该 panel 节点不需要 i2c 探测，本板 DSI 接口空着也照样
+ * probe 成功，于是 DRM 里多出一个不存在的 1080x1920 显示器，
+ * OpenHarmony 显示合成器取到它的宽度 1080，而 HDMI 实际是 1920x1080，
+ * 表现为画面只占屏幕约 56% 宽度、右侧鼠标进不去。
+ * 本板 DSI 连接器无面板，整条链路关闭。 */
+&dsi0 {
+	status = "disabled";
+};
+
+&route_dsi0 {
+	status = "disabled";
+};
+
+&mipi_dcphy0 {
+	status = "disabled";
+};
+
+/* 本板无摄像头，EVB7/SoC dtsi 默认开启的 MIPI D-PHY 全部关闭 */
+&csi2_dphy0_hw {
+	status = "disabled";
+};
+
+&csi2_dphy1_hw {
+	status = "disabled";
+};
+
+&mipidcphy1 {
+	status = "disabled";
+};
+
+&{/dp@fde50000/ports/port@0/endpoint@2} {
+	status = "disabled";
+};
+
+&{/dp@fde60000/ports/port@0/endpoint@2} {
+	status = "disabled";
+};

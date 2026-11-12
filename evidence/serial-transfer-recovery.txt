@@ -1,0 +1,20 @@
+console
+console mode
+[  173.646001] kauditd_printk_skb: 58 callbacks suppressed
+[  173.646004] audit: type=1400 audit(1793844898.393:3451): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.646037] audit: type=1400 audit(1793844898.393:3452): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.646060] audit: type=1400 audit(1793844898.393:3453): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.646077] audit: type=1400 audit(1793844898.393:3454): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.946302] audit: type=1400 audit(1793844898.693:3455): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.946339] audit: type=1400 audit(1793844898.693:3456): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5500 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.946362] audit: type=1400 audit(1793844898.693:3457): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5511 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+[  173.946379] audit: type=1400 audit(1793844898.693:3458): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5512 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+^C
+[  174.112856] audit: type=1400 audit(1793844898.860:3459): avc:  denied  { ioctl } for  pid=218 comm="sh" path="/dev/tty" dev="tmpfs" ino=34 ioctlcmd=0x5413 scontext=u:r:console:s0 tcontext=u:object_r:tty_device:s0 tclass=chr_file permissive=1
+# [  174.246634] audit: type=1400 audit(1793844898.993:3460): avc:  denied  { ioctl } for  pid=555 comm="OS_IPC_0_618" path="/dev/snd/controlC0" dev="tmpfs" ino=198 ioctlcmd=0x5501 scontext=u:r:audio_host:s0 tcontext=u:object_r:dev_snd_file:s0 tclass=chr_file permissive=1
+
+L_RESTORED; 
+Welcome to irq debugger mode
+Enter ? to get command help
+debug> _debugger/parameters; ls -l /data/local/tmp/libwms-cursor-screecat /
+proc/sys/debug> ke# echo SHELL_RESTORED; cat /proc/sys/kernel/printk; ls /sys/module/f

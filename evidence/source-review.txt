@@ -1,0 +1,222 @@
+2026年 11月 05日 星期四 02:02:28 UTC
+25e62af3936f1e29610b0b1de9a5b0adfa6bf356
+5c0f1d08cb7d563778bdba222a7576d9410c0198
+diff --git a/service/window_manager/src/screen_pointer.cpp b/service/window_manager/src/screen_pointer.cpp
+index 7184e20..e5e45a8 100644
+--- a/service/window_manager/src/screen_pointer.cpp
++++ b/service/window_manager/src/screen_pointer.cpp
+@@ -519,7 +519,13 @@ bool ScreenPointer::MoveSoft(int32_t x, int32_t y)
+     int32_t px = x - FOCUS_POINT;
+     int32_t py = y - FOCUS_POINT;
+ 
+-    if (!IsMirror()) {
++    // 显示后端不支持硬件光标时，RSPointerWindowManager 会把 isPointerEnableHwc_ 置为 false，
++    // 此时 SetHwcNodeBounds 只在渲染侧记录边界，不会移动节点本身，光标会固定在初始 (0,0)。
++    // 这里默认改用节点自身边界，由常规合成定位；需要回到 HWC 定位时，
++    // 设置 persist.multimodalinput.cursor.hwcbounds=1 后重启。
++    static const bool useHwcCursorBounds =
++        (OHOS::system::GetParameter("persist.multimodalinput.cursor.hwcbounds", "0") == "1");
++    if (!IsMirror() && useHwcCursorBounds) {
+         int64_t nodeId = surfaceNode_->GetId();
+         Rosen::RSInterfaces::GetInstance().SetHwcNodeBounds(nodeId, px, py, DEFAULT_CURSOR_SIZE, DEFAULT_CURSOR_SIZE);
+     } else {
+   612	ErrCode RSClientToRenderConnection::SetHwcNodeBounds(int64_t rsNodeId, float positionX, float positionY,
+   613	    float positionZ, float positionW)
+   614	{
+   615	    if (mainThread_ == nullptr || screenManager_ == nullptr) {
+   616	        return ERR_INVALID_VALUE;
+   617	    }
+   618	
+   619	    // adapt video scene pointer
+   620	    if (screenManager_->GetCurrentVirtualScreenNum() > 0 ||
+   621	        !RSPointerWindowManager::Instance().GetIsPointerEnableHwc()) {
+   622	        // when has virtual screen or pointer is enable hwc, we can't skip
+   623	        RSPointerWindowManager::Instance().SetIsPointerCanSkipFrame(false);
+   624	        RSMainThread::Instance()->RequestNextVSync();
+   625	    } else {
+   626	        RSPointerWindowManager::Instance().SetIsPointerCanSkipFrame(true);
+   627	    }
+   628	
+   629	    RSPointerWindowManager::Instance().SetHwcNodeBounds(rsNodeId, positionX, positionY,
+   630	        positionZ, positionW);
+   631	    return ERR_OK;
+   632	}
+    61	void RSPointerWindowManager::UpdatePointerInfo()
+    62	{
+    63	#ifdef RS_ENABLE_GPU
+    64	    int64_t rsNodeId = 0;
+    65	    BoundParam boundTemp = {0.0f, 0.0f, 0.0f, 0.0f};
+    66	    {
+    67	        std::lock_guard<std::mutex> lock(mtx_);
+    68	        if (!BoundHasUpdateCompareChange(true, false)) {
+    69	            return;
+    70	        }
+    71	        rsNodeId = GetRsNodeId();
+    72	        boundTemp = GetBound();
+    73	    }
+    74	
+    75	    if (rsNodeId <= 0) {
+    76	        return;
+    77	    }
+    78	
+    79	    // prepare
+    80	    auto node = RSMainThread::Instance()->GetContext().GetNodeMap().GetRenderNode(rsNodeId);
+    81	    if (node == nullptr) {
+    82	        return;
+    83	    }
+    84	    auto& properties = node->GetMutableRenderProperties();
+    85	    properties.SetBounds({boundTemp.x, boundTemp.y, boundTemp.z, boundTemp.w});
+    86	    node->SetDirty();
+    87	    properties.OnApplyModifiers();
+    88	    node->OnApplyModifiers();
+    89	    node->AddToPendingSyncList();
+    90	
+    91	    // 1.Set TotalMatrix
+    92	    auto surfaceNode = node->ReinterpretCastTo<RSSurfaceRenderNode>();
+    93	    if (surfaceNode == nullptr) {
+    94	        return;
+    95	    }
+    96	    RSUniHwcComputeUtil::UpdateHwcNodeProperty(surfaceNode);
+    97	
+    98	    // 2.update (layerInfo.matrix = TotalMatrix)
+    99	    if (surfaceNode->GetScreenId() != INVALID_SCREEN_ID) {
+   100	        auto screenManager = CreateOrGetScreenManager();
+   101	        if (!screenManager) {
+   102	            RS_LOGE("RSPointerWindowManager::UpdatePointerInfo screenManager is null!");
+   103	            return;
+   104	        }
+   105	        auto screenInfo = screenManager->QueryScreenInfo(surfaceNode->GetScreenId());
+   106	        auto transform = RSUniHwcComputeUtil::GetLayerTransform(*surfaceNode, screenInfo);
+   107	        surfaceNode->UpdateHwcNodeLayerInfo(transform, isPointerEnableHwc_);
+   108	    }
+   109	#endif
+   110	}
+   111	
+   112	void RSPointerWindowManager::SetHwcNodeBounds(int64_t rsNodeId, float positionX, float positionY,
+   113	    float positionZ, float positionW)
+   114	{
+   115	#ifdef RS_ENABLE_GPU
+   116	    // record status here
+   117	    {
+   118	        std::lock_guard<std::mutex> lock(mtx_);
+   119	        SetBound({positionX, positionY, positionZ, positionW});
+   120	        SetRsNodeId(rsNodeId);
+   121	    }
+   122	    SetBoundHasUpdate(true);
+   123	#endif
+   124	}
+  2272	    isCachedSurfaceUpdated_ = false;
+  2273	    if (needTraverseNodeTree) {
+  2274	        // Once exiting DoDirectComposition, clear the nodes collected for DoDirectComposition
+  2275	        aibarNodes_.clear();
+  2276	        if (RSUniRenderThread::Instance().IsPostedReclaimMemoryTask()) {
+  2277	            SetIfStatusBarDirtyOnly(IfStatusBarDirtyOnly());
+  2278	        }
+  2279	        RSUniRenderThread::Instance().PostTask([] {
+  2280	            RSUniRenderThread::Instance().ResetClearMemoryTask();
+  2281	        });
+  2282	        RSUifirstManager::Instance().ProcessForceUpdateNode();
+  2283	        RSPointerWindowManager::Instance().UpdatePointerInfo();
+  2284	        doDirectComposition_ = false;
+  2285	        RS_OPTIONAL_TRACE_NAME("hwc debug: disable directComposition by needTraverseNodeTree");
+  2286	        uniVisitor->SetAnimateState(doWindowAnimate_);
+  2287	        uniVisitor->SetDirtyFlag(isDirty_ || isAccessibilityConfigChanged_ || forceUIFirstChanged_);
+  2288	        forceUIFirstChanged_ = false;
+  2289	        SetFocusLeashWindowId();
+  2290	        uniVisitor->SetFocusedNodeId(focusNodeId_, focusLeashWindowId_);
+  2291	        rsVsyncRateReduceManager_.SetFocusedNodeId(focusNodeId_);
+  2292	        rootNode->QuickPrepare(uniVisitor);
+  2293	        uniVisitor->ResetCrossNodesVisitedStatus();
+  2649	void RSUniRenderVisitor::UpdatePointWindowDirtyStatus(std::shared_ptr<RSSurfaceRenderNode>& surfaceNode)
+  2650	{
+  2651	    if (!surfaceNode->IsHardwareEnabledTopSurface()) {
+  2652	        RSPointerWindowManager::Instance().SetIsPointerEnableHwc(false);
+  2653	        return;
+  2654	    }
+  2655	    std::shared_ptr<RSSurfaceHandler> pointSurfaceHandler = surfaceNode->GetMutableRSSurfaceHandler();
+  2656	    if (pointSurfaceHandler) {
+  2657	        // globalZOrder_  is screenNode layer, point window must be at the top.
+  2658	        pointSurfaceHandler->SetGlobalZOrder(static_cast<float>(TopLayerZOrder::POINTER_WINDOW));
+  2659	        if (!curScreenNode_) {
+  2660	            return;
+  2661	        }
+  2662	        bool isHardCursor = RSPointerWindowManager::Instance().CheckHardCursorSupport(curScreenNode_);
+  2663	        if (isHardCursor) {
+  2664	            // Set the highest z-order for hardCursor
+  2665	            pointSurfaceHandler->SetGlobalZOrder(static_cast<float>(TopLayerZOrder::POINTER_WINDOW));
+  2666	        }
+  2667	        surfaceNode->SetHardwareForcedDisabledState(true);
+  2668	        RS_OPTIONAL_TRACE_FMT("hwc debug: name:%s id:%" PRIu64 " use hardCursor to display",
+  2669	            surfaceNode->GetName().c_str(), surfaceNode->GetId());
+  2670	        hwcVisitor_->Statistics().UpdateHwcDisabledReasonForDFX(surfaceNode->GetId(),
+  2671	            HwcDisabledReasons::DISABLED_BY_POINT_WINDOW, surfaceNode->GetName());
+  2672	        bool isMirrorMode = RSPointerWindowManager::Instance().HasMirrorDisplay();
+  2673	        RSPointerWindowManager::Instance().SetIsPointerEnableHwc(isHardCursor && !isMirrorMode);
+  2674	        auto transform = RSUniHwcComputeUtil::GetLayerTransform(*surfaceNode, curScreenNode_->GetScreenInfo());
+  2675	        surfaceNode->UpdateHwcNodeLayerInfo(transform, isHardCursor);
+  2676	        if (isHardCursor) {
+  2677	            RSPointerWindowManager::Instance().UpdatePointerDirtyToGlobalDirty(surfaceNode, curScreenNode_);
+  2678	        }
+   165	int32_t MouseTransformProcessor::HandleMotionInner(struct libinput_event_pointer* data, struct libinput_event* event)
+   166	{
+   167	    CALL_DEBUG_ENTER;
+   168	    CHKPR(data, ERROR_NULL_POINTER);
+   169	    CHKPR(pointerEvent_, ERROR_NULL_POINTER);
+   170	#ifndef OHOS_BUILD_ENABLE_WATCH
+   171	    pointerEvent_->SetPointerAction(PointerEvent::POINTER_ACTION_MOVE);
+   172	    pointerEvent_->SetButtonId(buttonId_);
+   173	
+   174	    CursorPosition cursorPos = WIN_MGR->GetCursorPos();
+   175	    if (cursorPos.displayId < 0) {
+   176	        MMI_HILOGE("No display");
+   177	        return RET_ERR;
+   178	    }
+   179	    unaccelerated_.dx = libinput_event_pointer_get_dx_unaccelerated(data);
+   180	    unaccelerated_.dy = libinput_event_pointer_get_dy_unaccelerated(data);
+   181	
+   182	    Offset offset { unaccelerated_.dx, unaccelerated_.dy };
+   183	    auto displayInfo = WIN_MGR->GetPhysicalDisplay(cursorPos.displayId);
+   184	    CHKPR(displayInfo, ERROR_NULL_POINTER);
+   185	    CalculateMouseResponseTimeProbability(event);
+   520	        isPressed_ = true;
+   521	        buttonId_ = pointerEvent_->GetButtonId();
+   522	        CursorPosition cursorPos = WIN_MGR->GetCursorPos();
+   523	        if (cursorPos.displayId < 0) {
+   524	            MMI_HILOGE("No display");
+   525	            return RET_ERR;
+   526	        }
+   527	        auto displayInfo = WIN_MGR->GetPhysicalDisplay(cursorPos.displayId);
+    60	void InputWindowMonitor::UpdateInputWindowByDisplayId(DisplayId displayId)
+    61	{
+    62	    if (displayId == DISPLAY_ID_INVALID) {
+    63	        return;
+    64	    }
+    65	    auto container = windowRoot_->GetOrCreateWindowNodeContainer(displayId);
+    66	    if (container == nullptr) {
+    67	        WLOGFE("can not get window node container.");
+    68	        return;
+    69	    }
+    70	    auto displayInfos = DisplayGroupInfo::GetInstance().GetAllDisplayInfo();
+    71	    if (displayInfos.empty()) {
+    72	        return;
+    73	    }
+    74	    std::vector<MMI::ScreenInfo> screenInfos;
+    75	    UpdateDisplayGroupInfo(container, displayGroupInfo_, displayId);
+    76	    UpdateDisplayInfo(displayInfos, displayGroupInfo_.displaysInfo);
+    77	    ConstructScreenInfos(displayGroupInfo_.displaysInfo, screenInfos);
+    78	    std::vector<sptr<WindowNode>> windowNodes;
+    79	    container->TraverseContainer(windowNodes);
+    80	    TraverseWindowNodes(windowNodes, displayGroupInfo_.windowsInfo);
+    81	    WLOGFD("update display info to IMS, displayId: %{public}" PRIu64"", displayId);
+    82	    std::vector<MMI::DisplayGroupInfo> displayGroups;
+    83	    displayGroups.emplace_back(displayGroupInfo_);
+    84	    MMI::UserScreenInfo userScreenInfo = {
+    85	        .userId = 0,
+    86	        .screens = screenInfos,
+    87	        .displayGroups = displayGroups
+    88	    };
+    89	    auto task = [userScreenInfo]() {
+    90	        MMI::InputManager::GetInstance()->UpdateDisplayInfo(userScreenInfo);
+    91	    };
+    92	    WindowInnerManager::GetInstance().PostTask(std::move(task), "wms:UpdateDisplayInfoBydisplayId");
+    93	}

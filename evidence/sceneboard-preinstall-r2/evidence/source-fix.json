@@ -1,0 +1,18 @@
+{
+  "preinstall_directory": "/system/app/SceneBoard",
+  "capability": {
+    "bundleName": "com.ohos.sceneboard",
+    "app_signature": [
+      "8E93863FC32EE238060BF69A9B37E2608FFFB21F93C862DD511CBAC9F30024B5"
+    ],
+    "allowAppUsePrivilegeExtension": true,
+    "allowAbilityPriorityQueried": true,
+    "allowAppRunWhenDeviceFirstLocked": true
+  },
+  "incremental_version": "sceneboard-preinstall-20261105-r2",
+  "files": {
+    "vendor/rockchip/rk3588/preinstall-config/install_list.json": "dbaa60c31be3840e1e074056305de90d87e1fdfbcab30533ccb5beee007d740b",
+    "vendor/rockchip/rk3588/preinstall-config/install_list_capability.json": "24b4ca519ed6c4ab2e689bbb8b0eefddee4071db4ff2352b7ec06309c4c331df",
+    "base/startup/init/services/etc/param/ohos.para": "5fb69d09a1a3190ed574d84d324b6df953829f1c84a60997e5697e79701e02bb"
+  }
+}
