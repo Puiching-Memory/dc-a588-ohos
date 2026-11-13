@@ -1,0 +1,24 @@
+--- vendor_hihope/rk3568/install_list.json
++++ vendor_rockchip/rk3588/install_list.json
+@@ -48,6 +48,10 @@
+             "app_dir" : "/system/app/com.ohos.photos",
+             "removable" : false
+         },
++	{
++            "app_dir" : "/system/app/ohos.samples.screenrecorder",
++            "removable" : false
++        },
+         {
+             "app_dir" : "/system/app/com.ohos.distributedmusicplayer",
+             "removable" : false
+@@ -215,6 +219,10 @@
+         {
+             "app_dir": "/system/app/com.ohos.security.privacycenter",
+             "removable": true
++        },
++        {
++            "app_dir": "/system/app/com.ohos.browser",
++            "removable": false
+         }
+     ]
+ }

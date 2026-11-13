@@ -1,0 +1,489 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-13",
+  "reviewedArchiveCommit": "a57807c1225d22b674d9124aaebb3434984e4d19",
+  "scope": "Distributed source copies, excerpts, patches and preinstall configuration data; not a full OpenHarmony SDK or firmware distribution audit.",
+  "sourceMethod": "Read-only git show and recursive git ls-tree of fixed commits on the original build source checkout. Canonical vendor_hihope files and a complete public GitHub tree checked at a fixed commit.",
+  "noticeFilenameRule": "Case-insensitive basename starts with notice; all tracked paths scanned.",
+  "projects": [
+    {
+      "project": "foundation/window/window_manager",
+      "repository": "https://gitcode.com/openharmony/window_window_manager",
+      "commit": "ac4fbeff04b9560fb004f8ecb834aeccfc66bffd",
+      "tree": "41981a49fd7e5d7e67de1f77c109414c3ba4a34c",
+      "treePathListSha256": "dc427b6d411caf78e58c351a392ed83798a552220ecbb5daf4c41b2d859e3f7a",
+      "blobCount": 2207,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "LICENSE": {
+          "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9",
+          "blob": "4947287f7b5ccb5d1e8b7b2d3aa5d89f322c160d"
+        },
+        "wmserver/src/input_window_monitor.cpp": {
+          "sha256": "7a596861c909687b8bffd3bc1b6c5a69268edda38f7cb83d8617a522f0234eee",
+          "blob": "8b71ee8e1ae04f74f93f560665acd1c6c7bb1706"
+        },
+        "wmserver/test/unittest/input_window_monitor_test.cpp": {
+          "sha256": "9b870c69f3170a7fb8bdbc971bca28370408f3c3552a483274838f7e43570836",
+          "blob": "507d7b4205038ad06e7ca8a1eaeed9e1c7d822ac"
+        }
+      },
+      "licenseEvidence": "Apache-2.0 LICENSE from this exact commit",
+      "retainedLicenseFiles": [
+        "LICENSES/upstream/openharmony-common.LICENSE.txt"
+      ]
+    },
+    {
+      "project": "applications/standard/window_scene_board",
+      "repository": "https://gitcode.com/openharmony/window_scene_board",
+      "commit": "71f0c83f97da70f8c1f5ec4e30257af7767ef9bd",
+      "tree": "8410f8373ef2a89a0b72934b46fb78a2569fd183",
+      "treePathListSha256": "ac86fb19b3945d5e5205fc92b5bd20a50cca3adc6583771e8d27837a42726b21",
+      "blobCount": 15819,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "LICENSE": {
+          "sha256": "bb28c48e3e078166e91cfc2b6db7ffebb8a0973b9e23b3df060561292d8d69ec",
+          "blob": "d0381d6d04c77c78c42ae875f97d38483ba0c636"
+        },
+        "COPYING": {
+          "sha256": "9d8d4d8b4bb99572ee8b51025a30b8493d949798cac465c6c15b1b29420bcb06",
+          "blob": "9c1cd7cb84357f4aa3d57ff961cd37d993055ef5"
+        },
+        "README.OpenSource": {
+          "sha256": "ba04169bc26eea5b4fe96edcb2657a31d8b0106141debdce939b1e9f8d7d7a7c",
+          "blob": "b21f1e3d1c2a33862ef5f01b7800a2c5cc6c87f0"
+        },
+        "hvigorfile.ts": {
+          "sha256": "a9ad204fda68c079640318caab839531a2783f81cd022f82d60918caf1df1016",
+          "blob": "cd4b93b2ed9997093a4d7f4ed1f37e863fdc3432"
+        },
+        "hvigor/update-sdk-interface.js": {
+          "sha256": "784bf734027c8b262789362aa12a6beb6ee78004bbca5bf29760acee394e182e",
+          "blob": "600a5887833ac71f2ada4dc948031bdd220f16ab"
+        },
+        "build.sh": {
+          "sha256": "d0ab7e4b99a40aeb1faee2df66ff06fc5de7cab1183f5796857a1a3cf3a42eae",
+          "blob": "30044257ae6e6411562fc9b87470e73927cecd75"
+        }
+      },
+      "licenseEvidence": "Apache-2.0 LICENSE from this exact commit",
+      "retainedLicenseFiles": [
+        "LICENSES/upstream/window_scene_board.LICENSE.txt"
+      ]
+    },
+    {
+      "project": "foundation/multimodalinput/input",
+      "repository": "https://gitcode.com/openharmony/multimodalinput_input",
+      "commit": "5c0f1d08cb7d563778bdba222a7576d9410c0198",
+      "tree": "7989adaa002375aeac376435806a760e7423e079",
+      "treePathListSha256": "418c90041ae751a05280b46d11080b1ccdc78d64f39f7a11de74eecdfc724158",
+      "blobCount": 3720,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "LICENSE": {
+          "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9",
+          "blob": "4947287f7b5ccb5d1e8b7b2d3aa5d89f322c160d"
+        },
+        "service/window_manager/src/screen_pointer.cpp": {
+          "sha256": "e53f0293bcd0e9e5d1dfd0ba371437d5b70bce78a420cf7ed423b8a576f84075",
+          "blob": "7184e203328345e071fe9f87b7cf57df80cb6b9d"
+        }
+      },
+      "licenseEvidence": "Apache-2.0 LICENSE from this exact commit",
+      "retainedLicenseFiles": [
+        "LICENSES/upstream/openharmony-common.LICENSE.txt"
+      ]
+    },
+    {
+      "project": "foundation/graphic/graphic_2d",
+      "repository": "https://gitcode.com/caesar-wang/graphic_graphic_2d",
+      "commit": "25e62af3936f1e29610b0b1de9a5b0adfa6bf356",
+      "tree": "cfe8b6990ce7a0854a142f5a2ee1fc91d719eec3",
+      "treePathListSha256": "46482c9b842e2e8dc8c3cf317f8f828416bc0653a9c50a6bc60175fff29df99d",
+      "blobCount": 6572,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "LICENSE": {
+          "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9",
+          "blob": "4947287f7b5ccb5d1e8b7b2d3aa5d89f322c160d"
+        },
+        "rosen/modules/render_service/core/transaction/rs_client_to_render_connection.cpp": {
+          "sha256": "862fa8628282f0671bb36b7705439ee08a924bff5eb2997a2b4d2a14fed56753",
+          "blob": "a63dc13832830c27d575a896e52d45ddf648143a"
+        },
+        "rosen/modules/render_service/core/pipeline/rs_pointer_window_manager.cpp": {
+          "sha256": "f8fbf0ceeae9dd647d624a24f8e3e41c062577b9d33b89130536586714602c99",
+          "blob": "9a1e503606cc0d2d4c4a44722e2d7c96af233700"
+        },
+        "rosen/modules/render_service/core/pipeline/main_thread/rs_main_thread.cpp": {
+          "sha256": "d6dfc21e5abad43c8c0fb8b08783fcadbb78cc5de51074b26b0bf30a831be88f",
+          "blob": "6064ead237d2b00e9c7776d99f931f29a9ba13ad"
+        }
+      },
+      "licenseEvidence": "Apache-2.0 LICENSE from this exact commit",
+      "retainedLicenseFiles": [
+        "LICENSES/upstream/openharmony-common.LICENSE.txt"
+      ]
+    },
+    {
+      "project": "applications/standard/hap",
+      "repository": "https://gitcode.com/openharmony/applications_hap",
+      "commit": "f6fda72a768cbdde4bb0298626de2478ea99a83a",
+      "tree": "7b9bd73da34b095aa06b26879d149f782b61e1f5",
+      "treePathListSha256": "f1d19a7f28676055d8183b188eabbc011f00755db964da9d7ea82a83d2f73a30",
+      "blobCount": 76,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "LICENSE": {
+          "sha256": "bb28c48e3e078166e91cfc2b6db7ffebb8a0973b9e23b3df060561292d8d69ec",
+          "blob": "d0381d6d04c77c78c42ae875f97d38483ba0c636"
+        },
+        "BUILD.gn": {
+          "sha256": "e50ec342a509e28272cd1409e23734ec308b11b0e503cd0ca3bd8f48dfa9b9f1",
+          "blob": "cfb45fe3c8fd1576570ef50eb97de772df59a020"
+        }
+      },
+      "licenseEvidence": "Apache-2.0 LICENSE from this exact commit",
+      "retainedLicenseFiles": [
+        "LICENSES/upstream/window_scene_board.LICENSE.txt"
+      ]
+    },
+    {
+      "project": "vendor/rockchip",
+      "repository": "https://gitcode.com/caesar-wang/vendor_rockchip",
+      "commit": "ef028e3e1139b2a98862ce5c97ec11b2715cc79e",
+      "tree": "c303199d0bd6876e897dad6565d75b9d314131e9",
+      "treePathListSha256": "11d239d094ba074f808a468645fa9e264078790914a5100858986e99286df5ac",
+      "blobCount": 518,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "rk3588/preinstall-config/install_list.json": {
+          "sha256": "6b11cef01000da8cc102caaa978a61bc5fb2dd16c73141ecb32ceae39a3c7703",
+          "blob": "fa5575ad16c30e72956d18463acb828d6eea6513"
+        },
+        "rk3588/preinstall-config/install_list_capability.json": {
+          "sha256": "6aee041f1207ca1eb9fdb91e09a46e8989d12f7535e2b12b95ce0273fc946764",
+          "blob": "3e01ec0f0f8c85c6e87ff703fd2b0593b81fe076"
+        }
+      },
+      "licenseEvidence": "No root license; copied configuration compared to pinned Apache-2.0 vendor_hihope source",
+      "retainedLicenseFiles": [
+        "LICENSES/upstream/vendor_hihope.LICENSE.txt"
+      ]
+    },
+    {
+      "project": "base/startup/init",
+      "repository": "https://gitcode.com/caesar-wang/startup_init",
+      "commit": "8f53a20bddadf5d132889693a5054794a9b8a7c6",
+      "tree": "1a8161086b98ed381822a3599334507505b443af",
+      "treePathListSha256": "2a7ce646377483c2ac2dadf56b252d4359749e665ef4a7ed81552fd59e2a05e0",
+      "blobCount": 1352,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "LICENSE": {
+          "sha256": "9264a6b3c134511ccfcae48ed3808320688ae6933ec4fc547476a005095fc1ef",
+          "blob": "4a459866a57c25462afad17f3fe0b50d440da080"
+        },
+        "services/etc/param/ohos.para": {
+          "sha256": "cf1c116e3667586fa528e7735b4302cbb3f6ddc7f901773ab1ca95d863c61ccb",
+          "blob": "d4aad220cf0a4602bf4afa8e444e09eea4c6d048"
+        }
+      },
+      "licenseEvidence": "Apache-2.0 LICENSE from this exact commit",
+      "retainedLicenseFiles": [
+        "LICENSES/upstream/startup_init.LICENSE.txt"
+      ]
+    },
+    {
+      "project": "kernel/linux/linux-6.6",
+      "repository": "https://gitcode.com/caesar-wang/kernel_linux_6.6",
+      "commit": "a36241080fd0dd94fb668924795a0dee9dfdef8e",
+      "tree": "9a0b6e754dcf32a8fbfa017aabfee31035ff600e",
+      "treePathListSha256": "c0643461c78ff4fb5788350c55b70cc2d0fd227f14991f49dfd115a436d448dc",
+      "blobCount": 87107,
+      "noticeFiles": [],
+      "sourceFiles": {
+        "COPYING": {
+          "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0",
+          "blob": "a635a38ef9405fdfcfe97f3a435393c1e9cae971"
+        },
+        "LICENSES/preferred/MIT": {
+          "sha256": "323c587d0ccf10e376f8bf9a7f31fb4ca6078105194b42e0b1e0ee2bc9bde71f",
+          "blob": "f33a68ceb3ea00a533d2331a091ec7f2580bb4df"
+        },
+        "arch/arm64/boot/dts/rockchip/rk3588-evb7-v11-standard.dts": {
+          "sha256": "abbd1e3ea2a8d6a23cceacf2cacd2591d8f55ceae6c49b035a9a879e34f1c2b7",
+          "blob": "6c5910f3bbc4bafab5f73fe62bf5328440191f8a"
+        }
+      },
+      "licenseEvidence": "Explicit GPL-2.0+ OR MIT header; MIT option selected",
+      "retainedLicenseFiles": [
+        "LICENSES/MIT.txt",
+        "LICENSES/upstream/linux-6.6.MIT.txt"
+      ]
+    }
+  ],
+  "canonicalConfigurationSource": {
+    "repository": "https://github.com/openharmony/vendor_hihope",
+    "commit": "4f004ef41b5312630e14ab39af52fe9b2b9afd16",
+    "tree": "4f004ef41b5312630e14ab39af52fe9b2b9afd16",
+    "treeComplete": true,
+    "blobCount": 1232,
+    "noticeFiles": [
+      "dayu210/bluetooth/NOTICE"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "LICENSES/upstream/openharmony-common.LICENSE.txt",
+      "sha256": "0cec06e0e55fbc3dc5cee4fca9b607f66cb8f4e4dbcf3b3c013594dd156732e9",
+      "bytes": 10173,
+      "source": {
+        "repository": "https://gitcode.com/openharmony/window_window_manager",
+        "commit": "ac4fbeff04b9560fb004f8ecb834aeccfc66bffd",
+        "path": "LICENSE",
+        "gitBlob": "4947287f7b5ccb5d1e8b7b2d3aa5d89f322c160d"
+      }
+    },
+    {
+      "path": "LICENSES/upstream/window_scene_board.LICENSE.txt",
+      "sha256": "bb28c48e3e078166e91cfc2b6db7ffebb8a0973b9e23b3df060561292d8d69ec",
+      "bytes": 10140,
+      "source": {
+        "repository": "https://gitcode.com/openharmony/window_scene_board",
+        "commit": "71f0c83f97da70f8c1f5ec4e30257af7767ef9bd",
+        "path": "LICENSE",
+        "gitBlob": "d0381d6d04c77c78c42ae875f97d38483ba0c636"
+      }
+    },
+    {
+      "path": "LICENSES/upstream/window_scene_board.COPYING.txt",
+      "sha256": "9d8d4d8b4bb99572ee8b51025a30b8493d949798cac465c6c15b1b29420bcb06",
+      "bytes": 1075,
+      "source": {
+        "repository": "https://gitcode.com/openharmony/window_scene_board",
+        "commit": "71f0c83f97da70f8c1f5ec4e30257af7767ef9bd",
+        "path": "COPYING",
+        "gitBlob": "9c1cd7cb84357f4aa3d57ff961cd37d993055ef5"
+      }
+    },
+    {
+      "path": "LICENSES/upstream/window_scene_board.README.OpenSource.json",
+      "sha256": "ba04169bc26eea5b4fe96edcb2657a31d8b0106141debdce939b1e9f8d7d7a7c",
+      "bytes": 234,
+      "source": {
+        "repository": "https://gitcode.com/openharmony/window_scene_board",
+        "commit": "71f0c83f97da70f8c1f5ec4e30257af7767ef9bd",
+        "path": "README.OpenSource",
+        "gitBlob": "b21f1e3d1c2a33862ef5f01b7800a2c5cc6c87f0"
+      }
+    },
+    {
+      "path": "LICENSES/upstream/startup_init.LICENSE.txt",
+      "sha256": "9264a6b3c134511ccfcae48ed3808320688ae6933ec4fc547476a005095fc1ef",
+      "bytes": 10349,
+      "source": {
+        "repository": "https://gitcode.com/caesar-wang/startup_init",
+        "commit": "8f53a20bddadf5d132889693a5054794a9b8a7c6",
+        "path": "LICENSE",
+        "gitBlob": "4a459866a57c25462afad17f3fe0b50d440da080"
+      }
+    },
+    {
+      "path": "LICENSES/upstream/linux-6.6.MIT.txt",
+      "sha256": "323c587d0ccf10e376f8bf9a7f31fb4ca6078105194b42e0b1e0ee2bc9bde71f",
+      "bytes": 1372,
+      "source": {
+        "repository": "https://gitcode.com/caesar-wang/kernel_linux_6.6",
+        "commit": "a36241080fd0dd94fb668924795a0dee9dfdef8e",
+        "path": "LICENSES/preferred/MIT",
+        "gitBlob": "f33a68ceb3ea00a533d2331a091ec7f2580bb4df"
+      }
+    },
+    {
+      "path": "LICENSES/upstream/vendor_hihope.LICENSE.txt",
+      "sha256": "2514772e5475f208616174f81b67168179a7c51bdcb9570a96a9dc5962b83116",
+      "bytes": 10347,
+      "source": {
+        "repository": "https://github.com/openharmony/vendor_hihope",
+        "commit": "4f004ef41b5312630e14ab39af52fe9b2b9afd16",
+        "path": "LICENSE",
+        "gitBlob": "21254fc75dcad77bffde10dcab0ad5464a1f0963"
+      }
+    },
+    {
+      "path": "evidence/license-audit/upstream/vendor_hihope/install_list.json",
+      "sha256": "6061a457f3c7be2cd9d7178a1b03abad3b580892aeb07f1d47c98d078a836ccb",
+      "bytes": 6445,
+      "source": {
+        "repository": "https://github.com/openharmony/vendor_hihope",
+        "commit": "4f004ef41b5312630e14ab39af52fe9b2b9afd16",
+        "path": "rk3568/preinstall-config/install_list.json",
+        "gitBlob": "2380f11feaadbcc3c586db84e5aa9ccc4e00b8a9"
+      }
+    },
+    {
+      "path": "evidence/license-audit/upstream/vendor_hihope/install_list_capability.json",
+      "sha256": "7ec9ac9d96a7d948fd4578e029724626d1497f0541f9dfebdacc68753520876d",
+      "bytes": 11955,
+      "source": {
+        "repository": "https://github.com/openharmony/vendor_hihope",
+        "commit": "4f004ef41b5312630e14ab39af52fe9b2b9afd16",
+        "path": "rk3568/preinstall-config/install_list_capability.json",
+        "gitBlob": "a10096dc9bb05fd0450af23a997d3c13792484ff"
+      }
+    },
+    {
+      "path": "evidence/license-audit/upstream/vendor_hihope/dayu210-bluetooth-NOTICE.txt",
+      "sha256": "dc78e7f337a038472a8aee1fa8f4deb528bb50b2dd8e8876a6734ff9bcad6ab8",
+      "bytes": 1261,
+      "source": {
+        "repository": "https://github.com/openharmony/vendor_hihope",
+        "commit": "4f004ef41b5312630e14ab39af52fe9b2b9afd16",
+        "path": "dayu210/bluetooth/NOTICE",
+        "gitBlob": "8597d8e7aa76c729c1777f2bc8582a13dc15527b",
+        "applicability": "Only Bluetooth implementation; not redistributed by this archive. Retained as audit evidence."
+      }
+    },
+    {
+      "path": "evidence/license-audit/vendor-hihope-to-rockchip-install_list.json.diff",
+      "sha256": "99a90194b77850238a858760172291fe35e0f79ed1c61d203f2c97ca9321dd42",
+      "bytes": 707,
+      "source": {
+        "comparison": "Pinned Apache-2.0 configuration vs recorded Rockchip configuration; differences are app paths and a certificate fingerprint."
+      }
+    },
+    {
+      "path": "evidence/license-audit/vendor-hihope-to-rockchip-install_list_capability.json.diff",
+      "sha256": "ebffd5a17f854dbf9b08a944aea163d7cef4491219010411e1526e41c7081413",
+      "bytes": 509,
+      "source": {
+        "comparison": "Pinned Apache-2.0 configuration vs recorded Rockchip configuration; differences are app paths and a certificate fingerprint."
+      }
+    }
+  ],
+  "originalCopyChecks": [
+    {
+      "path": "scripts/board/input_window_monitor.cpp.orig",
+      "project": "foundation/window/window_manager",
+      "commit": "ac4fbeff04b9560fb004f8ecb834aeccfc66bffd",
+      "sourcePath": "wmserver/src/input_window_monitor.cpp",
+      "sourceBlob": "8b71ee8e1ae04f74f93f560665acd1c6c7bb1706",
+      "lfNormalizedSha256": "7a596861c909687b8bffd3bc1b6c5a69268edda38f7cb83d8617a522f0234eee",
+      "comparison": "equal after CRLF to LF normalization"
+    },
+    {
+      "path": "scripts/sceneboard/SceneBoard-hvigorfile.ts.orig",
+      "project": "applications/standard/window_scene_board",
+      "commit": "71f0c83f97da70f8c1f5ec4e30257af7767ef9bd",
+      "sourcePath": "hvigorfile.ts",
+      "sourceBlob": "cd4b93b2ed9997093a4d7f4ed1f37e863fdc3432",
+      "lfNormalizedSha256": "a9ad204fda68c079640318caab839531a2783f81cd022f82d60918caf1df1016",
+      "comparison": "equal after CRLF to LF normalization"
+    },
+    {
+      "path": "scripts/sceneboard/update-sdk-interface.js.orig",
+      "project": "applications/standard/window_scene_board",
+      "commit": "71f0c83f97da70f8c1f5ec4e30257af7767ef9bd",
+      "sourcePath": "hvigor/update-sdk-interface.js",
+      "sourceBlob": "600a5887833ac71f2ada4dc948031bdd220f16ab",
+      "lfNormalizedSha256": "784bf734027c8b262789362aa12a6beb6ee78004bbca5bf29760acee394e182e",
+      "comparison": "equal after CRLF to LF normalization"
+    },
+    {
+      "path": "evidence/SceneBoard-build.sh",
+      "project": "applications/standard/window_scene_board",
+      "commit": "71f0c83f97da70f8c1f5ec4e30257af7767ef9bd",
+      "sourcePath": "build.sh",
+      "sourceBlob": "30044257ae6e6411562fc9b87470e73927cecd75",
+      "lfNormalizedSha256": "d0ab7e4b99a40aeb1faee2df66ff06fc5de7cab1183f5796857a1a3cf3a42eae",
+      "comparison": "equal after CRLF to LF normalization"
+    },
+    {
+      "path": "evidence/sceneboard-preinstall-r2/source-backup/vendor/rockchip/rk3588/preinstall-config/install_list.json",
+      "project": "vendor/rockchip",
+      "commit": "ef028e3e1139b2a98862ce5c97ec11b2715cc79e",
+      "sourcePath": "rk3588/preinstall-config/install_list.json",
+      "sourceBlob": "fa5575ad16c30e72956d18463acb828d6eea6513",
+      "lfNormalizedSha256": "1767defd379575ac13b037798890d06aa2147f9f720778540a004f75629b0ff1",
+      "comparison": "equal after CRLF to LF normalization"
+    },
+    {
+      "path": "evidence/sceneboard-preinstall-r2/source-backup/vendor/rockchip/rk3588/preinstall-config/install_list_capability.json",
+      "project": "vendor/rockchip",
+      "commit": "ef028e3e1139b2a98862ce5c97ec11b2715cc79e",
+      "sourcePath": "rk3588/preinstall-config/install_list_capability.json",
+      "sourceBlob": "3e01ec0f0f8c85c6e87ff703fd2b0593b81fe076",
+      "lfNormalizedSha256": "3eb490129c5623f8bfb7776eab83b7726f1f223769fa2500ac669ce4494be170",
+      "comparison": "equal after CRLF to LF normalization"
+    }
+  ],
+  "patchChecks": [
+    {
+      "project": "foundation/window/window_manager",
+      "patch": "scripts/board/cursor-screen-id.patch",
+      "appliesToRecordedCommit": true,
+      "outputCopiesMatch": [
+        "scripts/board/input_window_monitor.cpp",
+        "scripts/board/input_window_monitor_test.cpp"
+      ],
+      "outputCopyLfSha256": {
+        "scripts/board/input_window_monitor.cpp": "6894eba2988e65514619416e8c30de6c085ed4025fa3d9871b248f82192f6098",
+        "scripts/board/input_window_monitor_test.cpp": "5bd7fb86b5447114df7a5375793f6a0d1cf1f625f2af8802ce479b8339849f55"
+      }
+    },
+    {
+      "project": "applications/standard/window_scene_board",
+      "patch": "evidence/sceneboard-linux-rebuild/linux-sdk-preparation.patch",
+      "appliesToRecordedCommit": true,
+      "outputCopiesMatch": [
+        "scripts/sceneboard/SceneBoard-hvigorfile.ts",
+        "scripts/sceneboard/update-sdk-interface.js"
+      ],
+      "outputCopyLfSha256": {
+        "scripts/sceneboard/SceneBoard-hvigorfile.ts": "009d7939c587173d7cdd20340e618b55ac671ae6686fe2cb4100ae86d0adf2a4",
+        "scripts/sceneboard/update-sdk-interface.js": "6bb1a3019dfa07885a3d363128df9cda0d6a595136683ad62313f6431fff8fe8"
+      }
+    },
+    {
+      "project": "foundation/multimodalinput/input",
+      "patch": "evidence/sceneboard-system-image/evidence/retained-movesoft.patch",
+      "appliesToRecordedCommit": true,
+      "outputCopiesMatch": [],
+      "outputCopyLfSha256": {}
+    },
+    {
+      "project": "base/startup/init",
+      "patch": "evidence/sceneboard-preinstall-r2/evidence/incremental-version.patch",
+      "appliesToRecordedCommit": true,
+      "outputCopiesMatch": [],
+      "outputCopyLfSha256": {}
+    },
+    {
+      "project": "vendor/rockchip",
+      "patch": "evidence/sceneboard-preinstall-r2/evidence/preinstall.patch",
+      "appliesToRecordedCommit": true,
+      "outputCopiesMatch": [],
+      "outputCopyLfSha256": {}
+    }
+  ],
+  "configurationComparisons": [
+    {
+      "name": "install_list.json",
+      "canonicalPath": "evidence/license-audit/upstream/vendor_hihope/install_list.json",
+      "archivePath": "evidence/sceneboard-preinstall-r2/source-backup/vendor/rockchip/rk3588/preinstall-config/install_list.json",
+      "diffPath": "evidence/license-audit/vendor-hihope-to-rockchip-install_list.json.diff"
+    },
+    {
+      "name": "install_list_capability.json",
+      "canonicalPath": "evidence/license-audit/upstream/vendor_hihope/install_list_capability.json",
+      "archivePath": "evidence/sceneboard-preinstall-r2/source-backup/vendor/rockchip/rk3588/preinstall-config/install_list_capability.json",
+      "diffPath": "evidence/license-audit/vendor-hihope-to-rockchip-install_list_capability.json.diff"
+    }
+  ],
+  "outOfScope": [
+    "Firmware images, HAP binaries, SDK, signing keys, vendor tools and dependencies not shipped in this repository."
+  ],
+  "result": "Source license and applicable notice review complete for distributed archive content; historical whole-system reproducibility and board acceptance remain unverified."
+}

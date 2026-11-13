@@ -1,0 +1,11 @@
+--- vendor_hihope/rk3568/install_list_capability.json
++++ vendor_rockchip/rk3588/install_list_capability.json
+@@ -51,7 +51,7 @@
+         },
+         {
+             "bundleName": "com.ohos.backgroundtaskmgr.resources",
+-            "app_signature" : ["EFDBE35DD45860CE04BA8DB3F38C0DA15233F6FDEC2B031D1721923FFA5E309C"],
++            "app_signature" : ["72BE2C651A9E0C57B4BB67825BA6F8180FC883858434712150A55C17C7E1A6F7"],
+             "singleton": true,
+             "allowAppDesktopIconHide": true
+         },

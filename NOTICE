@@ -7,12 +7,29 @@ are licensed under the Apache License, Version 2.0. See LICENSE.
 This repository includes source files and excerpts from OpenHarmony:
 Copyright (c) 2021-2022, 2022, 2023 Huawei Device Co., Ltd.
 Copyright (c) Huawei Device Co., Ltd. 2024-2025. All rights reserved.
+Copyright (c) 2021 Huawei Device Co., Ltd.
+Copyright (c) 2021-2025 Huawei Device Co., Ltd.
+Copyright (c) 2024 Huawei Device Co., Ltd.
+Copyright (c) 2025 Huawei Device Co., Ltd.
+Copyright (c) 2025-2025 Huawei Device Co., Ltd.
 These files retain their Apache-2.0 license headers.
+
+The archived SceneBoard source distribution also carries:
+Copyright (c) 2015 Bodymovin
+Its MIT notice is retained verbatim in
+LICENSES/upstream/window_scene_board.COPYING.txt.
+The redistributed SceneBoard build scripts retain their own Apache-2.0 headers.
 
 The board device tree retains:
 Copyright (c) 2023 Rockchip Electronics Co., Ltd.
 SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 The MIT option is used for redistribution in this repository; see LICENSES/MIT.txt.
 
+The archived preinstall configuration is compared against the Apache-2.0
+OpenHarmony vendor_hihope configuration at commit
+4f004ef41b5312630e14ab39af52fe9b2b9afd16. Its license and comparison evidence
+are retained under LICENSES/upstream/ and evidence/license-audit/.
+
 Source provenance, modifications and distribution boundaries are described
-in THIRD_PARTY.md. Product names do not imply endorsement by their owners.
+in THIRD_PARTY.md and docs/13-license-audit.md. Product names do not imply
+endorsement by their owners.

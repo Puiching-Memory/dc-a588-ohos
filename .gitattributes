@@ -1,3 +1,7 @@
 *.sh text eol=lf
 *.bat text eol=crlf
 *.cfg -text
+# Upstream audit evidence keeps the exact source bytes used by its SHA256.
+LICENSES/upstream/** -text whitespace=cr-at-eol
+evidence/license-audit/upstream/** -text whitespace=cr-at-eol
+evidence/license-audit/*.diff -text
