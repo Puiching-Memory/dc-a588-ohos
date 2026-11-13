@@ -1,5 +1,7 @@
 # OpenHarmony 6.1-RK-LTS · RK3588 镜像
 
+> 归档说明：以下是历史阶段记录，后续状态以 [SceneBoard 实验汇总](../08-sceneboard-experiment.md) 和 [光标调查](../09-cursor-investigation.md) 为准；本地镜像恢复不代表已完成板上回退。
+
 内核镜像 2026-11-03 07:01 构建，`uboot.img` 于 09:44 重新打包（补入 ATF，见「已知问题」）。
 构建机：`<BUILD_HOST>`，产物目录 `~/ohos/src/out/rockchip/packages/phone/images`。
 

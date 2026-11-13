@@ -1,12 +1,14 @@
 # SceneBoard Linux SDK 准备与重编结果
 
+> 归档说明：以下是历史阶段记录，后续状态以 [SceneBoard 实验汇总](../08-sceneboard-experiment.md) 和 [光标调查](../09-cursor-investigation.md) 为准；本地镜像恢复不代表已完成板上回退。
+
 **当前已停止采用 SceneBoard，`images/` 已恢复经典 WindowManager 基线。** 下文为实验历史，不是当前烧录指引。见 [经典版本回退](SceneBoard-停用与经典版本回退-20261105.md)。
 
 **板上后续状态：**用户局部更新及全量刷写后均停在启动 Logo。UART 与源码核对确认：BMS 使用预装清单模式，而产品清单漏了 SceneBoard，因此即使初始化 Userdata 也不会安装它；旧 Launcher/SystemUI 又被架构开关禁用。此前仅归因旧数据、指纹未变不完整。详见 [UART 启动诊断](SceneBoard-启动卡住-UART诊断-20261105.md)。[R2 修正版](SceneBoard-预装清单修复-20261105.md) 已完成重编、离线检查及原 `images/` 目录覆盖，本次只需更新 System，尚未在板上启动验证。
 
 日期：2026-11-05。结果：**SDK 准备、Pad SceneBoard 的 ArkTS 编译、HAP 打包检查及签名均已通过；随后已构建启用 SceneBoard 的整套系统镜像，并完成离线检查**。未执行烧录，板上架构和运行状态未在本轮改动。
 
-系统镜像交付：[images/README-烧录说明.md](images/README-烧录说明.md)。本次更新使用该目录的 Boot + System，新产物已按用户要求直接覆盖到 `images/`；原文件备份位于 `backups/images-before-sceneboard-20261105-112835/`。
+系统镜像交付：[images/README-烧录说明.md](../08-sceneboard-experiment.md)。本次更新使用该目录的 Boot + System，新产物已按用户要求直接覆盖到 `images/`；原文件备份位于 `backups/images-before-sceneboard-20261105-112835/`。
 
 ## 验证结果
 
@@ -60,7 +62,7 @@ bash /home/<user>/ohos/validation/sceneboard-linux-20261105/run-sceneboard-linux
 
 ## 产物
 
-[pad_sceneboard-default-signed.hap](validation/cursor-20261105/pad_sceneboard-default-signed.hap)
+pad_sceneboard-default-signed.hap（`pad_sceneboard-default-signed.hap`，未入库）
 
 - 大小：118,993,418 字节。
 - 包名：`com.ohos.sceneboard`。
@@ -72,7 +74,7 @@ bash /home/<user>/ohos/validation/sceneboard-linux-20261105/run-sceneboard-linux
 
 ## 证据和边界
 
-证据目录：[sceneboard-linux-rebuild](validation/cursor-20261105/sceneboard-linux-rebuild/)。
+证据目录：[sceneboard-linux-rebuild](../../evidence/sceneboard-linux-rebuild/)。
 
 - `pad_sceneboard.log`：SDK 准备、完整 ArkTS 编译成功，随后因缺 Java 停止。
 - `pad_sceneboard-java8.log`：增量复用编译缓存，打包、检查、签名与整体构建成功。

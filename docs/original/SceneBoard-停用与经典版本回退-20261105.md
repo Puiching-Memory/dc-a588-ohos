@@ -1,5 +1,7 @@
 # 停用 SceneBoard，恢复经典 WindowManager
 
+> 归档说明：以下是历史阶段记录，后续状态以 [SceneBoard 实验汇总](../08-sceneboard-experiment.md) 和 [光标调查](../09-cursor-investigation.md) 为准；本地镜像恢复不代表已完成板上回退。
+
 日期：2026-11-05。按用户明确要求，停止 SceneBoard 方向，恢复最后已知能进桌面、HDMI 0 能显示鼠标的经典版本。
 
 ## 已完成

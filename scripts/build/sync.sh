@@ -1,11 +1,17 @@
-#!/bin/bash
-export PATH=/home/<user>/ohos/bin:$PATH
+#!/usr/bin/env bash
+# SPDX-License-Identifier: Apache-2.0
+set -euo pipefail
+source_root=${OHOS_SOURCE_ROOT:-$HOME/ohos/src}
+repo_tool=${REPO_TOOL:-$HOME/ohos/repo}
 export GIT_CONFIG_COUNT=2 GIT_CONFIG_KEY_0=http.proxy GIT_CONFIG_VALUE_0= GIT_CONFIG_KEY_1=https.proxy GIT_CONFIG_VALUE_1=
-cd /home/<user>/ohos/src
-for i in $(seq 1 30); do
-  echo "=== attempt $i $(date +%F" "%H:%M:%S) ==="
-  python3 /home/<user>/ohos/repo sync -c --force-sync --no-tags --jobs=16 --retry-fetches=3 && { echo "=== SYNC OK $(date) ==="; exit 0; }
-  echo "=== attempt $i failed, retry in 60s ==="
-  sleep 60
+cd "$source_root"
+for attempt in $(seq 1 30); do
+    printf 'Sync attempt %s: %s\n' "$attempt" "$(date -Iseconds)"
+    if python3 "$repo_tool" sync -c --force-sync --no-tags --jobs=16 --retry-fetches=3; then
+        echo 'SYNC OK'
+        exit 0
+    fi
+    if (( attempt < 30 )); then sleep 60; fi
 done
-echo "=== SYNC GAVE UP ==="; exit 1
+echo 'SYNC GAVE UP' >&2
+exit 1

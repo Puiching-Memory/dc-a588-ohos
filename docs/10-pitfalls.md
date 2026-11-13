@@ -58,4 +58,5 @@
 - 镜像总体积约 4.3 GB（`system.img` 2 GB + `userdata.img` 1.4 GB + `vendor.img` 268 MB），
   **不进 Git**；仓库只保留 `parameter.txt`、`SHA256SUMS.txt` 与说明。
 - Windows 上克隆后中文文件名可能显示为八进制转义，`git config core.quotepath false` 即可。
-- 对比不同构建版本时以 **dtb 哈希**为准（`Image`/`boot.img` 含编译时间戳，每次都会变）。
+- DTB 哈希只用于核对设备树；整套版本要记录冻结 manifest、本地改动、构建参数与各镜像哈希。
+  `Image`/`boot.img` 还可能因编译时间戳变化，见 [复现边界](11-reproducibility.md)。

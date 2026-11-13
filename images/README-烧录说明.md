@@ -28,4 +28,4 @@ SceneBoard R1/R2 镜像、源码补丁、检查报告和 UART 记录均已留档
 
 本次回退恢复的是此前可用基线；不代表 HDMI 1 光标问题或其他历史缺陷已解决。
 
-详细记录：[停用 SceneBoard 与经典版本回退](../SceneBoard-停用与经典版本回退-20261105.md)。
+详细记录：[停用 SceneBoard 与经典版本回退](../docs/original/SceneBoard-停用与经典版本回退-20261105.md)。

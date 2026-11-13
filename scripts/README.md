@@ -1,7 +1,9 @@
 # 脚本索引
 
-所有脚本来自实际构建与验证环境，路径按**构建机** `/home/<user>/ohos/...` 硬编码。
-在别处复用时需要修改这些常量。
+脚本来自实际构建与验证环境。`build/` 的同步、LFS 和基线采集入口支持
+`OHOS_SOURCE_ROOT`（默认 `$HOME/ohos/src`）、`REPO_TOOL`（默认 `$HOME/ohos/repo`）；
+`flash/` 支持本机工具与镜像目录。其余历史专项脚本仍有 `/home/<user>/ohos/...` 常量，
+复用前必须调整；`evidence/` 内同名副本保留为历史材料，不是当前操作入口。
 
 ## build/
 
@@ -10,16 +12,21 @@
 | `Dockerfile` | `ohos-6.1-rk:jammy-v3`（ubuntu:22.04 + 全量 OHOS 构建依赖 + 1005 用户） |
 | `build-rk3588.sh` | 容器内构建入口（挂载为 `/build.sh`），经典 WindowManager 基线 |
 | `sync.sh` | `repo sync` 30 次重试，内置清空失效代理 |
-| `lfspull.sh` | 读 `lfs_repos.txt` 逐仓库 `git lfs pull`（`timeout 1200`） |
+| `lfspull.sh` | 自动发现 LFS 项目，或读可选清单；逐项目限时拉取，汇总失败并返回非零 |
+| `capture-baseline.sh` | 输出冻结 manifest、逐项目 HEAD/状态/已跟踪文件 diff 与未跟踪文件名 |
 
 ```bash
-docker build -t ohos-6.1-rk:jammy-v3 .
+# 在本归档仓库根目录执行；先按 docs/02-build-environment.md 准备可写的挂载目录。
+docker build -f scripts/build/Dockerfile -t ohos-6.1-rk:jammy-v3 .
 docker run --rm --user 1005:1005 -e HOME=/home/ohos \
   -v ~/ohos/src:/home/ohos/src -v ~/ohos/ccache:/ccache \
   -v ~/ohos/prebuilts_cache:/home/ohos/openharmony_prebuilts \
-  -v ~/ohos/build-rk3588.sh:/build.sh:ro -w /home/ohos/src \
+  -v "$PWD/scripts/build/build-rk3588.sh:/build.sh:ro" -w /home/ohos/src \
   ohos-6.1-rk:jammy-v3 bash /build.sh
 ```
+
+基线采集只保存已跟踪文件的改动，未跟踪/忽略文件与子模块内部改动仍需另行整理；
+历史缺口与应用顺序见 [复现边界](../docs/11-reproducibility.md)。
 
 ## dts/
 
@@ -39,8 +46,11 @@ python3 pin_audit.py <我方.dts>
 
 | 文件 | 用途 |
 | --- | --- |
-| `flash-rk3588.bat` | 先 `cd` 进 `rktools\RKDevTool` 再启动 RKDevTool（配置按 CWD 解析） |
-| `config.cfg` | RKDevTool v3.37 的分区/地址/文件路径配置（14 行，含强制按地址写） |
+| `flash-rk3588.bat` | 参数/环境变量指定工具目录，缺配置时生成，再切换工作目录启动 GUI |
+| `Prepare-FlashConfig.ps1` | 将模板的 11 个文件路径替换为本机目录，默认拒绝覆盖已有配置 |
+| `config.cfg` | RKDevTool v3.37 脱敏模板（14 行，路径相对于默认工具目录） |
+
+工具获取、目录布局与调用示例见 [烧录说明](../docs/05-flashing.md)。
 
 ## sceneboard/
 
@@ -73,3 +83,10 @@ python3 pin_audit.py <我方.dts>
 | `cursor-screen-id.patch` | 上述修正的完整补丁 |
 
 PowerShell 脚本依赖 .NET `System.IO.Ports.SerialPort`，串口固定 `COM4` / 1500000 / 8N1。
+
+## 离线回归检查
+
+在仓库根目录运行 `python -m unittest discover -s tests -v`。
+LFS 用例需要 Bash（Windows 支持 Git for Windows），通过临时替身验证失败传播与清单处理，不访问远端；
+烧录配置用例需要 Windows PowerShell，验证中文/空格路径、分区字段不变及覆盖保护，不启动 GUI 或操作板卡。
+缺少相应运行环境时用例会跳过；跳过不能算该平台通过。

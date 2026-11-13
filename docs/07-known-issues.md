@@ -70,7 +70,7 @@
 | P2 | eng 模式开启 | **P1** | 内核命令行含 `ohos.boot.eng_mode=on` | 量产前关闭 |
 | P3 | 串口 root shell 开启 | **P1** | `base/startup/init/services/etc/console.cfg` 改为 `start-mode: boot` / `disabled: 0` | **发布前必须回滚**（原文件备份在 `/tmp/console.cfg.orig`） |
 | P4 | hdc over USB 不可用 | P2 | USB OTG 未接主机或工作在 host 模式；另见 K6 | 未解决；网络 hdc 可用 |
-| P5 | 构建产物不可复现 | P3 | 内核 `Image` 内嵌编译时间戳 | 对比版本以 dtb 哈希为准 |
+| P5 | 历史镜像缺完整源码基线 | P2 | 未保存冻结 manifest 与部分本地改动；内核还有编译时间戳 | DTB 哈希仅核对设备树；完整缺口与留存方法见 [复现边界](11-reproducibility.md) |
 | P6 | 未映射外设：CAN、RTC（hym8563）、4×UART、LVDS/eDP 面板与背光、HDMI-IN | P1 | 无资料或无硬件 | 需厂商原理图/规格书，不靠试错 |
 | P7 | 内存与温度余量未测 | P2 | 未做压测 | 未开始 |
 

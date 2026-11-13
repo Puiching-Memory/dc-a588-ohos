@@ -1,5 +1,7 @@
 # SceneBoard 启动停在 Logo：UART 诊断
 
+> 归档说明：以下是历史阶段记录，后续状态以 [SceneBoard 实验汇总](../08-sceneboard-experiment.md) 和 [光标调查](../09-cursor-investigation.md) 为准；本地镜像恢复不代表已完成板上回退。
+
 日期：2026-11-05。通过 COM4、1500000 波特率进行只读检查，没有重启、安装应用、修改参数或清理数据。
 
 ## 结论

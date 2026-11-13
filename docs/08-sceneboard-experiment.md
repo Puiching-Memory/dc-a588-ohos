@@ -2,7 +2,8 @@
 
 > **结论先行**：编译、打包、签名、预装清单修复全部做通，R2 镜像能让 SceneBoard 跑起来
 > （进程 + WMS/全屏/账号就绪参数均为 true），但随后黑屏、UART 再次静默，根因未定位。
-> 按用户要求**停止该方向**，`images/` 已回退到经典 WindowManager 基线。
+> 按用户要求**停止该方向**，电脑上的 `images/` 已恢复经典 WindowManager 基线；
+> **未执行板上回退烧录，回退后的实际启动与 Userdata 兼容性尚未验证。**
 > 本页保留完整排障过程，供后续重启该方向时复用。
 
 ## 1. 背景
@@ -184,6 +185,9 @@ Boot 与 R1 逐字节一致（用 `compare-boot-fit.py` 比对 FIT 内各分量�
 镜像回退：从 `backups/images-before-sceneboard-20261105-112835/` 恢复
 Boot `2d0ded43…` / System `62ae2214…` 等 6 个文件，逐文件校验哈希，见
 `evidence/abandoned-sceneboard-20261105/classic-restore-verification.json`。
+
+该记录明确 `boardFlashed=false`，只证明电脑上的文件恢复与哈希校验通过，
+不代表开发板已经运行回退版本。
 
 ## 9. 证据索引
 

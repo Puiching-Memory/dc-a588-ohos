@@ -142,4 +142,4 @@ InputKeyFlow: PixArt Dell MS116 USB Optical Mouse, ...
 
 取证材料：`evidence/`（`serial-usb-probe-1.txt`、`mmi-enumeration.*`、`display-state-2.*`、
 `usb-hid-confirm.*`、`cursor-screen-ids.*`、`mouse-with-display-mmi.*`、`source-screen-id-review.txt`、
-`build-library.log` 等）。
+`build-library.log` 等；构建日志未入库，不能在本仓库复核完整编译输出）。

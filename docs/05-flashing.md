@@ -2,18 +2,42 @@
 
 ## 1. 烧录包
 
-本仓库不含镜像（`system.img` 2 GB、`userdata.img` 1.4 GB）。工作机上的交付目录结构：
+本仓库不含镜像（`system.img` 2 GB、`userdata.img` 1.4 GB），也不附带厂商烧录工具。
+历史工作机的交付目录结构如下；这是历史布局，当前仓库的启动器位于 `scripts/flash/`：
 
 ```
 ohos-rk3588-images\
 ├── images\                     烧录用镜像，SHA256SUMS.txt + parameter.txt 已收录到本仓库 images/
 ├── rktools\
-│   ├── RKDevTool\              v3.37，config.cfg 已预置（副本在 scripts/flash/config.cfg）
+│   ├── RKDevTool\              v3.37，需在本机生成 config.cfg
 │   └── DriverAssitant_v5.14\   USB 驱动安装程序（DriverInstall.exe）
 ├── backups\                    各实验前的镜像备份
 ├── images-sceneboard-20261105\ R1 快照
-└── flash-rk3588.bat            一键启动（副本在 scripts/flash/）
+└── flash-rk3588.bat            历史入口；本仓库入口为 scripts/flash/flash-rk3588.bat
 ```
+
+从板卡厂商或 Rockchip 官方渠道获取 **RKDevTool v3.37** 与 **DriverAssistant v5.14**，
+核对来源和各自使用条款。厂商参考入口为 [AndroidOL/Archive-DC-A588](https://github.com/AndroidOL/Archive-DC-A588)；
+本仓库不提供重新打包的 EXE、驱动或下载凭据。
+
+工具可解压到任意目录，镜像可以来自新构建或已获授权的配套交付包。先逐文件核对对应 SHA256，
+再生成配置并启动（PowerShell，在本仓库根目录执行）：
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy RemoteSigned -File .\scripts\flash\Prepare-FlashConfig.ps1 -ToolDirectory 'C:\RK Tools\RKDevTool' -ImageDirectory 'D:\OHOS Images'
+.\scripts\flash\flash-rk3588.bat 'C:\RK Tools\RKDevTool'
+```
+
+也可把工具放在仓库根目录的 `rktools\RKDevTool`，把镜像放在 `images/`。
+启动器依次读取第一个参数、环境变量 `RKDEVTOOL_DIR`、上述默认目录。
+缺少配置时自动按仓库 `images/` 生成，已有配置则保留；更换镜像目录时请显式重新生成。
+`Prepare-FlashConfig.ps1` 默认拒绝覆盖已有配置，保存旧配置后可加 `-Force`。
+示例与启动器的 `RemoteSigned` 仅对本次 PowerShell 进程生效，不更改用户或系统的持久执行策略。
+
+`scripts/flash/config.cfg` 是脱敏模板：11 个文件路径均为 `..\..\images\文件名`，
+生成脚本按本机目录替换路径，保持原 14 行的分区、地址和选中状态。
+它不检查镜像是否齐全、不执行烧录；**执行前仍需在 GUI 核对选中行、文件哈希与分区地址**。
+配置格式和生成行为经过离线检查，RKDevTool GUI 及设备烧录尚未在本轮验收。
 
 ## 2. 分区表（`images/parameter.txt`）
 
@@ -29,14 +53,15 @@ ohos-rk3588-images\
 
 ## 3. RKDevTool 使用
 
-1. 装驱动：`rktools\DriverAssitant_v5.14\DriverInstall.exe`。
+1. 从前述来源取得工具与驱动，运行 DriverAssistant 包内的 `DriverInstall.exe` 安装驱动。
 2. USB 线接载板**下层 USB3.0 口（OTG）**。
 3. 按住「升级&复位键」不放，再上电 → 工具出现 `MASKROM` 或 `LOADER` 设备。
-4. 双击 `flash-rk3588.bat`（或直接启动 `rktools\RKDevTool\RKDevTool.exe`）。
+4. 按第 1 节生成本机配置，用 `scripts/flash/flash-rk3588.bat` 启动工具。
 
 > **必须在工具目录内启动。** RKDevTool 按*当前工作目录*读取 `config.cfg`，从快捷方式或上级目录启动会生成
-> 一份 639 字节的空配置，表格里只剩一行 `Loader`。`flash-rk3588.bat` 已先 `cd /d` 到工具目录。
-> 表格为空时也可右键 →「导入配置」→ 选 `rktools\config_generated.cfg`（= `config.good.bak`）。
+> 一份 639 字节的空配置，表格里只剩一行 `Loader`。本仓库启动器已切换到工具目录。
+> 表格为空时可备份旧配置，再用 `Prepare-FlashConfig.ps1 -Force` 重新生成；
+> 也可在 GUI 右键 →「导入配置」选择生成的 `config.cfg`。
 
 ## 4. 常见烧录场景
 

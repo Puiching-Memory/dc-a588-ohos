@@ -1,5 +1,8 @@
 # RK3588 SceneBoard R2 预装清单修正版
 
+> 历史实验说明，已停止采用，不作为当前烧录指引。R2 后续上板进程与服务就绪但黑屏，根因未定位；
+> 本地经典镜像已恢复，未烧录回退。当前状态见 [SceneBoard 实验记录](../../docs/08-sceneboard-experiment.md)。
+
 日期：2026-11-05。增量版本：`sceneboard-preinstall-20261105-r2`。
 
 ## 这次只更新 System
@@ -20,7 +23,7 @@ System SHA256：
 b3f5382450d20a6b9e7741a68bbb8f6f7e7e56148c70a12aafb980744d8ad55c
 ```
 
-完整文件校验值见本目录 `SHA256SUMS.txt`。覆盖前的文件备份位于上一级 `backups/images-before-sceneboard-r2-20261105-163811` 目录。
+完整文件校验值见归档的 [R2-SHA256SUMS.txt](R2-SHA256SUMS.txt)。覆盖前的文件备份位于历史交付包的 `backups/images-before-sceneboard-r2-20261105-163811` 目录，镜像和备份本体未入库。
 
 ## 修正的实际原因
 
@@ -40,5 +43,5 @@ R2 已补上 SceneBoard 目录、限定签名的桌面启动能力配置，并�
 
 R2 尚未在板上启动验收。SceneBoard 运行时依赖、桌面显示、双 HDMI、鼠标及稳定性仍需验证，不能保证后续没有其他问题。
 
-详细记录：[预装清单修复 R2](../SceneBoard-预装清单修复-20261105.md)。证据：`../validation/cursor-20261105/sceneboard-preinstall-r2/`。
+详细记录：[预装清单修复 R2](../../docs/original/SceneBoard-预装清单修复-20261105.md)。证据：[sceneboard-preinstall-r2](../sceneboard-preinstall-r2/)。
 

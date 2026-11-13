@@ -9,7 +9,14 @@
 `ohos-rk3588-images`（镜像、烧录工具、取证文本）。仓库只保存**文本、脚本、设备树与校验清单**，
 2 GB 级别的镜像文件不入库，见 [docs/05-flashing.md](docs/05-flashing.md)。
 
+这是适配过程与实验材料的公开归档。历史构建尚缺完整的冻结 manifest 和部分本地改动，
+不能保证从上游当前分支重建出清单中的同一镜像；见 [复现边界与改动清单](docs/11-reproducibility.md)。
+公开前整改与验证边界见 [评审整改记录](docs/12-publication-review.md)。
+
 ## 当前状态
+
+下表汇总历史实测，不代表当前板卡已重新验收。停止 SceneBoard 后只恢复了电脑上的经典镜像与源码配置，
+**没有执行板上回退烧录**；光标修正库也未上板。
 
 | 项                        | 状态                                                                                                  |
 | ------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -22,7 +29,7 @@
 | USB                       | 设备/主机模式未完整验证；`usb_host` 服务存在 SIGSEGV 重启循环（厂商 HDI 缺陷）                        |
 | 摄像头 / CAN / RTC / LVDS | 未适配，缺厂商原理图或硬件                                                                            |
 | 鼠标光标                  | 已定位真实根因（WindowManager 漏填 `rsId`），修正库已编译但**未上板验证**                             |
-| SceneBoard                | 已完成编译/打包/预装修复，R2 能跑起桌面进程，但随后黑屏，**按用户要求停止该方向并回退经典版本**       |
+| SceneBoard                | R2 进程与服务就绪，但黑屏根因未定位；已停止实验并恢复本地经典镜像，尚未烧录回退验收 |
 
 完整清单见 [docs/07-known-issues.md](docs/07-known-issues.md)，原始版本见
 [docs/original/KNOWN-ISSUES.md](docs/original/KNOWN-ISSUES.md)。
@@ -42,6 +49,7 @@
 │   ├── 08-sceneboard-experiment.md  SceneBoard 迁移全过程
 │   ├── 09-cursor-investigation.md   光标问题调查与结论
 │   ├── 10-pitfalls.md            反复踩的坑（工具链/构建/设备树）
+│   ├── 11-reproducibility.md     历史源码缺口、改动清单与基线留存方法
 │   ├── 99-timeline.md            时间线
 │   └── original/                 一手交付文档（原文归档，含过期结论标注）
 ├── board-dts/
@@ -66,7 +74,8 @@
 3. **板级设备树**：把 [board-dts/rk3588-evb7-v11-standard.dts](board-dts/rk3588-evb7-v11-standard.dts)
    放回 `kernel/linux/linux-6.6/arch/arm64/boot/dts/rockchip/`，改完用 `scripts/dts/dts_diff.py` 复核。
 4. **构建**：[scripts/build/build-rk3588.sh](scripts/build/build-rk3588.sh)，产物在 `out/rockchip/packages/phone/images/`。
-5. **烧录**：`scripts/flash/flash-rk3588.bat`（必须在 RKDevTool 目录内启动），只改内核时只烧 `boot`。
+5. **烧录**：先按 [烧录说明](docs/05-flashing.md) 准备 RKDevTool 和配置，再运行
+   `scripts/flash/flash-rk3588.bat "你的 RKDevTool 目录"`；只改内核时只烧 `boot`。
 6. **调试**：COM4 @1500000 8N1 拿 root shell；`hdc tconn <ip>:37827` 走网络；取证脚本见 [scripts/board](scripts/board)。
 
 ## 五条最重要的结论
@@ -79,8 +88,9 @@
    SPL 打印 `cannot find image node 'atf-1': -1` 后跳转到未加载地址。
 3. **DSI 幻影面板会让画面只占屏幕 56% 宽。** EVB7 默认开启 `dsi0` + `simple-panel-dsi`（1080×1920），
    无面板也 probe 成功，OH 显示合成器取到宽度 1080，而 HDMI 是 1920×1080。
-4. **SceneBoard 的黑屏/停 Logo 是预装清单问题，不是板级问题。** BMS 走 `USE_PRE_BUNDLE_PROFILE` 清单安装，
+4. **SceneBoard R1 停在 Logo 的原因是预装清单缺项。** BMS 走 `USE_PRE_BUNDLE_PROFILE` 清单安装，
    产品 `install_list.json` 缺少 `/system/app/SceneBoard`，同时旧 Launcher/SystemUI 被架构开关禁用。
+   R2 补齐后进程与服务就绪，但随后黑屏，**黑屏根因未定位，不能据此判断或排除板级问题**。
 5. **“看不到光标但点击有效”是 RS 屏幕映射错误。** 经典 WindowManager 的
    `InputWindowMonitor::UpdateDisplayInfo()` 漏填 `MMI::DisplayInfo.rsId`，光标被挂到没有画面的 RS 屏幕 0；
    桌面窗口走另一条正确映射路径，所以点击/hover 正常。
@@ -102,3 +112,10 @@
 - 不要用 `Test-NetConnection` 判断板卡在线：本机 FlClash TUN 会伪造 TCP 连通性。
 - 串口 1500000 波特率下长输出会丢字，关键哈希一律用短命令分次读。
 - 文档与脚本中的 `<BUILD_HOST>`、`<SSH_PORT>`、`<user>` 为环境相关占位符，复用时替换成自己的值。
+
+## 许可证与来源
+
+本仓库原创文档、脚本及原创修改采用 [Apache-2.0](LICENSE)。第三方源码保留各自的版权与许可，
+设备树仍为 `(GPL-2.0+ OR MIT)` 双许可；本仓库选择 MIT 许可分支进行再分发。
+文件来源、修改说明和许可范围见 [THIRD_PARTY.md](THIRD_PARTY.md) 与 [NOTICE](NOTICE)。
+镜像、SDK、固件及厂商工具的再分发授权不包含在本仓库许可证内。

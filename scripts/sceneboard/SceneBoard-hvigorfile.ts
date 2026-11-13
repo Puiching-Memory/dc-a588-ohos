@@ -1,3 +1,4 @@
+// Modified by dc-a588-ohos contributors: see THIRD_PARTY.md for changes and provenance.
 // module.exports = require('@ohos/hvigor-ohos-plugin').appTasks
 
 /**

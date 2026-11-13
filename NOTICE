@@ -1,0 +1,18 @@
+dc-a588-ohos
+Copyright 2026 dc-a588-ohos contributors
+
+Original documentation, scripts and original modifications in this repository
+are licensed under the Apache License, Version 2.0. See LICENSE.
+
+This repository includes source files and excerpts from OpenHarmony:
+Copyright (c) 2021-2022, 2022, 2023 Huawei Device Co., Ltd.
+Copyright (c) Huawei Device Co., Ltd. 2024-2025. All rights reserved.
+These files retain their Apache-2.0 license headers.
+
+The board device tree retains:
+Copyright (c) 2023 Rockchip Electronics Co., Ltd.
+SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+The MIT option is used for redistribution in this repository; see LICENSES/MIT.txt.
+
+Source provenance, modifications and distribution boundaries are described
+in THIRD_PARTY.md. Product names do not imply endorsement by their owners.

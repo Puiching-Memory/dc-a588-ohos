@@ -5,7 +5,7 @@ RUN sed -i -e s@//archive.ubuntu.com@//mirrors.ustc.edu.cn@g \
            /etc/apt/sources.list
 RUN apt-get update && apt-get install -y --no-install-recommends \
       libstdc++-12-dev binutils binutils-dev git gnupg flex bison gperf \
-      build-essential zip curl zlib1g-dev gcc-multilib libc6-dev-i386 \
+      build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
       libx11-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip \
       m4 bc gnutls-bin ruby genext2fs device-tree-compiler make \
       libffi-dev e2fsprogs pkg-config perl openssl libssl-dev libelf-dev \
@@ -15,11 +15,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       reiserfsprogs xfsprogs squashfs-tools pcmciautils quota ppp \
       libtinfo-dev libstdc++6 gcc-arm-none-eabi vim ssh locales \
       libxinerama-dev libxcursor-dev libxrandr-dev libxi-dev python3 \
-      python3-requests && \
-    (apt-get install -y --no-install-recommends git-lfs libncurses5 libtinfo5 \
-      openjdk-8-jre-headless doxygen || true) && \
+      python3-requests python-is-python3 git-lfs libncurses5 libtinfo5 \
+      openjdk-8-jre-headless doxygen && \
     rm -rf /var/lib/apt/lists/*
-RUN git lfs install --system || true
+RUN git lfs install --system
 RUN apt-get update && apt-get install -y --no-install-recommends \
       python3-pip python3-venv python3-setuptools && \
     rm -rf /var/lib/apt/lists/*

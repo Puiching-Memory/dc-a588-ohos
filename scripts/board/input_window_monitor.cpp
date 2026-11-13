@@ -1,3 +1,4 @@
+// Modified by dc-a588-ohos contributors: see THIRD_PARTY.md for changes and provenance.
 /*
  * Copyright (c) 2021-2022 Huawei Device Co., Ltd.
  * Licensed under the Apache License, Version 2.0 (the "License");

@@ -1,8 +1,10 @@
 # SceneBoard 配套适配核查
 
+> 归档说明：以下是历史阶段记录，后续状态以 [SceneBoard 实验汇总](../08-sceneboard-experiment.md) 和 [光标调查](../09-cursor-investigation.md) 为准；本地镜像恢复不代表已完成板上回退。
+
 日期：2026-11-05。核查范围为当前 RK3588 源码树、2026-11-04 的系统构建日志和 SceneBoard 应用构建日志。
 
-**后续验证已完成：Linux SDK 准备修正后，Pad SceneBoard 的 ArkTS 编译、HAP 打包和签名均通过，并已生成启用 SceneBoard 的系统镜像。** 下面保留问题定位过程；最新证据见 [Linux 重编验证结果](SceneBoard-Linux重编验证-20261105.md)，产物见 [镜像及烧录说明](images/README-烧录说明.md)。本轮未烧录或改动板上运行架构。
+**后续验证已完成：Linux SDK 准备修正后，Pad SceneBoard 的 ArkTS 编译、HAP 打包和签名均通过，并已生成启用 SceneBoard 的系统镜像。** 下面保留问题定位过程；最新证据见 [Linux 重编验证结果](SceneBoard-Linux重编验证-20261105.md)，产物见 [镜像及烧录说明](../08-sceneboard-experiment.md)。本轮未烧录或改动板上运行架构。
 
 ## 进一步定位：Linux 自动入口跳过 SDK 内部声明准备
 
@@ -84,12 +86,12 @@ COPY ../../applications/standard/hap/sceneboard/SceneBoard.hap ...
 
 ## 已保存的证据
 
-- [应用源码构建原始日志](validation/cursor-20261105/sceneboard-app-build-20261104.log)
-- [构建规则与系统构建摘录](validation/cursor-20261105/sceneboard-integration-review.txt)
-- [SDK 准备路径与缺失声明核查](validation/cursor-20261105/sceneboard-sdk-preparation-review.txt)
-- [Hvigor 构建入口源码副本](validation/cursor-20261105/SceneBoard-hvigorfile.ts)
-- [SDK 声明更新脚本副本](validation/cursor-20261105/update-sdk-interface.js)
-- [错误分类统计](validation/cursor-20261105/sceneboard-error-statistics.json)
+- 应用源码构建原始日志（`sceneboard-app-build-20261104.log`，未入库）
+- [构建规则与系统构建摘录](../../evidence/sceneboard-integration-review.txt)
+- [SDK 准备路径与缺失声明核查](../../evidence/sceneboard-sdk-preparation-review.txt)
+- [Hvigor 构建入口源码副本](../../scripts/sceneboard/SceneBoard-hvigorfile.ts)
+- [SDK 声明更新脚本副本](../../scripts/sceneboard/update-sdk-interface.js)
+- [错误分类统计](../../evidence/sceneboard-error-statistics.json)
 
 这些文件保存于本地，避免后续 Hvigor 构建覆盖原始错误记录。
 

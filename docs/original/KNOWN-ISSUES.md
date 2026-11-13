@@ -1,5 +1,7 @@
 # DC-A588-V04 / DC-CM3588 OpenHarmony 6.1-RK-LTS 已知问题清单
 
+> 归档说明：以下是历史阶段记录，后续状态以 [SceneBoard 实验汇总](../08-sceneboard-experiment.md) 和 [光标调查](../09-cursor-investigation.md) 为准；本地镜像恢复不代表已完成板上回退。
+
 状态基线：构建 #9（DSI0 关闭 + console 服务修正，待烧录验证）；已验证基线为构建 #8（`boot.img` sha256 `9878183542…`，`dtb` `6f13db6e…`），系统可启动到 `bootevent.boot.completed`，两路 HDMI 均绑定。
 
 严重度：**P0** 阻断产品化 / **P1** 功能不可用或未验证 / **P2** 体验或稳定性风险 / **P3** 噪音，无功能影响。

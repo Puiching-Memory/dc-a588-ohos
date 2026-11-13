@@ -24,7 +24,7 @@
 ├── build-rk3588.sh          构建入口（宿主侧，挂载为 /build.sh）
 ├── sync.sh                  repo sync 带重试
 ├── lfspull.sh               按仓库列表拉 git-lfs
-├── lfs_repos.txt            LFS 仓库清单
+├── lfs_repos.txt            可选的 LFS 仓库清单（默认由 repo forall 自动发现，不依赖此文件）
 ├── validation/              各专项验证（SceneBoard、预装修复、回退）
 └── *.log                    每轮构建日志（build-align*/build-led/build-dsi/...）
 ```
@@ -36,16 +36,24 @@
 - 基础链：`build-essential gcc g++ gcc-multilib libc6-dev-i386 binutils* flex bison gperf make cmake 依赖`
 - OpenHarmony 构建需要：`device-tree-compiler u-boot-tools mtd-utils cpio liblz4-tool dosfstools mtools
   genext2fs e2fsprogs scons pkg-config ruby gnutls-bin xxd libgl1-mesa-dev libglib2.0-dev libpixman-1-dev`
-- 额外补齐：`git-lfs libncurses5 libtinfo5 openjdk-8-jre-headless libstdc++-12-dev g++-multilib`
+- 额外补齐：`git-lfs libncurses5 libtinfo5 openjdk-8-jre-headless libstdc++-12-dev g++-multilib python-is-python3`
   （`g++-multilib` 是 rkaiq 宿主工具 `iq_parser_v2/j2s4b` 用 `-m32` 链接 `libstdc++` 的必要条件）
 - 用户：`groupadd -g 1005 ohos && useradd -u 1005 -g 1005 -d /home/ohos ...`，`/ccache` 同权限
 
 构建：
 
 ```bash
+# 在本归档仓库根目录执行；归档与 OpenHarmony 源码树是两个目录。
+mkdir -p ~/ohos/ccache ~/ohos/prebuilts_cache
+cp scripts/build/build-rk3588.sh ~/ohos/build-rk3588.sh
+cp scripts/build/Dockerfile ~/ohos/Dockerfile
 cd ~/ohos
 docker build -t ohos-6.1-rk:jammy-v3 .
 ```
+
+镜像固定使用 UID/GID 1005。挂载的源码、缓存与构建目录必须允许该 UID 写入；
+如使用其他 UID，需要同步调整 Dockerfile 的用户与容器 `--user`，不要只改其中一个。
+Dockerfile 已补齐历史环境中的 `g++-multilib`，必需依赖安装失败会直接中止构建。
 
 ## 4. 运行容器
 
@@ -82,8 +90,11 @@ export GIT_CONFIG_COUNT=2 \
   `sync.sh` / `lfspull.sh` 里已内置这两行。
 
 - `~/ohos/repo` 是 repo-py3，脚本里用 `python3 ~/ohos/repo ...`；
-  需要 `~/ohos/bin/python -> python3` 软链。
-- LFS：`git lfs pull` 在部分仓库会超时，`lfspull.sh` 用 `timeout 1200` 逐仓库拉并记录返回码。
+  容器通过 `python-is-python3` 提供 `python` 命令，无须依赖未挂载的宿主软链。
+- `sync.sh` / `lfspull.sh` 默认操作 `$HOME/ohos/src`，repo 工具默认 `$HOME/ohos/repo`；
+  可分别用 `OHOS_SOURCE_ROOT`、`REPO_TOOL` 覆盖。
+- LFS：默认自动发现已提交 `.gitattributes` 含 `filter=lfs` 的项目；也可传入源码树相对路径清单。
+  每个项目限时 1200 秒，失败会统计并使脚本返回非零，详见 [源码与构建](03-source-and-build.md)。
 
 ## 6. 从 Windows 侧操作
 

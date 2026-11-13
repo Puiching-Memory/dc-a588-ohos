@@ -17,3 +17,9 @@ images/*.hap
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Downloaded vendor tools and local generated build evidence
+/rktools/
+/build-baselines/
+__pycache__/
+*.pyc
